@@ -1,0 +1,1903 @@
+fileFormatVersion: 2
+guid: bdfdd63427477c649a2f4888ba1b6029
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Dagger mush GIF_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 631
+      width: 192
+      height: 200
+    spriteID: bfd19c5751a347845ad6711e939d06d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 631}
+  - name: Dagger mush GIF_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 212
+      width: 192
+      height: 199
+    spriteID: 359188f54192e1c4fa393f36a00c1658
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 212}
+  - name: Dagger mush GIF_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 839
+      width: 192
+      height: 200
+    spriteID: 4ecf860ad10c3b847974cb12fae0256d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 839}
+  - name: Dagger mush GIF_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 1047
+      width: 192
+      height: 200
+    spriteID: e6c4156f17c70434b8ce4e5ee03ec68e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 1047}
+  - name: Dagger mush GIF_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 1082
+      width: 192
+      height: 201
+    spriteID: 75bc1459de4604f469a4014098b7fefa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 1082}
+  - name: Dagger mush GIF_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 1255
+      width: 192
+      height: 200
+    spriteID: d7eeb785d7d541a499d7350f596be928
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 1255}
+  - name: Dagger mush GIF_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.02538071}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 1446
+      width: 192
+      height: 197
+    spriteID: 54b313bf723b68540ae3013ad11207f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 1446}
+  - name: Dagger mush GIF_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 209
+      width: 192
+      height: 196
+    spriteID: 97ffee31d2a88f444aac9d1cbe0347ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 209}
+  - name: Dagger mush GIF_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 419
+      width: 192
+      height: 199
+    spriteID: 1c23933f573ece8418f71471d980cb5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 419}
+  - name: Dagger mush GIF_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.1652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 4
+      width: 192
+      height: 230
+    spriteID: d823538350fe2ed47912429aef367678
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 4}
+  - name: Dagger mush GIF_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.24409448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1028
+      width: 192
+      height: 254
+    spriteID: 3233632122f0fb84fa58d4727b94b4fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1028}
+  - name: Dagger mush GIF_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.24705882}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 765
+      width: 192
+      height: 255
+    spriteID: 8ab2bb07fca8a084687e28653e63459a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 765}
+  - name: Dagger mush GIF_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 501
+      width: 192
+      height: 256
+    spriteID: 5a7e284da8065f142a911647c1fd329b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 501}
+  - name: Dagger mush GIF_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.23505975}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1290
+      width: 192
+      height: 251
+    spriteID: 126cde2593df5934db9b5b796c33ecd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1290}
+  - name: Dagger mush GIF_Frame_14
+    originalName: 
+    pivot: {x: 0.46601942, y: 0.20331952}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 206
+      height: 241
+    spriteID: 4e13c6e259af73d4bb6eecc6cfbfe985
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Dagger mush GIF_Frame_15
+    originalName: 
+    pivot: {x: 0.46829268, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 253
+      width: 205
+      height: 240
+    spriteID: b7ffbb79122d3fe4684b96808e1fabcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 253}
+  - name: Dagger mush GIF_Frame_16
+    originalName: 
+    pivot: {x: 0.4923077, y: 0.19327731}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1549
+      width: 195
+      height: 238
+    spriteID: 7a8814236c984a644859b0708fd3c1f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1549}
+  - name: Dagger mush GIF_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.19327731}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1795
+      width: 192
+      height: 238
+    spriteID: 39658c24cfcabe240ac0c50c49ed9923
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1795}
+  - name: Dagger mush GIF_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 1463
+      width: 192
+      height: 200
+    spriteID: 0648c125346bc8f4080d35b56412a9c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 1463}
+  - name: Dagger mush GIF_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 1671
+      width: 192
+      height: 200
+    spriteID: 201ff154322d1324d92dd3c1584fd5c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 1671}
+  - name: Dagger mush GIF_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 617
+      width: 192
+      height: 195
+    spriteID: 6d8225c7d7fbf5943be344de4b812d28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 617}
+  - name: Dagger mush GIF_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 820
+      width: 192
+      height: 195
+    spriteID: efd1c48468b35754c8f330db26cdd13b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 820}
+  - name: Dagger mush GIF_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 1023
+      width: 192
+      height: 195
+    spriteID: 6f7d3d839dadc1346b41ea64f8a2e343
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 1023}
+  - name: Dagger mush GIF_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 1226
+      width: 192
+      height: 195
+    spriteID: 3501e168a16308749b2db0c882d5bb51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 1226}
+  - name: Dagger mush GIF_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 1429
+      width: 192
+      height: 195
+    spriteID: 40a1b144de4e0af42971abe3cc942598
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 1429}
+  - name: Dagger mush GIF_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.005181347}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 613
+      width: 192
+      height: 193
+    spriteID: 2a5ac436cd92bf84eb0c187546a98c40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 613}
+  - name: Dagger mush GIF_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 1632
+      width: 192
+      height: 195
+    spriteID: 37601c9f44502b64596dad2faddc9cd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 1632}
+  - name: Dagger mush GIF_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 1835
+      width: 192
+      height: 195
+    spriteID: 985d211fd1eb9b64db8850228ab54d3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 1835}
+  - name: Dagger mush GIF_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 1454
+      width: 192
+      height: 198
+    spriteID: 9b734106c85a5554fbcf89f28e42db05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 1454}
+  - name: Dagger mush GIF_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 1291
+      width: 192
+      height: 201
+    spriteID: 78e2b2c5a89d97645a292c30ccdaea8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 1291}
+  - name: Dagger mush GIF_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.04950495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 242
+      width: 192
+      height: 202
+    spriteID: 6100188a19bb80a4fb6bec1bbc50a514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 242}
+  - name: Dagger mush GIF_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 1500
+      width: 192
+      height: 201
+    spriteID: 01968ae4744e2e54a903c708d3738619
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 1500}
+  - name: Dagger mush GIF_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 1660
+      width: 192
+      height: 198
+    spriteID: d1c40fe81e8a0fe4b9e98f5ca10a9082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 1660}
+  - name: Dagger mush GIF_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 1709
+      width: 192
+      height: 201
+    spriteID: 8ad8fdf3bdcaade43a1848cad4ab2efb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 1709}
+  - name: Dagger mush GIF_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.04950495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 452
+      width: 192
+      height: 202
+    spriteID: ddd9ca0b1bd678e4e9442b1e5bfa8373
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 452}
+  - name: Dagger mush GIF_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 4
+      width: 192
+      height: 201
+    spriteID: e91d078692d22fd4b8bec0e5576a0503
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 4}
+  - name: Dagger mush GIF_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 4
+      width: 192
+      height: 198
+    spriteID: 4318f3b9032462644917b1a2632cabc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 4}
+  - name: Dagger mush GIF_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 213
+      width: 192
+      height: 201
+    spriteID: d2830d8c0d5e06944908a720bbc4dcbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 213}
+  - name: Dagger mush GIF_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.04950495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 662
+      width: 192
+      height: 202
+    spriteID: b895e3fd69281374cb9e39db4f29fc50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 662}
+  - name: Dagger mush GIF_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 210
+      width: 192
+      height: 198
+    spriteID: 85f8ce8c74d7f9d4eb9b0b5482f6f763
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 210}
+  - name: Dagger mush GIF_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 418
+      y: 422
+      width: 192
+      height: 201
+    spriteID: c270edbea37b0ad4cb39a04c16496ea2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 418, y: 422}
+  - name: Dagger mush GIF_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.04950495}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 872
+      width: 192
+      height: 202
+    spriteID: d7473c8a1d354b341b5e68067260e542
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 872}
+  - name: Dagger mush GIF_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.02538071}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 1651
+      width: 192
+      height: 197
+    spriteID: b904726c734e8ea4b86a48c17964d0c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 1651}
+  - name: Dagger mush GIF_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 413
+      width: 192
+      height: 196
+    spriteID: eee3f197eb6adb54f90996fb99049039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 413}
+  - name: Dagger mush GIF_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 626
+      width: 192
+      height: 199
+    spriteID: 8cf44b1212495fc46a8f9e6527db42a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 626}
+  - name: Dagger mush GIF_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 833
+      width: 192
+      height: 199
+    spriteID: 428dec61c1632794a9eeecf5c52383b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 833}
+  - name: Dagger mush GIF_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 4
+      width: 192
+      height: 195
+    spriteID: 284c3d2d1d1dc1c458ee2dd63d5d00d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 4}
+  - name: Dagger mush GIF_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 207
+      width: 192
+      height: 195
+    spriteID: b067a50b0bb9c86419c160f9f20db2f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 207}
+  - name: Dagger mush GIF_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.015384615}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 410
+      width: 192
+      height: 195
+    spriteID: d0cd6058f0609674985a839bdf8c1ce4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 410}
+  - name: Dagger mush GIF_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.02538071}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1018
+      y: 4
+      width: 192
+      height: 197
+    spriteID: 726f3608146162148ab1c0344edef23f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1018, y: 4}
+  - name: Dagger mush GIF_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 1040
+      width: 192
+      height: 199
+    spriteID: 510490e7a301cac428f4fe01ebc06b50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 1040}
+  - name: Dagger mush GIF_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 4
+      width: 192
+      height: 200
+    spriteID: 389bb42959787e44cb3547fa560661e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 4}
+  - name: Dagger mush GIF_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.03517588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 1247
+      width: 192
+      height: 199
+    spriteID: 4a4523d4d694d834ebcc0b6d5bbaa58e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 1247}
+  - name: Dagger mush GIF_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 416
+      width: 192
+      height: 198
+    spriteID: 3eb8f1d492461714a872a9c6a7c419e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 416}
+  - name: Dagger mush GIF_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 622
+      width: 192
+      height: 198
+    spriteID: bbb7c1edb9e44f34fafa17995e8718ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 622}
+  - name: Dagger mush GIF_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 828
+      width: 192
+      height: 198
+    spriteID: 130e23f9ed7ff1e47b33eca843d7595a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 828}
+  - name: Dagger mush GIF_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 1034
+      width: 192
+      height: 198
+    spriteID: 13cdcec7db8674741a93cd50b82c1f1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 1034}
+  - name: Dagger mush GIF_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.030303031}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 818
+      y: 1240
+      width: 192
+      height: 198
+    spriteID: 7f3612d37c6e402479c46410350a166d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 818, y: 1240}
+  - name: Dagger mush GIF_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 814
+      width: 192
+      height: 192
+    spriteID: 51ead4621bd570346a83c548adbd7b56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 814}
+  - name: Dagger mush GIF_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 1014
+      width: 192
+      height: 192
+    spriteID: 28023defeec97f64b8e86c11fa7aa1f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 1014}
+  - name: Dagger mush GIF_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 1214
+      width: 192
+      height: 192
+    spriteID: 6baed9c788d26284e90cc9e44c3fbbf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 1214}
+  - name: Dagger mush GIF_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 1414
+      width: 192
+      height: 192
+    spriteID: cb0a0a0a78589624ea2ae24026d9ec9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 1414}
+  - name: Dagger mush GIF_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1218
+      y: 1614
+      width: 192
+      height: 192
+    spriteID: fed2c78102745f647a9a461a6a80c975
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1218, y: 1614}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -812819271
+    name: Dagger mush GIF
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Dagger mush GIF_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: bfd19c5751a347845ad6711e939d06d4
+    - name: Dagger mush GIF_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 359188f54192e1c4fa393f36a00c1658
+    - name: Dagger mush GIF_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: 4ecf860ad10c3b847974cb12fae0256d
+    - name: Dagger mush GIF_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: e6c4156f17c70434b8ce4e5ee03ec68e
+    - name: Dagger mush GIF_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: 75bc1459de4604f469a4014098b7fefa
+    - name: Dagger mush GIF_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: d7eeb785d7d541a499d7350f596be928
+    - name: Dagger mush GIF_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: -5
+        width: 192
+        height: 197
+      spriteId: 54b313bf723b68540ae3013ad11207f7
+    - name: Dagger mush GIF_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: -4
+        width: 192
+        height: 196
+      spriteId: 97ffee31d2a88f444aac9d1cbe0347ba
+    - name: Dagger mush GIF_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 1c23933f573ece8418f71471d980cb5c
+    - name: Dagger mush GIF_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: -38
+        width: 192
+        height: 230
+      spriteId: d823538350fe2ed47912429aef367678
+    - name: Dagger mush GIF_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: -62
+        width: 192
+        height: 254
+      spriteId: 3233632122f0fb84fa58d4727b94b4fb
+    - name: Dagger mush GIF_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: -63
+        width: 192
+        height: 255
+      spriteId: 8ab2bb07fca8a084687e28653e63459a
+    - name: Dagger mush GIF_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: -64
+        width: 192
+        height: 256
+      spriteId: 5a7e284da8065f142a911647c1fd329b
+    - name: Dagger mush GIF_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: -59
+        width: 192
+        height: 251
+      spriteId: 126cde2593df5934db9b5b796c33ecd2
+    - name: Dagger mush GIF_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: -49
+        width: 206
+        height: 241
+      spriteId: 4e13c6e259af73d4bb6eecc6cfbfe985
+    - name: Dagger mush GIF_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: -48
+        width: 205
+        height: 240
+      spriteId: b7ffbb79122d3fe4684b96808e1fabcf
+    - name: Dagger mush GIF_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: -46
+        width: 195
+        height: 238
+      spriteId: 7a8814236c984a644859b0708fd3c1f6
+    - name: Dagger mush GIF_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: -46
+        width: 192
+        height: 238
+      spriteId: 39658c24cfcabe240ac0c50c49ed9923
+    - name: Dagger mush GIF_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: 0648c125346bc8f4080d35b56412a9c6
+    - name: Dagger mush GIF_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: 201ff154322d1324d92dd3c1584fd5c4
+    - name: Dagger mush GIF_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 6d8225c7d7fbf5943be344de4b812d28
+    - name: Dagger mush GIF_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: efd1c48468b35754c8f330db26cdd13b
+    - name: Dagger mush GIF_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 6f7d3d839dadc1346b41ea64f8a2e343
+    - name: Dagger mush GIF_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 3501e168a16308749b2db0c882d5bb51
+    - name: Dagger mush GIF_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 40a1b144de4e0af42971abe3cc942598
+    - name: Dagger mush GIF_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: -1
+        width: 192
+        height: 193
+      spriteId: 2a5ac436cd92bf84eb0c187546a98c40
+    - name: Dagger mush GIF_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 37601c9f44502b64596dad2faddc9cd9
+    - name: Dagger mush GIF_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 985d211fd1eb9b64db8850228ab54d3b
+    - name: Dagger mush GIF_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 9b734106c85a5554fbcf89f28e42db05
+    - name: Dagger mush GIF_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: 78e2b2c5a89d97645a292c30ccdaea8a
+    - name: Dagger mush GIF_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: -10
+        width: 192
+        height: 202
+      spriteId: 6100188a19bb80a4fb6bec1bbc50a514
+    - name: Dagger mush GIF_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: 01968ae4744e2e54a903c708d3738619
+    - name: Dagger mush GIF_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: d1c40fe81e8a0fe4b9e98f5ca10a9082
+    - name: Dagger mush GIF_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: 8ad8fdf3bdcaade43a1848cad4ab2efb
+    - name: Dagger mush GIF_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: -10
+        width: 192
+        height: 202
+      spriteId: ddd9ca0b1bd678e4e9442b1e5bfa8373
+    - name: Dagger mush GIF_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: e91d078692d22fd4b8bec0e5576a0503
+    - name: Dagger mush GIF_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 4318f3b9032462644917b1a2632cabc9
+    - name: Dagger mush GIF_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: d2830d8c0d5e06944908a720bbc4dcbf
+    - name: Dagger mush GIF_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: -10
+        width: 192
+        height: 202
+      spriteId: b895e3fd69281374cb9e39db4f29fc50
+    - name: Dagger mush GIF_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 85f8ce8c74d7f9d4eb9b0b5482f6f763
+    - name: Dagger mush GIF_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: -9
+        width: 192
+        height: 201
+      spriteId: c270edbea37b0ad4cb39a04c16496ea2
+    - name: Dagger mush GIF_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: -10
+        width: 192
+        height: 202
+      spriteId: d7473c8a1d354b341b5e68067260e542
+    - name: Dagger mush GIF_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: -5
+        width: 192
+        height: 197
+      spriteId: b904726c734e8ea4b86a48c17964d0c9
+    - name: Dagger mush GIF_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: -4
+        width: 192
+        height: 196
+      spriteId: eee3f197eb6adb54f90996fb99049039
+    - name: Dagger mush GIF_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 8cf44b1212495fc46a8f9e6527db42a1
+    - name: Dagger mush GIF_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 428dec61c1632794a9eeecf5c52383b8
+    - name: Dagger mush GIF_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: 284c3d2d1d1dc1c458ee2dd63d5d00d1
+    - name: Dagger mush GIF_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: b067a50b0bb9c86419c160f9f20db2f2
+    - name: Dagger mush GIF_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 0
+        y: -3
+        width: 192
+        height: 195
+      spriteId: d0cd6058f0609674985a839bdf8c1ce4
+    - name: Dagger mush GIF_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 0
+        y: -5
+        width: 192
+        height: 197
+      spriteId: 726f3608146162148ab1c0344edef23f
+    - name: Dagger mush GIF_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 510490e7a301cac428f4fe01ebc06b50
+    - name: Dagger mush GIF_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 0
+        y: -8
+        width: 192
+        height: 200
+      spriteId: 389bb42959787e44cb3547fa560661e5
+    - name: Dagger mush GIF_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 0
+        y: -7
+        width: 192
+        height: 199
+      spriteId: 4a4523d4d694d834ebcc0b6d5bbaa58e
+    - name: Dagger mush GIF_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 3eb8f1d492461714a872a9c6a7c419e9
+    - name: Dagger mush GIF_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: bbb7c1edb9e44f34fafa17995e8718ba
+    - name: Dagger mush GIF_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 130e23f9ed7ff1e47b33eca843d7595a
+    - name: Dagger mush GIF_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 13cdcec7db8674741a93cd50b82c1f1c
+    - name: Dagger mush GIF_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 0
+        y: -6
+        width: 192
+        height: 198
+      spriteId: 7f3612d37c6e402479c46410350a166d
+    - name: Dagger mush GIF_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      spriteId: 51ead4621bd570346a83c548adbd7b56
+    - name: Dagger mush GIF_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      spriteId: 28023defeec97f64b8e86c11fa7aa1f9
+    - name: Dagger mush GIF_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      spriteId: 6baed9c788d26284e90cc9e44c3fbbf9
+    - name: Dagger mush GIF_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      spriteId: cb0a0a0a78589624ea2ae24026d9ec9b
+    - name: Dagger mush GIF_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      spriteId: fed2c78102745f647a9a461a6a80c975
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 192, y: 192}

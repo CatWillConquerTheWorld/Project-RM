@@ -1,0 +1,1091 @@
+fileFormatVersion: 2
+guid: 8aa04f2170aa1454c98e60737b5b5a0a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Throne_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 4
+      width: 50
+      height: 47
+    spriteID: 61c9eb3dd2d9b5444a868ea88b872f9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 4}
+  - name: Throne_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 59
+      width: 50
+      height: 47
+    spriteID: 2fea9c5218768a8479199088e714702f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 59}
+  - name: Throne_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 114
+      width: 50
+      height: 47
+    spriteID: 046b94d7fda68fc4bb0252055fc9a03f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 114}
+  - name: Throne_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 169
+      width: 50
+      height: 47
+    spriteID: d8a6f64803d904a4380740ca5d88b446
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 169}
+  - name: Throne_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 224
+      width: 50
+      height: 47
+    spriteID: 929ff6f21059d4546b50e119a390c721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 224}
+  - name: Throne_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 279
+      width: 50
+      height: 47
+    spriteID: 6e548c53817f198409c7e9c6d6c1d785
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 279}
+  - name: Throne_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 334
+      width: 50
+      height: 47
+    spriteID: 1748f4b6b7688d2498737fcbb4c965f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 334}
+  - name: Throne_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 389
+      width: 50
+      height: 47
+    spriteID: 142e10988bfc72f43b21fd125f917920
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 389}
+  - name: Throne_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 444
+      width: 50
+      height: 47
+    spriteID: 6296750b277d5f34a99662eb29b9fee0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 444}
+  - name: Throne_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 4
+      width: 50
+      height: 47
+    spriteID: c90fadc88334f034185f9dea78370736
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 4}
+  - name: Throne_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 59
+      width: 50
+      height: 47
+    spriteID: 2136ebe404f5a484a88caea99fd3366a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 59}
+  - name: Throne_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 114
+      width: 50
+      height: 47
+    spriteID: fe4a0ac64069cc7439647d6ca4837703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 114}
+  - name: Throne_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 169
+      width: 50
+      height: 47
+    spriteID: e7cce9d267da94945a79aa6b5515ef7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 169}
+  - name: Throne_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 224
+      width: 50
+      height: 47
+    spriteID: 07bad8eaaa55e15428b28035d3403b57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 224}
+  - name: Throne_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 279
+      width: 50
+      height: 47
+    spriteID: b7f1506695b77c94f8fee028bc442209
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 279}
+  - name: Throne_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 334
+      width: 50
+      height: 47
+    spriteID: 00bc59e0497386f498780d8372725f32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 334}
+  - name: Throne_Frame_16
+    originalName: 
+    pivot: {x: 0.4918033, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 61
+      height: 47
+    spriteID: 632aec193017e5b4b8ce81198bd3c19f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: Throne_Frame_17
+    originalName: 
+    pivot: {x: 0.4918033, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 279
+      width: 61
+      height: 47
+    spriteID: e0d078dedc7db3f45bed67909598bd97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 279}
+  - name: Throne_Frame_18
+    originalName: 
+    pivot: {x: 0.4918033, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 334
+      width: 61
+      height: 47
+    spriteID: 6f843ac5c175f154eac46a6e0944902e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 334}
+  - name: Throne_Frame_19
+    originalName: 
+    pivot: {x: 0.48387095, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 62
+      height: 47
+    spriteID: 58fb6df9b209a464b96b9d3fabb25b1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Throne_Frame_20
+    originalName: 
+    pivot: {x: 0.48387095, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 59
+      width: 62
+      height: 47
+    spriteID: ea0c2cc322aae994c9ee4a0232bb1844
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 59}
+  - name: Throne_Frame_21
+    originalName: 
+    pivot: {x: 0.48387095, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 114
+      width: 62
+      height: 47
+    spriteID: cd2cf9f9a3385f14d8d64f4c6ba8837b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 114}
+  - name: Throne_Frame_22
+    originalName: 
+    pivot: {x: 0.48387095, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 169
+      width: 62
+      height: 47
+    spriteID: 982246d5059e75540a03ae7241503d11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 169}
+  - name: Throne_Frame_23
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 389
+      width: 60
+      height: 47
+    spriteID: 0d552f28429ca8642b8fddcce57052d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 389}
+  - name: Throne_Frame_24
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 444
+      width: 60
+      height: 47
+    spriteID: 9512f3e5add7b184fb2db51d3ab920ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 444}
+  - name: Throne_Frame_25
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 4
+      width: 60
+      height: 47
+    spriteID: 264f4bdc1716ad842bcd7d79896b2cd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 4}
+  - name: Throne_Frame_26
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 59
+      width: 60
+      height: 47
+    spriteID: dbfc257603e77744ead465b0734b0337
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 59}
+  - name: Throne_Frame_27
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 114
+      width: 60
+      height: 47
+    spriteID: c80e93c349c615c4f85736f756c8ed58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 114}
+  - name: Throne_Frame_28
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 169
+      width: 60
+      height: 47
+    spriteID: df0e6d3c88d54414b981f1b6c36a5372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 169}
+  - name: Throne_Frame_29
+    originalName: 
+    pivot: {x: 0.4745763, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 224
+      width: 59
+      height: 47
+    spriteID: 027eeec4c9e73474c80977e916032c9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 224}
+  - name: Throne_Frame_30
+    originalName: 
+    pivot: {x: 0.4745763, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 279
+      width: 59
+      height: 47
+    spriteID: 4f24a62f12cc43c48972071b376451f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 279}
+  - name: Throne_Frame_31
+    originalName: 
+    pivot: {x: 0.4745763, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 334
+      width: 59
+      height: 47
+    spriteID: 93bc6a3f3243836489a48e3731f46c1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 334}
+  - name: Throne_Frame_32
+    originalName: 
+    pivot: {x: 0.4745763, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 389
+      width: 59
+      height: 47
+    spriteID: 878fb3363eb57504f829f69d6f04be54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 389}
+  - name: Throne_Frame_33
+    originalName: 
+    pivot: {x: 0.4745763, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 444
+      width: 59
+      height: 47
+    spriteID: 624a6c75c97e4d8498b81b18b851dd80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 444}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 645750992
+    name: Throne
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Throne_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 61c9eb3dd2d9b5444a868ea88b872f9b
+    - name: Throne_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 2fea9c5218768a8479199088e714702f
+    - name: Throne_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 046b94d7fda68fc4bb0252055fc9a03f
+    - name: Throne_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: d8a6f64803d904a4380740ca5d88b446
+    - name: Throne_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 929ff6f21059d4546b50e119a390c721
+    - name: Throne_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 6e548c53817f198409c7e9c6d6c1d785
+    - name: Throne_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 1748f4b6b7688d2498737fcbb4c965f5
+    - name: Throne_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 142e10988bfc72f43b21fd125f917920
+    - name: Throne_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 6296750b277d5f34a99662eb29b9fee0
+    - name: Throne_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: c90fadc88334f034185f9dea78370736
+    - name: Throne_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 2136ebe404f5a484a88caea99fd3366a
+    - name: Throne_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: fe4a0ac64069cc7439647d6ca4837703
+    - name: Throne_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: e7cce9d267da94945a79aa6b5515ef7a
+    - name: Throne_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 07bad8eaaa55e15428b28035d3403b57
+    - name: Throne_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: b7f1506695b77c94f8fee028bc442209
+    - name: Throne_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 23
+        y: 0
+        width: 50
+        height: 47
+      spriteId: 00bc59e0497386f498780d8372725f32
+    - name: Throne_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 18
+        y: 0
+        width: 61
+        height: 47
+      spriteId: 632aec193017e5b4b8ce81198bd3c19f
+    - name: Throne_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 18
+        y: 0
+        width: 61
+        height: 47
+      spriteId: e0d078dedc7db3f45bed67909598bd97
+    - name: Throne_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 18
+        y: 0
+        width: 61
+        height: 47
+      spriteId: 6f843ac5c175f154eac46a6e0944902e
+    - name: Throne_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 18
+        y: 0
+        width: 62
+        height: 47
+      spriteId: 58fb6df9b209a464b96b9d3fabb25b1b
+    - name: Throne_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 18
+        y: 0
+        width: 62
+        height: 47
+      spriteId: ea0c2cc322aae994c9ee4a0232bb1844
+    - name: Throne_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 18
+        y: 0
+        width: 62
+        height: 47
+      spriteId: cd2cf9f9a3385f14d8d64f4c6ba8837b
+    - name: Throne_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 18
+        y: 0
+        width: 62
+        height: 47
+      spriteId: 982246d5059e75540a03ae7241503d11
+    - name: Throne_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: 0d552f28429ca8642b8fddcce57052d6
+    - name: Throne_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: 9512f3e5add7b184fb2db51d3ab920ac
+    - name: Throne_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: 264f4bdc1716ad842bcd7d79896b2cd8
+    - name: Throne_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: dbfc257603e77744ead465b0734b0337
+    - name: Throne_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: c80e93c349c615c4f85736f756c8ed58
+    - name: Throne_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 20
+        y: 0
+        width: 60
+        height: 47
+      spriteId: df0e6d3c88d54414b981f1b6c36a5372
+    - name: Throne_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 20
+        y: 0
+        width: 59
+        height: 47
+      spriteId: 027eeec4c9e73474c80977e916032c9b
+    - name: Throne_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 20
+        y: 0
+        width: 59
+        height: 47
+      spriteId: 4f24a62f12cc43c48972071b376451f1
+    - name: Throne_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 20
+        y: 0
+        width: 59
+        height: 47
+      spriteId: 93bc6a3f3243836489a48e3731f46c1c
+    - name: Throne_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 20
+        y: 0
+        width: 59
+        height: 47
+      spriteId: 878fb3363eb57504f829f69d6f04be54
+    - name: Throne_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 20
+        y: 0
+        width: 59
+        height: 47
+      spriteId: 624a6c75c97e4d8498b81b18b851dd80
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 64}
