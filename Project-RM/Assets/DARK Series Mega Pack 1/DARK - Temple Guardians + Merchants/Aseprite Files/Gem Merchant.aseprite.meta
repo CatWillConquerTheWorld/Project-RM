@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 101
       height: 37
-    spriteID: 915dcc5b0e12382448e21bad77f256aa
+    spriteID: 5b821e7cef47d6f48b2e8b2cb45a3e4c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 49
       width: 101
       height: 37
-    spriteID: 68ac16c096fc5c04dbf86239aa4516ad
+    spriteID: 6eb8e7129cd7eef44850d9f205aeab48
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 94
       width: 101
       height: 37
-    spriteID: 1f310aa8203041e42bcdb13d924ec1e1
+    spriteID: c7cfbb918f0a29c499f64cf003f2066d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 139
       width: 101
       height: 37
-    spriteID: bd651b65e71a1eb40be860a3665d8efd
+    spriteID: 09d01bf6ba311a9418b5b029c1a9bef6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 184
       width: 101
       height: 37
-    spriteID: 975daaf1c93bf704588edefe4821016d
+    spriteID: 8f62c50d4b927be4f84da881f32dfed1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 229
       width: 101
       height: 37
-    spriteID: 01ce7b2ab972f1a44bfd457c447806bd
+    spriteID: e692bbe8da3f76543beaf54b3e2dd0fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 274
       width: 101
       height: 37
-    spriteID: 5a4aeedc8a1cdba4c9828837bb396b5f
+    spriteID: 08161fda84b7148499d34f2cd63d887f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 319
       width: 101
       height: 37
-    spriteID: 34285d717b6eb144cb6134f563fc1570
+    spriteID: f8a763a69f9b63c48815ac5227188870
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 364
       width: 101
       height: 37
-    spriteID: 0a724f2d990e47b49abfabe5e0e2ac3d
+    spriteID: 2eca6b3db24f07a4d8483cebc01aefbb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 409
       width: 101
       height: 37
-    spriteID: ee8c357e2f991c84780b5ae7b8fad86f
+    spriteID: 9294dbe094ca7564995b6f5153b59258
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 454
       width: 101
       height: 37
-    spriteID: 1658f46d6a688ce47931a15b2136fc2a
+    spriteID: f76a1059845de0f46a64d06c719eeb86
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 4
       width: 101
       height: 37
-    spriteID: e59edd53b1f47da44909003c921c190c
+    spriteID: bafd18da63db7174f88b1eabd0b796e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -377,7 +377,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 915dcc5b0e12382448e21bad77f256aa
+      spriteId: 5b821e7cef47d6f48b2e8b2cb45a3e4c
     - name: Gem Merchant_Frame_1
       frameIndex: 1
       cellRect:
@@ -385,7 +385,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 68ac16c096fc5c04dbf86239aa4516ad
+      spriteId: 6eb8e7129cd7eef44850d9f205aeab48
     - name: Gem Merchant_Frame_2
       frameIndex: 2
       cellRect:
@@ -393,7 +393,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 1f310aa8203041e42bcdb13d924ec1e1
+      spriteId: c7cfbb918f0a29c499f64cf003f2066d
     - name: Gem Merchant_Frame_3
       frameIndex: 3
       cellRect:
@@ -401,7 +401,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: bd651b65e71a1eb40be860a3665d8efd
+      spriteId: 09d01bf6ba311a9418b5b029c1a9bef6
     - name: Gem Merchant_Frame_4
       frameIndex: 4
       cellRect:
@@ -409,7 +409,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 975daaf1c93bf704588edefe4821016d
+      spriteId: 8f62c50d4b927be4f84da881f32dfed1
     - name: Gem Merchant_Frame_5
       frameIndex: 5
       cellRect:
@@ -417,7 +417,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 01ce7b2ab972f1a44bfd457c447806bd
+      spriteId: e692bbe8da3f76543beaf54b3e2dd0fd
     - name: Gem Merchant_Frame_6
       frameIndex: 6
       cellRect:
@@ -425,7 +425,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 5a4aeedc8a1cdba4c9828837bb396b5f
+      spriteId: 08161fda84b7148499d34f2cd63d887f
     - name: Gem Merchant_Frame_7
       frameIndex: 7
       cellRect:
@@ -433,7 +433,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 34285d717b6eb144cb6134f563fc1570
+      spriteId: f8a763a69f9b63c48815ac5227188870
     - name: Gem Merchant_Frame_8
       frameIndex: 8
       cellRect:
@@ -441,7 +441,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 0a724f2d990e47b49abfabe5e0e2ac3d
+      spriteId: 2eca6b3db24f07a4d8483cebc01aefbb
     - name: Gem Merchant_Frame_9
       frameIndex: 9
       cellRect:
@@ -449,7 +449,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: ee8c357e2f991c84780b5ae7b8fad86f
+      spriteId: 9294dbe094ca7564995b6f5153b59258
     - name: Gem Merchant_Frame_10
       frameIndex: 10
       cellRect:
@@ -457,7 +457,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: 1658f46d6a688ce47931a15b2136fc2a
+      spriteId: f76a1059845de0f46a64d06c719eeb86
     - name: Gem Merchant_Frame_11
       frameIndex: 11
       cellRect:
@@ -465,7 +465,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 37
-      spriteId: e59edd53b1f47da44909003c921c190c
+      spriteId: bafd18da63db7174f88b1eabd0b796e4
     linkedCells: []
     parentIndex: -1
   platformSettings: []

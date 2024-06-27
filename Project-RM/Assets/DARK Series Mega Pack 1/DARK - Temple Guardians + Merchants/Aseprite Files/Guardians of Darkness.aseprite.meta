@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 576
       height: 208
-    spriteID: c1c0a62c540bb8a4199c9c4e72d5a1cd
+    spriteID: 9dbb13825ba749b4393be4a84334b8fb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 220
       width: 576
       height: 208
-    spriteID: afe521fec4384d745b3c14cbfbb35eec
+    spriteID: c7e2ff96d48d3924185e9977db9464a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 436
       width: 576
       height: 208
-    spriteID: 91ebb2582efef824399ebcca9378cef4
+    spriteID: 3aa5f9542d97c29468a69d38c7919464
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 652
       width: 576
       height: 208
-    spriteID: e49631a8b4136fa4d8e5eccb2f710041
+    spriteID: a72be4cb744177e44a3f82bd64600754
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 868
       width: 576
       height: 208
-    spriteID: 4468432ff7524624984fc8fd1833b6ce
+    spriteID: 7be4dffdc82af3b4d8fa2ceeb263088d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 1084
       width: 576
       height: 208
-    spriteID: 52f16dfea0eeb3b4594c0efd78a50ba9
+    spriteID: 4fbd02931c23cf04297b68ed37461a7f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 1300
       width: 576
       height: 208
-    spriteID: 00ce7d986687f854e9fc120e05dec1f8
+    spriteID: a771757159a4277478c0a63b76695bfa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 1516
       width: 576
       height: 208
-    spriteID: 67bcf675cd59f4049b0f72b471d7aa72
+    spriteID: 0b0febb14b23d3b49bcbb106e78b3006
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 1732
       width: 576
       height: 208
-    spriteID: f0c7bd0bb524c9548a9df53a0e36eb9a
+    spriteID: f43b1e07dd1c2984c9883c9231930a7a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 1948
       width: 576
       height: 208
-    spriteID: e76251eff591ade419121518f9fde4ad
+    spriteID: 6af3194d65d36b44c8d77f87725d57a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 2164
       width: 576
       height: 208
-    spriteID: 938326f2c9c4e2049959123628037b16
+    spriteID: 0e1a450ee07180446be861b893c12242
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 2380
       width: 576
       height: 208
-    spriteID: d27796b40c95bc24f8f6cd5226644205
+    spriteID: 96189a493834a354d80f02a50fe20ff7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 2596
       width: 576
       height: 208
-    spriteID: a3e57ec3fff6b4f478602bbd0d5d6214
+    spriteID: ac50d25860f0a8a42a15c8b6721ca77f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 2812
       width: 576
       height: 208
-    spriteID: d39fbb91eb675c64bb0f0cd9ca04a061
+    spriteID: da79d9fc6cbdb5e4bb7273346b6050a1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 3028
       width: 576
       height: 208
-    spriteID: b25b0b76fb7368e4bac23deecc0d2569
+    spriteID: f2ffd07c649905a4f883e57f42d54d97
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 3244
       width: 576
       height: 208
-    spriteID: 31d156bc0a5474544998a0a59ed55b7e
+    spriteID: 4c58428bca44cc24e8cf8cf3fbc3dbd4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 3460
       width: 576
       height: 208
-    spriteID: a9f7acd32319e2b43bff717e7d78f8b6
+    spriteID: 229e91653bbdd514d92c52e100f07304
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 3676
       width: 576
       height: 208
-    spriteID: f874ebee811a2444496c6f6fe3caf105
+    spriteID: 4bb646b952a5856408df9113a6fa3564
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 4
       width: 576
       height: 208
-    spriteID: 297638d6e2f922a4e88f96ad484923f5
+    spriteID: 92c751b3c069c6247a17db2f872639c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 220
       width: 576
       height: 208
-    spriteID: 50adb3191406b4d468b333d6d294db6e
+    spriteID: 334fd4ef4d091144e8d9ba77381a5f43
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 436
       width: 576
       height: 208
-    spriteID: 689409558c20ff14eac17ec4ca184c20
+    spriteID: f827da32cac7575488ea95ce6a9fd9aa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 652
       width: 576
       height: 208
-    spriteID: 24ec1832a69cf104e86fa159789d53c6
+    spriteID: 3157ec7854b376e4089696b7f0767677
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 868
       width: 576
       height: 208
-    spriteID: 624a8fd8d3310e345857febebd39cc44
+    spriteID: 191308cf7493fb7428b23c3511bda5bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 1084
       width: 576
       height: 208
-    spriteID: 626b115b3d3c5834eb32249dc08ad809
+    spriteID: 67fc6f2656987eb4bbc839c00a338c58
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 1300
       width: 576
       height: 208
-    spriteID: 8487b0c353d5ed84b961eefb7ea39663
+    spriteID: 091e8d1ff4e3f884e83ceb6d71aeab2a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 1516
       width: 576
       height: 208
-    spriteID: 2fcfe28827d47144d98880fd2764d612
+    spriteID: 8a14101331f0ef1439aad02f506c1a2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 1732
       width: 576
       height: 208
-    spriteID: 22b45303c7aba4f4aa93b4dad151b667
+    spriteID: 5d8dcb82457e9d941b0916e84b6f5e74
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 1948
       width: 576
       height: 208
-    spriteID: aeeb3ded9c27f644c953e95b4f78cc43
+    spriteID: 12fa7115fdff0cf4bbd1fe82af23f210
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 2164
       width: 576
       height: 208
-    spriteID: 580b35943ab47f443b86565affdbcf11
+    spriteID: 8010af7467ca4284c9aa4ba53124ba91
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 2380
       width: 576
       height: 208
-    spriteID: 545b721868b9fcd4a86605ae5a4f1c66
+    spriteID: 1337e602ebea1b241b92c259f50bfadb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 2596
       width: 576
       height: 208
-    spriteID: d6b45031aac20ed4190ccf476909804f
+    spriteID: 755bf76395088534c9dccd85c73e463f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 2812
       width: 576
       height: 208
-    spriteID: 673bb792148dc3745bd2b19e3ef36a62
+    spriteID: e524e24557793254a94bbd46e710113d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 3028
       width: 576
       height: 208
-    spriteID: f1d1d55f0a6933a45beab5757a566e13
+    spriteID: a09dd108ee22cd44895a9afa0449a2d4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 3244
       width: 576
       height: 208
-    spriteID: 9b5bba943ee34764d9731e556da7dc55
+    spriteID: dde783b14348c544ab56ca4e465531c2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 3460
       width: 576
       height: 208
-    spriteID: 75e45e0ec51b32b468bb24f8f3e341fd
+    spriteID: 84764374e2043ea4a819edd709fe97ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 3676
       width: 576
       height: 208
-    spriteID: 9264b3b9edbb3b74a93170928c2e5755
+    spriteID: cd6eaec6ab6f58142926273b868984fb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 4
       width: 576
       height: 208
-    spriteID: fee8cc08f2b371847b6de76513d6d24e
+    spriteID: 1f5b772ed7d82f74f8a2f23f59a504c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 220
       width: 576
       height: 208
-    spriteID: 34a628d7627332c438ecf54d7ae9c0ec
+    spriteID: 625807541493d794fbfc8f0d19814feb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 436
       width: 576
       height: 208
-    spriteID: 29aa0a745e78ca1439e469aaa890d8c2
+    spriteID: 77c6d927d71fc724e8e401dcb0f17a1b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 652
       width: 576
       height: 208
-    spriteID: d09bbb4cef5785a49ae0554e7da2b0f4
+    spriteID: 310a80c50063a1243add83d4d67b50d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -937,7 +937,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: c1c0a62c540bb8a4199c9c4e72d5a1cd
+      spriteId: 9dbb13825ba749b4393be4a84334b8fb
     - name: Guardians of Darkness_Frame_1
       frameIndex: 1
       cellRect:
@@ -945,7 +945,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: afe521fec4384d745b3c14cbfbb35eec
+      spriteId: c7e2ff96d48d3924185e9977db9464a4
     - name: Guardians of Darkness_Frame_2
       frameIndex: 2
       cellRect:
@@ -953,7 +953,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 91ebb2582efef824399ebcca9378cef4
+      spriteId: 3aa5f9542d97c29468a69d38c7919464
     - name: Guardians of Darkness_Frame_3
       frameIndex: 3
       cellRect:
@@ -961,7 +961,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: e49631a8b4136fa4d8e5eccb2f710041
+      spriteId: a72be4cb744177e44a3f82bd64600754
     - name: Guardians of Darkness_Frame_4
       frameIndex: 4
       cellRect:
@@ -969,7 +969,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 4468432ff7524624984fc8fd1833b6ce
+      spriteId: 7be4dffdc82af3b4d8fa2ceeb263088d
     - name: Guardians of Darkness_Frame_5
       frameIndex: 5
       cellRect:
@@ -977,7 +977,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 52f16dfea0eeb3b4594c0efd78a50ba9
+      spriteId: 4fbd02931c23cf04297b68ed37461a7f
     - name: Guardians of Darkness_Frame_6
       frameIndex: 6
       cellRect:
@@ -985,7 +985,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 00ce7d986687f854e9fc120e05dec1f8
+      spriteId: a771757159a4277478c0a63b76695bfa
     - name: Guardians of Darkness_Frame_7
       frameIndex: 7
       cellRect:
@@ -993,7 +993,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 67bcf675cd59f4049b0f72b471d7aa72
+      spriteId: 0b0febb14b23d3b49bcbb106e78b3006
     - name: Guardians of Darkness_Frame_8
       frameIndex: 8
       cellRect:
@@ -1001,7 +1001,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: f0c7bd0bb524c9548a9df53a0e36eb9a
+      spriteId: f43b1e07dd1c2984c9883c9231930a7a
     - name: Guardians of Darkness_Frame_9
       frameIndex: 9
       cellRect:
@@ -1009,7 +1009,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: e76251eff591ade419121518f9fde4ad
+      spriteId: 6af3194d65d36b44c8d77f87725d57a4
     - name: Guardians of Darkness_Frame_10
       frameIndex: 10
       cellRect:
@@ -1017,7 +1017,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 938326f2c9c4e2049959123628037b16
+      spriteId: 0e1a450ee07180446be861b893c12242
     - name: Guardians of Darkness_Frame_11
       frameIndex: 11
       cellRect:
@@ -1025,7 +1025,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: d27796b40c95bc24f8f6cd5226644205
+      spriteId: 96189a493834a354d80f02a50fe20ff7
     - name: Guardians of Darkness_Frame_12
       frameIndex: 12
       cellRect:
@@ -1033,7 +1033,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: a3e57ec3fff6b4f478602bbd0d5d6214
+      spriteId: ac50d25860f0a8a42a15c8b6721ca77f
     - name: Guardians of Darkness_Frame_13
       frameIndex: 13
       cellRect:
@@ -1041,7 +1041,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: d39fbb91eb675c64bb0f0cd9ca04a061
+      spriteId: da79d9fc6cbdb5e4bb7273346b6050a1
     - name: Guardians of Darkness_Frame_14
       frameIndex: 14
       cellRect:
@@ -1049,7 +1049,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: b25b0b76fb7368e4bac23deecc0d2569
+      spriteId: f2ffd07c649905a4f883e57f42d54d97
     - name: Guardians of Darkness_Frame_15
       frameIndex: 15
       cellRect:
@@ -1057,7 +1057,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 31d156bc0a5474544998a0a59ed55b7e
+      spriteId: 4c58428bca44cc24e8cf8cf3fbc3dbd4
     - name: Guardians of Darkness_Frame_16
       frameIndex: 16
       cellRect:
@@ -1065,7 +1065,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: a9f7acd32319e2b43bff717e7d78f8b6
+      spriteId: 229e91653bbdd514d92c52e100f07304
     - name: Guardians of Darkness_Frame_17
       frameIndex: 17
       cellRect:
@@ -1073,7 +1073,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: f874ebee811a2444496c6f6fe3caf105
+      spriteId: 4bb646b952a5856408df9113a6fa3564
     - name: Guardians of Darkness_Frame_18
       frameIndex: 18
       cellRect:
@@ -1081,7 +1081,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 297638d6e2f922a4e88f96ad484923f5
+      spriteId: 92c751b3c069c6247a17db2f872639c7
     - name: Guardians of Darkness_Frame_19
       frameIndex: 19
       cellRect:
@@ -1089,7 +1089,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 50adb3191406b4d468b333d6d294db6e
+      spriteId: 334fd4ef4d091144e8d9ba77381a5f43
     - name: Guardians of Darkness_Frame_20
       frameIndex: 20
       cellRect:
@@ -1097,7 +1097,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 689409558c20ff14eac17ec4ca184c20
+      spriteId: f827da32cac7575488ea95ce6a9fd9aa
     - name: Guardians of Darkness_Frame_21
       frameIndex: 21
       cellRect:
@@ -1105,7 +1105,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 24ec1832a69cf104e86fa159789d53c6
+      spriteId: 3157ec7854b376e4089696b7f0767677
     - name: Guardians of Darkness_Frame_22
       frameIndex: 22
       cellRect:
@@ -1113,7 +1113,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 624a8fd8d3310e345857febebd39cc44
+      spriteId: 191308cf7493fb7428b23c3511bda5bf
     - name: Guardians of Darkness_Frame_23
       frameIndex: 23
       cellRect:
@@ -1121,7 +1121,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 626b115b3d3c5834eb32249dc08ad809
+      spriteId: 67fc6f2656987eb4bbc839c00a338c58
     - name: Guardians of Darkness_Frame_24
       frameIndex: 24
       cellRect:
@@ -1129,7 +1129,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 8487b0c353d5ed84b961eefb7ea39663
+      spriteId: 091e8d1ff4e3f884e83ceb6d71aeab2a
     - name: Guardians of Darkness_Frame_25
       frameIndex: 25
       cellRect:
@@ -1137,7 +1137,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 2fcfe28827d47144d98880fd2764d612
+      spriteId: 8a14101331f0ef1439aad02f506c1a2b
     - name: Guardians of Darkness_Frame_26
       frameIndex: 26
       cellRect:
@@ -1145,7 +1145,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 22b45303c7aba4f4aa93b4dad151b667
+      spriteId: 5d8dcb82457e9d941b0916e84b6f5e74
     - name: Guardians of Darkness_Frame_27
       frameIndex: 27
       cellRect:
@@ -1153,7 +1153,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: aeeb3ded9c27f644c953e95b4f78cc43
+      spriteId: 12fa7115fdff0cf4bbd1fe82af23f210
     - name: Guardians of Darkness_Frame_28
       frameIndex: 28
       cellRect:
@@ -1161,7 +1161,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 580b35943ab47f443b86565affdbcf11
+      spriteId: 8010af7467ca4284c9aa4ba53124ba91
     - name: Guardians of Darkness_Frame_29
       frameIndex: 29
       cellRect:
@@ -1169,7 +1169,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 545b721868b9fcd4a86605ae5a4f1c66
+      spriteId: 1337e602ebea1b241b92c259f50bfadb
     - name: Guardians of Darkness_Frame_30
       frameIndex: 30
       cellRect:
@@ -1177,7 +1177,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: d6b45031aac20ed4190ccf476909804f
+      spriteId: 755bf76395088534c9dccd85c73e463f
     - name: Guardians of Darkness_Frame_31
       frameIndex: 31
       cellRect:
@@ -1185,7 +1185,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 673bb792148dc3745bd2b19e3ef36a62
+      spriteId: e524e24557793254a94bbd46e710113d
     - name: Guardians of Darkness_Frame_32
       frameIndex: 32
       cellRect:
@@ -1193,7 +1193,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: f1d1d55f0a6933a45beab5757a566e13
+      spriteId: a09dd108ee22cd44895a9afa0449a2d4
     - name: Guardians of Darkness_Frame_33
       frameIndex: 33
       cellRect:
@@ -1201,7 +1201,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 9b5bba943ee34764d9731e556da7dc55
+      spriteId: dde783b14348c544ab56ca4e465531c2
     - name: Guardians of Darkness_Frame_34
       frameIndex: 34
       cellRect:
@@ -1209,7 +1209,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 75e45e0ec51b32b468bb24f8f3e341fd
+      spriteId: 84764374e2043ea4a819edd709fe97ef
     - name: Guardians of Darkness_Frame_35
       frameIndex: 35
       cellRect:
@@ -1217,7 +1217,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 9264b3b9edbb3b74a93170928c2e5755
+      spriteId: cd6eaec6ab6f58142926273b868984fb
     - name: Guardians of Darkness_Frame_36
       frameIndex: 36
       cellRect:
@@ -1225,7 +1225,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: fee8cc08f2b371847b6de76513d6d24e
+      spriteId: 1f5b772ed7d82f74f8a2f23f59a504c6
     - name: Guardians of Darkness_Frame_37
       frameIndex: 37
       cellRect:
@@ -1233,7 +1233,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 34a628d7627332c438ecf54d7ae9c0ec
+      spriteId: 625807541493d794fbfc8f0d19814feb
     - name: Guardians of Darkness_Frame_38
       frameIndex: 38
       cellRect:
@@ -1241,7 +1241,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: 29aa0a745e78ca1439e469aaa890d8c2
+      spriteId: 77c6d927d71fc724e8e401dcb0f17a1b
     - name: Guardians of Darkness_Frame_39
       frameIndex: 39
       cellRect:
@@ -1249,7 +1249,7 @@ ScriptedImporter:
         y: -33
         width: 576
         height: 208
-      spriteId: d09bbb4cef5785a49ae0554e7da2b0f4
+      spriteId: 310a80c50063a1243add83d4d67b50d7
     linkedCells: []
     parentIndex: -1
   platformSettings: []

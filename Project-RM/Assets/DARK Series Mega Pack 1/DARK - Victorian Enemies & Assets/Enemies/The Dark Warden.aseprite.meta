@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 401
       width: 15
       height: 28
-    spriteID: 9214787c4ed7e68468844f2ab5499ca0
+    spriteID: 09a2bbdae03d00e41be5674c682daa75
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 437
       width: 15
       height: 28
-    spriteID: cd9854185b3468943ad7fdb16c5017e6
+    spriteID: 35f2c1b816bddd04fb350d2823edde1f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 473
       width: 15
       height: 28
-    spriteID: 9ca0fc5638d65de4a9c8c5aa6711ae7b
+    spriteID: ad119cc29f18d2d499e1f01e80542442
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 165
       width: 15
       height: 28
-    spriteID: f9de4ffdbc2be0f40a439ba07a41ce0a
+    spriteID: d1caff61495d4c54fa877058f452367b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 201
       width: 15
       height: 28
-    spriteID: e651fd16f41d87d4f9fb18aa3c7e41a6
+    spriteID: dfd894df34f09744ebf4953eb72c12ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 237
       width: 15
       height: 28
-    spriteID: f6f0260070e317846a34de0156294207
+    spriteID: 14dbb3bce82042145a2cc217fec80f18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 273
       width: 15
       height: 28
-    spriteID: 1132cfebf993a1e4194929cc1c75edf3
+    spriteID: 668c1ec2ef0183a48980c9f85adef7d2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 309
       width: 15
       height: 28
-    spriteID: b058d563d0b714b4fa5525b9f7975e2f
+    spriteID: 59ca595e2d42e53489ae7c91ef99fddf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 345
       width: 15
       height: 28
-    spriteID: 9f07f6a88ecb2da4ca00accc66e21ca2
+    spriteID: bff22038b7c08964c9838aa8988297ec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 381
       width: 15
       height: 28
-    spriteID: 5f504bf56b1419c4aba0ea7493c72bc6
+    spriteID: 80c861a73e89bc94a9009ed9a351f369
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 417
       width: 15
       height: 28
-    spriteID: 51428228f73d9544385941ff22af2332
+    spriteID: c750e795fcae3a749902574bb9924aed
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 453
       width: 15
       height: 28
-    spriteID: a8a48241a4467234ab8ae59b8792d4be
+    spriteID: 2abd7356e22dd794fa5f642f235fc4b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 4
       width: 15
       height: 28
-    spriteID: bc8f763ca2d7d03479e3704e3fe52e92
+    spriteID: 68d8066fbfa97074e9383a415cb8af49
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 4
       width: 18
       height: 23
-    spriteID: edee32580a3af244c8128e54b76cb041
+    spriteID: 9e514d1dac0254e41be64aec1c11c184
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 65
       width: 17
       height: 23
-    spriteID: 2e91712920d19a04e92cc121144fc90f
+    spriteID: a1c634d71a542ff48b7f37b550afe55a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 148
       width: 15
       height: 25
-    spriteID: 5eeee889fc5af394e8a520871078f1ce
+    spriteID: b5f34157b5ed14747a5b16b1e48389a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 270
       width: 18
       height: 27
-    spriteID: f0d59aa4dcadcdf4294dfb160b675b65
+    spriteID: 26c5f90cf8623d44dac6c271ec79f777
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 165
       width: 20
       height: 28
-    spriteID: f3c9d4182a096254d8f97fbc4f97105a
+    spriteID: 442f89637d590464e8197f9367dc4ebd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 439
       width: 21
       height: 27
-    spriteID: a8b9a5de287851f43a78e9c1049fbc67
+    spriteID: 2d67a6b6734210a44a206f4ab72659a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 370
       width: 20
       height: 23
-    spriteID: 27fa134d659113543bebbbb5c63f7bcd
+    spriteID: a8e65a838ef08b54ebb02fdf1ff2d3d2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 35
       width: 18
       height: 22
-    spriteID: 4ba7a2cfe2bae684eba790ed38e4034f
+    spriteID: 59d89bad5c731594b9dddd422f41c1e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 112
       width: 16
       height: 25
-    spriteID: c9eb592ac33ebce46b3e58c176a045fa
+    spriteID: 7bb5a3f1020a8874bb45febbba6ad97a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 201
       width: 20
       height: 27
-    spriteID: 27be6832ce4b9714f85bf979c63a0844
+    spriteID: 2605859f8018aac4486ccb8d3d136e2c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 364
       width: 21
       height: 29
-    spriteID: 5741c96bc1c9db14cbf3f7855bf6959b
+    spriteID: 5224ecef529283045b50e61440e8d2e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 478
       width: 19
       height: 26
-    spriteID: 55657e38626df0d49b2321e57d7131e4
+    spriteID: c1a0674884fd6f24092792cf2f04024f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 40
       width: 15
       height: 28
-    spriteID: 580340ae72ee823459971635b8a8d500
+    spriteID: 906741f08f5a84b45a5cc97f0224047f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 152
       width: 82
       height: 27
-    spriteID: b3009d07c5a04b346a52d17ea27e3f84
+    spriteID: 66f5b0ded22e2304d94547f345056de2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 4
       width: 83
       height: 29
-    spriteID: abfb8acbcf7d18f4195f2108c345287e
+    spriteID: 5f19ddafcf49f7d479c5485e42490a24
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 41
       width: 81
       height: 29
-    spriteID: 57f7a96cf500a4341bb812b2e9146395
+    spriteID: 110dc520633cb48469a6f88f57c874f1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 78
       width: 79
       height: 29
-    spriteID: 52d872e52c1abb74f9d581c429c463f0
+    spriteID: 02653a96e3aed0a43978ee81495091fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 115
       width: 79
       height: 29
-    spriteID: ae03e98b5831a76469221c14b1f9d748
+    spriteID: 032bcc2af3ee31b4fb1a8f547f7b17d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 187
       width: 79
       height: 28
-    spriteID: 7d5dec61506cfa048844960afc0af70c
+    spriteID: b3a6fd60e55caf9448ad2fffb16bc261
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 325
       width: 19
       height: 26
-    spriteID: 526f3a501cd023c4b9f18f3f5112ff76
+    spriteID: 1d51c49794a2a2c4cafbe6ded8b80cef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 236
       width: 19
       height: 26
-    spriteID: 9e5e276ac488fe04c972356d91a5b428
+    spriteID: bded5a65a791c5a4cb55245c0a1ea12e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 112
       width: 36
       height: 26
-    spriteID: 57e279ff1bdac034098311390029a1a1
+    spriteID: 8994d094ccefdf443b8884e1507df163
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 76
       width: 43
       height: 28
-    spriteID: 508e332e8e15ca74d95d94294db6a7d1
+    spriteID: 9e348328af994d24aa35275f2b070713
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 38
       width: 50
       height: 30
-    spriteID: e9a26426ff31d404e80d8feb8dad48ab
+    spriteID: 9043a37b4c02924468eb4dc72bae8f38
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 439
       width: 52
       height: 31
-    spriteID: 8aead2104411cdb43b035d5c1ff9d688
+    spriteID: f67094ef03d078a4f85af8f4fff1e89d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 364
       width: 54
       height: 31
-    spriteID: bcb765a34e0a7de47bfbedfe3bd16905
+    spriteID: f4a5ec98a5d3c8b4a82ea43019f19840
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 325
       width: 56
       height: 31
-    spriteID: bb7254239e977a740ab852866d56547e
+    spriteID: c6790ef0061e38b40931a9b919584e9c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +932,7 @@ ScriptedImporter:
       y: 478
       width: 56
       height: 28
-    spriteID: 0e4e2dce6ec2997459293f62d159f26c
+    spriteID: 76830ab7f86be6a49b4cc5eadfeed335
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +952,7 @@ ScriptedImporter:
       y: 403
       width: 58
       height: 28
-    spriteID: f746a9b0078724f4d9aff94b76ee0507
+    spriteID: 8b05d6528bd622547a8d2d2ed4ac0910
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +972,7 @@ ScriptedImporter:
       y: 146
       width: 60
       height: 11
-    spriteID: cf79d16e24f73304c920b83565374b9c
+    spriteID: c95189717b0150a4198cc71e59c26b26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +992,7 @@ ScriptedImporter:
       y: 76
       width: 15
       height: 28
-    spriteID: 515ce27582ba6e34c931be4e4a3d531d
+    spriteID: c2ec5de88024f8948b9e6b0b880b32ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1012,7 @@ ScriptedImporter:
       y: 403
       width: 16
       height: 28
-    spriteID: 7f0ba499e07889f4f88b194a21ce0981
+    spriteID: 12bec957a2921ff45867ae7fa4c0a6e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1032,7 @@ ScriptedImporter:
       y: 112
       width: 15
       height: 28
-    spriteID: 00f263289b80de443835584aefa16401
+    spriteID: 89f42e7784c41ef49ac25567144eef2e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1052,7 @@ ScriptedImporter:
       y: 337
       width: 19
       height: 25
-    spriteID: 98e94c4213f16244091347b49191d359
+    spriteID: 9b25e54c9b144a94880b01db99b55139
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1072,7 +1072,7 @@ ScriptedImporter:
       y: 305
       width: 20
       height: 24
-    spriteID: e5192bb6472b7a143ad8123fdf927296
+    spriteID: a6a31782c8276c04d87290c0c3b6e5cc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1092,7 +1092,7 @@ ScriptedImporter:
       y: 4
       width: 60
       height: 26
-    spriteID: bfacfdb822995f2498ce6fceaac4452c
+    spriteID: 565109e9234e396468fcb68fb061030b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1112,7 +1112,7 @@ ScriptedImporter:
       y: 223
       width: 80
       height: 26
-    spriteID: 21facb67dedb1cc41a457c82bb27d629
+    spriteID: 19b4df00f54769048811665de68aceef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1132,7 +1132,7 @@ ScriptedImporter:
       y: 257
       width: 78
       height: 26
-    spriteID: 10f315da4363a2c4988f8565b9ddb11a
+    spriteID: 762ef0aeeea2db24b9a42a0a92492ee5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1152,7 +1152,7 @@ ScriptedImporter:
       y: 291
       width: 77
       height: 26
-    spriteID: c0b737151cd08a8409f48ba31bc8ec1d
+    spriteID: 6313f705e7f29234a8118cb39b5cd445
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1177,7 +1177,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 9214787c4ed7e68468844f2ab5499ca0
+      spriteId: 09a2bbdae03d00e41be5674c682daa75
     - name: The Dark Warden_Frame_1
       frameIndex: 1
       cellRect:
@@ -1185,7 +1185,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: cd9854185b3468943ad7fdb16c5017e6
+      spriteId: 35f2c1b816bddd04fb350d2823edde1f
     - name: The Dark Warden_Frame_2
       frameIndex: 2
       cellRect:
@@ -1193,7 +1193,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 9ca0fc5638d65de4a9c8c5aa6711ae7b
+      spriteId: ad119cc29f18d2d499e1f01e80542442
     - name: The Dark Warden_Frame_3
       frameIndex: 3
       cellRect:
@@ -1201,7 +1201,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: f9de4ffdbc2be0f40a439ba07a41ce0a
+      spriteId: d1caff61495d4c54fa877058f452367b
     - name: The Dark Warden_Frame_4
       frameIndex: 4
       cellRect:
@@ -1209,7 +1209,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: e651fd16f41d87d4f9fb18aa3c7e41a6
+      spriteId: dfd894df34f09744ebf4953eb72c12ad
     - name: The Dark Warden_Frame_5
       frameIndex: 5
       cellRect:
@@ -1217,7 +1217,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: f6f0260070e317846a34de0156294207
+      spriteId: 14dbb3bce82042145a2cc217fec80f18
     - name: The Dark Warden_Frame_6
       frameIndex: 6
       cellRect:
@@ -1225,7 +1225,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 1132cfebf993a1e4194929cc1c75edf3
+      spriteId: 668c1ec2ef0183a48980c9f85adef7d2
     - name: The Dark Warden_Frame_7
       frameIndex: 7
       cellRect:
@@ -1233,7 +1233,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: b058d563d0b714b4fa5525b9f7975e2f
+      spriteId: 59ca595e2d42e53489ae7c91ef99fddf
     - name: The Dark Warden_Frame_8
       frameIndex: 8
       cellRect:
@@ -1241,7 +1241,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 9f07f6a88ecb2da4ca00accc66e21ca2
+      spriteId: bff22038b7c08964c9838aa8988297ec
     - name: The Dark Warden_Frame_9
       frameIndex: 9
       cellRect:
@@ -1249,7 +1249,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 5f504bf56b1419c4aba0ea7493c72bc6
+      spriteId: 80c861a73e89bc94a9009ed9a351f369
     - name: The Dark Warden_Frame_10
       frameIndex: 10
       cellRect:
@@ -1257,7 +1257,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 51428228f73d9544385941ff22af2332
+      spriteId: c750e795fcae3a749902574bb9924aed
     - name: The Dark Warden_Frame_11
       frameIndex: 11
       cellRect:
@@ -1265,7 +1265,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: a8a48241a4467234ab8ae59b8792d4be
+      spriteId: 2abd7356e22dd794fa5f642f235fc4b6
     - name: The Dark Warden_Frame_12
       frameIndex: 12
       cellRect:
@@ -1273,7 +1273,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: bc8f763ca2d7d03479e3704e3fe52e92
+      spriteId: 68d8066fbfa97074e9383a415cb8af49
     - name: The Dark Warden_Frame_13
       frameIndex: 13
       cellRect:
@@ -1281,7 +1281,7 @@ ScriptedImporter:
         y: 80
         width: 18
         height: 23
-      spriteId: edee32580a3af244c8128e54b76cb041
+      spriteId: 9e514d1dac0254e41be64aec1c11c184
     - name: The Dark Warden_Frame_14
       frameIndex: 14
       cellRect:
@@ -1289,7 +1289,7 @@ ScriptedImporter:
         y: 80
         width: 17
         height: 23
-      spriteId: 2e91712920d19a04e92cc121144fc90f
+      spriteId: a1c634d71a542ff48b7f37b550afe55a
     - name: The Dark Warden_Frame_15
       frameIndex: 15
       cellRect:
@@ -1297,7 +1297,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 25
-      spriteId: 5eeee889fc5af394e8a520871078f1ce
+      spriteId: b5f34157b5ed14747a5b16b1e48389a9
     - name: The Dark Warden_Frame_16
       frameIndex: 16
       cellRect:
@@ -1305,7 +1305,7 @@ ScriptedImporter:
         y: 80
         width: 18
         height: 27
-      spriteId: f0d59aa4dcadcdf4294dfb160b675b65
+      spriteId: 26c5f90cf8623d44dac6c271ec79f777
     - name: The Dark Warden_Frame_17
       frameIndex: 17
       cellRect:
@@ -1313,7 +1313,7 @@ ScriptedImporter:
         y: 80
         width: 20
         height: 28
-      spriteId: f3c9d4182a096254d8f97fbc4f97105a
+      spriteId: 442f89637d590464e8197f9367dc4ebd
     - name: The Dark Warden_Frame_18
       frameIndex: 18
       cellRect:
@@ -1321,7 +1321,7 @@ ScriptedImporter:
         y: 80
         width: 21
         height: 27
-      spriteId: a8b9a5de287851f43a78e9c1049fbc67
+      spriteId: 2d67a6b6734210a44a206f4ab72659a9
     - name: The Dark Warden_Frame_19
       frameIndex: 19
       cellRect:
@@ -1329,7 +1329,7 @@ ScriptedImporter:
         y: 80
         width: 20
         height: 23
-      spriteId: 27fa134d659113543bebbbb5c63f7bcd
+      spriteId: a8e65a838ef08b54ebb02fdf1ff2d3d2
     - name: The Dark Warden_Frame_20
       frameIndex: 20
       cellRect:
@@ -1337,7 +1337,7 @@ ScriptedImporter:
         y: 80
         width: 18
         height: 22
-      spriteId: 4ba7a2cfe2bae684eba790ed38e4034f
+      spriteId: 59d89bad5c731594b9dddd422f41c1e2
     - name: The Dark Warden_Frame_21
       frameIndex: 21
       cellRect:
@@ -1345,7 +1345,7 @@ ScriptedImporter:
         y: 80
         width: 16
         height: 25
-      spriteId: c9eb592ac33ebce46b3e58c176a045fa
+      spriteId: 7bb5a3f1020a8874bb45febbba6ad97a
     - name: The Dark Warden_Frame_22
       frameIndex: 22
       cellRect:
@@ -1353,7 +1353,7 @@ ScriptedImporter:
         y: 80
         width: 20
         height: 27
-      spriteId: 27be6832ce4b9714f85bf979c63a0844
+      spriteId: 2605859f8018aac4486ccb8d3d136e2c
     - name: The Dark Warden_Frame_23
       frameIndex: 23
       cellRect:
@@ -1361,7 +1361,7 @@ ScriptedImporter:
         y: 80
         width: 21
         height: 29
-      spriteId: 5741c96bc1c9db14cbf3f7855bf6959b
+      spriteId: 5224ecef529283045b50e61440e8d2e6
     - name: The Dark Warden_Frame_24
       frameIndex: 24
       cellRect:
@@ -1369,7 +1369,7 @@ ScriptedImporter:
         y: 80
         width: 19
         height: 26
-      spriteId: 55657e38626df0d49b2321e57d7131e4
+      spriteId: c1a0674884fd6f24092792cf2f04024f
     - name: The Dark Warden_Frame_25
       frameIndex: 25
       cellRect:
@@ -1377,7 +1377,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 580340ae72ee823459971635b8a8d500
+      spriteId: 906741f08f5a84b45a5cc97f0224047f
     - name: The Dark Warden_Frame_35
       frameIndex: 35
       cellRect:
@@ -1385,7 +1385,7 @@ ScriptedImporter:
         y: 80
         width: 82
         height: 27
-      spriteId: b3009d07c5a04b346a52d17ea27e3f84
+      spriteId: 66f5b0ded22e2304d94547f345056de2
     - name: The Dark Warden_Frame_36
       frameIndex: 36
       cellRect:
@@ -1393,7 +1393,7 @@ ScriptedImporter:
         y: 80
         width: 83
         height: 29
-      spriteId: abfb8acbcf7d18f4195f2108c345287e
+      spriteId: 5f19ddafcf49f7d479c5485e42490a24
     - name: The Dark Warden_Frame_37
       frameIndex: 37
       cellRect:
@@ -1401,7 +1401,7 @@ ScriptedImporter:
         y: 80
         width: 81
         height: 29
-      spriteId: 57f7a96cf500a4341bb812b2e9146395
+      spriteId: 110dc520633cb48469a6f88f57c874f1
     - name: The Dark Warden_Frame_38
       frameIndex: 38
       cellRect:
@@ -1409,7 +1409,7 @@ ScriptedImporter:
         y: 80
         width: 79
         height: 29
-      spriteId: 52d872e52c1abb74f9d581c429c463f0
+      spriteId: 02653a96e3aed0a43978ee81495091fd
     - name: The Dark Warden_Frame_39
       frameIndex: 39
       cellRect:
@@ -1417,7 +1417,7 @@ ScriptedImporter:
         y: 80
         width: 79
         height: 29
-      spriteId: ae03e98b5831a76469221c14b1f9d748
+      spriteId: 032bcc2af3ee31b4fb1a8f547f7b17d5
     - name: The Dark Warden_Frame_40
       frameIndex: 40
       cellRect:
@@ -1425,7 +1425,7 @@ ScriptedImporter:
         y: 80
         width: 79
         height: 28
-      spriteId: 7d5dec61506cfa048844960afc0af70c
+      spriteId: b3a6fd60e55caf9448ad2fffb16bc261
     - name: The Dark Warden_Frame_41
       frameIndex: 41
       cellRect:
@@ -1433,7 +1433,7 @@ ScriptedImporter:
         y: 80
         width: 19
         height: 26
-      spriteId: 526f3a501cd023c4b9f18f3f5112ff76
+      spriteId: 1d51c49794a2a2c4cafbe6ded8b80cef
     - name: The Dark Warden_Frame_42
       frameIndex: 42
       cellRect:
@@ -1441,7 +1441,7 @@ ScriptedImporter:
         y: 80
         width: 19
         height: 26
-      spriteId: 9e5e276ac488fe04c972356d91a5b428
+      spriteId: bded5a65a791c5a4cb55245c0a1ea12e
     - name: The Dark Warden_Frame_43
       frameIndex: 43
       cellRect:
@@ -1449,7 +1449,7 @@ ScriptedImporter:
         y: 82
         width: 36
         height: 26
-      spriteId: 57e279ff1bdac034098311390029a1a1
+      spriteId: 8994d094ccefdf443b8884e1507df163
     - name: The Dark Warden_Frame_44
       frameIndex: 44
       cellRect:
@@ -1457,7 +1457,7 @@ ScriptedImporter:
         y: 81
         width: 43
         height: 28
-      spriteId: 508e332e8e15ca74d95d94294db6a7d1
+      spriteId: 9e348328af994d24aa35275f2b070713
     - name: The Dark Warden_Frame_45
       frameIndex: 45
       cellRect:
@@ -1465,7 +1465,7 @@ ScriptedImporter:
         y: 81
         width: 50
         height: 30
-      spriteId: e9a26426ff31d404e80d8feb8dad48ab
+      spriteId: 9043a37b4c02924468eb4dc72bae8f38
     - name: The Dark Warden_Frame_46
       frameIndex: 46
       cellRect:
@@ -1473,7 +1473,7 @@ ScriptedImporter:
         y: 81
         width: 52
         height: 31
-      spriteId: 8aead2104411cdb43b035d5c1ff9d688
+      spriteId: f67094ef03d078a4f85af8f4fff1e89d
     - name: The Dark Warden_Frame_47
       frameIndex: 47
       cellRect:
@@ -1481,7 +1481,7 @@ ScriptedImporter:
         y: 81
         width: 54
         height: 31
-      spriteId: bcb765a34e0a7de47bfbedfe3bd16905
+      spriteId: f4a5ec98a5d3c8b4a82ea43019f19840
     - name: The Dark Warden_Frame_48
       frameIndex: 48
       cellRect:
@@ -1489,7 +1489,7 @@ ScriptedImporter:
         y: 81
         width: 56
         height: 31
-      spriteId: bb7254239e977a740ab852866d56547e
+      spriteId: c6790ef0061e38b40931a9b919584e9c
     - name: The Dark Warden_Frame_49
       frameIndex: 49
       cellRect:
@@ -1497,7 +1497,7 @@ ScriptedImporter:
         y: 84
         width: 56
         height: 28
-      spriteId: 0e4e2dce6ec2997459293f62d159f26c
+      spriteId: 76830ab7f86be6a49b4cc5eadfeed335
     - name: The Dark Warden_Frame_50
       frameIndex: 50
       cellRect:
@@ -1505,7 +1505,7 @@ ScriptedImporter:
         y: 84
         width: 58
         height: 28
-      spriteId: f746a9b0078724f4d9aff94b76ee0507
+      spriteId: 8b05d6528bd622547a8d2d2ed4ac0910
     - name: The Dark Warden_Frame_51
       frameIndex: 51
       cellRect:
@@ -1513,7 +1513,7 @@ ScriptedImporter:
         y: 84
         width: 60
         height: 11
-      spriteId: cf79d16e24f73304c920b83565374b9c
+      spriteId: c95189717b0150a4198cc71e59c26b26
     - name: The Dark Warden_Frame_26
       frameIndex: 26
       cellRect:
@@ -1521,7 +1521,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 515ce27582ba6e34c931be4e4a3d531d
+      spriteId: c2ec5de88024f8948b9e6b0b880b32ad
     - name: The Dark Warden_Frame_27
       frameIndex: 27
       cellRect:
@@ -1529,7 +1529,7 @@ ScriptedImporter:
         y: 80
         width: 16
         height: 28
-      spriteId: 7f0ba499e07889f4f88b194a21ce0981
+      spriteId: 12bec957a2921ff45867ae7fa4c0a6e4
     - name: The Dark Warden_Frame_28
       frameIndex: 28
       cellRect:
@@ -1537,7 +1537,7 @@ ScriptedImporter:
         y: 80
         width: 15
         height: 28
-      spriteId: 00f263289b80de443835584aefa16401
+      spriteId: 89f42e7784c41ef49ac25567144eef2e
     - name: The Dark Warden_Frame_29
       frameIndex: 29
       cellRect:
@@ -1545,7 +1545,7 @@ ScriptedImporter:
         y: 80
         width: 19
         height: 25
-      spriteId: 98e94c4213f16244091347b49191d359
+      spriteId: 9b25e54c9b144a94880b01db99b55139
     - name: The Dark Warden_Frame_30
       frameIndex: 30
       cellRect:
@@ -1553,7 +1553,7 @@ ScriptedImporter:
         y: 80
         width: 20
         height: 24
-      spriteId: e5192bb6472b7a143ad8123fdf927296
+      spriteId: a6a31782c8276c04d87290c0c3b6e5cc
     - name: The Dark Warden_Frame_31
       frameIndex: 31
       cellRect:
@@ -1561,7 +1561,7 @@ ScriptedImporter:
         y: 80
         width: 60
         height: 26
-      spriteId: bfacfdb822995f2498ce6fceaac4452c
+      spriteId: 565109e9234e396468fcb68fb061030b
     - name: The Dark Warden_Frame_32
       frameIndex: 32
       cellRect:
@@ -1569,7 +1569,7 @@ ScriptedImporter:
         y: 80
         width: 80
         height: 26
-      spriteId: 21facb67dedb1cc41a457c82bb27d629
+      spriteId: 19b4df00f54769048811665de68aceef
     - name: The Dark Warden_Frame_33
       frameIndex: 33
       cellRect:
@@ -1577,7 +1577,7 @@ ScriptedImporter:
         y: 80
         width: 78
         height: 26
-      spriteId: 10f315da4363a2c4988f8565b9ddb11a
+      spriteId: 762ef0aeeea2db24b9a42a0a92492ee5
     - name: The Dark Warden_Frame_34
       frameIndex: 34
       cellRect:
@@ -1585,7 +1585,7 @@ ScriptedImporter:
         y: 80
         width: 77
         height: 26
-      spriteId: c0b737151cd08a8409f48ba31bc8ec1d
+      spriteId: 6313f705e7f29234a8118cb39b5cd445
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 401
       width: 22
       height: 28
-    spriteID: cf6f2bffd64e1f943b3c474827eb5776
+    spriteID: 5ef74361aeea21e48834b00c6849758f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 437
       width: 22
       height: 28
-    spriteID: f0561c148a3ab1b4789ed54c2308e2be
+    spriteID: 898abc1ed60d2b64583cca9d62900d8b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 473
       width: 22
       height: 28
-    spriteID: bc837941a7a57d64b9ff72a98cc41a95
+    spriteID: 8e8e03b09616b8c43b334beff4a8f8b5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 28
-    spriteID: e1645cb23c96c4344887159ae9577c03
+    spriteID: bb80a9b8728fad448a1a10acd5cb0e7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 40
       width: 22
       height: 28
-    spriteID: 1273e01c34b9b0246b27d4de8c54b91a
+    spriteID: e9e1d27b60d09db46b40e12cd8206151
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 76
       width: 22
       height: 28
-    spriteID: 8a8932a1e78093741b93ba3d16617dd5
+    spriteID: b0206c3c9c50ccb46b4b9e54ad50811d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 112
       width: 22
       height: 28
-    spriteID: a5e81e4459c3c31438dff913a4bcae51
+    spriteID: 9a309f25d162fd24cb5e5ba2a709debd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 152
       width: 25
       height: 28
-    spriteID: 7e88877a6c9de484896244ce8b5302c4
+    spriteID: af97c164196eca641bd8008634cd2481
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 148
       width: 22
       height: 28
-    spriteID: ddf3e6b47ce36e1489111eac3124d15c
+    spriteID: 21255991a17d4764ab5a08f4e8bbfc1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 366
       width: 23
       height: 27
-    spriteID: a2fb03604b6575e40a4001bb2d4bbe7e
+    spriteID: e3ecd6895ba761d4dad4375dafbfd4da
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 188
       width: 25
       height: 27
-    spriteID: f6f027b8114b6ae49b481776f452202b
+    spriteID: d2e98531be78eb646a9e6be211c62c9a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 425
       width: 27
       height: 28
-    spriteID: 609f1dbc9e8a50f4fb9805ed22330efb
+    spriteID: 12a42e4f0ae4c7d468d0afd960b0e117
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 258
       width: 24
       height: 28
-    spriteID: 5192defac3527674a8c5cc4e8ef4f4f7
+    spriteID: 2afcaba50a6e8fb4b8d59942e82ca2e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 223
       width: 25
       height: 27
-    spriteID: 436d0fd6c080c304caa4f3d90915de55
+    spriteID: 072a8b20184802a4c960b152a22da5dc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 116
       width: 27
       height: 28
-    spriteID: 5aad16a360bf64e4f8d126c3e04f1540
+    spriteID: 56dbb4228d1ddb148b205530a0b99a45
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 4
       width: 85
       height: 29
-    spriteID: cc392a8e68fbcde41bbb5f01382bb38e
+    spriteID: 111e7145ddce4cf4eacae7cd1cf74859
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 41
       width: 85
       height: 29
-    spriteID: 8d99549a0123531468a137fc7be8b2ba
+    spriteID: 3ea9ab8c5ef19d247a648cc07b0668e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 78
       width: 83
       height: 29
-    spriteID: 0b6ba4bcc52d18d48a6182cade569924
+    spriteID: 122414bfed4d7e64b8a8a90a95bbffc8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 157
       width: 82
       height: 29
-    spriteID: 097120c23585993429ddaf2dd72a68eb
+    spriteID: 3ae7c990185ae6641ba690457679b3c2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 319
       width: 65
       height: 29
-    spriteID: 9d3a1130474e05c4e8484212d3f56f3f
+    spriteID: 105750bd5ae0aaf499ec9aa94ad4585f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 356
       width: 65
       height: 29
-    spriteID: 97c2f29d17371a6418cacf941ecb94ee
+    spriteID: dbb1107e7dffa264dbcca15ad567c124
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 184
       width: 22
       height: 28
-    spriteID: 44371193f93cf08469d8abf7a1d0a097
+    spriteID: 546c9b81abf7b5d489d319e63d0fa7c5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 220
       width: 22
       height: 28
-    spriteID: 14de3f885dfc27047b663d541caae231
+    spriteID: a7d6bbe401f71a04fbe02a290e99bab1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 78
       width: 30
       height: 30
-    spriteID: 798f1f086255c094c84cf6017f265bfb
+    spriteID: c549c8145e73b6547ab4f16e4eedd1a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 461
       width: 33
       height: 31
-    spriteID: 79ad45afc5c7a07439531d30390ae345
+    spriteID: 09e8ee558a4695c4aa07bffd770d8c53
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 461
       width: 33
       height: 31
-    spriteID: b0148ae1f0c60e242bff19c55f0d6154
+    spriteID: b3b645150f7565e4aa79431d6b1e3a97
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 425
       width: 37
       height: 28
-    spriteID: 15347865ec1ee94479262bbe85baa6f2
+    spriteID: 572bc04c23f47a4488b68aae27f7dd3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 4
       width: 35
       height: 29
-    spriteID: 4cff9dd23e70b694c8d192fa97f74017
+    spriteID: 12ff88acb3f5e1e468cef93118cdafb1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 41
       width: 34
       height: 29
-    spriteID: 6b9bb4d0d63354949a93798e9dfd336e
+    spriteID: 3aa6089ad851e554bbfce051576a043b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 292
       width: 20
       height: 28
-    spriteID: 7a8f497b307929c458f8b300c78ec391
+    spriteID: f89cb887429d5654b84ddc577a66b1db
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 328
       width: 20
       height: 28
-    spriteID: 93b8f217ddc88164d97695f306d94c0f
+    spriteID: 3584b334891c53a4086e06fc0bb4ed9b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 364
       width: 20
       height: 28
-    spriteID: 81f6dedfe4754fb45b2338a8c9f6346d
+    spriteID: a0f3e62f3501b6f4e899c0e56098d1c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 294
       width: 23
       height: 28
-    spriteID: edcadcb73214ced4f9b51cab000219ef
+    spriteID: b7aa16ae22426a747822d7d4ba550282
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 330
       width: 23
       height: 28
-    spriteID: 3acfb223013529845acd9a75576acc2a
+    spriteID: 3da10da596b36b14898798372328e56c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 256
       width: 21
       height: 28
-    spriteID: 4c25990ec3bfb974296c4a9340f47b83
+    spriteID: 5a5fbe1e907c1b445b8ed7720eed2440
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 194
       width: 71
       height: 33
-    spriteID: f4d51c95a36dcbe4c87da13273a81e5e
+    spriteID: bd4a0490b4d178c4bb85048ad8abff3c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 115
       width: 70
       height: 34
-    spriteID: 9a0cc135769d4a64c892719509211fc9
+    spriteID: 4bf85e64a0e16274ba23930de3476e85
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 235
       width: 68
       height: 34
-    spriteID: 95e6f9f862b65b14ea02ea242a0ce2e5
+    spriteID: 49db66ec99339184b896ddf559f86dba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 277
       width: 68
       height: 34
-    spriteID: 12de2412ace120f43bacb5179fc0467a
+    spriteID: 52191fe7d27d42b46966de7bca65712d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 393
       width: 69
       height: 24
-    spriteID: f0cfe327ab2b6b043aadef3be5a481af
+    spriteID: 770b01fd22fb42448aca841d6b48a15b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -937,7 +937,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: cf6f2bffd64e1f943b3c474827eb5776
+      spriteId: 5ef74361aeea21e48834b00c6849758f
     - name: Hell Bot Dark_Frame_1
       frameIndex: 1
       cellRect:
@@ -945,7 +945,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: f0561c148a3ab1b4789ed54c2308e2be
+      spriteId: 898abc1ed60d2b64583cca9d62900d8b
     - name: Hell Bot Dark_Frame_2
       frameIndex: 2
       cellRect:
@@ -953,7 +953,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: bc837941a7a57d64b9ff72a98cc41a95
+      spriteId: 8e8e03b09616b8c43b334beff4a8f8b5
     - name: Hell Bot Dark_Frame_3
       frameIndex: 3
       cellRect:
@@ -961,7 +961,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: e1645cb23c96c4344887159ae9577c03
+      spriteId: bb80a9b8728fad448a1a10acd5cb0e7c
     - name: Hell Bot Dark_Frame_4
       frameIndex: 4
       cellRect:
@@ -969,7 +969,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: 1273e01c34b9b0246b27d4de8c54b91a
+      spriteId: e9e1d27b60d09db46b40e12cd8206151
     - name: Hell Bot Dark_Frame_5
       frameIndex: 5
       cellRect:
@@ -977,7 +977,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: 8a8932a1e78093741b93ba3d16617dd5
+      spriteId: b0206c3c9c50ccb46b4b9e54ad50811d
     - name: Hell Bot Dark_Frame_6
       frameIndex: 6
       cellRect:
@@ -985,7 +985,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: a5e81e4459c3c31438dff913a4bcae51
+      spriteId: 9a309f25d162fd24cb5e5ba2a709debd
     - name: Hell Bot Dark_Frame_7
       frameIndex: 7
       cellRect:
@@ -993,7 +993,7 @@ ScriptedImporter:
         y: 1
         width: 25
         height: 28
-      spriteId: 7e88877a6c9de484896244ce8b5302c4
+      spriteId: af97c164196eca641bd8008634cd2481
     - name: Hell Bot Dark_Frame_8
       frameIndex: 8
       cellRect:
@@ -1001,7 +1001,7 @@ ScriptedImporter:
         y: 2
         width: 22
         height: 28
-      spriteId: ddf3e6b47ce36e1489111eac3124d15c
+      spriteId: 21255991a17d4764ab5a08f4e8bbfc1d
     - name: Hell Bot Dark_Frame_9
       frameIndex: 9
       cellRect:
@@ -1009,7 +1009,7 @@ ScriptedImporter:
         y: 4
         width: 23
         height: 27
-      spriteId: a2fb03604b6575e40a4001bb2d4bbe7e
+      spriteId: e3ecd6895ba761d4dad4375dafbfd4da
     - name: Hell Bot Dark_Frame_10
       frameIndex: 10
       cellRect:
@@ -1017,7 +1017,7 @@ ScriptedImporter:
         y: 3
         width: 25
         height: 27
-      spriteId: f6f027b8114b6ae49b481776f452202b
+      spriteId: d2e98531be78eb646a9e6be211c62c9a
     - name: Hell Bot Dark_Frame_11
       frameIndex: 11
       cellRect:
@@ -1025,7 +1025,7 @@ ScriptedImporter:
         y: 1
         width: 27
         height: 28
-      spriteId: 609f1dbc9e8a50f4fb9805ed22330efb
+      spriteId: 12a42e4f0ae4c7d468d0afd960b0e117
     - name: Hell Bot Dark_Frame_12
       frameIndex: 12
       cellRect:
@@ -1033,7 +1033,7 @@ ScriptedImporter:
         y: 2
         width: 24
         height: 28
-      spriteId: 5192defac3527674a8c5cc4e8ef4f4f7
+      spriteId: 2afcaba50a6e8fb4b8d59942e82ca2e4
     - name: Hell Bot Dark_Frame_13
       frameIndex: 13
       cellRect:
@@ -1041,7 +1041,7 @@ ScriptedImporter:
         y: 4
         width: 25
         height: 27
-      spriteId: 436d0fd6c080c304caa4f3d90915de55
+      spriteId: 072a8b20184802a4c960b152a22da5dc
     - name: Hell Bot Dark_Frame_14
       frameIndex: 14
       cellRect:
@@ -1049,7 +1049,7 @@ ScriptedImporter:
         y: 2
         width: 27
         height: 28
-      spriteId: 5aad16a360bf64e4f8d126c3e04f1540
+      spriteId: 56dbb4228d1ddb148b205530a0b99a45
     - name: Hell Bot Dark_Frame_15
       frameIndex: 15
       cellRect:
@@ -1057,7 +1057,7 @@ ScriptedImporter:
         y: 1
         width: 85
         height: 29
-      spriteId: cc392a8e68fbcde41bbb5f01382bb38e
+      spriteId: 111e7145ddce4cf4eacae7cd1cf74859
     - name: Hell Bot Dark_Frame_16
       frameIndex: 16
       cellRect:
@@ -1065,7 +1065,7 @@ ScriptedImporter:
         y: 1
         width: 85
         height: 29
-      spriteId: 8d99549a0123531468a137fc7be8b2ba
+      spriteId: 3ea9ab8c5ef19d247a648cc07b0668e2
     - name: Hell Bot Dark_Frame_17
       frameIndex: 17
       cellRect:
@@ -1073,7 +1073,7 @@ ScriptedImporter:
         y: 1
         width: 83
         height: 29
-      spriteId: 0b6ba4bcc52d18d48a6182cade569924
+      spriteId: 122414bfed4d7e64b8a8a90a95bbffc8
     - name: Hell Bot Dark_Frame_18
       frameIndex: 18
       cellRect:
@@ -1081,7 +1081,7 @@ ScriptedImporter:
         y: 1
         width: 82
         height: 29
-      spriteId: 097120c23585993429ddaf2dd72a68eb
+      spriteId: 3ae7c990185ae6641ba690457679b3c2
     - name: Hell Bot Dark_Frame_19
       frameIndex: 19
       cellRect:
@@ -1089,7 +1089,7 @@ ScriptedImporter:
         y: 1
         width: 65
         height: 29
-      spriteId: 9d3a1130474e05c4e8484212d3f56f3f
+      spriteId: 105750bd5ae0aaf499ec9aa94ad4585f
     - name: Hell Bot Dark_Frame_20
       frameIndex: 20
       cellRect:
@@ -1097,7 +1097,7 @@ ScriptedImporter:
         y: 1
         width: 65
         height: 29
-      spriteId: 97c2f29d17371a6418cacf941ecb94ee
+      spriteId: dbb1107e7dffa264dbcca15ad567c124
     - name: Hell Bot Dark_Frame_21
       frameIndex: 21
       cellRect:
@@ -1105,7 +1105,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: 44371193f93cf08469d8abf7a1d0a097
+      spriteId: 546c9b81abf7b5d489d319e63d0fa7c5
     - name: Hell Bot Dark_Frame_22
       frameIndex: 22
       cellRect:
@@ -1113,7 +1113,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 28
-      spriteId: 14de3f885dfc27047b663d541caae231
+      spriteId: a7d6bbe401f71a04fbe02a290e99bab1
     - name: Hell Bot Dark_Frame_23
       frameIndex: 23
       cellRect:
@@ -1121,7 +1121,7 @@ ScriptedImporter:
         y: 1
         width: 30
         height: 30
-      spriteId: 798f1f086255c094c84cf6017f265bfb
+      spriteId: c549c8145e73b6547ab4f16e4eedd1a8
     - name: Hell Bot Dark_Frame_24
       frameIndex: 24
       cellRect:
@@ -1129,7 +1129,7 @@ ScriptedImporter:
         y: 1
         width: 33
         height: 31
-      spriteId: 79ad45afc5c7a07439531d30390ae345
+      spriteId: 09e8ee558a4695c4aa07bffd770d8c53
     - name: Hell Bot Dark_Frame_25
       frameIndex: 25
       cellRect:
@@ -1137,7 +1137,7 @@ ScriptedImporter:
         y: 1
         width: 33
         height: 31
-      spriteId: b0148ae1f0c60e242bff19c55f0d6154
+      spriteId: b3b645150f7565e4aa79431d6b1e3a97
     - name: Hell Bot Dark_Frame_26
       frameIndex: 26
       cellRect:
@@ -1145,7 +1145,7 @@ ScriptedImporter:
         y: 1
         width: 37
         height: 28
-      spriteId: 15347865ec1ee94479262bbe85baa6f2
+      spriteId: 572bc04c23f47a4488b68aae27f7dd3a
     - name: Hell Bot Dark_Frame_27
       frameIndex: 27
       cellRect:
@@ -1153,7 +1153,7 @@ ScriptedImporter:
         y: 0
         width: 35
         height: 29
-      spriteId: 4cff9dd23e70b694c8d192fa97f74017
+      spriteId: 12ff88acb3f5e1e468cef93118cdafb1
     - name: Hell Bot Dark_Frame_28
       frameIndex: 28
       cellRect:
@@ -1161,7 +1161,7 @@ ScriptedImporter:
         y: 0
         width: 34
         height: 29
-      spriteId: 6b9bb4d0d63354949a93798e9dfd336e
+      spriteId: 3aa6089ad851e554bbfce051576a043b
     - name: Hell Bot Dark_Frame_29
       frameIndex: 29
       cellRect:
@@ -1169,7 +1169,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 28
-      spriteId: 7a8f497b307929c458f8b300c78ec391
+      spriteId: f89cb887429d5654b84ddc577a66b1db
     - name: Hell Bot Dark_Frame_30
       frameIndex: 30
       cellRect:
@@ -1177,7 +1177,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 28
-      spriteId: 93b8f217ddc88164d97695f306d94c0f
+      spriteId: 3584b334891c53a4086e06fc0bb4ed9b
     - name: Hell Bot Dark_Frame_31
       frameIndex: 31
       cellRect:
@@ -1185,7 +1185,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 28
-      spriteId: 81f6dedfe4754fb45b2338a8c9f6346d
+      spriteId: a0f3e62f3501b6f4e899c0e56098d1c7
     - name: Hell Bot Dark_Frame_32
       frameIndex: 32
       cellRect:
@@ -1193,7 +1193,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 28
-      spriteId: edcadcb73214ced4f9b51cab000219ef
+      spriteId: b7aa16ae22426a747822d7d4ba550282
     - name: Hell Bot Dark_Frame_33
       frameIndex: 33
       cellRect:
@@ -1201,7 +1201,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 28
-      spriteId: 3acfb223013529845acd9a75576acc2a
+      spriteId: 3da10da596b36b14898798372328e56c
     - name: Hell Bot Dark_Frame_34
       frameIndex: 34
       cellRect:
@@ -1209,7 +1209,7 @@ ScriptedImporter:
         y: 1
         width: 21
         height: 28
-      spriteId: 4c25990ec3bfb974296c4a9340f47b83
+      spriteId: 5a5fbe1e907c1b445b8ed7720eed2440
     - name: Hell Bot Dark_Frame_35
       frameIndex: 35
       cellRect:
@@ -1217,7 +1217,7 @@ ScriptedImporter:
         y: 1
         width: 71
         height: 33
-      spriteId: f4d51c95a36dcbe4c87da13273a81e5e
+      spriteId: bd4a0490b4d178c4bb85048ad8abff3c
     - name: Hell Bot Dark_Frame_36
       frameIndex: 36
       cellRect:
@@ -1225,7 +1225,7 @@ ScriptedImporter:
         y: 1
         width: 70
         height: 34
-      spriteId: 9a0cc135769d4a64c892719509211fc9
+      spriteId: 4bf85e64a0e16274ba23930de3476e85
     - name: Hell Bot Dark_Frame_37
       frameIndex: 37
       cellRect:
@@ -1233,7 +1233,7 @@ ScriptedImporter:
         y: 1
         width: 68
         height: 34
-      spriteId: 95e6f9f862b65b14ea02ea242a0ce2e5
+      spriteId: 49db66ec99339184b896ddf559f86dba
     - name: Hell Bot Dark_Frame_38
       frameIndex: 38
       cellRect:
@@ -1241,7 +1241,7 @@ ScriptedImporter:
         y: 1
         width: 68
         height: 34
-      spriteId: 12de2412ace120f43bacb5179fc0467a
+      spriteId: 52191fe7d27d42b46966de7bca65712d
     - name: Hell Bot Dark_Frame_39
       frameIndex: 39
       cellRect:
@@ -1249,7 +1249,7 @@ ScriptedImporter:
         y: 12
         width: 69
         height: 24
-      spriteId: f0cfe327ab2b6b043aadef3be5a481af
+      spriteId: 770b01fd22fb42448aca841d6b48a15b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

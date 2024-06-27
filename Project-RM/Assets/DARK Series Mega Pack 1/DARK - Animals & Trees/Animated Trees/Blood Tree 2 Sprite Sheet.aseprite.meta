@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 117
       height: 84
-    spriteID: caab31534d3f410459b74ce1407b4874
+    spriteID: bf133a41ed707a94fb1232bbf49ba41b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 639
       width: 117
       height: 80
-    spriteID: 3fbcb4b2fa3b0ff46b7120d5d371ba15
+    spriteID: 5be632f0c591513458cf0ed46df6b50e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 550
       width: 117
       height: 81
-    spriteID: d0ed8efd87874874eaa8ad40a8886095
+    spriteID: 5cf0f2dcb3519df45a9ffdc764169fd2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 370
       width: 117
       height: 82
-    spriteID: bab672b1b11292044af2e76ff8a53b55
+    spriteID: 0a2e3004a7e45bf41b75cdaac1232392
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 188
       width: 117
       height: 83
-    spriteID: 78f618ee7019cb7429a16c00f126858d
+    spriteID: 5c2f919ab8b55ba43a775e507c759e54
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 96
       width: 117
       height: 84
-    spriteID: 3ed5c5e2ce5626249b7f5e0e22703d60
+    spriteID: 735cbfd8e4df9ff45ad2b6abc2011547
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 460
       width: 117
       height: 82
-    spriteID: 22aab698a69dc1b4690b102a53ba905c
+    spriteID: b2f99a0910e999e4bb18c1626a797c0a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 279
       width: 117
       height: 83
-    spriteID: d86d238101900e04d9ea7c21fa5559fa
+    spriteID: 6fd08edb65a3a534f942a802531ce0af
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 727
       width: 117
       height: 76
-    spriteID: ec81181cd2ba7b54d8909df2595898c1
+    spriteID: fe97fbc7ed64908428dec853438614ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 811
       width: 117
       height: 76
-    spriteID: 3207dc95e34cf5347a50ae28ca8ecd8a
+    spriteID: 4f8b75c8961e2eb4abb3e6d48f4e726b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 895
       width: 117
       height: 76
-    spriteID: 5dfd7200574513d48b1e5fe7ea0bcfd0
+    spriteID: a8809f55d8be42f459cb8accd6ee0115
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 4
       width: 117
       height: 76
-    spriteID: e8b1beb703effa143bfa85e195d49df9
+    spriteID: 0fd89b0d708523040aa78bf93a4a104f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 88
       width: 117
       height: 76
-    spriteID: fa4ddbe21c6e2fc4d9d243c1aa6c779e
+    spriteID: 0a1e64f4724762e479f1f982322e8b8d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 172
       width: 117
       height: 76
-    spriteID: c461a64a4e2814a4596d138f7cf7e3f8
+    spriteID: fdf5e475116f9f447b8e34215cb74c13
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 256
       width: 117
       height: 76
-    spriteID: c9344399a8c2a3146ba66d47f7a8816f
+    spriteID: f67b0d66b13b98b4b863f4fce2cee657
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 340
       width: 117
       height: 76
-    spriteID: ad3476180b6799d46a0dd787c78b4f53
+    spriteID: a48b647d68083c04588999239a8bdd28
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 424
       width: 117
       height: 76
-    spriteID: d5aec802a86133c498bb9be2667418f0
+    spriteID: 1b107c8431d0c4c4a8763d458f13b228
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 508
       width: 117
       height: 76
-    spriteID: 22b3ac41fd5a52547b6c136fd61cd671
+    spriteID: 29b3c6c6404547a4fbb52338af80f501
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 592
       width: 117
       height: 76
-    spriteID: 306f1cb109d62004aa6ac95949d429a1
+    spriteID: 0dd9a6d3690b6ef40ad502db6c4801ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 676
       width: 117
       height: 76
-    spriteID: ba483b7decd333f428cf3a7050039353
+    spriteID: d0995ab720dcdaa43a06202e20104106
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 760
       width: 117
       height: 76
-    spriteID: be25610a902c3bd43aa0dfa5780ead66
+    spriteID: e821c007fbc01d9448a44b75c4947ffe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 844
       width: 117
       height: 76
-    spriteID: b2aedd720d4df4142b281188806fac1e
+    spriteID: e92572333c1f6544085d43104b194cc6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 928
       width: 117
       height: 76
-    spriteID: 2ef118118d2ee2645ad77ff78f3da00f
+    spriteID: bb6300e8c09471a4598335dc89d5f658
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 4
       width: 117
       height: 76
-    spriteID: 17b35b586c1caa64d90e2c0aeb11eb2e
+    spriteID: b4f3097a3a139a44e9249309e49027b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 88
       width: 117
       height: 76
-    spriteID: 7f1bb272183fc2c4badfa2fbe3e55359
+    spriteID: 3a2e94caed395374b9f5ff1ef2949217
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 172
       width: 117
       height: 76
-    spriteID: 63d0706fbce534146a0235916759e86a
+    spriteID: 7db7a952c56718a4282a97e45c725934
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 256
       width: 117
       height: 76
-    spriteID: 3a864bb1ea501224c8fa35aeb83e92e6
+    spriteID: a73164f570c936943a191e61ccf8bbea
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 340
       width: 117
       height: 76
-    spriteID: c5b19ee17b3e5054fa6aa1fd407559cf
+    spriteID: b6e9731ba23afd349a81075c7610afd2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 424
       width: 117
       height: 76
-    spriteID: 164bfaccd1233664689ba42cbbeee828
+    spriteID: 7ff52aecbf4927a47bba273d44550d79
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 508
       width: 117
       height: 76
-    spriteID: 5f1590821ab12534fadc38b7ce98e384
+    spriteID: 106627106302b464fa472de3eea41104
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 592
       width: 117
       height: 76
-    spriteID: 9c38ec743fe4d914f81a776e10329652
+    spriteID: 4185fc0829eef084e9617d0a16064ad0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 676
       width: 117
       height: 76
-    spriteID: 607fce6548d20204ca89b6c18711c77a
+    spriteID: a4745b147f5690e4583ee1976e2a0a6d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 760
       width: 117
       height: 76
-    spriteID: 543146fde2354b7409331650ea5312cd
+    spriteID: d45d97b52e5987c439179c8189abcb81
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 844
       width: 117
       height: 76
-    spriteID: a84452a0252829e48af5a2f066b6c23a
+    spriteID: adb811c97a824f043baf46065b723e9c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 928
       width: 117
       height: 76
-    spriteID: 0cc73856511a1ad46a420ee61fdad718
+    spriteID: 7b73338b93ad42242a87fa0d76031bcd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 4
       width: 117
       height: 76
-    spriteID: 95f865075029a15488a51dbe6fe54bb9
+    spriteID: 7a371a48b67106b41b6665124f781b2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 88
       width: 117
       height: 76
-    spriteID: 1cec64c92fb44584da181e130aebada0
+    spriteID: aaf16e96e43a930439dbd80a13aab214
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 172
       width: 117
       height: 76
-    spriteID: f9ef2af335447c040bb0068aeafbadd9
+    spriteID: 7ca2bb5c00cd55d47885a0071d74d8ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 256
       width: 117
       height: 76
-    spriteID: a04b0543b4cad11428e444e06712e5ab
+    spriteID: 277c10173e5929a4db89f97e445e5f1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 340
       width: 117
       height: 76
-    spriteID: 118ce9c3d66df7e4b98db40ad2974d7e
+    spriteID: dc837c90c35bdd24184e163d3c939165
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +932,7 @@ ScriptedImporter:
       y: 424
       width: 117
       height: 76
-    spriteID: 46c30e390349a6f4396abd577e2bd4a4
+    spriteID: 89037b30558c5ae45a07edcbe5f59bf8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +952,7 @@ ScriptedImporter:
       y: 508
       width: 117
       height: 76
-    spriteID: 987b19677b8c3014299593dc0ee1a63c
+    spriteID: 2b5a2e3407d3fd341911d72b60f65772
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +972,7 @@ ScriptedImporter:
       y: 592
       width: 117
       height: 76
-    spriteID: 39634f03755f41a4c884ceaa62cb6df2
+    spriteID: eceb9517fa059af46b07d4ed5426866e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +992,7 @@ ScriptedImporter:
       y: 676
       width: 117
       height: 76
-    spriteID: eb692dc87bf7fc84e80fc499d68a855f
+    spriteID: 84c86400117173a4d962c6ae809d80d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1012,7 @@ ScriptedImporter:
       y: 760
       width: 117
       height: 76
-    spriteID: 3d8cb9cc687c0714f8b0d344488fa2da
+    spriteID: d4897600a8fd83342b0d4fed1f57ea89
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1032,7 @@ ScriptedImporter:
       y: 844
       width: 117
       height: 76
-    spriteID: ce455073de7ee2b46aa929fc2367f3c1
+    spriteID: 827bcc4efb58abc4d94b7fd1aa85e0e1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1052,7 @@ ScriptedImporter:
       y: 928
       width: 117
       height: 76
-    spriteID: de4a56002c21c844fa65c402794a4f2a
+    spriteID: 3aeda2de57253214998beab660384e19
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1077,7 +1077,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 84
-      spriteId: caab31534d3f410459b74ce1407b4874
+      spriteId: bf133a41ed707a94fb1232bbf49ba41b
     - name: Blood Tree 2 Sprite Sheet_Frame_1
       frameIndex: 1
       cellRect:
@@ -1085,7 +1085,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 80
-      spriteId: 3fbcb4b2fa3b0ff46b7120d5d371ba15
+      spriteId: 5be632f0c591513458cf0ed46df6b50e
     - name: Blood Tree 2 Sprite Sheet_Frame_2
       frameIndex: 2
       cellRect:
@@ -1093,7 +1093,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 81
-      spriteId: d0ed8efd87874874eaa8ad40a8886095
+      spriteId: 5cf0f2dcb3519df45a9ffdc764169fd2
     - name: Blood Tree 2 Sprite Sheet_Frame_3
       frameIndex: 3
       cellRect:
@@ -1101,7 +1101,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 82
-      spriteId: bab672b1b11292044af2e76ff8a53b55
+      spriteId: 0a2e3004a7e45bf41b75cdaac1232392
     - name: Blood Tree 2 Sprite Sheet_Frame_4
       frameIndex: 4
       cellRect:
@@ -1109,7 +1109,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 83
-      spriteId: 78f618ee7019cb7429a16c00f126858d
+      spriteId: 5c2f919ab8b55ba43a775e507c759e54
     - name: Blood Tree 2 Sprite Sheet_Frame_5
       frameIndex: 5
       cellRect:
@@ -1117,7 +1117,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 84
-      spriteId: 3ed5c5e2ce5626249b7f5e0e22703d60
+      spriteId: 735cbfd8e4df9ff45ad2b6abc2011547
     - name: Blood Tree 2 Sprite Sheet_Frame_6
       frameIndex: 6
       cellRect:
@@ -1125,7 +1125,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 82
-      spriteId: 22aab698a69dc1b4690b102a53ba905c
+      spriteId: b2f99a0910e999e4bb18c1626a797c0a
     - name: Blood Tree 2 Sprite Sheet_Frame_7
       frameIndex: 7
       cellRect:
@@ -1133,7 +1133,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 83
-      spriteId: d86d238101900e04d9ea7c21fa5559fa
+      spriteId: 6fd08edb65a3a534f942a802531ce0af
     - name: Blood Tree 2 Sprite Sheet_Frame_8
       frameIndex: 8
       cellRect:
@@ -1141,7 +1141,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: ec81181cd2ba7b54d8909df2595898c1
+      spriteId: fe97fbc7ed64908428dec853438614ce
     - name: Blood Tree 2 Sprite Sheet_Frame_9
       frameIndex: 9
       cellRect:
@@ -1149,7 +1149,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 3207dc95e34cf5347a50ae28ca8ecd8a
+      spriteId: 4f8b75c8961e2eb4abb3e6d48f4e726b
     - name: Blood Tree 2 Sprite Sheet_Frame_10
       frameIndex: 10
       cellRect:
@@ -1157,7 +1157,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 5dfd7200574513d48b1e5fe7ea0bcfd0
+      spriteId: a8809f55d8be42f459cb8accd6ee0115
     - name: Blood Tree 2 Sprite Sheet_Frame_11
       frameIndex: 11
       cellRect:
@@ -1165,7 +1165,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: e8b1beb703effa143bfa85e195d49df9
+      spriteId: 0fd89b0d708523040aa78bf93a4a104f
     - name: Blood Tree 2 Sprite Sheet_Frame_12
       frameIndex: 12
       cellRect:
@@ -1173,7 +1173,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: fa4ddbe21c6e2fc4d9d243c1aa6c779e
+      spriteId: 0a1e64f4724762e479f1f982322e8b8d
     - name: Blood Tree 2 Sprite Sheet_Frame_13
       frameIndex: 13
       cellRect:
@@ -1181,7 +1181,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: c461a64a4e2814a4596d138f7cf7e3f8
+      spriteId: fdf5e475116f9f447b8e34215cb74c13
     - name: Blood Tree 2 Sprite Sheet_Frame_14
       frameIndex: 14
       cellRect:
@@ -1189,7 +1189,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: c9344399a8c2a3146ba66d47f7a8816f
+      spriteId: f67b0d66b13b98b4b863f4fce2cee657
     - name: Blood Tree 2 Sprite Sheet_Frame_15
       frameIndex: 15
       cellRect:
@@ -1197,7 +1197,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: ad3476180b6799d46a0dd787c78b4f53
+      spriteId: a48b647d68083c04588999239a8bdd28
     - name: Blood Tree 2 Sprite Sheet_Frame_16
       frameIndex: 16
       cellRect:
@@ -1205,7 +1205,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: d5aec802a86133c498bb9be2667418f0
+      spriteId: 1b107c8431d0c4c4a8763d458f13b228
     - name: Blood Tree 2 Sprite Sheet_Frame_17
       frameIndex: 17
       cellRect:
@@ -1213,7 +1213,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 22b3ac41fd5a52547b6c136fd61cd671
+      spriteId: 29b3c6c6404547a4fbb52338af80f501
     - name: Blood Tree 2 Sprite Sheet_Frame_18
       frameIndex: 18
       cellRect:
@@ -1221,7 +1221,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 306f1cb109d62004aa6ac95949d429a1
+      spriteId: 0dd9a6d3690b6ef40ad502db6c4801ae
     - name: Blood Tree 2 Sprite Sheet_Frame_19
       frameIndex: 19
       cellRect:
@@ -1229,7 +1229,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: ba483b7decd333f428cf3a7050039353
+      spriteId: d0995ab720dcdaa43a06202e20104106
     - name: Blood Tree 2 Sprite Sheet_Frame_20
       frameIndex: 20
       cellRect:
@@ -1237,7 +1237,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: be25610a902c3bd43aa0dfa5780ead66
+      spriteId: e821c007fbc01d9448a44b75c4947ffe
     - name: Blood Tree 2 Sprite Sheet_Frame_21
       frameIndex: 21
       cellRect:
@@ -1245,7 +1245,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: b2aedd720d4df4142b281188806fac1e
+      spriteId: e92572333c1f6544085d43104b194cc6
     - name: Blood Tree 2 Sprite Sheet_Frame_22
       frameIndex: 22
       cellRect:
@@ -1253,7 +1253,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 2ef118118d2ee2645ad77ff78f3da00f
+      spriteId: bb6300e8c09471a4598335dc89d5f658
     - name: Blood Tree 2 Sprite Sheet_Frame_23
       frameIndex: 23
       cellRect:
@@ -1261,7 +1261,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 17b35b586c1caa64d90e2c0aeb11eb2e
+      spriteId: b4f3097a3a139a44e9249309e49027b1
     - name: Blood Tree 2 Sprite Sheet_Frame_24
       frameIndex: 24
       cellRect:
@@ -1269,7 +1269,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 7f1bb272183fc2c4badfa2fbe3e55359
+      spriteId: 3a2e94caed395374b9f5ff1ef2949217
     - name: Blood Tree 2 Sprite Sheet_Frame_25
       frameIndex: 25
       cellRect:
@@ -1277,7 +1277,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 63d0706fbce534146a0235916759e86a
+      spriteId: 7db7a952c56718a4282a97e45c725934
     - name: Blood Tree 2 Sprite Sheet_Frame_26
       frameIndex: 26
       cellRect:
@@ -1285,7 +1285,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 3a864bb1ea501224c8fa35aeb83e92e6
+      spriteId: a73164f570c936943a191e61ccf8bbea
     - name: Blood Tree 2 Sprite Sheet_Frame_27
       frameIndex: 27
       cellRect:
@@ -1293,7 +1293,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: c5b19ee17b3e5054fa6aa1fd407559cf
+      spriteId: b6e9731ba23afd349a81075c7610afd2
     - name: Blood Tree 2 Sprite Sheet_Frame_28
       frameIndex: 28
       cellRect:
@@ -1301,7 +1301,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 164bfaccd1233664689ba42cbbeee828
+      spriteId: 7ff52aecbf4927a47bba273d44550d79
     - name: Blood Tree 2 Sprite Sheet_Frame_29
       frameIndex: 29
       cellRect:
@@ -1309,7 +1309,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 5f1590821ab12534fadc38b7ce98e384
+      spriteId: 106627106302b464fa472de3eea41104
     - name: Blood Tree 2 Sprite Sheet_Frame_30
       frameIndex: 30
       cellRect:
@@ -1317,7 +1317,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 9c38ec743fe4d914f81a776e10329652
+      spriteId: 4185fc0829eef084e9617d0a16064ad0
     - name: Blood Tree 2 Sprite Sheet_Frame_31
       frameIndex: 31
       cellRect:
@@ -1325,7 +1325,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 607fce6548d20204ca89b6c18711c77a
+      spriteId: a4745b147f5690e4583ee1976e2a0a6d
     - name: Blood Tree 2 Sprite Sheet_Frame_32
       frameIndex: 32
       cellRect:
@@ -1333,7 +1333,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 543146fde2354b7409331650ea5312cd
+      spriteId: d45d97b52e5987c439179c8189abcb81
     - name: Blood Tree 2 Sprite Sheet_Frame_33
       frameIndex: 33
       cellRect:
@@ -1341,7 +1341,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: a84452a0252829e48af5a2f066b6c23a
+      spriteId: adb811c97a824f043baf46065b723e9c
     - name: Blood Tree 2 Sprite Sheet_Frame_34
       frameIndex: 34
       cellRect:
@@ -1349,7 +1349,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 0cc73856511a1ad46a420ee61fdad718
+      spriteId: 7b73338b93ad42242a87fa0d76031bcd
     - name: Blood Tree 2 Sprite Sheet_Frame_35
       frameIndex: 35
       cellRect:
@@ -1357,7 +1357,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 95f865075029a15488a51dbe6fe54bb9
+      spriteId: 7a371a48b67106b41b6665124f781b2f
     - name: Blood Tree 2 Sprite Sheet_Frame_36
       frameIndex: 36
       cellRect:
@@ -1365,7 +1365,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 1cec64c92fb44584da181e130aebada0
+      spriteId: aaf16e96e43a930439dbd80a13aab214
     - name: Blood Tree 2 Sprite Sheet_Frame_37
       frameIndex: 37
       cellRect:
@@ -1373,7 +1373,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: f9ef2af335447c040bb0068aeafbadd9
+      spriteId: 7ca2bb5c00cd55d47885a0071d74d8ef
     - name: Blood Tree 2 Sprite Sheet_Frame_38
       frameIndex: 38
       cellRect:
@@ -1381,7 +1381,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: a04b0543b4cad11428e444e06712e5ab
+      spriteId: 277c10173e5929a4db89f97e445e5f1d
     - name: Blood Tree 2 Sprite Sheet_Frame_39
       frameIndex: 39
       cellRect:
@@ -1389,7 +1389,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 118ce9c3d66df7e4b98db40ad2974d7e
+      spriteId: dc837c90c35bdd24184e163d3c939165
     - name: Blood Tree 2 Sprite Sheet_Frame_40
       frameIndex: 40
       cellRect:
@@ -1397,7 +1397,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 46c30e390349a6f4396abd577e2bd4a4
+      spriteId: 89037b30558c5ae45a07edcbe5f59bf8
     - name: Blood Tree 2 Sprite Sheet_Frame_41
       frameIndex: 41
       cellRect:
@@ -1405,7 +1405,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 987b19677b8c3014299593dc0ee1a63c
+      spriteId: 2b5a2e3407d3fd341911d72b60f65772
     - name: Blood Tree 2 Sprite Sheet_Frame_42
       frameIndex: 42
       cellRect:
@@ -1413,7 +1413,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 39634f03755f41a4c884ceaa62cb6df2
+      spriteId: eceb9517fa059af46b07d4ed5426866e
     - name: Blood Tree 2 Sprite Sheet_Frame_43
       frameIndex: 43
       cellRect:
@@ -1421,7 +1421,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: eb692dc87bf7fc84e80fc499d68a855f
+      spriteId: 84c86400117173a4d962c6ae809d80d6
     - name: Blood Tree 2 Sprite Sheet_Frame_44
       frameIndex: 44
       cellRect:
@@ -1429,7 +1429,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: 3d8cb9cc687c0714f8b0d344488fa2da
+      spriteId: d4897600a8fd83342b0d4fed1f57ea89
     - name: Blood Tree 2 Sprite Sheet_Frame_45
       frameIndex: 45
       cellRect:
@@ -1437,7 +1437,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: ce455073de7ee2b46aa929fc2367f3c1
+      spriteId: 827bcc4efb58abc4d94b7fd1aa85e0e1
     - name: Blood Tree 2 Sprite Sheet_Frame_46
       frameIndex: 46
       cellRect:
@@ -1445,7 +1445,7 @@ ScriptedImporter:
         y: 0
         width: 117
         height: 76
-      spriteId: de4a56002c21c844fa65c402794a4f2a
+      spriteId: 3aeda2de57253214998beab660384e19
     linkedCells: []
     parentIndex: -1
   platformSettings: []

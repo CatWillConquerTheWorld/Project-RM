@@ -1,0 +1,1511 @@
+fileFormatVersion: 2
+guid: 0844ce32dd3c7274b9b10c50a2026c6e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Gunslinger Sprite Sheet_Frame_0
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 192
+      height: 192
+    spriteID: 452ad5aa24831464b8c2864d8c454459
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Gunslinger Sprite Sheet_Frame_1
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 192
+      height: 192
+    spriteID: 2c52fe6c02f4d1045b2c8e2d42626e13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: Gunslinger Sprite Sheet_Frame_2
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 404
+      width: 192
+      height: 192
+    spriteID: 0b6b181da0547574b8fd91ea3ddc33b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 404}
+  - name: Gunslinger Sprite Sheet_Frame_3
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 604
+      width: 192
+      height: 192
+    spriteID: 5f245a1da88c62e4995a6d243d5ba3fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 604}
+  - name: Gunslinger Sprite Sheet_Frame_4
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 804
+      width: 192
+      height: 192
+    spriteID: 4dd269bc10204224e87b563a0c364b2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 804}
+  - name: Gunslinger Sprite Sheet_Frame_5
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1004
+      width: 192
+      height: 192
+    spriteID: 448474a1531f0584dba943f6314ae6c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1004}
+  - name: Gunslinger Sprite Sheet_Frame_6
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1204
+      width: 192
+      height: 192
+    spriteID: eb6d2721f0c8ad74a864cf845d35bd24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1204}
+  - name: Gunslinger Sprite Sheet_Frame_7
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1404
+      width: 192
+      height: 192
+    spriteID: 7b2b553c64bf1ad4ebf859fc002ac9c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1404}
+  - name: Gunslinger Sprite Sheet_Frame_8
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1604
+      width: 192
+      height: 192
+    spriteID: 38d9322dad5b06b4e9522ae2f01a4c0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1604}
+  - name: Gunslinger Sprite Sheet_Frame_9
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1804
+      width: 192
+      height: 192
+    spriteID: 22018614775b22f479c656391fcbfe8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1804}
+  - name: Gunslinger Sprite Sheet_Frame_10
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 4
+      width: 192
+      height: 192
+    spriteID: fffe3d79f129c8d4297eb2d10ff33fd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 4}
+  - name: Gunslinger Sprite Sheet_Frame_11
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 204
+      width: 192
+      height: 192
+    spriteID: ab7fad7e2d6499c4d8843adf3c4eda6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 204}
+  - name: Gunslinger Sprite Sheet_Frame_12
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 404
+      width: 192
+      height: 192
+    spriteID: 8c5400991f4be9644a06d08b66f45eab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 404}
+  - name: Gunslinger Sprite Sheet_Frame_13
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 604
+      width: 192
+      height: 192
+    spriteID: ede7e76a72beb704b90bf4b01ac9b976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 604}
+  - name: Gunslinger Sprite Sheet_Frame_14
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 804
+      width: 192
+      height: 192
+    spriteID: 5e0a56919c122dc499982c19769bc1cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 804}
+  - name: Gunslinger Sprite Sheet_Frame_15
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1004
+      width: 192
+      height: 192
+    spriteID: e2afd8430593c5346a20a6ec1816dff3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1004}
+  - name: Gunslinger Sprite Sheet_Frame_16
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1204
+      width: 192
+      height: 192
+    spriteID: 88754baec277f1a4b964b2d1fe2793c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1204}
+  - name: Gunslinger Sprite Sheet_Frame_17
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1404
+      width: 192
+      height: 192
+    spriteID: 9165901d025a19142a916f9fda7a5dfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1404}
+  - name: Gunslinger Sprite Sheet_Frame_18
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1604
+      width: 192
+      height: 192
+    spriteID: 2080895dfe6eb0d40884277e294e4f14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1604}
+  - name: Gunslinger Sprite Sheet_Frame_19
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 1804
+      width: 192
+      height: 192
+    spriteID: 21d95799d72d96f428f2a49d98d42579
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 1804}
+  - name: Gunslinger Sprite Sheet_Frame_20
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 4
+      width: 192
+      height: 192
+    spriteID: 4243d29974e63d442ab22b01b63583c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 4}
+  - name: Gunslinger Sprite Sheet_Frame_21
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 204
+      width: 192
+      height: 192
+    spriteID: 6bcd6abc3cab0ec42b59264b4f780a32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 204}
+  - name: Gunslinger Sprite Sheet_Frame_22
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 404
+      width: 192
+      height: 192
+    spriteID: 106027635934c814e951f613d5ae06ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 404}
+  - name: Gunslinger Sprite Sheet_Frame_23
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 604
+      width: 192
+      height: 192
+    spriteID: 8ca4079fd1265ee4ab0fb5d2c5ef5671
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 604}
+  - name: Gunslinger Sprite Sheet_Frame_24
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 804
+      width: 192
+      height: 192
+    spriteID: 4fd0ec62c7b49b04db8c985e2f8b79a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 804}
+  - name: Gunslinger Sprite Sheet_Frame_25
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1004
+      width: 192
+      height: 192
+    spriteID: a3c1a997187333e4fbee528fb910d56c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1004}
+  - name: Gunslinger Sprite Sheet_Frame_26
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1204
+      width: 192
+      height: 192
+    spriteID: 6f1d2d1303f19654d82782a85112da0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1204}
+  - name: Gunslinger Sprite Sheet_Frame_27
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1404
+      width: 192
+      height: 192
+    spriteID: 267537f2367b23847aa3a30d7672e5c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1404}
+  - name: Gunslinger Sprite Sheet_Frame_28
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1604
+      width: 192
+      height: 192
+    spriteID: 353b8e272d1474f4cb2c0e3a775c8154
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1604}
+  - name: Gunslinger Sprite Sheet_Frame_29
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 1804
+      width: 192
+      height: 192
+    spriteID: 35eb38b906850c242a07a2511fd335c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 1804}
+  - name: Gunslinger Sprite Sheet_Frame_30
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 4
+      width: 192
+      height: 192
+    spriteID: 096f36b45f9611248b241f76ae1b6e1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 4}
+  - name: Gunslinger Sprite Sheet_Frame_31
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 204
+      width: 192
+      height: 192
+    spriteID: 6b374c40d2f9bcf43b7059e5456ce87b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 204}
+  - name: Gunslinger Sprite Sheet_Frame_32
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 404
+      width: 192
+      height: 192
+    spriteID: c1e8a58830f45864da8102ce8d3cc072
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 404}
+  - name: Gunslinger Sprite Sheet_Frame_33
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 604
+      width: 192
+      height: 192
+    spriteID: f346888e08d3fe644800c982653c0fdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 604}
+  - name: Gunslinger Sprite Sheet_Frame_34
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 804
+      width: 192
+      height: 192
+    spriteID: 3efc8126ced56ae46b190893bbbcc9a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 804}
+  - name: Gunslinger Sprite Sheet_Frame_35
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1004
+      width: 192
+      height: 192
+    spriteID: 6b7cd041bf14f8548ae75dd0759bb006
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1004}
+  - name: Gunslinger Sprite Sheet_Frame_36
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1204
+      width: 192
+      height: 192
+    spriteID: dcf25705969a8f04daf8279917a904e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1204}
+  - name: Gunslinger Sprite Sheet_Frame_37
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1404
+      width: 192
+      height: 192
+    spriteID: c36cfc9d8b5c057439abbc6675535cd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1404}
+  - name: Gunslinger Sprite Sheet_Frame_38
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1604
+      width: 192
+      height: 192
+    spriteID: eda9813a1d3af6e4fb9e606ec493e62b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1604}
+  - name: Gunslinger Sprite Sheet_Frame_39
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 1804
+      width: 192
+      height: 192
+    spriteID: ed17786a75992494aa779680565b1d9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 1804}
+  - name: Gunslinger Sprite Sheet_Frame_40
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 4
+      width: 192
+      height: 192
+    spriteID: 054b7c04e11e4424cae6e39eeeacacd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 4}
+  - name: Gunslinger Sprite Sheet_Frame_41
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 204
+      width: 192
+      height: 192
+    spriteID: 7bc5880496bbc244d8b0ff9c43d3de44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 204}
+  - name: Gunslinger Sprite Sheet_Frame_42
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 404
+      width: 192
+      height: 192
+    spriteID: c2a19babd88225f4996ffe7b434b2856
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 404}
+  - name: Gunslinger Sprite Sheet_Frame_43
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 604
+      width: 192
+      height: 192
+    spriteID: 6e4b313a3fc83714dbc1ed805e153453
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 604}
+  - name: Gunslinger Sprite Sheet_Frame_44
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 804
+      width: 192
+      height: 192
+    spriteID: f19753a48957a0843b302464988c1fba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 804}
+  - name: Gunslinger Sprite Sheet_Frame_45
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 1004
+      width: 192
+      height: 192
+    spriteID: aea0f4b8e6ea9944482e313924281690
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 1004}
+  - name: Gunslinger Sprite Sheet_Frame_46
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 1204
+      width: 192
+      height: 192
+    spriteID: 3f8f72ecc341ff24e9ad94b2b15d84d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 1204}
+  - name: Gunslinger Sprite Sheet_Frame_47
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 1404
+      width: 192
+      height: 192
+    spriteID: 0a7f62743e38b9e4bba338e28114cf33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 1404}
+  - name: Gunslinger Sprite Sheet_Frame_48
+    originalName: 
+    pivot: {x: 0.45833334, y: 0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 1604
+      width: 192
+      height: 192
+    spriteID: 8c894fdccb39cf24fb4a6494e70b1a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 1604}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 270332344
+    name: Gunslinger Sprite Sheet
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Gunslinger Sprite Sheet_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 452ad5aa24831464b8c2864d8c454459
+    - name: Gunslinger Sprite Sheet_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 2c52fe6c02f4d1045b2c8e2d42626e13
+    - name: Gunslinger Sprite Sheet_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 0b6b181da0547574b8fd91ea3ddc33b3
+    - name: Gunslinger Sprite Sheet_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 5f245a1da88c62e4995a6d243d5ba3fc
+    - name: Gunslinger Sprite Sheet_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 4dd269bc10204224e87b563a0c364b2e
+    - name: Gunslinger Sprite Sheet_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 448474a1531f0584dba943f6314ae6c5
+    - name: Gunslinger Sprite Sheet_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: eb6d2721f0c8ad74a864cf845d35bd24
+    - name: Gunslinger Sprite Sheet_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 7b2b553c64bf1ad4ebf859fc002ac9c1
+    - name: Gunslinger Sprite Sheet_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 38d9322dad5b06b4e9522ae2f01a4c0c
+    - name: Gunslinger Sprite Sheet_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 22018614775b22f479c656391fcbfe8d
+    - name: Gunslinger Sprite Sheet_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: fffe3d79f129c8d4297eb2d10ff33fd0
+    - name: Gunslinger Sprite Sheet_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: ab7fad7e2d6499c4d8843adf3c4eda6b
+    - name: Gunslinger Sprite Sheet_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 8c5400991f4be9644a06d08b66f45eab
+    - name: Gunslinger Sprite Sheet_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: ede7e76a72beb704b90bf4b01ac9b976
+    - name: Gunslinger Sprite Sheet_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 5e0a56919c122dc499982c19769bc1cb
+    - name: Gunslinger Sprite Sheet_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: e2afd8430593c5346a20a6ec1816dff3
+    - name: Gunslinger Sprite Sheet_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 88754baec277f1a4b964b2d1fe2793c3
+    - name: Gunslinger Sprite Sheet_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 9165901d025a19142a916f9fda7a5dfe
+    - name: Gunslinger Sprite Sheet_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 2080895dfe6eb0d40884277e294e4f14
+    - name: Gunslinger Sprite Sheet_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 21d95799d72d96f428f2a49d98d42579
+    - name: Gunslinger Sprite Sheet_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 4243d29974e63d442ab22b01b63583c4
+    - name: Gunslinger Sprite Sheet_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 6bcd6abc3cab0ec42b59264b4f780a32
+    - name: Gunslinger Sprite Sheet_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 106027635934c814e951f613d5ae06ce
+    - name: Gunslinger Sprite Sheet_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 8ca4079fd1265ee4ab0fb5d2c5ef5671
+    - name: Gunslinger Sprite Sheet_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 4fd0ec62c7b49b04db8c985e2f8b79a7
+    - name: Gunslinger Sprite Sheet_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: a3c1a997187333e4fbee528fb910d56c
+    - name: Gunslinger Sprite Sheet_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 6f1d2d1303f19654d82782a85112da0f
+    - name: Gunslinger Sprite Sheet_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 267537f2367b23847aa3a30d7672e5c7
+    - name: Gunslinger Sprite Sheet_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 353b8e272d1474f4cb2c0e3a775c8154
+    - name: Gunslinger Sprite Sheet_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 35eb38b906850c242a07a2511fd335c3
+    - name: Gunslinger Sprite Sheet_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 096f36b45f9611248b241f76ae1b6e1f
+    - name: Gunslinger Sprite Sheet_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 6b374c40d2f9bcf43b7059e5456ce87b
+    - name: Gunslinger Sprite Sheet_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: c1e8a58830f45864da8102ce8d3cc072
+    - name: Gunslinger Sprite Sheet_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: f346888e08d3fe644800c982653c0fdd
+    - name: Gunslinger Sprite Sheet_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 3efc8126ced56ae46b190893bbbcc9a4
+    - name: Gunslinger Sprite Sheet_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 6b7cd041bf14f8548ae75dd0759bb006
+    - name: Gunslinger Sprite Sheet_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: dcf25705969a8f04daf8279917a904e5
+    - name: Gunslinger Sprite Sheet_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: c36cfc9d8b5c057439abbc6675535cd4
+    - name: Gunslinger Sprite Sheet_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: eda9813a1d3af6e4fb9e606ec493e62b
+    - name: Gunslinger Sprite Sheet_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: ed17786a75992494aa779680565b1d9c
+    - name: Gunslinger Sprite Sheet_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 054b7c04e11e4424cae6e39eeeacacd0
+    - name: Gunslinger Sprite Sheet_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 7bc5880496bbc244d8b0ff9c43d3de44
+    - name: Gunslinger Sprite Sheet_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: c2a19babd88225f4996ffe7b434b2856
+    - name: Gunslinger Sprite Sheet_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 6e4b313a3fc83714dbc1ed805e153453
+    - name: Gunslinger Sprite Sheet_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: f19753a48957a0843b302464988c1fba
+    - name: Gunslinger Sprite Sheet_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: aea0f4b8e6ea9944482e313924281690
+    - name: Gunslinger Sprite Sheet_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 3f8f72ecc341ff24e9ad94b2b15d84d1
+    - name: Gunslinger Sprite Sheet_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 0a7f62743e38b9e4bba338e28114cf33
+    - name: Gunslinger Sprite Sheet_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: -64
+        y: -72
+        width: 192
+        height: 192
+      spriteId: 8c894fdccb39cf24fb4a6494e70b1a1a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 48}

@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 533c29580965ab34f9e76b7e030b82d0
+    spriteID: 6301196f2a1c4e04184c24d6774f66df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 25a732c2b267b284b83dd0b1f142a27b
+    spriteID: b5b29a24acdb9044ab33016c2969fc1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 3fea67e5aac6ab8499aee0ebce8d22a2
+    spriteID: f049e02d0c1c5bc4cab2f28145c85561
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 56cb7453b717c73468513e34cee7162a
+    spriteID: 71a61c81165dc484098d11962c2a1d77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 70c13c76f9387894481787627dc925eb
+    spriteID: 3b9cdc7b63c46ac47ad1acb458e7d9b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: e0830b11659d9144eb407f65e0d656e2
+    spriteID: 2f4c1538e59019b4890003ef9085b29b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: a93e9c0177952f8499318be212704e72
+    spriteID: fbcf7902e287a5e4b98c2644ecac7930
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 2fac32f0f2b0f624199cd24c83c56756
+    spriteID: 6f7b852b0c435194b84a2c618f6179bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 4a38a4e9c12d9c746abb782b02bd13cb
+    spriteID: bbd5e7e05763814479c33284ddebe336
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 3b3366b57a092734d80c3d073f9b3b7a
+    spriteID: 1adf667382a707542a659f6560852e7d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 736205f1828860c4bbc0ac53abfce84f
+    spriteID: 80ac478947faddf45b78bae399cbb03f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: a07efe2cb75aeaf4385dbecd2f68b014
+    spriteID: e4e4b986a9beb5b45ae2dd68dd7c41c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 5814c7ce6ec1cd84fbdff16433f6d925
+    spriteID: 2c40f62103018d24ab200e89af835981
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 7367aadd23d55094ca479453253e74c0
+    spriteID: 594454609969ebe439acb51f45c4c7f4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 058011740e654fe4cbce1763e05638ce
+    spriteID: 680b49576b9b79948ac466b5900bc4d1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: e2f6180b7adab3b4f97862299dc237b6
+    spriteID: 8351293aaf9f9004aa61fca2853b1d02
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: e36160e27fd97e1449317e661465b275
+    spriteID: 512a78229f16b08428d92245e2a1d1e0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 73af67472cda22b47b4d7ea6f386b451
+    spriteID: 66a54d35bc9404244b832237004af5ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: db8ba57b1089ba3449f8c252c37467e5
+    spriteID: 9b8a89a0ba74c26428e0c79e9a318dfb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 0330bfae3f1fc484b995c57f43bbf146
+    spriteID: a7ecfc6bd4d2cc9478a4ffbeab531865
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 0c142761f679a214ab956def1595c7c9
+    spriteID: 112167b9358579a40bdca11d9cc443aa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: d65a323a47666274198707f0cf2a771c
+    spriteID: 7a1c46a432afc0a4ba37b1c266129dd4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 6056e189bb08b904b82b2b88fb4a8a8b
+    spriteID: c995da16be14f0843ba4de0c80881466
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 2344265d02828ba4495dc54e99b110a6
+    spriteID: 271f31e8c8bec4b4790e01d366e3a798
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: e09ecd1a5ea056c44bdffbd4862f8146
+    spriteID: ef3d06debe20b83499a4e026df98d5b9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 091de37ebfcc24246952ee9dc9035f40
+    spriteID: 5aa6be34f97ce024a85d01460813e8d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: 1ef89287aa287514d84f793e3c70392c
+    spriteID: e6967db58a3f56f41955805693e95d52
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: fe20256f57402724ab183629737d9362
+    spriteID: ce9b3757e61a7c847a7307875b48df77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 8bd58461c87bb844795bd8e7476400db
+    spriteID: a18a55e72f94cea4497a9d15c05b8fdc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 45053d918c63c4541abd0bac6e44387b
+    spriteID: 77ceeb14146b87a4f9373ca25d87b080
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: f006e7c3922a9f64b811b8fe38c03d24
+    spriteID: 207be157a6e3bae40a4ceca98bda4b71
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 39055dc0106a7e14da2606ff3ebb7e16
+    spriteID: 0bb435c122781fb43a8761fbab2d1adf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 03a6df2ae4c1dfd4aa16539a635fb655
+    spriteID: 8bb3895eb4bc4c344ac35f25a2d49e87
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 819879a9950630e4ea5e8b1860689b4e
+    spriteID: 97b5a00a8fe8c7d4c860706de19dbe9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 918f9d9ea5921614da787bd112addc8b
+    spriteID: 4f8a7f5959526604394a3df0cedfc75a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: cbe1bd8273c0d1147a5ef2ba78f969c5
+    spriteID: 44b5f73ae8b11dd499c74a404062427e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: a5124c2307f29b945be376586c06cafc
+    spriteID: 620317ccb3f5967428fde40658c4836a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 9c2a49bd85a89794a8812292e23338cf
+    spriteID: a6f08cd79a476dc43af47f5f2c02508a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 7b8dcde066289ae4890300f53bd2ff8f
+    spriteID: 26c0b926b0b0114418bf5b3496e2bec7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 3f5a8da4b646a93429aff567d579d992
+    spriteID: 52c265493edf1f243b05cca8c43c2d14
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +932,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: afeccedea86320a44a9ce8289008e94e
+    spriteID: e22b1ace3c708cc40a19131bcbbe4e85
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +952,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: eb51cf5ae8b93cb4aac1be72f662fd11
+    spriteID: b31d32b535895074d886b8f0fab57a8f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +972,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 25b63741c16755b4998076d2df39a5ed
+    spriteID: 821ff7ec9badaea438b979cb8173b84f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +992,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 8e97a21284653d346823db17c0f16399
+    spriteID: de168b5ec9d8d2946aa80c754ba00d44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1012,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 6b71ed8c8ba690248882e81023606c8c
+    spriteID: 10cf32ce1f6a90e41a03d174b2878f1d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1032,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 1e9711eca2d9fe146879b9b9aa9a8f30
+    spriteID: 12ceb6b8e34a22b49a4de58892a58a2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1052,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: f92b4ff36cf57cb4da0ade906a839631
+    spriteID: c3e0767b07b3d7643b37b2279d72a8dc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1077,7 +1077,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 533c29580965ab34f9e76b7e030b82d0
+      spriteId: 6301196f2a1c4e04184c24d6774f66df
     - name: Bomb droid_Frame_31
       frameIndex: 31
       cellRect:
@@ -1085,7 +1085,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 25a732c2b267b284b83dd0b1f142a27b
+      spriteId: b5b29a24acdb9044ab33016c2969fc1d
     - name: Bomb droid_Frame_32
       frameIndex: 32
       cellRect:
@@ -1093,7 +1093,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3fea67e5aac6ab8499aee0ebce8d22a2
+      spriteId: f049e02d0c1c5bc4cab2f28145c85561
     - name: Bomb droid_Frame_33
       frameIndex: 33
       cellRect:
@@ -1101,7 +1101,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 56cb7453b717c73468513e34cee7162a
+      spriteId: 71a61c81165dc484098d11962c2a1d77
     - name: Bomb droid_Frame_34
       frameIndex: 34
       cellRect:
@@ -1109,7 +1109,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 70c13c76f9387894481787627dc925eb
+      spriteId: 3b9cdc7b63c46ac47ad1acb458e7d9b2
     - name: Bomb droid_Frame_35
       frameIndex: 35
       cellRect:
@@ -1117,7 +1117,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e0830b11659d9144eb407f65e0d656e2
+      spriteId: 2f4c1538e59019b4890003ef9085b29b
     - name: Bomb droid_Frame_36
       frameIndex: 36
       cellRect:
@@ -1125,7 +1125,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: a93e9c0177952f8499318be212704e72
+      spriteId: fbcf7902e287a5e4b98c2644ecac7930
     - name: Bomb droid_Frame_37
       frameIndex: 37
       cellRect:
@@ -1133,7 +1133,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 2fac32f0f2b0f624199cd24c83c56756
+      spriteId: 6f7b852b0c435194b84a2c618f6179bc
     - name: Bomb droid_Frame_38
       frameIndex: 38
       cellRect:
@@ -1141,7 +1141,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 4a38a4e9c12d9c746abb782b02bd13cb
+      spriteId: bbd5e7e05763814479c33284ddebe336
     - name: Bomb droid_Frame_39
       frameIndex: 39
       cellRect:
@@ -1149,7 +1149,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3b3366b57a092734d80c3d073f9b3b7a
+      spriteId: 1adf667382a707542a659f6560852e7d
     - name: Bomb droid_Frame_40
       frameIndex: 40
       cellRect:
@@ -1157,7 +1157,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 736205f1828860c4bbc0ac53abfce84f
+      spriteId: 80ac478947faddf45b78bae399cbb03f
     - name: Bomb droid_Frame_41
       frameIndex: 41
       cellRect:
@@ -1165,7 +1165,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: a07efe2cb75aeaf4385dbecd2f68b014
+      spriteId: e4e4b986a9beb5b45ae2dd68dd7c41c0
     - name: Bomb droid_Frame_42
       frameIndex: 42
       cellRect:
@@ -1173,7 +1173,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 5814c7ce6ec1cd84fbdff16433f6d925
+      spriteId: 2c40f62103018d24ab200e89af835981
     - name: Bomb droid_Frame_43
       frameIndex: 43
       cellRect:
@@ -1181,7 +1181,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 7367aadd23d55094ca479453253e74c0
+      spriteId: 594454609969ebe439acb51f45c4c7f4
     - name: Bomb droid_Frame_44
       frameIndex: 44
       cellRect:
@@ -1189,7 +1189,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 058011740e654fe4cbce1763e05638ce
+      spriteId: 680b49576b9b79948ac466b5900bc4d1
     - name: Bomb droid_Frame_45
       frameIndex: 45
       cellRect:
@@ -1197,7 +1197,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e2f6180b7adab3b4f97862299dc237b6
+      spriteId: 8351293aaf9f9004aa61fca2853b1d02
     - name: Bomb droid_Frame_46
       frameIndex: 46
       cellRect:
@@ -1205,7 +1205,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e36160e27fd97e1449317e661465b275
+      spriteId: 512a78229f16b08428d92245e2a1d1e0
     - name: Bomb droid_Frame_1
       frameIndex: 1
       cellRect:
@@ -1213,7 +1213,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 73af67472cda22b47b4d7ea6f386b451
+      spriteId: 66a54d35bc9404244b832237004af5ad
     - name: Bomb droid_Frame_2
       frameIndex: 2
       cellRect:
@@ -1221,7 +1221,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: db8ba57b1089ba3449f8c252c37467e5
+      spriteId: 9b8a89a0ba74c26428e0c79e9a318dfb
     - name: Bomb droid_Frame_3
       frameIndex: 3
       cellRect:
@@ -1229,7 +1229,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 0330bfae3f1fc484b995c57f43bbf146
+      spriteId: a7ecfc6bd4d2cc9478a4ffbeab531865
     - name: Bomb droid_Frame_4
       frameIndex: 4
       cellRect:
@@ -1237,7 +1237,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 0c142761f679a214ab956def1595c7c9
+      spriteId: 112167b9358579a40bdca11d9cc443aa
     - name: Bomb droid_Frame_5
       frameIndex: 5
       cellRect:
@@ -1245,7 +1245,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d65a323a47666274198707f0cf2a771c
+      spriteId: 7a1c46a432afc0a4ba37b1c266129dd4
     - name: Bomb droid_Frame_6
       frameIndex: 6
       cellRect:
@@ -1253,7 +1253,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 6056e189bb08b904b82b2b88fb4a8a8b
+      spriteId: c995da16be14f0843ba4de0c80881466
     - name: Bomb droid_Frame_7
       frameIndex: 7
       cellRect:
@@ -1261,7 +1261,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 2344265d02828ba4495dc54e99b110a6
+      spriteId: 271f31e8c8bec4b4790e01d366e3a798
     - name: Bomb droid_Frame_8
       frameIndex: 8
       cellRect:
@@ -1269,7 +1269,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e09ecd1a5ea056c44bdffbd4862f8146
+      spriteId: ef3d06debe20b83499a4e026df98d5b9
     - name: Bomb droid_Frame_9
       frameIndex: 9
       cellRect:
@@ -1277,7 +1277,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 091de37ebfcc24246952ee9dc9035f40
+      spriteId: 5aa6be34f97ce024a85d01460813e8d5
     - name: Bomb droid_Frame_10
       frameIndex: 10
       cellRect:
@@ -1285,7 +1285,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 1ef89287aa287514d84f793e3c70392c
+      spriteId: e6967db58a3f56f41955805693e95d52
     - name: Bomb droid_Frame_11
       frameIndex: 11
       cellRect:
@@ -1293,7 +1293,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: fe20256f57402724ab183629737d9362
+      spriteId: ce9b3757e61a7c847a7307875b48df77
     - name: Bomb droid_Frame_12
       frameIndex: 12
       cellRect:
@@ -1301,7 +1301,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 8bd58461c87bb844795bd8e7476400db
+      spriteId: a18a55e72f94cea4497a9d15c05b8fdc
     - name: Bomb droid_Frame_13
       frameIndex: 13
       cellRect:
@@ -1309,7 +1309,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 45053d918c63c4541abd0bac6e44387b
+      spriteId: 77ceeb14146b87a4f9373ca25d87b080
     - name: Bomb droid_Frame_14
       frameIndex: 14
       cellRect:
@@ -1317,7 +1317,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f006e7c3922a9f64b811b8fe38c03d24
+      spriteId: 207be157a6e3bae40a4ceca98bda4b71
     - name: Bomb droid_Frame_15
       frameIndex: 15
       cellRect:
@@ -1325,7 +1325,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 39055dc0106a7e14da2606ff3ebb7e16
+      spriteId: 0bb435c122781fb43a8761fbab2d1adf
     - name: Bomb droid_Frame_16
       frameIndex: 16
       cellRect:
@@ -1333,7 +1333,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 03a6df2ae4c1dfd4aa16539a635fb655
+      spriteId: 8bb3895eb4bc4c344ac35f25a2d49e87
     - name: Bomb droid_Frame_17
       frameIndex: 17
       cellRect:
@@ -1341,7 +1341,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 819879a9950630e4ea5e8b1860689b4e
+      spriteId: 97b5a00a8fe8c7d4c860706de19dbe9d
     - name: Bomb droid_Frame_18
       frameIndex: 18
       cellRect:
@@ -1349,7 +1349,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 918f9d9ea5921614da787bd112addc8b
+      spriteId: 4f8a7f5959526604394a3df0cedfc75a
     - name: Bomb droid_Frame_19
       frameIndex: 19
       cellRect:
@@ -1357,7 +1357,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: cbe1bd8273c0d1147a5ef2ba78f969c5
+      spriteId: 44b5f73ae8b11dd499c74a404062427e
     - name: Bomb droid_Frame_20
       frameIndex: 20
       cellRect:
@@ -1365,7 +1365,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: a5124c2307f29b945be376586c06cafc
+      spriteId: 620317ccb3f5967428fde40658c4836a
     - name: Bomb droid_Frame_21
       frameIndex: 21
       cellRect:
@@ -1373,7 +1373,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9c2a49bd85a89794a8812292e23338cf
+      spriteId: a6f08cd79a476dc43af47f5f2c02508a
     - name: Bomb droid_Frame_22
       frameIndex: 22
       cellRect:
@@ -1381,7 +1381,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 7b8dcde066289ae4890300f53bd2ff8f
+      spriteId: 26c0b926b0b0114418bf5b3496e2bec7
     - name: Bomb droid_Frame_23
       frameIndex: 23
       cellRect:
@@ -1389,7 +1389,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3f5a8da4b646a93429aff567d579d992
+      spriteId: 52c265493edf1f243b05cca8c43c2d14
     - name: Bomb droid_Frame_24
       frameIndex: 24
       cellRect:
@@ -1397,7 +1397,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: afeccedea86320a44a9ce8289008e94e
+      spriteId: e22b1ace3c708cc40a19131bcbbe4e85
     - name: Bomb droid_Frame_25
       frameIndex: 25
       cellRect:
@@ -1405,7 +1405,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: eb51cf5ae8b93cb4aac1be72f662fd11
+      spriteId: b31d32b535895074d886b8f0fab57a8f
     - name: Bomb droid_Frame_26
       frameIndex: 26
       cellRect:
@@ -1413,7 +1413,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 25b63741c16755b4998076d2df39a5ed
+      spriteId: 821ff7ec9badaea438b979cb8173b84f
     - name: Bomb droid_Frame_27
       frameIndex: 27
       cellRect:
@@ -1421,7 +1421,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 8e97a21284653d346823db17c0f16399
+      spriteId: de168b5ec9d8d2946aa80c754ba00d44
     - name: Bomb droid_Frame_28
       frameIndex: 28
       cellRect:
@@ -1429,7 +1429,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 6b71ed8c8ba690248882e81023606c8c
+      spriteId: 10cf32ce1f6a90e41a03d174b2878f1d
     - name: Bomb droid_Frame_29
       frameIndex: 29
       cellRect:
@@ -1437,7 +1437,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 1e9711eca2d9fe146879b9b9aa9a8f30
+      spriteId: 12ceb6b8e34a22b49a4de58892a58a2b
     - name: Bomb droid_Frame_30
       frameIndex: 30
       cellRect:
@@ -1445,7 +1445,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f92b4ff36cf57cb4da0ade906a839631
+      spriteId: c3e0767b07b3d7643b37b2279d72a8dc
     linkedCells: []
     parentIndex: -1
   platformSettings: []

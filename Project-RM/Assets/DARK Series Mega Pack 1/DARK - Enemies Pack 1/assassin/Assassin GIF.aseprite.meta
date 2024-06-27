@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 423dcc2eab3cadc4c981c737ee8aef1c
+    spriteID: 46123bcefd598f848a0f5c79ee33971b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: c3b16441ae75e6d4b9dabaaea30a27be
+    spriteID: c42ed61c5c2473544a45e460b52e0b76
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 7e6a967b07a2e1c4b8b8b2f26cf9540b
+    spriteID: 4e3c5125ca64fa9408b310d1b7720ed1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: d95d78c5057351e49a16d24e49cd1f2e
+    spriteID: 4ef7ff8ffa09e8f4cb05461b43d1601e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 18015314e192247478e7efca7f4c6112
+    spriteID: 25292ef5d8da1794488dbf98d2583e6b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 126e9568bc1268840979265f33506d7b
+    spriteID: 92b0d807709ef734e85d069f287f9458
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: cbe9eb757d6cdb94ea651b544d71c9c5
+    spriteID: ec901fcd22b36954abc5e2aa1e07b89a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 55fe81eb3c145604bbf3c0229e7847e4
+    spriteID: 5bf4ea80c32e62d46b51341e9df9727c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: f1046ad592bc96647af036d2b5852318
+    spriteID: 51b6bf990262b1d49904d7d7d2e990e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 317ec8cbb69aca74db3165d88a5f6bb8
+    spriteID: 6e802ebb638221a4f9868157fbc583ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 976d9084aacc87d409424617bf01a790
+    spriteID: aaaef85bd0d4dea45916c5a906b7fa15
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 060c555fd106d254da6e012e1203d73a
+    spriteID: dcb1e3c99e9a3704186fd1d1cd42d967
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: bba79811a433a494eaffc8065e6e5ba1
+    spriteID: 40daa7ab173e71745bd9a051521f3af3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 4d4ef25bad98056468ded2c4eb25e9e0
+    spriteID: 7d71e4174212fa249af60928c6168316
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 401d925430b797346b1f60e0b5f8c58f
+    spriteID: 7df0d8f5a3b81814a9d8dfd043fdae7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: ff1b382599d58ec4da293c5f25ecccde
+    spriteID: b96c9c8c7afa99946aff8093604116d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 9d94dfa2a5b0d524392382ff6d97358a
+    spriteID: c6c3c537ba747cb4096469892735f98f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 91ee660934b649047a3313fe5febbf9a
+    spriteID: ca6b049b003a77448a578a1cb4e02058
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: e07924e5231620d4a9a61e8dc93e9efe
+    spriteID: 42584ee0815cc04459b732ebcdb65f55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 45589f1372f000145937870a463ce0a6
+    spriteID: b385b425ecd4f254db13fcefbe6866c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 31a7756983fb4df4d8cfb7a9e6429142
+    spriteID: 52e63dfad7c5eac42853cf340e9b75bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: c92dd4a8dc141c94da0f8d56a66eb274
+    spriteID: f875ed7a9e5f4514e992f0a8d9b0264f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 2c0756df08fb92f429990ea646f76cb8
+    spriteID: 26f9177d9dd17614ead96539df5de2ba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: a4ff0f77de5c893418c7dfff8dcfc2eb
+    spriteID: b192c833423258646bb8077192d5e765
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -617,7 +617,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 423dcc2eab3cadc4c981c737ee8aef1c
+      spriteId: 46123bcefd598f848a0f5c79ee33971b
     - name: Assassin GIF_Frame_1
       frameIndex: 1
       cellRect:
@@ -625,7 +625,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: c3b16441ae75e6d4b9dabaaea30a27be
+      spriteId: c42ed61c5c2473544a45e460b52e0b76
     - name: Assassin GIF_Frame_2
       frameIndex: 2
       cellRect:
@@ -633,7 +633,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 7e6a967b07a2e1c4b8b8b2f26cf9540b
+      spriteId: 4e3c5125ca64fa9408b310d1b7720ed1
     - name: Assassin GIF_Frame_3
       frameIndex: 3
       cellRect:
@@ -641,7 +641,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d95d78c5057351e49a16d24e49cd1f2e
+      spriteId: 4ef7ff8ffa09e8f4cb05461b43d1601e
     - name: Assassin GIF_Frame_4
       frameIndex: 4
       cellRect:
@@ -649,7 +649,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 18015314e192247478e7efca7f4c6112
+      spriteId: 25292ef5d8da1794488dbf98d2583e6b
     - name: Assassin GIF_Frame_5
       frameIndex: 5
       cellRect:
@@ -657,7 +657,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 126e9568bc1268840979265f33506d7b
+      spriteId: 92b0d807709ef734e85d069f287f9458
     - name: Assassin GIF_Frame_6
       frameIndex: 6
       cellRect:
@@ -665,7 +665,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: cbe9eb757d6cdb94ea651b544d71c9c5
+      spriteId: ec901fcd22b36954abc5e2aa1e07b89a
     - name: Assassin GIF_Frame_7
       frameIndex: 7
       cellRect:
@@ -673,7 +673,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 55fe81eb3c145604bbf3c0229e7847e4
+      spriteId: 5bf4ea80c32e62d46b51341e9df9727c
     - name: Assassin GIF_Frame_8
       frameIndex: 8
       cellRect:
@@ -681,7 +681,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f1046ad592bc96647af036d2b5852318
+      spriteId: 51b6bf990262b1d49904d7d7d2e990e3
     - name: Assassin GIF_Frame_9
       frameIndex: 9
       cellRect:
@@ -689,7 +689,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 317ec8cbb69aca74db3165d88a5f6bb8
+      spriteId: 6e802ebb638221a4f9868157fbc583ce
     - name: Assassin GIF_Frame_10
       frameIndex: 10
       cellRect:
@@ -697,7 +697,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 976d9084aacc87d409424617bf01a790
+      spriteId: aaaef85bd0d4dea45916c5a906b7fa15
     - name: Assassin GIF_Frame_11
       frameIndex: 11
       cellRect:
@@ -705,7 +705,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 060c555fd106d254da6e012e1203d73a
+      spriteId: dcb1e3c99e9a3704186fd1d1cd42d967
     - name: Assassin GIF_Frame_12
       frameIndex: 12
       cellRect:
@@ -713,7 +713,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: bba79811a433a494eaffc8065e6e5ba1
+      spriteId: 40daa7ab173e71745bd9a051521f3af3
     - name: Assassin GIF_Frame_13
       frameIndex: 13
       cellRect:
@@ -721,7 +721,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 4d4ef25bad98056468ded2c4eb25e9e0
+      spriteId: 7d71e4174212fa249af60928c6168316
     - name: Assassin GIF_Frame_14
       frameIndex: 14
       cellRect:
@@ -729,7 +729,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 401d925430b797346b1f60e0b5f8c58f
+      spriteId: 7df0d8f5a3b81814a9d8dfd043fdae7c
     - name: Assassin GIF_Frame_15
       frameIndex: 15
       cellRect:
@@ -737,7 +737,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: ff1b382599d58ec4da293c5f25ecccde
+      spriteId: b96c9c8c7afa99946aff8093604116d5
     - name: Assassin GIF_Frame_16
       frameIndex: 16
       cellRect:
@@ -745,7 +745,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9d94dfa2a5b0d524392382ff6d97358a
+      spriteId: c6c3c537ba747cb4096469892735f98f
     - name: Assassin GIF_Frame_17
       frameIndex: 17
       cellRect:
@@ -753,7 +753,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 91ee660934b649047a3313fe5febbf9a
+      spriteId: ca6b049b003a77448a578a1cb4e02058
     - name: Assassin GIF_Frame_18
       frameIndex: 18
       cellRect:
@@ -761,7 +761,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e07924e5231620d4a9a61e8dc93e9efe
+      spriteId: 42584ee0815cc04459b732ebcdb65f55
     - name: Assassin GIF_Frame_19
       frameIndex: 19
       cellRect:
@@ -769,7 +769,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 45589f1372f000145937870a463ce0a6
+      spriteId: b385b425ecd4f254db13fcefbe6866c7
     - name: Assassin GIF_Frame_20
       frameIndex: 20
       cellRect:
@@ -777,7 +777,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 31a7756983fb4df4d8cfb7a9e6429142
+      spriteId: 52e63dfad7c5eac42853cf340e9b75bc
     - name: Assassin GIF_Frame_21
       frameIndex: 21
       cellRect:
@@ -785,7 +785,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: c92dd4a8dc141c94da0f8d56a66eb274
+      spriteId: f875ed7a9e5f4514e992f0a8d9b0264f
     - name: Assassin GIF_Frame_22
       frameIndex: 22
       cellRect:
@@ -793,7 +793,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 2c0756df08fb92f429990ea646f76cb8
+      spriteId: 26f9177d9dd17614ead96539df5de2ba
     - name: Assassin GIF_Frame_23
       frameIndex: 23
       cellRect:
@@ -801,7 +801,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: a4ff0f77de5c893418c7dfff8dcfc2eb
+      spriteId: b192c833423258646bb8077192d5e765
     linkedCells: []
     parentIndex: -1
   platformSettings: []

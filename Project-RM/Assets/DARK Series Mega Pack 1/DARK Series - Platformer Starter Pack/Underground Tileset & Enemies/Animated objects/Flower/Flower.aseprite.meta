@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 32
-    spriteID: ad4b98a407ed33c4bb311b33db4d1331
+    spriteID: 1113369b085bd57449a72a634f836559
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 44
       width: 32
       height: 32
-    spriteID: e4ac47c4956cd1b43be52ad18138228b
+    spriteID: c77cf58bc7043ac49b1302053be8b4ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 84
       width: 32
       height: 32
-    spriteID: 3380648e2f1c21a409a93e64f332c1cd
+    spriteID: b785bf3c2692c8f4d914da3f00dadba3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 32
-    spriteID: 15bd94e9fad2f3547bb9ee279cdeae73
+    spriteID: 42ac28cfc610a424f94ca256b14cd0ba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 44
       width: 32
       height: 32
-    spriteID: e6603454ededa9544975ba2a43cce8b0
+    spriteID: e9ee08bd7f8df7444b4f5da113b2f584
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 84
       width: 32
       height: 32
-    spriteID: 57416066058933540ba85d3744dd1eef
+    spriteID: 056660c87bdeeff40907e37d1ac1ff99
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -257,7 +257,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: ad4b98a407ed33c4bb311b33db4d1331
+      spriteId: 1113369b085bd57449a72a634f836559
     - name: Flower_Frame_1
       frameIndex: 1
       cellRect:
@@ -265,7 +265,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: e4ac47c4956cd1b43be52ad18138228b
+      spriteId: c77cf58bc7043ac49b1302053be8b4ad
     - name: Flower_Frame_2
       frameIndex: 2
       cellRect:
@@ -273,7 +273,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: 3380648e2f1c21a409a93e64f332c1cd
+      spriteId: b785bf3c2692c8f4d914da3f00dadba3
     - name: Flower_Frame_3
       frameIndex: 3
       cellRect:
@@ -281,7 +281,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: 15bd94e9fad2f3547bb9ee279cdeae73
+      spriteId: 42ac28cfc610a424f94ca256b14cd0ba
     - name: Flower_Frame_4
       frameIndex: 4
       cellRect:
@@ -289,7 +289,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: e6603454ededa9544975ba2a43cce8b0
+      spriteId: e9ee08bd7f8df7444b4f5da113b2f584
     - name: Flower_Frame_5
       frameIndex: 5
       cellRect:
@@ -297,7 +297,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: 57416066058933540ba85d3744dd1eef
+      spriteId: 056660c87bdeeff40907e37d1ac1ff99
     linkedCells: []
     parentIndex: -1
   platformSettings: []

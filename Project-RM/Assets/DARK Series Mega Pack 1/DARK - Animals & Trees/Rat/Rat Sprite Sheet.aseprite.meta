@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 97
       width: 16
       height: 6
-    spriteID: 8d32a4a0236f8a64784f8d8977c99b93
+    spriteID: 72a4a6be44e26d74ca45a2f29120d4cb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 53
       width: 16
       height: 7
-    spriteID: eaaa023fdba475945b7ca7596c725978
+    spriteID: e6264007cd0f76c4d886e651dd56ed30
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 37
       width: 16
       height: 8
-    spriteID: 04b316c78d87a70449dce6e80c3fe323
+    spriteID: 8e735dde2ef6ebf48b425650515cc40e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 111
       width: 16
       height: 6
-    spriteID: 47462162d21603b4a80ce798c17d2f1d
+    spriteID: b44ae76a29f5f0f4ab285e20b5370ebe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 57
       width: 15
       height: 6
-    spriteID: c346623c172bdac4c99a486236e32c7e
+    spriteID: 40d295e8fb3d2d24d8708869008dd05b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 71
       width: 15
       height: 6
-    spriteID: 09fbdbd1098f0d34d92743eedec0e0be
+    spriteID: f7b03ce7bfb0fb048a8192aa661b542e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 68
       width: 16
       height: 7
-    spriteID: f51af7f43f323f84ea8e65c1a7dd1c25
+    spriteID: ca20cb48e9a12a840888628769d50644
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 21
       width: 17
       height: 8
-    spriteID: 73a970b5b75727f46917884e5b8f2764
+    spriteID: 9020e5e42a1737e4b97b237811d1622b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 4
       width: 18
       height: 9
-    spriteID: b13f7d11ddf6d544e9cd918dd2365c67
+    spriteID: b07560d4a65b8334ea04a3e60ffb7ccd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 4
       width: 20
       height: 8
-    spriteID: 4e7ad13cc327be14593bbbdcf04ee97c
+    spriteID: 08849bc240572c345810c83749951629
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 83
       width: 18
       height: 6
-    spriteID: f527e25de01dc6344bd76dfabab67f39
+    spriteID: a814a16ce54ac0c41b6a94ed44ef3e44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 85
       width: 19
       height: 4
-    spriteID: 134ccd264d67cb745848b17b18945bda
+    spriteID: dbe1c35b0b014234ca913765b4966619
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 20
       width: 21
       height: 5
-    spriteID: 8d62e1116d27f0e4b971ab9d3cea05ec
+    spriteID: 2793bd9e411125d43bd8d84170873c5d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 45
       width: 23
       height: 4
-    spriteID: 2383b5f630e85a74bb415fe09d2d65b1
+    spriteID: fa3b77672a91fb341a7f2aa8e70825a1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 33
       width: 24
       height: 4
-    spriteID: 92f0e8408a330494091e26a09bcbebe9
+    spriteID: 2d051c4b0615da34db155f54884280b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -437,7 +437,7 @@ ScriptedImporter:
         y: -1
         width: 16
         height: 6
-      spriteId: 8d32a4a0236f8a64784f8d8977c99b93
+      spriteId: 72a4a6be44e26d74ca45a2f29120d4cb
     - name: Rat Sprite Sheet_Frame_1
       frameIndex: 1
       cellRect:
@@ -445,7 +445,7 @@ ScriptedImporter:
         y: -1
         width: 16
         height: 7
-      spriteId: eaaa023fdba475945b7ca7596c725978
+      spriteId: e6264007cd0f76c4d886e651dd56ed30
     - name: Rat Sprite Sheet_Frame_2
       frameIndex: 2
       cellRect:
@@ -453,7 +453,7 @@ ScriptedImporter:
         y: -1
         width: 16
         height: 8
-      spriteId: 04b316c78d87a70449dce6e80c3fe323
+      spriteId: 8e735dde2ef6ebf48b425650515cc40e
     - name: Rat Sprite Sheet_Frame_3
       frameIndex: 3
       cellRect:
@@ -461,7 +461,7 @@ ScriptedImporter:
         y: 0
         width: 16
         height: 6
-      spriteId: 47462162d21603b4a80ce798c17d2f1d
+      spriteId: b44ae76a29f5f0f4ab285e20b5370ebe
     - name: Rat Sprite Sheet_Frame_4
       frameIndex: 4
       cellRect:
@@ -469,7 +469,7 @@ ScriptedImporter:
         y: 0
         width: 15
         height: 6
-      spriteId: c346623c172bdac4c99a486236e32c7e
+      spriteId: 40d295e8fb3d2d24d8708869008dd05b
     - name: Rat Sprite Sheet_Frame_5
       frameIndex: 5
       cellRect:
@@ -477,7 +477,7 @@ ScriptedImporter:
         y: 0
         width: 15
         height: 6
-      spriteId: 09fbdbd1098f0d34d92743eedec0e0be
+      spriteId: f7b03ce7bfb0fb048a8192aa661b542e
     - name: Rat Sprite Sheet_Frame_6
       frameIndex: 6
       cellRect:
@@ -485,7 +485,7 @@ ScriptedImporter:
         y: -1
         width: 16
         height: 7
-      spriteId: f51af7f43f323f84ea8e65c1a7dd1c25
+      spriteId: ca20cb48e9a12a840888628769d50644
     - name: Rat Sprite Sheet_Frame_7
       frameIndex: 7
       cellRect:
@@ -493,7 +493,7 @@ ScriptedImporter:
         y: -1
         width: 17
         height: 8
-      spriteId: 73a970b5b75727f46917884e5b8f2764
+      spriteId: 9020e5e42a1737e4b97b237811d1622b
     - name: Rat Sprite Sheet_Frame_8
       frameIndex: 8
       cellRect:
@@ -501,7 +501,7 @@ ScriptedImporter:
         y: -1
         width: 18
         height: 9
-      spriteId: b13f7d11ddf6d544e9cd918dd2365c67
+      spriteId: b07560d4a65b8334ea04a3e60ffb7ccd
     - name: Rat Sprite Sheet_Frame_9
       frameIndex: 9
       cellRect:
@@ -509,7 +509,7 @@ ScriptedImporter:
         y: -1
         width: 20
         height: 8
-      spriteId: 4e7ad13cc327be14593bbbdcf04ee97c
+      spriteId: 08849bc240572c345810c83749951629
     - name: Rat Sprite Sheet_Frame_10
       frameIndex: 10
       cellRect:
@@ -517,7 +517,7 @@ ScriptedImporter:
         y: -1
         width: 18
         height: 6
-      spriteId: f527e25de01dc6344bd76dfabab67f39
+      spriteId: a814a16ce54ac0c41b6a94ed44ef3e44
     - name: Rat Sprite Sheet_Frame_11
       frameIndex: 11
       cellRect:
@@ -525,7 +525,7 @@ ScriptedImporter:
         y: -1
         width: 19
         height: 4
-      spriteId: 134ccd264d67cb745848b17b18945bda
+      spriteId: dbe1c35b0b014234ca913765b4966619
     - name: Rat Sprite Sheet_Frame_12
       frameIndex: 12
       cellRect:
@@ -533,7 +533,7 @@ ScriptedImporter:
         y: -1
         width: 21
         height: 5
-      spriteId: 8d62e1116d27f0e4b971ab9d3cea05ec
+      spriteId: 2793bd9e411125d43bd8d84170873c5d
     - name: Rat Sprite Sheet_Frame_13
       frameIndex: 13
       cellRect:
@@ -541,7 +541,7 @@ ScriptedImporter:
         y: -1
         width: 23
         height: 4
-      spriteId: 2383b5f630e85a74bb415fe09d2d65b1
+      spriteId: fa3b77672a91fb341a7f2aa8e70825a1
     - name: Rat Sprite Sheet_Frame_14
       frameIndex: 14
       cellRect:
@@ -549,7 +549,7 @@ ScriptedImporter:
         y: -1
         width: 24
         height: 4
-      spriteId: 92f0e8408a330494091e26a09bcbebe9
+      spriteId: 2d051c4b0615da34db155f54884280b6
     linkedCells: []
     parentIndex: -1
   platformSettings: []

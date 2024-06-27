@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 236
       width: 684
       height: 224
-    spriteID: d93851a0877bf1d4190ce12e7f5f9d7f
+    spriteID: 40067f8992c5df24ebae1e3f3b1d9ec7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 685
       height: 224
-    spriteID: 802d7ed06bb5351459b274c84c288d9d
+    spriteID: 7ff885f59bcc96540a625349a1866f9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -177,7 +177,7 @@ ScriptedImporter:
         y: 0
         width: 684
         height: 224
-      spriteId: d93851a0877bf1d4190ce12e7f5f9d7f
+      spriteId: 40067f8992c5df24ebae1e3f3b1d9ec7
     - name: Foreground_Frame_1
       frameIndex: 1
       cellRect:
@@ -185,7 +185,7 @@ ScriptedImporter:
         y: 0
         width: 685
         height: 224
-      spriteId: 802d7ed06bb5351459b274c84c288d9d
+      spriteId: 7ff885f59bcc96540a625349a1866f9d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 492
       width: 126
       height: 115
-    spriteID: 5113b5871270de940b6b650870c4100d
+    spriteID: 411aae46e1a5e1e42880c2b12d6d693f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 615
       width: 126
       height: 115
-    spriteID: e142db3920e884f4a82a6659e45580d2
+    spriteID: d80c8f646b339e14a905082bdcbb0c55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 738
       width: 126
       height: 115
-    spriteID: 4866885f9280c814fb2b21e4e5103759
+    spriteID: 55139e48ed37c3742acb6393bc932fb3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 861
       width: 126
       height: 115
-    spriteID: c27b5899f45f8da47b4c84d309c8b096
+    spriteID: 35574b7bbbeda3c459fa67e5f969494f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 4
       width: 126
       height: 115
-    spriteID: 0775ff78f7365314a9cd5beb737f93a2
+    spriteID: d304410963f6f2c4587194aa0c4b595f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 127
       width: 126
       height: 115
-    spriteID: ad2d30c7821076044a73f21732b1dda7
+    spriteID: b0f0e94ca47455641aabe238604d1d71
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 250
       width: 126
       height: 115
-    spriteID: bea5ae9cee188564dba8c053115a39a1
+    spriteID: 8fbfb6be0ccc3df40b83428a35de63b3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 373
       width: 126
       height: 115
-    spriteID: f01c7e567dd161049a4037c63bb2e45b
+    spriteID: 3e38b5e6fd8657c489b4b36154748d84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 496
       width: 126
       height: 115
-    spriteID: d73a4d4a94cd9ef42801f1d97c34d5fe
+    spriteID: dff2eac6cb5ab7f41a34cf165fcf16b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 619
       width: 126
       height: 115
-    spriteID: fa17625831a4c9d408d1cf6e56183416
+    spriteID: 7cec239b3d45fab4d8c779a2f1b556a3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 742
       width: 126
       height: 115
-    spriteID: a646a9a3213196a42a31d1e8a08fe776
+    spriteID: 26bfe5ecf24d7384db47f10fb4c3bc29
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 865
       width: 126
       height: 115
-    spriteID: 15a784b4398e20e449cd29057c8c9e0f
+    spriteID: a045646ba9943464391433127373a66f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 4
       width: 130
       height: 115
-    spriteID: 13d9a67577f2414408d203e9031aa408
+    spriteID: 20960bf64389eb2479fab132834c2f5b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 127
       width: 130
       height: 115
-    spriteID: 4b9f3c6d1521c7e4c9fcef8394b92662
+    spriteID: cef973c7ed493b24d856ebdfc6ea47f5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 250
       width: 130
       height: 113
-    spriteID: e07198d1cd17fd0429aaa380dcf6d7f4
+    spriteID: 78b5b90ccd57f144d9a305d284761f26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 371
       width: 130
       height: 113
-    spriteID: cd07b9cb8275b45429bbd152926a8efb
+    spriteID: 4143893cce5aead4a800cb35a53be44c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 988
       width: 7
       height: 7
-    spriteID: 07f90c362aa5dbe4989052c9b8d5045d
+    spriteID: ec40c938c4580e24a8f17d2723a03007
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 988
       width: 9
       height: 7
-    spriteID: ad06ef94ce2e4dd429798c502a8131e3
+    spriteID: 3163c4425435f164baebc5e8fd496154
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 988
       width: 11
       height: 8
-    spriteID: dcbf2fe5af5a4e44f844ab2a27e9b191
+    spriteID: c98d9005b97ab084aaef8907d4dade96
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 988
       width: 11
       height: 9
-    spriteID: 200fe10d43a2860428cdd03d96351557
+    spriteID: c3048c3ad1693d74d97068549efc64d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 988
       width: 13
       height: 10
-    spriteID: 66c26cb753078d240897b9867c31dcd8
+    spriteID: d97583e06fd83374487b5e0b4c04c5c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 988
       width: 13
       height: 7
-    spriteID: 4ad75cdcdf2a5934295ac2f57ae1e485
+    spriteID: c27ab8147d7ae6b48a081b878217c6f8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -577,7 +577,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: 5113b5871270de940b6b650870c4100d
+      spriteId: 411aae46e1a5e1e42880c2b12d6d693f
     - name: Crow Sprite Sheet_Frame_1
       frameIndex: 1
       cellRect:
@@ -585,7 +585,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: e142db3920e884f4a82a6659e45580d2
+      spriteId: d80c8f646b339e14a905082bdcbb0c55
     - name: Crow Sprite Sheet_Frame_2
       frameIndex: 2
       cellRect:
@@ -593,7 +593,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: 4866885f9280c814fb2b21e4e5103759
+      spriteId: 55139e48ed37c3742acb6393bc932fb3
     - name: Crow Sprite Sheet_Frame_3
       frameIndex: 3
       cellRect:
@@ -601,7 +601,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: c27b5899f45f8da47b4c84d309c8b096
+      spriteId: 35574b7bbbeda3c459fa67e5f969494f
     - name: Crow Sprite Sheet_Frame_4
       frameIndex: 4
       cellRect:
@@ -609,7 +609,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: 0775ff78f7365314a9cd5beb737f93a2
+      spriteId: d304410963f6f2c4587194aa0c4b595f
     - name: Crow Sprite Sheet_Frame_5
       frameIndex: 5
       cellRect:
@@ -617,7 +617,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: ad2d30c7821076044a73f21732b1dda7
+      spriteId: b0f0e94ca47455641aabe238604d1d71
     - name: Crow Sprite Sheet_Frame_6
       frameIndex: 6
       cellRect:
@@ -625,7 +625,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: bea5ae9cee188564dba8c053115a39a1
+      spriteId: 8fbfb6be0ccc3df40b83428a35de63b3
     - name: Crow Sprite Sheet_Frame_7
       frameIndex: 7
       cellRect:
@@ -633,7 +633,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: f01c7e567dd161049a4037c63bb2e45b
+      spriteId: 3e38b5e6fd8657c489b4b36154748d84
     - name: Crow Sprite Sheet_Frame_8
       frameIndex: 8
       cellRect:
@@ -641,7 +641,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: d73a4d4a94cd9ef42801f1d97c34d5fe
+      spriteId: dff2eac6cb5ab7f41a34cf165fcf16b2
     - name: Crow Sprite Sheet_Frame_9
       frameIndex: 9
       cellRect:
@@ -649,7 +649,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: fa17625831a4c9d408d1cf6e56183416
+      spriteId: 7cec239b3d45fab4d8c779a2f1b556a3
     - name: Crow Sprite Sheet_Frame_10
       frameIndex: 10
       cellRect:
@@ -657,7 +657,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: a646a9a3213196a42a31d1e8a08fe776
+      spriteId: 26bfe5ecf24d7384db47f10fb4c3bc29
     - name: Crow Sprite Sheet_Frame_11
       frameIndex: 11
       cellRect:
@@ -665,7 +665,7 @@ ScriptedImporter:
         y: -94
         width: 126
         height: 115
-      spriteId: 15a784b4398e20e449cd29057c8c9e0f
+      spriteId: a045646ba9943464391433127373a66f
     - name: Crow Sprite Sheet_Frame_12
       frameIndex: 12
       cellRect:
@@ -673,7 +673,7 @@ ScriptedImporter:
         y: -94
         width: 130
         height: 115
-      spriteId: 13d9a67577f2414408d203e9031aa408
+      spriteId: 20960bf64389eb2479fab132834c2f5b
     - name: Crow Sprite Sheet_Frame_13
       frameIndex: 13
       cellRect:
@@ -681,7 +681,7 @@ ScriptedImporter:
         y: -94
         width: 130
         height: 115
-      spriteId: 4b9f3c6d1521c7e4c9fcef8394b92662
+      spriteId: cef973c7ed493b24d856ebdfc6ea47f5
     - name: Crow Sprite Sheet_Frame_14
       frameIndex: 14
       cellRect:
@@ -689,7 +689,7 @@ ScriptedImporter:
         y: -94
         width: 130
         height: 113
-      spriteId: e07198d1cd17fd0429aaa380dcf6d7f4
+      spriteId: 78b5b90ccd57f144d9a305d284761f26
     - name: Crow Sprite Sheet_Frame_15
       frameIndex: 15
       cellRect:
@@ -697,7 +697,7 @@ ScriptedImporter:
         y: -94
         width: 130
         height: 113
-      spriteId: cd07b9cb8275b45429bbd152926a8efb
+      spriteId: 4143893cce5aead4a800cb35a53be44c
     - name: Crow Sprite Sheet_Frame_16
       frameIndex: 16
       cellRect:
@@ -705,7 +705,7 @@ ScriptedImporter:
         y: 12
         width: 7
         height: 7
-      spriteId: 07f90c362aa5dbe4989052c9b8d5045d
+      spriteId: ec40c938c4580e24a8f17d2723a03007
     - name: Crow Sprite Sheet_Frame_17
       frameIndex: 17
       cellRect:
@@ -713,7 +713,7 @@ ScriptedImporter:
         y: 12
         width: 9
         height: 7
-      spriteId: ad06ef94ce2e4dd429798c502a8131e3
+      spriteId: 3163c4425435f164baebc5e8fd496154
     - name: Crow Sprite Sheet_Frame_18
       frameIndex: 18
       cellRect:
@@ -721,7 +721,7 @@ ScriptedImporter:
         y: 12
         width: 11
         height: 8
-      spriteId: dcbf2fe5af5a4e44f844ab2a27e9b191
+      spriteId: c98d9005b97ab084aaef8907d4dade96
     - name: Crow Sprite Sheet_Frame_19
       frameIndex: 19
       cellRect:
@@ -729,7 +729,7 @@ ScriptedImporter:
         y: 11
         width: 11
         height: 9
-      spriteId: 200fe10d43a2860428cdd03d96351557
+      spriteId: c3048c3ad1693d74d97068549efc64d7
     - name: Crow Sprite Sheet_Frame_20
       frameIndex: 20
       cellRect:
@@ -737,7 +737,7 @@ ScriptedImporter:
         y: 10
         width: 13
         height: 10
-      spriteId: 66c26cb753078d240897b9867c31dcd8
+      spriteId: d97583e06fd83374487b5e0b4c04c5c7
     - name: Crow Sprite Sheet_Frame_21
       frameIndex: 21
       cellRect:
@@ -745,7 +745,7 @@ ScriptedImporter:
         y: 12
         width: 13
         height: 7
-      spriteId: 4ad75cdcdf2a5934295ac2f57ae1e485
+      spriteId: c27ab8147d7ae6b48a081b878217c6f8
     linkedCells: []
     parentIndex: -1
   platformSettings: []

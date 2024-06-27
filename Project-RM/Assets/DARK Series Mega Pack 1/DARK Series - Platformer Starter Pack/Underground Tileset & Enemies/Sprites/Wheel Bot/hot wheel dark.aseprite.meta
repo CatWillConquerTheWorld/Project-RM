@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 188
       width: 13
       height: 17
-    spriteID: 2e8b2848817caa844a897b98ba39d3fe
+    spriteID: c4debed5c99597e44a9d945fa413029c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 188
       width: 13
       height: 17
-    spriteID: ed59aef6f54e35946888c9c210ff8826
+    spriteID: 6b6a834c7c7adbc41bd4b3c72ba42054
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 188
       width: 14
       height: 18
-    spriteID: 8b63713a5c19d6148a553ff85c53f3ce
+    spriteID: 213132020e3e2514097a01c460e20240
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 128
       width: 21
       height: 22
-    spriteID: 7143d6bad4a125344a23b9e286409a4b
+    spriteID: ddb31b322c77c784abd4709079132b68
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 128
       width: 20
       height: 22
-    spriteID: 669f9267c8cdd764cb84b7fa512b4c19
+    spriteID: f5664020ea6701141820ced70b266361
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 128
       width: 20
       height: 22
-    spriteID: 7b2a4a1cdef3f57479de75655bc2b04d
+    spriteID: ed9a5cb0055a8df4483e5b84da3ce5d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 128
       width: 20
       height: 22
-    spriteID: 12e6284bebac3d2418379b10b50a7bb8
+    spriteID: b0eda96d140fb204fba7637bc7abacc4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 95
       width: 24
       height: 23
-    spriteID: 534c432164548d44f8616fda32c8279f
+    spriteID: 4c932913dc8632c4c9de9528e0e1a77c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 95
       width: 25
       height: 21
-    spriteID: d49bf5041c496e5409e96d7639ba8e2b
+    spriteID: d71630e9846fc33418795f09ec7163fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 65
       width: 27
       height: 20
-    spriteID: ca13f96f8d1c9254b81bbb72bac410b0
+    spriteID: 1cb702ae1b8f5184ab918211bb4dc9bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 158
       width: 19
       height: 21
-    spriteID: ef773279b9c9d0a498f0ecce824eb1c0
+    spriteID: 9df38f70bbf7fa249b901020c848f31b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 34
       width: 22
       height: 23
-    spriteID: ea0b3ca2718d4384da33eae8941de341
+    spriteID: 0c1b741bdff3a234b80d537b49251c85
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 128
       width: 23
       height: 21
-    spriteID: 7a611db1d6849194589dcf1c0a7780e1
+    spriteID: ceeaff97444b71d449078c2482e57947
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 128
       width: 25
       height: 20
-    spriteID: 37e391f8a3778f440a5bc6909e642a79
+    spriteID: 533f9bca1fcc0cf46adc5a7fba1d4dd5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 4
       width: 17
       height: 21
-    spriteID: e7cac3ce7efe73b4993c31be35ad36c0
+    spriteID: 8f6fc85955a45474888d9592badcfd09
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 95
       width: 23
       height: 22
-    spriteID: f0b653a7ebc5b7240933fec20624d703
+    spriteID: f8c1d074bbe70ce49a0dc867d4be10c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 95
       width: 23
       height: 22
-    spriteID: dca82b66c90d2d24a8b27de0980ca583
+    spriteID: 43146fe5c3f6ce941a32a978a4d8eecb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 95
       width: 23
       height: 22
-    spriteID: 58b5fe6c7b0de2b4f91c0d25d825dddf
+    spriteID: 2fe873ec196661d489a459182f8b4735
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 128
       width: 22
       height: 22
-    spriteID: e7c8b01c607b4934ca28774be75d88a5
+    spriteID: 0f1e7ea736cc6594caa6bb165b607b59
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 4
       width: 34
       height: 22
-    spriteID: d738e2c1bf1b3774892b14dd333c7903
+    spriteID: 76fd7c80637a6df4ebc36447229940f0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 34
       width: 35
       height: 23
-    spriteID: 3ef92dca68c881a49a70187228e64f7e
+    spriteID: b845b1a900581a54882fb551b3986552
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 95
       width: 34
       height: 24
-    spriteID: 36696b5b054ea86468415a184202f962
+    spriteID: e06be47d446b75f4c8513ba7a0a2cea0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 95
       width: 35
       height: 25
-    spriteID: da7212c0d0291054380138df482cf8ef
+    spriteID: e4c1a99782f63554ca5ab0d449745d84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 4
       width: 89
       height: 22
-    spriteID: 126ced8e275570a4796a44b7d3259558
+    spriteID: 30780413cf99eb547ad39ca62f943929
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 4
       width: 84
       height: 22
-    spriteID: a2a694f7241500947b8a09e33997e154
+    spriteID: 688c0f7174d95a54d8f3a3948f31a743
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 34
       width: 83
       height: 23
-    spriteID: e344463ff2b52594ca2a15c6fde40f22
+    spriteID: 082ee790434cbb64e91bf1fe7de3a411
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 34
       width: 83
       height: 22
-    spriteID: a174f8bef80684944a60a79c63dd5614
+    spriteID: 773f6ad937039f24c8944a945e5d5349
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 65
       width: 83
       height: 22
-    spriteID: e6c9e128c87b44643ba66ad7bdca6a43
+    spriteID: 99e3618dc7250fb479b323e03e2ac3be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 128
       width: 23
       height: 22
-    spriteID: b0d7642fe899bf94eb0957cd5a1dfa0e
+    spriteID: 17315360387483545a6a1f38d62557e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 158
       width: 20
       height: 22
-    spriteID: 6735ea0b2eaacdb49b3bb565c3008769
+    spriteID: bd7c06b957cee2b4dbad53fc76637d72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 158
       width: 21
       height: 20
-    spriteID: 36e4a7f48fad8364caa5c481161e357c
+    spriteID: 065232d97fb03b24ab31b1ba3a6b0d2e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 158
       width: 23
       height: 16
-    spriteID: 6e3cb0a55c9a15149a0c427c8f4e4694
+    spriteID: 98531a3bf786f4c428b246ae515604b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 65
       width: 27
       height: 20
-    spriteID: 6b135a5659227234db6d33fa6f25a2b4
+    spriteID: 15635e5751efa8644abbebb11b9e869c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 158
       width: 22
       height: 17
-    spriteID: a3293245385f1c34a8bb74308401c4c1
+    spriteID: 0128edbd80eb3e44a81402310071a66a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 158
       width: 24
       height: 11
-    spriteID: 4208d2b5dd94b184f927ac1a7ee12553
+    spriteID: b8968dc19d833634496275c232624ac0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 158
       width: 24
       height: 11
-    spriteID: 6705d4b3b30a39c448a9f04d0ad7810e
+    spriteID: 1dd5ed65d1361d142b2aa2b4f2aec089
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 158
       width: 24
       height: 11
-    spriteID: acc949b6c242453449f7f31958da4778
+    spriteID: 5a05d7596e6c53648afe55d0782aa780
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 65
       width: 86
       height: 17
-    spriteID: 2bfa70022933672418e6fe5fdc5eb8c4
+    spriteID: 99d33043b9c881440a025f796db10fed
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -897,7 +897,7 @@ ScriptedImporter:
         y: 1
         width: 13
         height: 17
-      spriteId: 2e8b2848817caa844a897b98ba39d3fe
+      spriteId: c4debed5c99597e44a9d945fa413029c
     - name: hot wheel dark_Frame_1
       frameIndex: 1
       cellRect:
@@ -905,7 +905,7 @@ ScriptedImporter:
         y: 1
         width: 13
         height: 17
-      spriteId: ed59aef6f54e35946888c9c210ff8826
+      spriteId: 6b6a834c7c7adbc41bd4b3c72ba42054
     - name: hot wheel dark_Frame_2
       frameIndex: 2
       cellRect:
@@ -913,7 +913,7 @@ ScriptedImporter:
         y: 1
         width: 14
         height: 18
-      spriteId: 8b63713a5c19d6148a553ff85c53f3ce
+      spriteId: 213132020e3e2514097a01c460e20240
     - name: hot wheel dark_Frame_3
       frameIndex: 3
       cellRect:
@@ -921,7 +921,7 @@ ScriptedImporter:
         y: 2
         width: 21
         height: 22
-      spriteId: 7143d6bad4a125344a23b9e286409a4b
+      spriteId: ddb31b322c77c784abd4709079132b68
     - name: hot wheel dark_Frame_4
       frameIndex: 4
       cellRect:
@@ -929,7 +929,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 22
-      spriteId: 669f9267c8cdd764cb84b7fa512b4c19
+      spriteId: f5664020ea6701141820ced70b266361
     - name: hot wheel dark_Frame_5
       frameIndex: 5
       cellRect:
@@ -937,7 +937,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 22
-      spriteId: 7b2a4a1cdef3f57479de75655bc2b04d
+      spriteId: ed9a5cb0055a8df4483e5b84da3ce5d5
     - name: hot wheel dark_Frame_6
       frameIndex: 6
       cellRect:
@@ -945,7 +945,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 22
-      spriteId: 12e6284bebac3d2418379b10b50a7bb8
+      spriteId: b0eda96d140fb204fba7637bc7abacc4
     - name: hot wheel dark_Frame_7
       frameIndex: 7
       cellRect:
@@ -953,7 +953,7 @@ ScriptedImporter:
         y: 1
         width: 24
         height: 23
-      spriteId: 534c432164548d44f8616fda32c8279f
+      spriteId: 4c932913dc8632c4c9de9528e0e1a77c
     - name: hot wheel dark_Frame_8
       frameIndex: 8
       cellRect:
@@ -961,7 +961,7 @@ ScriptedImporter:
         y: 1
         width: 25
         height: 21
-      spriteId: d49bf5041c496e5409e96d7639ba8e2b
+      spriteId: d71630e9846fc33418795f09ec7163fc
     - name: hot wheel dark_Frame_9
       frameIndex: 9
       cellRect:
@@ -969,7 +969,7 @@ ScriptedImporter:
         y: 1
         width: 27
         height: 20
-      spriteId: ca13f96f8d1c9254b81bbb72bac410b0
+      spriteId: 1cb702ae1b8f5184ab918211bb4dc9bc
     - name: hot wheel dark_Frame_10
       frameIndex: 10
       cellRect:
@@ -977,7 +977,7 @@ ScriptedImporter:
         y: 1
         width: 19
         height: 21
-      spriteId: ef773279b9c9d0a498f0ecce824eb1c0
+      spriteId: 9df38f70bbf7fa249b901020c848f31b
     - name: hot wheel dark_Frame_11
       frameIndex: 11
       cellRect:
@@ -985,7 +985,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 23
-      spriteId: ea0b3ca2718d4384da33eae8941de341
+      spriteId: 0c1b741bdff3a234b80d537b49251c85
     - name: hot wheel dark_Frame_12
       frameIndex: 12
       cellRect:
@@ -993,7 +993,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 21
-      spriteId: 7a611db1d6849194589dcf1c0a7780e1
+      spriteId: ceeaff97444b71d449078c2482e57947
     - name: hot wheel dark_Frame_13
       frameIndex: 13
       cellRect:
@@ -1001,7 +1001,7 @@ ScriptedImporter:
         y: 1
         width: 25
         height: 20
-      spriteId: 37e391f8a3778f440a5bc6909e642a79
+      spriteId: 533f9bca1fcc0cf46adc5a7fba1d4dd5
     - name: hot wheel dark_Frame_14
       frameIndex: 14
       cellRect:
@@ -1009,7 +1009,7 @@ ScriptedImporter:
         y: 1
         width: 17
         height: 21
-      spriteId: e7cac3ce7efe73b4993c31be35ad36c0
+      spriteId: 8f6fc85955a45474888d9592badcfd09
     - name: hot wheel dark_Frame_15
       frameIndex: 15
       cellRect:
@@ -1017,7 +1017,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 22
-      spriteId: f0b653a7ebc5b7240933fec20624d703
+      spriteId: f8c1d074bbe70ce49a0dc867d4be10c6
     - name: hot wheel dark_Frame_16
       frameIndex: 16
       cellRect:
@@ -1025,7 +1025,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 22
-      spriteId: dca82b66c90d2d24a8b27de0980ca583
+      spriteId: 43146fe5c3f6ce941a32a978a4d8eecb
     - name: hot wheel dark_Frame_17
       frameIndex: 17
       cellRect:
@@ -1033,7 +1033,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 22
-      spriteId: 58b5fe6c7b0de2b4f91c0d25d825dddf
+      spriteId: 2fe873ec196661d489a459182f8b4735
     - name: hot wheel dark_Frame_18
       frameIndex: 18
       cellRect:
@@ -1041,7 +1041,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 22
-      spriteId: e7c8b01c607b4934ca28774be75d88a5
+      spriteId: 0f1e7ea736cc6594caa6bb165b607b59
     - name: hot wheel dark_Frame_19
       frameIndex: 19
       cellRect:
@@ -1049,7 +1049,7 @@ ScriptedImporter:
         y: 1
         width: 34
         height: 22
-      spriteId: d738e2c1bf1b3774892b14dd333c7903
+      spriteId: 76fd7c80637a6df4ebc36447229940f0
     - name: hot wheel dark_Frame_20
       frameIndex: 20
       cellRect:
@@ -1057,7 +1057,7 @@ ScriptedImporter:
         y: 1
         width: 35
         height: 23
-      spriteId: 3ef92dca68c881a49a70187228e64f7e
+      spriteId: b845b1a900581a54882fb551b3986552
     - name: hot wheel dark_Frame_21
       frameIndex: 21
       cellRect:
@@ -1065,7 +1065,7 @@ ScriptedImporter:
         y: 1
         width: 34
         height: 24
-      spriteId: 36696b5b054ea86468415a184202f962
+      spriteId: e06be47d446b75f4c8513ba7a0a2cea0
     - name: hot wheel dark_Frame_22
       frameIndex: 22
       cellRect:
@@ -1073,7 +1073,7 @@ ScriptedImporter:
         y: 1
         width: 35
         height: 25
-      spriteId: da7212c0d0291054380138df482cf8ef
+      spriteId: e4c1a99782f63554ca5ab0d449745d84
     - name: hot wheel dark_Frame_24
       frameIndex: 24
       cellRect:
@@ -1081,7 +1081,7 @@ ScriptedImporter:
         y: 1
         width: 89
         height: 22
-      spriteId: 126ced8e275570a4796a44b7d3259558
+      spriteId: 30780413cf99eb547ad39ca62f943929
     - name: hot wheel dark_Frame_25
       frameIndex: 25
       cellRect:
@@ -1089,7 +1089,7 @@ ScriptedImporter:
         y: 1
         width: 84
         height: 22
-      spriteId: a2a694f7241500947b8a09e33997e154
+      spriteId: 688c0f7174d95a54d8f3a3948f31a743
     - name: hot wheel dark_Frame_26
       frameIndex: 26
       cellRect:
@@ -1097,7 +1097,7 @@ ScriptedImporter:
         y: 0
         width: 83
         height: 23
-      spriteId: e344463ff2b52594ca2a15c6fde40f22
+      spriteId: 082ee790434cbb64e91bf1fe7de3a411
     - name: hot wheel dark_Frame_27
       frameIndex: 27
       cellRect:
@@ -1105,7 +1105,7 @@ ScriptedImporter:
         y: 1
         width: 83
         height: 22
-      spriteId: a174f8bef80684944a60a79c63dd5614
+      spriteId: 773f6ad937039f24c8944a945e5d5349
     - name: hot wheel dark_Frame_28
       frameIndex: 28
       cellRect:
@@ -1113,7 +1113,7 @@ ScriptedImporter:
         y: 1
         width: 83
         height: 22
-      spriteId: e6c9e128c87b44643ba66ad7bdca6a43
+      spriteId: 99e3618dc7250fb479b323e03e2ac3be
     - name: hot wheel dark_Frame_29
       frameIndex: 29
       cellRect:
@@ -1121,7 +1121,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 22
-      spriteId: b0d7642fe899bf94eb0957cd5a1dfa0e
+      spriteId: 17315360387483545a6a1f38d62557e4
     - name: hot wheel dark_Frame_30
       frameIndex: 30
       cellRect:
@@ -1129,7 +1129,7 @@ ScriptedImporter:
         y: 1
         width: 20
         height: 22
-      spriteId: 6735ea0b2eaacdb49b3bb565c3008769
+      spriteId: bd7c06b957cee2b4dbad53fc76637d72
     - name: hot wheel dark_Frame_31
       frameIndex: 31
       cellRect:
@@ -1137,7 +1137,7 @@ ScriptedImporter:
         y: 1
         width: 21
         height: 20
-      spriteId: 36e4a7f48fad8364caa5c481161e357c
+      spriteId: 065232d97fb03b24ab31b1ba3a6b0d2e
     - name: hot wheel dark_Frame_32
       frameIndex: 32
       cellRect:
@@ -1145,7 +1145,7 @@ ScriptedImporter:
         y: 1
         width: 23
         height: 16
-      spriteId: 6e3cb0a55c9a15149a0c427c8f4e4694
+      spriteId: 98531a3bf786f4c428b246ae515604b7
     - name: hot wheel dark_Frame_33
       frameIndex: 33
       cellRect:
@@ -1153,7 +1153,7 @@ ScriptedImporter:
         y: 1
         width: 27
         height: 20
-      spriteId: 6b135a5659227234db6d33fa6f25a2b4
+      spriteId: 15635e5751efa8644abbebb11b9e869c
     - name: hot wheel dark_Frame_34
       frameIndex: 34
       cellRect:
@@ -1161,7 +1161,7 @@ ScriptedImporter:
         y: 1
         width: 22
         height: 17
-      spriteId: a3293245385f1c34a8bb74308401c4c1
+      spriteId: 0128edbd80eb3e44a81402310071a66a
     - name: hot wheel dark_Frame_35
       frameIndex: 35
       cellRect:
@@ -1169,7 +1169,7 @@ ScriptedImporter:
         y: 1
         width: 24
         height: 11
-      spriteId: 4208d2b5dd94b184f927ac1a7ee12553
+      spriteId: b8968dc19d833634496275c232624ac0
     - name: hot wheel dark_Frame_36
       frameIndex: 36
       cellRect:
@@ -1177,7 +1177,7 @@ ScriptedImporter:
         y: 1
         width: 24
         height: 11
-      spriteId: 6705d4b3b30a39c448a9f04d0ad7810e
+      spriteId: 1dd5ed65d1361d142b2aa2b4f2aec089
     - name: hot wheel dark_Frame_37
       frameIndex: 37
       cellRect:
@@ -1185,7 +1185,7 @@ ScriptedImporter:
         y: 1
         width: 24
         height: 11
-      spriteId: acc949b6c242453449f7f31958da4778
+      spriteId: 5a05d7596e6c53648afe55d0782aa780
     - name: hot wheel dark_Frame_23
       frameIndex: 23
       cellRect:
@@ -1193,7 +1193,7 @@ ScriptedImporter:
         y: 1
         width: 86
         height: 17
-      spriteId: 2bfa70022933672418e6fe5fdc5eb8c4
+      spriteId: 99d33043b9c881440a025f796db10fed
     linkedCells: []
     parentIndex: -1
   platformSettings: []

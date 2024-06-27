@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 196
       width: 226
       height: 48
-    spriteID: 1440955dc7485f94ab6b12131b4fc905
+    spriteID: 43085d58f89be744ba7d2e45e9921598
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 196
       width: 228
       height: 47
-    spriteID: 704a9e3fe23201a429948badbf73a15e
+    spriteID: 47af1707dd7493c46b5cb4655b784a1e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 135
       width: 230
       height: 48
-    spriteID: 223330c50c9eac74b816dee50bd41d4b
+    spriteID: c9e5a1bdf30cf004fa8a1044eca97529
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 135
       width: 232
       height: 49
-    spriteID: 5a4f6cbdde57eaf4d8f0ded1ea005a30
+    spriteID: 35a16aed7cb1e414a897797cc8e6f832
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 135
       width: 234
       height: 49
-    spriteID: df61e8e94e1fbfe409911ffbd350f949
+    spriteID: 8d45d791323f91d44970d82eee871468
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 196
       width: 224
       height: 49
-    spriteID: bf78a94e8728e1448bf8ce70f7d3b4df
+    spriteID: c4b8da7c2c39b544db9a9a51c1a1504d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 253
       width: 235
       height: 36
-    spriteID: fa235afc146224a459fed536a55d6ce8
+    spriteID: d860fa4140dec9549880fc160fd504d8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 253
       width: 236
       height: 37
-    spriteID: 0f9f86da4c5cf064383a2e7e8908339c
+    spriteID: a4400d2cc0eb28848bbd2bec08bfe910
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 253
       width: 236
       height: 39
-    spriteID: 6f9900671692df442bc9584be931eb90
+    spriteID: ec60648c14fbca84cbf4a45fe3b2c092
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 300
       width: 210
       height: 40
-    spriteID: cd107c6dda8cb49469bb35b161c615af
+    spriteID: fe81c8c3afaa6ca4897324f3ac90999c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 69
       width: 208
       height: 45
-    spriteID: b4c525c9078973645a55a710b8307c35
+    spriteID: 2397ea0b68643fa4591eb69cd843311f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 587
       width: 199
       height: 30
-    spriteID: 7232782a558df5c48a5f678d483cc067
+    spriteID: 9d7e2600fe514474099019cf075b1663
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 627
       width: 196
       height: 29
-    spriteID: 6a31b647a6103b54582ab39fb1a1ef35
+    spriteID: 89738b71c60ee1a49b39cf1942bb9342
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 627
       width: 196
       height: 29
-    spriteID: b9859a0c1cb91764d9e91a92fc0a2334
+    spriteID: 272362e9e2b57ef4b8576601f6977598
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 627
       width: 196
       height: 29
-    spriteID: a75a1ea7257bb6245874be1754844b50
+    spriteID: b1ea4790ec47bd0489ce4d43f71b1fe0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 627
       width: 196
       height: 29
-    spriteID: 77fdf761d9707df44a42236342a401ec
+    spriteID: 38964b5a632e30c4d96250deb302804b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 627
       width: 196
       height: 30
-    spriteID: da66dfcd3ddc52e45928fc3e8a233bb8
+    spriteID: 47e254e0976e42745869ed1645ffa04e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 473
       width: 222
       height: 29
-    spriteID: 4a8d51d5e8fc4104ebc5a674cf39859d
+    spriteID: 69261cb54cc7c8c4a93b68e61b95d881
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 473
       width: 222
       height: 29
-    spriteID: 3589cfe1cbb409b4d996e0aeec82cdd0
+    spriteID: ab9076813d064374fab51079539243be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 392
       width: 222
       height: 30
-    spriteID: 65b154c02f3e5f94e9a9ec3c8e07cb17
+    spriteID: cf7fb6c1123876e4c9eec93bc0078809
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 432
       width: 222
       height: 30
-    spriteID: e2266920453085848bbad63b28c87823
+    spriteID: ee7a13be3b0b3554190a28a5b9a6d8ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 511
       width: 222
       height: 29
-    spriteID: 6636d45e8d6df934bbb94f54f2d897a5
+    spriteID: 1acb3f544a9eed845a89d60630c6ed37
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 511
       width: 222
       height: 29
-    spriteID: 1b6cbee184d92ef4cbffc86f5462f47a
+    spriteID: 516abb8d67bb5874b8e1e28969cf9b49
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 511
       width: 222
       height: 29
-    spriteID: 981f5f2b7615e8f48bf793f65a9d3793
+    spriteID: 10278a823b98a6347bfed8576fe3fd9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 550
       width: 222
       height: 29
-    spriteID: 5602e927a3e346e44ad99ef8cf80c520
+    spriteID: 9f24fb984328e404a9729d1c25714b7f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 432
       width: 222
       height: 30
-    spriteID: 2e61246b1700bc346a610a517b8b5500
+    spriteID: bba90111ccf3974418d30e23c37f6344
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 348
       width: 223
       height: 31
-    spriteID: 5a2da752eaa90484a882bbc767561778
+    spriteID: d1afcbd86986ad044b4dfc1ea28c9bcb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 348
       width: 223
       height: 33
-    spriteID: 7d7d103af6204eb49a3e32cff685117a
+    spriteID: 041c5a6bfc1159c4b916fa7f2c5199e5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 300
       width: 231
       height: 35
-    spriteID: 2eca90b38dbf02740ac1c78c1a722db2
+    spriteID: d167cab5fae735a44aadca1ee1433a2e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 253
       width: 233
       height: 38
-    spriteID: f65233794b154d141bb8ebb88b1a0394
+    spriteID: 19878aaed8ab6d243b075395e51c0685
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 392
       width: 224
       height: 30
-    spriteID: 21d4d695180a19c458845d8b32c6752a
+    spriteID: 24b3d7a87ef97514cab701b45c96b27c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 550
       width: 215
       height: 29
-    spriteID: 0e798c01aef0e4e47bb1366f75915b67
+    spriteID: f112584a06d05514ab6e6039a3cf01be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 550
       width: 212
       height: 29
-    spriteID: 20a931bfdedd5ef4d81a148edb5a847d
+    spriteID: c5b460671a661ee4b8da6a655cbf157f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 587
       width: 194
       height: 32
-    spriteID: 8336e6f3466906a43921a7c67c9b319e
+    spriteID: adb79d716eeccb84bb293a675dda2809
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 348
       width: 205
       height: 36
-    spriteID: db0f2b064e0bf1241a883f8e3fcd6bc2
+    spriteID: 59fb2fa009c54c5459a1685a2c3531ca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 300
       width: 210
       height: 38
-    spriteID: b1668597c2f14594f88d3de1d782287f
+    spriteID: fb1f683ef2dd71640862e15e17cdcd33
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 300
       width: 224
       height: 40
-    spriteID: 8ab353df101728b4281d61597e0bbaa8
+    spriteID: a85bee4a8453719479d16bd9c8f0ae76
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 196
       width: 238
       height: 41
-    spriteID: b932de33de6ebdd4289bb8621bdeb5fa
+    spriteID: 245b472f1103a3f44abbbe7ad4f68db0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 4
       width: 273
       height: 57
-    spriteID: 0d44ec4c990ffc24b8ad9731397b9a09
+    spriteID: 3921ef0e97cc95f4083b67dec5acb04e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 4
       width: 265
       height: 56
-    spriteID: 2a36f9fdd1346fd4c9ab947326fd4399
+    spriteID: d693520cf5644394891c1afa3831127d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +932,7 @@ ScriptedImporter:
       y: 4
       width: 260
       height: 57
-    spriteID: f4c13a723c52fc84fa09c20dc9960885
+    spriteID: eb8500332ebed714bbf125c8c68b01da
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +952,7 @@ ScriptedImporter:
       y: 69
       width: 261
       height: 58
-    spriteID: eb013210ff30afa4c91f64e89083cb17
+    spriteID: fddfe7948cbd35440bbfa4cfb1455567
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +972,7 @@ ScriptedImporter:
       y: 69
       width: 261
       height: 54
-    spriteID: 68db6721668a4be48926140caa14ade7
+    spriteID: a953f2fa7993d3643a0982149bd29048
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +992,7 @@ ScriptedImporter:
       y: 69
       width: 261
       height: 55
-    spriteID: 40fb1565d9c3a1448bd5e06efac4a56a
+    spriteID: 51a2e6f8a6d269749973b550ffab9182
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1012,7 @@ ScriptedImporter:
       y: 135
       width: 253
       height: 53
-    spriteID: 3a37b7e351adf3b40b5e92e7fcd8d50a
+    spriteID: 8c9ac9f64bbeaca4fb31ea93551b1874
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1032,7 @@ ScriptedImporter:
       y: 587
       width: 194
       height: 32
-    spriteID: 08126d82da4284e4384e942327b91ad9
+    spriteID: 7ae9f90123d1e8c46b2d47e36f3334eb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1052,7 @@ ScriptedImporter:
       y: 587
       width: 212
       height: 29
-    spriteID: fdb3eeae5b513d54c801d7e4273fcd6b
+    spriteID: fbd83508723420349854ddacf8f00385
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1072,7 +1072,7 @@ ScriptedImporter:
       y: 550
       width: 215
       height: 29
-    spriteID: 9a1c3bceb48a7d942a88348da57b8666
+    spriteID: 4b3a9e9a04c1a8742864389fd7e4e9a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1092,7 +1092,7 @@ ScriptedImporter:
       y: 473
       width: 223
       height: 29
-    spriteID: 7b6afd4519f1aae4e8f153730fb68695
+    spriteID: f01ea3ae4bcf0244cbfe6c8c352ea9a0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1112,7 +1112,7 @@ ScriptedImporter:
       y: 432
       width: 222
       height: 30
-    spriteID: 98e47b180f79a2b4bae7af634e023f87
+    spriteID: ea8e2650f56d8ff4cb16bfc683ebef13
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1132,7 +1132,7 @@ ScriptedImporter:
       y: 473
       width: 222
       height: 30
-    spriteID: 61819b3dea07d2e44a11123b262ae093
+    spriteID: 9640b9bf7e75094449ac46da1cec4cee
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1152,7 +1152,7 @@ ScriptedImporter:
       y: 392
       width: 223
       height: 30
-    spriteID: cd378075191f38b42a21550fe1af08a4
+    spriteID: 8260007cf9734bb45a81fe808968a71f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1172,7 +1172,7 @@ ScriptedImporter:
       y: 348
       width: 222
       height: 31
-    spriteID: 067637efe96d9f245988dd474c01b350
+    spriteID: a262fe8f2e1229c4fb6a77a7c2178e30
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1192,7 +1192,7 @@ ScriptedImporter:
       y: 511
       width: 213
       height: 31
-    spriteID: ab8ca3c091ff52442a45bc06e741219c
+    spriteID: 0c14633f270f8ad4ea981ced33401f84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1212,7 +1212,7 @@ ScriptedImporter:
       y: 392
       width: 212
       height: 32
-    spriteID: 89a73bb54be20d64082ab1319731f6f4
+    spriteID: 26e6365b8bd5c264db582589a71120b0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1232,7 +1232,7 @@ ScriptedImporter:
       y: 432
       width: 205
       height: 33
-    spriteID: e9acab206d5d54347b5a4dc67f0843a9
+    spriteID: 85ae6b0b79ba2744d8b0169921a31b1a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1252,7 +1252,7 @@ ScriptedImporter:
       y: 4
       width: 190
       height: 33
-    spriteID: c06a0ca680fa14b459b8b641718509f5
+    spriteID: d7e5216f6cc4f0f43bc20da3e6701e7e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1272,7 +1272,7 @@ ScriptedImporter:
       y: 253
       width: 19
       height: 30
-    spriteID: fe62f9f14fcbae54c920deae599ada90
+    spriteID: 904071c1bf3b04847a972d5d40cd4d09
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1292,7 +1292,7 @@ ScriptedImporter:
       y: 135
       width: 18
       height: 31
-    spriteID: 3aae3fc1e58072d4aa519efb1b5a7765
+    spriteID: 4ad84a34d2a84d141bf1f9460acabcd4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1312,7 +1312,7 @@ ScriptedImporter:
       y: 174
       width: 1
       height: 1
-    spriteID: 4488a21352e255541912f932a435ebf1
+    spriteID: 7a70bef32e4270c46b627b1f88ada954
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1337,7 +1337,7 @@ ScriptedImporter:
         y: 0
         width: 226
         height: 48
-      spriteId: 1440955dc7485f94ab6b12131b4fc905
+      spriteId: 43085d58f89be744ba7d2e45e9921598
     - name: Guardian SWORD_Frame_25
       frameIndex: 25
       cellRect:
@@ -1345,7 +1345,7 @@ ScriptedImporter:
         y: 0
         width: 228
         height: 47
-      spriteId: 704a9e3fe23201a429948badbf73a15e
+      spriteId: 47af1707dd7493c46b5cb4655b784a1e
     - name: Guardian SWORD_Frame_26
       frameIndex: 26
       cellRect:
@@ -1353,7 +1353,7 @@ ScriptedImporter:
         y: 0
         width: 230
         height: 48
-      spriteId: 223330c50c9eac74b816dee50bd41d4b
+      spriteId: c9e5a1bdf30cf004fa8a1044eca97529
     - name: Guardian SWORD_Frame_27
       frameIndex: 27
       cellRect:
@@ -1361,7 +1361,7 @@ ScriptedImporter:
         y: 0
         width: 232
         height: 49
-      spriteId: 5a4f6cbdde57eaf4d8f0ded1ea005a30
+      spriteId: 35a16aed7cb1e414a897797cc8e6f832
     - name: Guardian SWORD_Frame_28
       frameIndex: 28
       cellRect:
@@ -1369,7 +1369,7 @@ ScriptedImporter:
         y: 0
         width: 234
         height: 49
-      spriteId: df61e8e94e1fbfe409911ffbd350f949
+      spriteId: 8d45d791323f91d44970d82eee871468
     - name: Guardian SWORD_Frame_29
       frameIndex: 29
       cellRect:
@@ -1377,7 +1377,7 @@ ScriptedImporter:
         y: 0
         width: 224
         height: 49
-      spriteId: bf78a94e8728e1448bf8ce70f7d3b4df
+      spriteId: c4b8da7c2c39b544db9a9a51c1a1504d
     - name: Guardian SWORD_Frame_13
       frameIndex: 13
       cellRect:
@@ -1385,7 +1385,7 @@ ScriptedImporter:
         y: 1
         width: 235
         height: 36
-      spriteId: fa235afc146224a459fed536a55d6ce8
+      spriteId: d860fa4140dec9549880fc160fd504d8
     - name: Guardian SWORD_Frame_14
       frameIndex: 14
       cellRect:
@@ -1393,7 +1393,7 @@ ScriptedImporter:
         y: 1
         width: 236
         height: 37
-      spriteId: 0f9f86da4c5cf064383a2e7e8908339c
+      spriteId: a4400d2cc0eb28848bbd2bec08bfe910
     - name: Guardian SWORD_Frame_15
       frameIndex: 15
       cellRect:
@@ -1401,7 +1401,7 @@ ScriptedImporter:
         y: 1
         width: 236
         height: 39
-      spriteId: 6f9900671692df442bc9584be931eb90
+      spriteId: ec60648c14fbca84cbf4a45fe3b2c092
     - name: Guardian SWORD_Frame_16
       frameIndex: 16
       cellRect:
@@ -1409,7 +1409,7 @@ ScriptedImporter:
         y: 1
         width: 210
         height: 40
-      spriteId: cd107c6dda8cb49469bb35b161c615af
+      spriteId: fe81c8c3afaa6ca4897324f3ac90999c
     - name: Guardian SWORD_Frame_17
       frameIndex: 17
       cellRect:
@@ -1417,7 +1417,7 @@ ScriptedImporter:
         y: 1
         width: 208
         height: 45
-      spriteId: b4c525c9078973645a55a710b8307c35
+      spriteId: 2397ea0b68643fa4591eb69cd843311f
     - name: Guardian SWORD_Frame_18
       frameIndex: 18
       cellRect:
@@ -1425,7 +1425,7 @@ ScriptedImporter:
         y: 0
         width: 199
         height: 30
-      spriteId: 7232782a558df5c48a5f678d483cc067
+      spriteId: 9d7e2600fe514474099019cf075b1663
     - name: Guardian SWORD_Frame_19
       frameIndex: 19
       cellRect:
@@ -1433,7 +1433,7 @@ ScriptedImporter:
         y: 1
         width: 196
         height: 29
-      spriteId: 6a31b647a6103b54582ab39fb1a1ef35
+      spriteId: 89738b71c60ee1a49b39cf1942bb9342
     - name: Guardian SWORD_Frame_20
       frameIndex: 20
       cellRect:
@@ -1441,7 +1441,7 @@ ScriptedImporter:
         y: 1
         width: 196
         height: 29
-      spriteId: b9859a0c1cb91764d9e91a92fc0a2334
+      spriteId: 272362e9e2b57ef4b8576601f6977598
     - name: Guardian SWORD_Frame_21
       frameIndex: 21
       cellRect:
@@ -1449,7 +1449,7 @@ ScriptedImporter:
         y: 1
         width: 196
         height: 29
-      spriteId: a75a1ea7257bb6245874be1754844b50
+      spriteId: b1ea4790ec47bd0489ce4d43f71b1fe0
     - name: Guardian SWORD_Frame_22
       frameIndex: 22
       cellRect:
@@ -1457,7 +1457,7 @@ ScriptedImporter:
         y: 1
         width: 196
         height: 29
-      spriteId: 77fdf761d9707df44a42236342a401ec
+      spriteId: 38964b5a632e30c4d96250deb302804b
     - name: Guardian SWORD_Frame_23
       frameIndex: 23
       cellRect:
@@ -1465,7 +1465,7 @@ ScriptedImporter:
         y: 0
         width: 196
         height: 30
-      spriteId: da66dfcd3ddc52e45928fc3e8a233bb8
+      spriteId: 47e254e0976e42745869ed1645ffa04e
     - name: Guardian SWORD_Frame_0
       frameIndex: 0
       cellRect:
@@ -1473,7 +1473,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 4a8d51d5e8fc4104ebc5a674cf39859d
+      spriteId: 69261cb54cc7c8c4a93b68e61b95d881
     - name: Guardian SWORD_Frame_1
       frameIndex: 1
       cellRect:
@@ -1481,7 +1481,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 3589cfe1cbb409b4d996e0aeec82cdd0
+      spriteId: ab9076813d064374fab51079539243be
     - name: Guardian SWORD_Frame_2
       frameIndex: 2
       cellRect:
@@ -1489,7 +1489,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 30
-      spriteId: 65b154c02f3e5f94e9a9ec3c8e07cb17
+      spriteId: cf7fb6c1123876e4c9eec93bc0078809
     - name: Guardian SWORD_Frame_3
       frameIndex: 3
       cellRect:
@@ -1497,7 +1497,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 30
-      spriteId: e2266920453085848bbad63b28c87823
+      spriteId: ee7a13be3b0b3554190a28a5b9a6d8ae
     - name: Guardian SWORD_Frame_4
       frameIndex: 4
       cellRect:
@@ -1505,7 +1505,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 6636d45e8d6df934bbb94f54f2d897a5
+      spriteId: 1acb3f544a9eed845a89d60630c6ed37
     - name: Guardian SWORD_Frame_5
       frameIndex: 5
       cellRect:
@@ -1513,7 +1513,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 1b6cbee184d92ef4cbffc86f5462f47a
+      spriteId: 516abb8d67bb5874b8e1e28969cf9b49
     - name: Guardian SWORD_Frame_6
       frameIndex: 6
       cellRect:
@@ -1521,7 +1521,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 981f5f2b7615e8f48bf793f65a9d3793
+      spriteId: 10278a823b98a6347bfed8576fe3fd9d
     - name: Guardian SWORD_Frame_7
       frameIndex: 7
       cellRect:
@@ -1529,7 +1529,7 @@ ScriptedImporter:
         y: 1
         width: 222
         height: 29
-      spriteId: 5602e927a3e346e44ad99ef8cf80c520
+      spriteId: 9f24fb984328e404a9729d1c25714b7f
     - name: Guardian SWORD_Frame_8
       frameIndex: 8
       cellRect:
@@ -1537,7 +1537,7 @@ ScriptedImporter:
         y: 0
         width: 222
         height: 30
-      spriteId: 2e61246b1700bc346a610a517b8b5500
+      spriteId: bba90111ccf3974418d30e23c37f6344
     - name: Guardian SWORD_Frame_9
       frameIndex: 9
       cellRect:
@@ -1545,7 +1545,7 @@ ScriptedImporter:
         y: 1
         width: 223
         height: 31
-      spriteId: 5a2da752eaa90484a882bbc767561778
+      spriteId: d1afcbd86986ad044b4dfc1ea28c9bcb
     - name: Guardian SWORD_Frame_10
       frameIndex: 10
       cellRect:
@@ -1553,7 +1553,7 @@ ScriptedImporter:
         y: 1
         width: 223
         height: 33
-      spriteId: 7d7d103af6204eb49a3e32cff685117a
+      spriteId: 041c5a6bfc1159c4b916fa7f2c5199e5
     - name: Guardian SWORD_Frame_11
       frameIndex: 11
       cellRect:
@@ -1561,7 +1561,7 @@ ScriptedImporter:
         y: 0
         width: 231
         height: 35
-      spriteId: 2eca90b38dbf02740ac1c78c1a722db2
+      spriteId: d167cab5fae735a44aadca1ee1433a2e
     - name: Guardian SWORD_Frame_12
       frameIndex: 12
       cellRect:
@@ -1569,7 +1569,7 @@ ScriptedImporter:
         y: 0
         width: 233
         height: 38
-      spriteId: f65233794b154d141bb8ebb88b1a0394
+      spriteId: 19878aaed8ab6d243b075395e51c0685
     - name: Guardian SWORD_Frame_30
       frameIndex: 30
       cellRect:
@@ -1577,7 +1577,7 @@ ScriptedImporter:
         y: 0
         width: 224
         height: 30
-      spriteId: 21d4d695180a19c458845d8b32c6752a
+      spriteId: 24b3d7a87ef97514cab701b45c96b27c
     - name: Guardian SWORD_Frame_31
       frameIndex: 31
       cellRect:
@@ -1585,7 +1585,7 @@ ScriptedImporter:
         y: 1
         width: 215
         height: 29
-      spriteId: 0e798c01aef0e4e47bb1366f75915b67
+      spriteId: f112584a06d05514ab6e6039a3cf01be
     - name: Guardian SWORD_Frame_32
       frameIndex: 32
       cellRect:
@@ -1593,7 +1593,7 @@ ScriptedImporter:
         y: 1
         width: 212
         height: 29
-      spriteId: 20a931bfdedd5ef4d81a148edb5a847d
+      spriteId: c5b460671a661ee4b8da6a655cbf157f
     - name: Guardian SWORD_Frame_33
       frameIndex: 33
       cellRect:
@@ -1601,7 +1601,7 @@ ScriptedImporter:
         y: 1
         width: 194
         height: 32
-      spriteId: 8336e6f3466906a43921a7c67c9b319e
+      spriteId: adb79d716eeccb84bb293a675dda2809
     - name: Guardian SWORD_Frame_34
       frameIndex: 34
       cellRect:
@@ -1609,7 +1609,7 @@ ScriptedImporter:
         y: 1
         width: 205
         height: 36
-      spriteId: db0f2b064e0bf1241a883f8e3fcd6bc2
+      spriteId: 59fb2fa009c54c5459a1685a2c3531ca
     - name: Guardian SWORD_Frame_35
       frameIndex: 35
       cellRect:
@@ -1617,7 +1617,7 @@ ScriptedImporter:
         y: 1
         width: 210
         height: 38
-      spriteId: b1668597c2f14594f88d3de1d782287f
+      spriteId: fb1f683ef2dd71640862e15e17cdcd33
     - name: Guardian SWORD_Frame_36
       frameIndex: 36
       cellRect:
@@ -1625,7 +1625,7 @@ ScriptedImporter:
         y: 1
         width: 224
         height: 40
-      spriteId: 8ab353df101728b4281d61597e0bbaa8
+      spriteId: a85bee4a8453719479d16bd9c8f0ae76
     - name: Guardian SWORD_Frame_37
       frameIndex: 37
       cellRect:
@@ -1633,7 +1633,7 @@ ScriptedImporter:
         y: 1
         width: 238
         height: 41
-      spriteId: b932de33de6ebdd4289bb8621bdeb5fa
+      spriteId: 245b472f1103a3f44abbbe7ad4f68db0
     - name: Guardian SWORD_Frame_38
       frameIndex: 38
       cellRect:
@@ -1641,7 +1641,7 @@ ScriptedImporter:
         y: 1
         width: 273
         height: 57
-      spriteId: 0d44ec4c990ffc24b8ad9731397b9a09
+      spriteId: 3921ef0e97cc95f4083b67dec5acb04e
     - name: Guardian SWORD_Frame_39
       frameIndex: 39
       cellRect:
@@ -1649,7 +1649,7 @@ ScriptedImporter:
         y: 1
         width: 265
         height: 56
-      spriteId: 2a36f9fdd1346fd4c9ab947326fd4399
+      spriteId: d693520cf5644394891c1afa3831127d
     - name: Guardian SWORD_Frame_40
       frameIndex: 40
       cellRect:
@@ -1657,7 +1657,7 @@ ScriptedImporter:
         y: 1
         width: 260
         height: 57
-      spriteId: f4c13a723c52fc84fa09c20dc9960885
+      spriteId: eb8500332ebed714bbf125c8c68b01da
     - name: Guardian SWORD_Frame_41
       frameIndex: 41
       cellRect:
@@ -1665,7 +1665,7 @@ ScriptedImporter:
         y: 1
         width: 261
         height: 58
-      spriteId: eb013210ff30afa4c91f64e89083cb17
+      spriteId: fddfe7948cbd35440bbfa4cfb1455567
     - name: Guardian SWORD_Frame_42
       frameIndex: 42
       cellRect:
@@ -1673,7 +1673,7 @@ ScriptedImporter:
         y: 1
         width: 261
         height: 54
-      spriteId: 68db6721668a4be48926140caa14ade7
+      spriteId: a953f2fa7993d3643a0982149bd29048
     - name: Guardian SWORD_Frame_43
       frameIndex: 43
       cellRect:
@@ -1681,7 +1681,7 @@ ScriptedImporter:
         y: 1
         width: 261
         height: 55
-      spriteId: 40fb1565d9c3a1448bd5e06efac4a56a
+      spriteId: 51a2e6f8a6d269749973b550ffab9182
     - name: Guardian SWORD_Frame_44
       frameIndex: 44
       cellRect:
@@ -1689,7 +1689,7 @@ ScriptedImporter:
         y: 1
         width: 253
         height: 53
-      spriteId: 3a37b7e351adf3b40b5e92e7fcd8d50a
+      spriteId: 8c9ac9f64bbeaca4fb31ea93551b1874
     - name: Guardian SWORD_Frame_45
       frameIndex: 45
       cellRect:
@@ -1697,7 +1697,7 @@ ScriptedImporter:
         y: 1
         width: 194
         height: 32
-      spriteId: 08126d82da4284e4384e942327b91ad9
+      spriteId: 7ae9f90123d1e8c46b2d47e36f3334eb
     - name: Guardian SWORD_Frame_46
       frameIndex: 46
       cellRect:
@@ -1705,7 +1705,7 @@ ScriptedImporter:
         y: 1
         width: 212
         height: 29
-      spriteId: fdb3eeae5b513d54c801d7e4273fcd6b
+      spriteId: fbd83508723420349854ddacf8f00385
     - name: Guardian SWORD_Frame_47
       frameIndex: 47
       cellRect:
@@ -1713,7 +1713,7 @@ ScriptedImporter:
         y: 1
         width: 215
         height: 29
-      spriteId: 9a1c3bceb48a7d942a88348da57b8666
+      spriteId: 4b3a9e9a04c1a8742864389fd7e4e9a9
     - name: Guardian SWORD_Frame_48
       frameIndex: 48
       cellRect:
@@ -1721,7 +1721,7 @@ ScriptedImporter:
         y: 1
         width: 223
         height: 29
-      spriteId: 7b6afd4519f1aae4e8f153730fb68695
+      spriteId: f01ea3ae4bcf0244cbfe6c8c352ea9a0
     - name: Guardian SWORD_Frame_49
       frameIndex: 49
       cellRect:
@@ -1729,7 +1729,7 @@ ScriptedImporter:
         y: 0
         width: 222
         height: 30
-      spriteId: 98e47b180f79a2b4bae7af634e023f87
+      spriteId: ea8e2650f56d8ff4cb16bfc683ebef13
     - name: Guardian SWORD_Frame_50
       frameIndex: 50
       cellRect:
@@ -1737,7 +1737,7 @@ ScriptedImporter:
         y: 0
         width: 222
         height: 30
-      spriteId: 61819b3dea07d2e44a11123b262ae093
+      spriteId: 9640b9bf7e75094449ac46da1cec4cee
     - name: Guardian SWORD_Frame_51
       frameIndex: 51
       cellRect:
@@ -1745,7 +1745,7 @@ ScriptedImporter:
         y: 0
         width: 223
         height: 30
-      spriteId: cd378075191f38b42a21550fe1af08a4
+      spriteId: 8260007cf9734bb45a81fe808968a71f
     - name: Guardian SWORD_Frame_52
       frameIndex: 52
       cellRect:
@@ -1753,7 +1753,7 @@ ScriptedImporter:
         y: 0
         width: 222
         height: 31
-      spriteId: 067637efe96d9f245988dd474c01b350
+      spriteId: a262fe8f2e1229c4fb6a77a7c2178e30
     - name: Guardian SWORD_Frame_53
       frameIndex: 53
       cellRect:
@@ -1761,7 +1761,7 @@ ScriptedImporter:
         y: 0
         width: 213
         height: 31
-      spriteId: ab8ca3c091ff52442a45bc06e741219c
+      spriteId: 0c14633f270f8ad4ea981ced33401f84
     - name: Guardian SWORD_Frame_54
       frameIndex: 54
       cellRect:
@@ -1769,7 +1769,7 @@ ScriptedImporter:
         y: 0
         width: 212
         height: 32
-      spriteId: 89a73bb54be20d64082ab1319731f6f4
+      spriteId: 26e6365b8bd5c264db582589a71120b0
     - name: Guardian SWORD_Frame_55
       frameIndex: 55
       cellRect:
@@ -1777,7 +1777,7 @@ ScriptedImporter:
         y: 0
         width: 205
         height: 33
-      spriteId: e9acab206d5d54347b5a4dc67f0843a9
+      spriteId: 85ae6b0b79ba2744d8b0169921a31b1a
     - name: Guardian SWORD_Frame_56
       frameIndex: 56
       cellRect:
@@ -1785,7 +1785,7 @@ ScriptedImporter:
         y: 1
         width: 190
         height: 33
-      spriteId: c06a0ca680fa14b459b8b641718509f5
+      spriteId: d7e5216f6cc4f0f43bc20da3e6701e7e
     - name: Guardian SWORD_Frame_57
       frameIndex: 57
       cellRect:
@@ -1793,7 +1793,7 @@ ScriptedImporter:
         y: 1
         width: 19
         height: 30
-      spriteId: fe62f9f14fcbae54c920deae599ada90
+      spriteId: 904071c1bf3b04847a972d5d40cd4d09
     - name: Guardian SWORD_Frame_58
       frameIndex: 58
       cellRect:
@@ -1801,7 +1801,7 @@ ScriptedImporter:
         y: 1
         width: 18
         height: 31
-      spriteId: 3aae3fc1e58072d4aa519efb1b5a7765
+      spriteId: 4ad84a34d2a84d141bf1f9460acabcd4
     - name: Guardian SWORD_Frame_59
       frameIndex: 59
       cellRect:
@@ -1809,7 +1809,7 @@ ScriptedImporter:
         y: 32
         width: 1
         height: 1
-      spriteId: 4488a21352e255541912f932a435ebf1
+      spriteId: 7a70bef32e4270c46b627b1f88ada954
     linkedCells: []
     parentIndex: -1
   platformSettings: []
