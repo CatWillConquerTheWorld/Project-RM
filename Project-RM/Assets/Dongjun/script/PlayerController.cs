@@ -1,4 +1,5 @@
 using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -27,8 +28,14 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer gunVFXSpriteRenderer;
     private float chargedTime;
 
+    //색적 요소
+    public float detectionRadius = 5f; // 감지 반경
+    private Transform closestEnemy;
+    private bool flip;
+
     void Start()
     {
+        flip = true;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -49,26 +56,24 @@ public class PlayerController : MonoBehaviour
 
         //시야 위/아래로 전환
         CameraControl();
+
+        FindClosestEnemy();
+        if (closestEnemy != null)
+        {
+            flip = false;
+            LookAtEnemy();
+            FlipTowardsEnemy();
+        }
+        else
+        {
+            transform.Find("Gun").transform.rotation = Quaternion.identity;
+            flip = true;
+        }
+
+        print(flip);
+
+        print(transform.localScale.x / Mathf.Abs(transform.localScale.x));
     }
-
-    // 태그를 비교하여 isGrounded 및 애니메이터의 변수를 다루는 방법, 이는 벽에서도 점프가 되는 버그가 있어 RayCast 채용
-    //void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Ground"))
-    //    {
-    //        isGrounded = true;
-    //        animator.SetBool("isJump", false);
-    //    }
-    //}
-
-    //void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Ground"))
-    //    {
-    //        isGrounded = false;
-    //        animator.SetBool("isJump", true);
-    //    }
-    //}
 
     void FixedUpdate()
     {
@@ -76,34 +81,81 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + 0.1f, LayerMask.GetMask("Ground"));
     }
 
+    void FindClosestEnemy()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        float closestDistance = Mathf.Infinity;
+        closestEnemy = null;
+
+        foreach (GameObject enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < detectionRadius && distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestEnemy = enemy.transform;
+            }
+        }
+    }
+
+    void LookAtEnemy()
+    {
+        Transform gunTransform = transform.Find("Gun").transform;
+        Vector3 direction = closestEnemy.position - gunTransform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        gunTransform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    void FlipTowardsEnemy()
+    {
+        Vector3 enemyPosition = closestEnemy.position;
+        Vector3 scale = transform.localScale;
+        Vector3 gunScale = transform.Find("Gun").transform.localScale;
+
+        if (enemyPosition.x < transform.position.x)
+        {
+            scale.x = -Mathf.Abs(scale.x);
+            transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
+            gunScale.x = -Mathf.Abs(gunScale.x);
+            //firePoint.rotation = new Quaternion(0, 0, 180, 0);
+        }
+        else
+        {
+            scale.x = Mathf.Abs(scale.x);
+            transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
+            gunScale.x = Mathf.Abs(gunScale.x);
+            //firePoint.rotation = new Quaternion(0, 0, 0, 0);
+        }
+
+        transform.localScale = scale;
+        transform.Find("Gun").transform.localScale = gunScale;
+    }
+
     private void Move()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             animator.SetBool("isWalking", true);
-            spriteRenderer.flipX = true;
-            gunSpriteRenderer.flipX=true;
-            gunVFXSpriteRenderer.flipX=true;
+            if (flip) transform.localScale = new Vector3(-3, 3, 0);
+            if (flip) firePoint.rotation = new Quaternion(0, 0, 180, 0);
             transform.Translate(Vector3.right * -1 * moveSpeed * Time.deltaTime);
 
             // 총 위치 조정
-            transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
+            if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             animator.SetBool("isWalking", true);
-            spriteRenderer.flipX = false;
-            gunSpriteRenderer.flipX = false;
-            gunVFXSpriteRenderer.flipX = false;
+            if (flip) transform.localScale = new Vector3(3, 3, 0);
+            if (flip) firePoint.rotation = new Quaternion(0, 0, 0, 0);
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
             //총 위치 조정
-            transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
+            if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
         }
         else
         {
             animator.SetBool("isWalking", false);
-            //animator.StopPlayback();
         }
     }
 
@@ -111,7 +163,6 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
-            //rb.velocity = Vector3.zero;
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         }
 
@@ -184,7 +235,7 @@ public class PlayerController : MonoBehaviour
             GameObject chargedBullet = Instantiate(chargedBulletPrefab, firePoint.position, firePoint.rotation);
             chargedBullet.gameObject.SetActive(true);
             Rigidbody2D rb = chargedBullet.GetComponent<Rigidbody2D>();
-            rb.velocity = firePoint.right * chargedBulletSpeed;
+            rb.velocity = firePoint.right * chargedBulletSpeed ;
             chargedBullet.GetComponent<Animator>().SetTrigger("charged");
         } 
         else if (type == "SemiCharged")
