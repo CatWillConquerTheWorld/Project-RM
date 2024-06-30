@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 94adf3b04ef9cfb4b8d8cc7431fe1cbf
+guid: fd91dbbb4bd7f7f4198174719529d67a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1735992856171597957
-    second: Blast 2_0
+      213: -6857195038448300644
+    second: Blast 1_0
   - first:
-      213: 1510423686090285369
-    second: Blast 2_1
+      213: 7880984098386313916
+    second: Blast 1_1
   - first:
-      213: 8631937378230320036
-    second: Blast 2_2
+      213: -7401986564054155166
+    second: Blast 1_2
+  - first:
+      213: 342555943822577176
+    second: Blast 1_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -106,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blast 2_0
+      name: Blast 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58059b41e4c771810800000000000000
-      internalID: 1735992856171597957
+      spriteID: c9dc7b9817956d0a0800000000000000
+      internalID: -6857195038448300644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blast 2_1
+      name: Blast 1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -141,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9316fb5075a16f410800000000000000
-      internalID: 1510423686090285369
+      spriteID: cb281d04841ee5d60800000000000000
+      internalID: 7880984098386313916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blast 2_2
+      name: Blast 1_2
       rect:
         serializedVersion: 2
         x: 32
@@ -162,8 +165,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4abb5d0cf4dcac770800000000000000
-      internalID: 8631937378230320036
+      spriteID: 2608659ff6cd64990800000000000000
+      internalID: -7401986564054155166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast 1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4e33e0d001c400800000000000000
+      internalID: 342555943822577176
       vertices: []
       indices: 
       edges: []
@@ -179,9 +203,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blast 2_0: 1735992856171597957
-      Blast 2_1: 1510423686090285369
-      Blast 2_2: 8631937378230320036
+      Blast 1_0: -6857195038448300644
+      Blast 1_1: 7880984098386313916
+      Blast 1_2: -7401986564054155166
+      Blast 1_3: 342555943822577176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

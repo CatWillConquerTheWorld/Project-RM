@@ -223,7 +223,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 117}
   - name: Projectiles_Frame_5
     originalName: 
-    pivot: {x: 0.50248647, y: 0.4829712}
+    pivot: {x: 0.50248647, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -243,7 +243,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 56}
   - name: Projectiles_Frame_6
     originalName: 
-    pivot: {x: -0.6666667, y: -2}
+    pivot: {x: 0.50931424, y: 0.47574806}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -263,7 +263,7 @@ ScriptedImporter:
     uvTransform: {x: 56, y: 4}
   - name: Projectiles_Frame_7
     originalName: 
-    pivot: {x: 0.5714286, y: -1}
+    pivot: {x: 0.5061313, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -283,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 62}
   - name: Projectiles_Frame_8
     originalName: 
-    pivot: {x: 0.5714286, y: -1}
+    pivot: {x: 0.5061313, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -303,7 +303,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 75}
   - name: Projectiles_Frame_9
     originalName: 
-    pivot: {x: 0.5714286, y: -1}
+    pivot: {x: 0.5061313, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -323,7 +323,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 88}
   - name: Projectiles_Frame_10
     originalName: 
-    pivot: {x: 0.5555556, y: -0.8333334}
+    pivot: {x: 0.5246082, y: 0.46643582}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -343,7 +343,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 4}
   - name: Projectiles_Frame_11
     originalName: 
-    pivot: {x: 0.54545456, y: -0.5714286}
+    pivot: {x: 0.54545456, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -363,7 +363,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 71}
   - name: Projectiles_Frame_12
     originalName: 
-    pivot: {x: 0.54545456, y: -0.71428573}
+    pivot: {x: 0.54545456, y: 0.5134522}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -383,7 +383,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 86}
   - name: Projectiles_Frame_13
     originalName: 
-    pivot: {x: 0, y: -2.6666667}
+    pivot: {x: 0.46420288, y: 0.48991394}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -403,7 +403,7 @@ ScriptedImporter:
     uvTransform: {x: 39, y: 29}
   - name: Projectiles_Frame_14
     originalName: 
-    pivot: {x: 0.5, y: -0.5714286}
+    pivot: {x: 0.51160455, y: 0.51613295}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -423,7 +423,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 4}
   - name: Projectiles_Frame_15
     originalName: 
-    pivot: {x: 0.5, y: -0.5714286}
+    pivot: {x: 0.51160455, y: 0.50287}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -443,7 +443,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 19}
   - name: Projectiles_Frame_16
     originalName: 
-    pivot: {x: 0.5, y: -0.5714286}
+    pivot: {x: 0.5232098, y: 0.46308136}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -463,7 +463,7 @@ ScriptedImporter:
     uvTransform: {x: 23, y: 34}
   - name: Projectiles_Frame_17
     originalName: 
-    pivot: {x: 0.5555556, y: -0.5}
+    pivot: {x: 0.48943308, y: 0.44844246}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -483,7 +483,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 101}
   - name: Projectiles_Frame_18
     originalName: 
-    pivot: {x: 0.5, y: -0.5}
+    pivot: {x: 0.51856816, y: 0.48643112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -503,7 +503,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 40}
   - name: Projectiles_Frame_19
     originalName: 
-    pivot: {x: 0.45454547, y: -0.3}
+    pivot: {x: 0.5220659, y: 0.47986087}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -523,7 +523,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Projectiles_Frame_20
     originalName: 
-    pivot: {x: 0.45454547, y: -0.3}
+    pivot: {x: 0.51362586, y: 0.4891451}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -543,7 +543,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 22}
   - name: Projectiles_Frame_21
     originalName: 
-    pivot: {x: 1.3333334, y: -3.6666667}
+    pivot: {x: 0.49776712, y: 0.51115924}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

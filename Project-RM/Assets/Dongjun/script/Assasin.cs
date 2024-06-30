@@ -1,7 +1,6 @@
-using System.Text;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Assasin : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float jumpForce = 4f;
@@ -14,24 +13,19 @@ public class PlayerController : MonoBehaviour
 
     //총 요소
     public GameObject bulletPrefab;
-    public GameObject chargedBulletPrefab;
-    public GameObject semiChargedBP;
     public Transform firePoint;
     public float bulletSpeed;
-    public float chargedBulletSpeed;
-    public float maxChargeTime;
 
-    public Animator gunAnimator;
-    public Animator gunVFXAnimator;
-    public SpriteRenderer gunSpriteRenderer;
-    public SpriteRenderer gunVFXSpriteRenderer;
-    private float chargedTime;
+    private Animator gunAnimator;
+    private SpriteRenderer gunSpriteRenderer;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gunAnimator = transform.Find("Gun").GetComponent<Animator>();
+        gunSpriteRenderer = transform.Find("Gun").GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -83,7 +77,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
             spriteRenderer.flipX = true;
             gunSpriteRenderer.flipX=true;
-            gunVFXSpriteRenderer.flipX=true;
             transform.Translate(Vector3.right * -1 * moveSpeed * Time.deltaTime);
 
             // 총 위치 조정
@@ -94,7 +87,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
             spriteRenderer.flipX = false;
             gunSpriteRenderer.flipX = false;
-            gunVFXSpriteRenderer.flipX = false;
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
             //총 위치 조정
@@ -127,81 +119,21 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot()
     {
-        print(chargedTime);
         if (Input.GetKeyDown(KeyCode.A))
         {
-            chargedTime = 0;
-            gunAnimator.SetBool("isCharging", true);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            chargedTime += Time.deltaTime;
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-         {
-            if (chargedTime >= maxChargeTime)
+            if (gunAnimator.GetCurrentAnimatorStateInfo(0).IsName("Shoot") == true)
             {
-                GunEffect("Charged");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("Charged");
-            } 
-            else if (chargedTime >= maxChargeTime / 3 * 2)
-            {
-                GunEffect("Charged");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("SemiCharged");
+                gunAnimator.SetTrigger("back");
             }
-            else
-            {
-                GunEffect("Normal");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("Normal");
-            }
-        }
-    }
+            gunAnimator.SetTrigger("Shoot");
+            //Instantiate(bullet, firePoint.position, firePoint.rotation);
 
-    private void GunEffect(string type)
-    {
-        gunVFXAnimator.StopPlayback();
-        if (gunVFXAnimator.GetCurrentAnimatorStateInfo(0).IsName("charged") == true || gunVFXAnimator.GetCurrentAnimatorStateInfo(0).IsName("normal") == true)
-        {
-            gunVFXAnimator.SetTrigger("back");
-        }
-        if (type == "Charged")
-        {
-            gunVFXAnimator.SetTrigger("ChargedShoot");
-        } 
-        else if (type == "Normal")
-        {
-            gunVFXAnimator.SetTrigger("Shoot");
-        }
-    }
-
-    private void Attack(string type)
-    {
-        if (type == "Charged")
-        {
-            GameObject chargedBullet = Instantiate(chargedBulletPrefab, firePoint.position, firePoint.rotation);
-            chargedBullet.gameObject.SetActive(true);
-            Rigidbody2D rb = chargedBullet.GetComponent<Rigidbody2D>();
-            rb.velocity = firePoint.right * chargedBulletSpeed;
-            chargedBullet.GetComponent<Animator>().SetTrigger("charged");
-        } 
-        else if (type == "SemiCharged")
-        {
-            GameObject semiChargedBullet = Instantiate(semiChargedBP, firePoint.position, firePoint.rotation);
-            semiChargedBullet.gameObject.SetActive(true);
-            Rigidbody2D rb = semiChargedBullet.GetComponent<Rigidbody2D>();
-            rb.velocity = firePoint.right * chargedBulletSpeed;
-            semiChargedBullet.GetComponent<Animator>().SetTrigger("semi");
-        }
-        else if (type == "Normal")
-        {
+            // firePoint 위치에서 bulletPrefab을 인스턴스화
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             bullet.gameObject.SetActive(true);
+            // 총알의 Rigidbody2D를 가져와서 속도를 설정
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * bulletSpeed;
-            bullet.GetComponent<Animator>().SetTrigger("normal");
         }
     }
 
