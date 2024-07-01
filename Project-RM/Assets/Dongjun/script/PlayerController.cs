@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //½Ì±ÛÅæ ¼±¾ð
+    public static PlayerController instance { get; private set; }
+
     public float moveSpeed = 4f;
     public float jumpForce = 4f;
 
@@ -14,6 +17,9 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     //ÃÑ ¿ä¼Ò
+    public int normalAttackRate;
+    public int semiAttackRate;
+    public int chargedAttackRate;
     public GameObject bulletPrefab;
     public GameObject chargedBulletPrefab;
     public GameObject semiChargedBP;
@@ -32,6 +38,17 @@ public class PlayerController : MonoBehaviour
     public float detectionRadius = 5f; // °¨Áö ¹Ý°æ
     private Transform closestEnemy;
     private bool flip;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        } else
+        {
+            Destroy(this);
+        }
+    }
 
     void Start()
     {

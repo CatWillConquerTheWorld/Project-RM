@@ -248,7 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c022a34b2b951fc4fa03da332dfca4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRadius: 0
+  hp: 100
+  playerRadius: 5
   moveSpeed: 2
 --- !u!95 &505248911
 Animator:
@@ -260,7 +261,7 @@ Animator:
   m_GameObject: {fileID: 505248904}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 922868433087922225, guid: 2c56c517e34bd514ab668ffb0e255e80, type: 3}
+  m_Controller: {fileID: 9100000, guid: cffb20c5d65a2e54a8fb0ec0a2997db8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -366,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090111680}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: firePoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,6 +616,10 @@ PrefabInstance:
       value: ChargedBullet
       objectReference: {fileID: 0}
     - target: {fileID: 8870814887614350803, guid: c50bc2925e081ea458bc368131a3b57f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870814887614350803, guid: c50bc2925e081ea458bc368131a3b57f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -740,6 +745,10 @@ PrefabInstance:
     - target: {fileID: 8870814887614350803, guid: c50bc2925e081ea458bc368131a3b57f, type: 3}
       propertyPath: m_Name
       value: SemiChargedBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870814887614350803, guid: c50bc2925e081ea458bc368131a3b57f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8870814887614350803, guid: c50bc2925e081ea458bc368131a3b57f, type: 3}
       propertyPath: m_IsActive
@@ -2743,6 +2752,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.10369934
       objectReference: {fileID: 0}
+    - target: {fileID: 2266916728348958655, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560407839554203676, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2560407839554203676, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2779,6 +2796,18 @@ PrefabInstance:
       propertyPath: gunVFXAnimator
       value: 
       objectReference: {fileID: 1119262024}
+    - target: {fileID: 3994763474813665403, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: semiAttackRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994763474813665403, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: normalAttackRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994763474813665403, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: chargedAttackRate
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3994763474813665403, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: gunSpriteRenderer
       value: 
@@ -2883,9 +2912,17 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00032550562
       objectReference: {fileID: 0}
+    - target: {fileID: 5923244498767095981, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6478636536437046565, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478636536437046565, guid: 1cdda622b4125954982752e91f9788da, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6478636536437046565, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_TagString
@@ -2964,6 +3001,10 @@ PrefabInstance:
     - target: {fileID: 3226880350209017586, guid: c679d7b5be9141747b0c519fb7f16dc5, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226880350209017586, guid: c679d7b5be9141747b0c519fb7f16dc5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5675346695112200520, guid: c679d7b5be9141747b0c519fb7f16dc5, type: 3}
       propertyPath: m_LocalPosition.x

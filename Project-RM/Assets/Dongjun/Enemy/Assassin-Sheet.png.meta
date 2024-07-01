@@ -1,0 +1,1558 @@
+fileFormatVersion: 2
+guid: 91d47bc6acb3dde4095eb73655330adb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Assassin-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1197
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07be26e1a49d6c14fb88de5f4b71744a
+      internalID: -498784355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1178
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a8a1461785fb14b8b4ab9751e4de31
+      internalID: 836260837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1159
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d07ab22a6d5a14f98c84cb16167edf
+      internalID: -369255538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1140
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e3cdb886e5dc24bb431d8c06550866
+      internalID: -1040695467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1121
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28647a18dd34914495a4fbd6492acc7
+      internalID: 11653161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1102
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8de001d6a37a84ea90e7aca84404e7
+      internalID: 16683781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1083
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc66a7f26b6c0f4086cf405a6078b8b
+      internalID: -1334604811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1064
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd00a6d977c92a439cf0ac0a018d5ce
+      internalID: -1178951079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1045
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c167c2a88d1d5c45ba3130b3a37b966
+      internalID: 2141530045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1026
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d57130651b16c74fb4f01de70923e75
+      internalID: 864762568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1007
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994ea01fb58683a4f88e351312fbc0e5
+      internalID: -306232364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 988
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824dedec133e214e8bce5870c4524e9
+      internalID: -549409758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 969
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686e6996a33d339478845f87b1e4bbc1
+      internalID: 1335088668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 950
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4018c595cb560a45bc5e6c20110030e
+      internalID: -1460166522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 931
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c229d29d49a52354fb1be086db6888b1
+      internalID: 122576118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 912
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afd6736e0686b24ba54a35d38bd4ce5
+      internalID: 697615207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 893
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af17260bcbabee4ab42382d909da077
+      internalID: -961056234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 874
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd619ac9a1f03944e8126d8e033525a5
+      internalID: -1696292273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 855
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3715d6d5976797243830229becd2e864
+      internalID: -437092193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 836
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb09bef5e9d743148b5f16200ae38f3a
+      internalID: 1846635914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 817
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632854ea5bbcb1a449258693a6e885d2
+      internalID: -375867595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 798
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b2877763b80e34da573daa567d553d
+      internalID: -148002249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 779
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5493cbe14df2745409e7b03e6f358bde
+      internalID: -1558199877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 760
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02e049bd4debae4596aa5bb89aca8f3
+      internalID: 1075885717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 741
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d493e93e735294da8190797c979adf
+      internalID: 1737392274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 722
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c17b85e1d9b38843b2d1032d8180eda
+      internalID: 1242840103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 703
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b8805899c36b74384909bb884f16c6
+      internalID: 72585328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 684
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8654ed6f373af4f9b032cc4c4d17da
+      internalID: 351408089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 665
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fb9c8582edf944fbd3c53c6b4293fb
+      internalID: 1664817095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 646
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c338162ed1596064eb28462431f8a27c
+      internalID: -377758188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 627
+        width: 32
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77beed3574db2b44b480eec427d271d
+      internalID: -146732477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 608
+        width: 32
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aedf8b7aab3d604f8ce36288014063e
+      internalID: -1631869240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 589
+        width: 32
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c45fa7d3b3ded4592bad6d1195f5d7
+      internalID: -1803249802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 570
+        width: 32
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fc8b7c87a57cb40a53111889dc8a8d
+      internalID: -517354609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 551
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f0651c482662e49b3265e79871f8fa
+      internalID: -166567920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 532
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3926e3beb5ea24c8feb74831cb7111
+      internalID: -2122583743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 513
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32801659b862c488ef0c0fb7d2d2b9
+      internalID: 802339710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 494
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e979a47f7f77d144396f403f5b9f71db
+      internalID: 1277369571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 475
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f5754029d01f14fae45113d33f98ab
+      internalID: 1082209975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 456
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6340fa60813d9418d62dd024429c27
+      internalID: -1932893317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 437
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf794057053a2d4bb0b9050d952bd60
+      internalID: 543731727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5186fc45b1e314dae94a8257d1c634
+      internalID: 740965272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01ba2f770a3b55459e38823990b15e5
+      internalID: 1112410961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb878b017d55b30478f2849eb6262f81
+      internalID: -1506541799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 361
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb46ea9b62deef41a0f105a29ba80ff
+      internalID: -988907533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53f0f1353a0fdc418bd8129b2f70b7a
+      internalID: 200053714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359cbbb70c3f4c64cba0443bfe62ab7f
+      internalID: -1534552156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0db6c926e86e94593a698adc0037df
+      internalID: -249304036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b9db47ea0e58141a90cc88c69dea30
+      internalID: 460553904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 266
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4350c52397f63b489db6ce3dff657f2
+      internalID: -109207211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 247
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c3c9e40813b6e40a2d596d4a8bb3ba
+      internalID: -2019345604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434f67d60c3d36944a2953fefda48390
+      internalID: -976531921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6da58520a3fd3441966d2fb1253e4af
+      internalID: -1192639944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 91
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046c7baa48c280c4f9af8d8acece7050
+      internalID: 726262531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 171
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45bf3b6fa491dd43a0069597dcb0a5e
+      internalID: -344238219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 152
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67364890c623804fb10cc02eadf4afb
+      internalID: -652148551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 133
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f798a759a951424ebf0e20706d85a72
+      internalID: -262666150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 114
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7a80159be4a0e4380dd7c3697693f5
+      internalID: 1538881948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29359670f7c4df942a49058fdcd784ce
+      internalID: 1706036698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 76
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421134f3067b5784abe8cfc95a6dd813
+      internalID: 1140020131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 57
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e26c4018477202439a344296a24b9bb
+      internalID: 1475840249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 38
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bc8b5da3930b64d99708bdfc41bad8
+      internalID: 213964760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0dc289f4c321648ae7c61bd706bdc0
+      internalID: -1611973326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assassin-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a565b84e80c0c9c4a820d881de358458
+      internalID: 573170325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Assassin-Sheet_0: -498784355
+      Assassin-Sheet_1: 836260837
+      Assassin-Sheet_10: -306232364
+      Assassin-Sheet_11: -549409758
+      Assassin-Sheet_12: 1335088668
+      Assassin-Sheet_13: -1460166522
+      Assassin-Sheet_14: 122576118
+      Assassin-Sheet_15: 697615207
+      Assassin-Sheet_16: -961056234
+      Assassin-Sheet_17: -1696292273
+      Assassin-Sheet_18: -437092193
+      Assassin-Sheet_19: 1846635914
+      Assassin-Sheet_2: -369255538
+      Assassin-Sheet_20: -375867595
+      Assassin-Sheet_21: -148002249
+      Assassin-Sheet_22: -1558199877
+      Assassin-Sheet_23: 1075885717
+      Assassin-Sheet_24: 1737392274
+      Assassin-Sheet_25: 1242840103
+      Assassin-Sheet_26: 72585328
+      Assassin-Sheet_27: 523044327
+      Assassin-Sheet_28: 351408089
+      Assassin-Sheet_29: 783691858
+      Assassin-Sheet_3: -1040695467
+      Assassin-Sheet_30: 1664817095
+      Assassin-Sheet_31: 1548163436
+      Assassin-Sheet_32: -377758188
+      Assassin-Sheet_33: -1035264976
+      Assassin-Sheet_34: -146732477
+      Assassin-Sheet_35: -1811951730
+      Assassin-Sheet_36: -1631869240
+      Assassin-Sheet_37: -233174970
+      Assassin-Sheet_38: -1803249802
+      Assassin-Sheet_39: 1561458356
+      Assassin-Sheet_4: 11653161
+      Assassin-Sheet_40: -517354609
+      Assassin-Sheet_41: 355679508
+      Assassin-Sheet_42: -166567920
+      Assassin-Sheet_43: -1498089403
+      Assassin-Sheet_44: -2122583743
+      Assassin-Sheet_45: 1221639845
+      Assassin-Sheet_46: 802339710
+      Assassin-Sheet_47: 309371830
+      Assassin-Sheet_48: 1277369571
+      Assassin-Sheet_49: 814109903
+      Assassin-Sheet_5: 16683781
+      Assassin-Sheet_50: 1082209975
+      Assassin-Sheet_51: -638865122
+      Assassin-Sheet_52: -1932893317
+      Assassin-Sheet_53: 543731727
+      Assassin-Sheet_54: 740965272
+      Assassin-Sheet_55: 1112410961
+      Assassin-Sheet_56: -1506541799
+      Assassin-Sheet_57: -1183603563
+      Assassin-Sheet_58: -826939540
+      Assassin-Sheet_59: -988907533
+      Assassin-Sheet_6: -1334604811
+      Assassin-Sheet_60: -1251085663
+      Assassin-Sheet_61: 437961340
+      Assassin-Sheet_62: 200053714
+      Assassin-Sheet_63: 690505591
+      Assassin-Sheet_64: -927217390
+      Assassin-Sheet_65: -1534552156
+      Assassin-Sheet_66: 531143805
+      Assassin-Sheet_67: -249304036
+      Assassin-Sheet_68: 124618406
+      Assassin-Sheet_69: 460553904
+      Assassin-Sheet_7: -1178951079
+      Assassin-Sheet_70: -1174166063
+      Assassin-Sheet_71: -109207211
+      Assassin-Sheet_72: 899667737
+      Assassin-Sheet_73: -2019345604
+      Assassin-Sheet_74: 1831560258
+      Assassin-Sheet_75: -976531921
+      Assassin-Sheet_76: 677173179
+      Assassin-Sheet_77: -1192639944
+      Assassin-Sheet_78: -960513612
+      Assassin-Sheet_79: 726262531
+      Assassin-Sheet_8: 2141530045
+      Assassin-Sheet_80: -344238219
+      Assassin-Sheet_81: 129444545
+      Assassin-Sheet_82: -652148551
+      Assassin-Sheet_83: 686009360
+      Assassin-Sheet_84: -262666150
+      Assassin-Sheet_85: -1469306347
+      Assassin-Sheet_86: 1538881948
+      Assassin-Sheet_87: -123252940
+      Assassin-Sheet_88: 1706036698
+      Assassin-Sheet_89: -91838081
+      Assassin-Sheet_9: 864762568
+      Assassin-Sheet_90: 1140020131
+      Assassin-Sheet_91: -1888589521
+      Assassin-Sheet_92: 1475840249
+      Assassin-Sheet_93: 363449299
+      Assassin-Sheet_94: 213964760
+      Assassin-Sheet_95: -1028082593
+      Assassin-Sheet_96: -1611973326
+      Assassin-Sheet_97: 27871951
+      Assassin-Sheet_98: 573170325
+      Assassin-Sheet_99: -939710038
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
