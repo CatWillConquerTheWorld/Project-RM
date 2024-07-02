@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     //싱글톤 선언
     public static PlayerController instance { get; private set; }
+
+    public int hp;
+    private bool isDead;
 
     public float moveSpeed = 4f;
     public float jumpForce = 4f;
@@ -39,6 +43,9 @@ public class PlayerController : MonoBehaviour
     private Transform closestEnemy;
     private bool flip;
 
+    public float knockBack;
+    private int accel;
+    private bool isHitting;
     void Awake()
     {
         if (instance == null)
@@ -52,16 +59,21 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        isDead = false;
+
         flip = true;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
+        isHitting = false;
+        accel = 1;
     }
 
     void Update()
     {
-        
+        if (isDead) return;
+
         //좌우 이동
         Move();
 
@@ -159,6 +171,9 @@ public class PlayerController : MonoBehaviour
 
             // 총 위치 조정
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
+
+            //피격시 넉백 방향 조정
+            accel = -1;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -169,6 +184,9 @@ public class PlayerController : MonoBehaviour
 
             //총 위치 조정
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
+
+            //피격시 넉백 방향 조정
+            accel = 1;
         }
         else
         {
@@ -285,5 +303,49 @@ public class PlayerController : MonoBehaviour
         {
             CameraController.instance.offset = Vector3.Lerp(CameraController.instance.offset, Vector3.zero, 0.05f);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && !isDead)
+        {
+            Hit(5);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy" && !isDead)
+        {
+            Hit(10);
+        }
+    }
+
+    private void Hit(int damage)
+    {
+        isHitting = true;
+        transform.Find("Gun").gameObject.SetActive(false);
+        animator.SetTrigger("hit");
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accel, transform.position.y, 0), 1f);
+        hp -= damage;
+        if (hp <= 0f)
+        {
+            Death();
+        }
+    }
+
+    public void Death()
+    {
+        transform.Find("Gun").gameObject.SetActive(false);
+        isDead = true;
+        animator.SetBool("isDead", true);
+        //Destroy(GetComponent<Rigidbody2D>());
+    }
+
+    public void back()
+    {
+        isHitting = false;
+        transform.Find("Gun").gameObject.SetActive(true);
+        animator.SetTrigger("back");
     }
 }
