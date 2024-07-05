@@ -1,7 +1,9 @@
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
+    //public static EnemyController instance { get; private set; }
+
     public int hp;
 
     public float playerRadius;
@@ -11,17 +13,15 @@ public class EnemyAI : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     private int[] direction;
-    private int velocity;
-    private int attackVelo;
+    public int velocity;
     private bool moved;
     private float wanderTimer;
 
-    private Animator animator;
+    public Animator animator;
 
-    private bool isCharging;
-    private int attackStack;
-    private GameObject attackCollider;
-    private GameObject longAttackCollider;
+    public int attackStack;
+    public bool isCharging;
+
     private int normalAttackRate;
     private int semiAttackRate;
     private int chargedAttackRate;
@@ -30,9 +30,19 @@ public class EnemyAI : MonoBehaviour
 
     private bool isDead;
 
+    //void Awake()
+    //{
+    //    if (instance == null)
+    //    {
+    //        instance = this;
+    //    } else
+    //    {
+    //        Destroy(this);
+    //    }
+    //}
+
     void Start()
     {
-        attackStack = 1;
         boxCollider = GetComponent<BoxCollider2D>();
         moved = false;
         direction = new int[2] { 1, -1 };
@@ -45,33 +55,13 @@ public class EnemyAI : MonoBehaviour
         normalAttackRate = PlayerController.instance.normalAttackRate;
         semiAttackRate = PlayerController.instance.semiAttackRate;
         chargedAttackRate = PlayerController.instance.chargedAttackRate;
-
-        attackCollider = transform.Find("attackCollider").gameObject;
-        attackCollider.SetActive(false);
-        longAttackCollider = transform.Find("longAttackCollider").gameObject;
-        longAttackCollider.SetActive(false);
     }
 
     void Update()
     {
         if (isDead) return;
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            print("S");
-            Attack();
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            LongAttackPrepare();
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            LongAttack();
-        }
-
-        if  (animator.GetCurrentAnimatorStateInfo(0).IsName("attack 1 0") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("attack 2 0") == false && isHitting == false && isCharging == false)
+        if  (animator.GetCurrentAnimatorStateInfo(0).IsName("attack 1") == false && animator.GetCurrentAnimatorStateInfo(0).IsName("attack 2") == false && isHitting == false && isCharging == false)
         {
             Wander();
         }
@@ -132,64 +122,6 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void Attack()
-    {
-        attackCollider.SetActive(false);
-        velocity = 0;
-        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
-        Vector3 direction = (player.position - transform.position).normalized;
-        if (direction.x < 0f)
-        {
-            
-            transform.localScale = new Vector3(-3, 3, 0);
-        }
-        else
-        {
-            transform.localScale = new Vector3(3, 3, 0);
-        }
-        attackCollider.SetActive(true);
-        if (attackStack % 2 == 1) animator.SetTrigger("attack1");
-        if (attackStack % 2 == 0) animator.SetTrigger("attack2");
-    }
-
-    void LongAttackPrepare()
-    {
-        longAttackCollider.SetActive(false);
-        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
-        Vector3 direction = (player.position - transform.position).normalized;
-        if (direction.x < 0f)
-        {
-            attackVelo = -1;
-            transform.localScale = new Vector3(-3, 3, 0);
-        }
-        else
-        {
-            attackVelo = 1;
-            transform.localScale = new Vector3(3, 3, 0);
-        }
-        isCharging = true;
-        animator.SetBool("isCharging", true);
-    }
-
-    void LongAttack()
-    {
-        longAttackCollider.SetActive(true);
-        animator.SetTrigger("longAttack");
-    }
-
-    public void attackStackPlus()
-    {
-        attackStack += 1;
-    }
-
-    public void back()
-    {
-        isCharging = false;
-        animator.SetBool("isCharging", false);
-        attackCollider.SetActive(false);
-        longAttackCollider.SetActive(false);
-        animator.SetTrigger("back");
-    }
 
     public void hitEnd()
     {

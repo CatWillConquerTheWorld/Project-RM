@@ -374,7 +374,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &3994763474813665403
@@ -404,8 +404,6 @@ MonoBehaviour:
   maxChargeTime: 1
   gunAnimator: {fileID: 7772306442505255744}
   gunVFXAnimator: {fileID: 13838556812785867}
-  gunSpriteRenderer: {fileID: 4519484185086693924}
-  gunVFXSpriteRenderer: {fileID: 5272467741069630593}
   detectionRadius: 5
   knockBack: 0.3
 --- !u!61 &1823088573665876954

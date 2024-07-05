@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b429524eb62acc4183e024692ccf137
+guid: e30a3eae0e7a7524b9090ed6ca4afa5d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,127 +97,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack vfx _0
+      name: death_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 8
+        y: 204
+        width: 21
+        height: 34
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b36ca519feaee3458448a3d8294d05f
+      internalID: -1469152161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_1
+      rect:
+        serializedVersion: 2
+        x: 8
         y: 170
-        width: 15
+        width: 21
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5389e5301d33a69408e276d7d63b8670
-      internalID: -396836339
+      spriteID: 34670d4b96996db45bdde56ab765e909
+      internalID: 573991516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack vfx _1
+      name: death_2
       rect:
         serializedVersion: 2
-        x: 47
+        x: 8
         y: 136
-        width: 15
+        width: 21
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e1446d017838474394d982f970958a6
-      internalID: 1763389552
+      spriteID: 00cef58a6eaeb8245b048e0484cc798e
+      internalID: -915877993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack vfx _2
+      name: death_3
       rect:
         serializedVersion: 2
-        x: 47
+        x: 0
         y: 102
-        width: 15
+        width: 29
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.62068963, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87b04805014dd2344a2fc234d33f08e4
-      internalID: 2038805601
+      spriteID: bb9b8335b3e67f34b98a80dbc2a42327
+      internalID: 2077308175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack vfx _3
+      name: death_4
       rect:
         serializedVersion: 2
-        x: 47
+        x: 0
         y: 68
-        width: 15
+        width: 30
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf12ccdb1c56ead48afb2eb535cca6b0
-      internalID: -1257898658
+      spriteID: 5e5c44b046d774a458fe0475e5c14796
+      internalID: 1595016170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack vfx _4
+      name: death_6
       rect:
         serializedVersion: 2
-        x: 47
+        x: 8
         y: 34
-        width: 15
+        width: 21
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08abaf95893a1547916fa460dbfd609
-      internalID: -1767522433
+      spriteID: 57b1bb5ffc9503242a6a82303e00ccf6
+      internalID: 1015946199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack vfx _5
+      name: death_8
       rect:
         serializedVersion: 2
-        x: 47
+        x: 8
         y: 0
-        width: 15
+        width: 21
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13f00bdd8aae2d2409a80faad9e91ca3
-      internalID: -648494256
+      spriteID: 6a2e30af7ec96ac469f2c1fe335878be
+      internalID: 286623028
       vertices: []
       indices: 
       edges: []
@@ -233,12 +254,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      attack vfx _0: -396836339
-      attack vfx _1: 1763389552
-      attack vfx _2: 2038805601
-      attack vfx _3: -1257898658
-      attack vfx _4: -1767522433
-      attack vfx _5: -648494256
+      death_0: -1469152161
+      death_1: 573991516
+      death_2: -915877993
+      death_3: 2077308175
+      death_4: 1595016170
+      death_5: -1450224539
+      death_6: 1015946199
+      death_7: -511119526
+      death_8: 286623028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

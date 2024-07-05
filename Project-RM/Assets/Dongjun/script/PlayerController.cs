@@ -34,8 +34,6 @@ public class PlayerController : MonoBehaviour
 
     public Animator gunAnimator;
     public Animator gunVFXAnimator;
-    public SpriteRenderer gunSpriteRenderer;
-    public SpriteRenderer gunVFXSpriteRenderer;
     private float chargedTime;
 
     //색적 요소
@@ -73,7 +71,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (isDead) return;
-
         //좌우 이동
         Move();
 
@@ -96,12 +93,10 @@ public class PlayerController : MonoBehaviour
         else
         {
             transform.Find("Gun").transform.rotation = Quaternion.identity;
+            transform.Find("Gun").transform.localScale = Vector3.one;
             flip = true;
         }
 
-        print(flip);
-
-        print(transform.localScale.x / Mathf.Abs(transform.localScale.x));
     }
 
     void FixedUpdate()
@@ -145,19 +140,16 @@ public class PlayerController : MonoBehaviour
         {
             scale.x = -Mathf.Abs(scale.x);
             transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
-            gunScale.x = -Mathf.Abs(gunScale.x);
-            //firePoint.rotation = new Quaternion(0, 0, 180, 0);
         }
         else
         {
             scale.x = Mathf.Abs(scale.x);
             transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
-            gunScale.x = Mathf.Abs(gunScale.x);
-            //firePoint.rotation = new Quaternion(0, 0, 0, 0);
         }
+        firePoint.rotation = new Quaternion(0, 0, 0, 0);
 
         transform.localScale = scale;
-        transform.Find("Gun").transform.localScale = gunScale;
+        transform.Find("Gun").transform.localScale = scale / 3;
     }
 
     private void Move()
@@ -315,7 +307,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && !isDead)
+        if (collision.gameObject.tag == "EnemyBullet" && !isDead)
         {
             Hit(10);
         }
