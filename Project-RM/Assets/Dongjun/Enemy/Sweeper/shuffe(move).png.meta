@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cd56a20bd6c91340a78ea0d24d3e611
+guid: 66c5ee3e470dc1844ab7f8f81bdb3bfd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,211 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slam with VFX_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 270
-        width: 34
-        height: 30
-      alignment: 9
-      pivot: {x: 0.7941176, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dffdd828ba06254abf2360643b74ffb
-      internalID: 557818667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slam with VFX_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 240
-        width: 34
-        height: 30
-      alignment: 9
-      pivot: {x: 0.7941176, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 678dc0c1c84c3e74d9ffa4aecb2562cc
-      internalID: 2125290839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slam with VFX_2
+      name: shuffe(move)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 210
-        width: 35
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.7714286, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c6133e66d667fb42852a49531648443
-      internalID: 283021994
+      spriteID: 5d93af326e5a83642add0390c44812c2
+      internalID: -852531559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_4
+      name: shuffe(move)_1
       rect:
         serializedVersion: 2
         x: 0
         y: 180
-        width: 35
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.7714286, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8c07ec1488566f4ebfb12ab02f8b856
-      internalID: -1354093424
+      spriteID: 4138f3ab2eb19d849b078d2e86ea5d94
+      internalID: -446299453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_6
+      name: shuffe(move)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 150
-        width: 35
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.7714286, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f661a31e2b3a3f4c8b9f3aa7d602375
-      internalID: -1593029392
+      spriteID: 7d86061edf0170f4887a5cc19999840e
+      internalID: 2137375111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_8
+      name: shuffe(move)_3
       rect:
         serializedVersion: 2
         x: 0
         y: 120
-        width: 62
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.43548387, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c05bbc52931854e9eff76975807cc2
-      internalID: 1318596380
+      spriteID: 56a1208de58521840bd83d0177a17e4d
+      internalID: 1642444816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_10
+      name: shuffe(move)_4
       rect:
         serializedVersion: 2
         x: 0
         y: 90
-        width: 62
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.43548387, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7274a62b36521184a8b88bfcb3325292
-      internalID: -1598551247
+      spriteID: 4e886e88d3fa3874aa35324a98a0ad80
+      internalID: -312579654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_12
+      name: shuffe(move)_5
       rect:
         serializedVersion: 2
         x: 0
         y: 60
-        width: 62
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.43548387, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a11edb715e8ef45b20efa1325fc57a
-      internalID: 1990693956
+      spriteID: d6fe9373374020e47937fd3887f408b7
+      internalID: 551309977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_14
+      name: shuffe(move)_6
       rect:
         serializedVersion: 2
         x: 0
         y: 30
-        width: 62
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.43548387, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d9ff0bb9889ade48bb7321984ff138d
-      internalID: -1800659644
+      spriteID: 65c873785fb62da4cad0c795f7fe67ca
+      internalID: 1746384472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slam with VFX_16
+      name: shuffe(move)_7
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 62
+        width: 34
         height: 30
       alignment: 9
-      pivot: {x: 0.43548387, y: 0.5}
+      pivot: {x: 0.7941176, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf434c721b40df4eba301b55a2aacb8
-      internalID: -1732292720
+      spriteID: 85d2e1cc2e732e74d8ae844463bda079
+      internalID: -1650603419
       vertices: []
       indices: 
       edges: []
@@ -317,24 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      slam with VFX_0: 557818667
-      slam with VFX_1: 2125290839
-      slam with VFX_10: -1598551247
-      slam with VFX_11: -1437327927
-      slam with VFX_12: 1990693956
-      slam with VFX_13: -1179240195
-      slam with VFX_14: -1800659644
-      slam with VFX_15: -1134124505
-      slam with VFX_16: -1732292720
-      slam with VFX_17: -1073217976
-      slam with VFX_2: 283021994
-      slam with VFX_3: 965998815
-      slam with VFX_4: -1354093424
-      slam with VFX_5: 980742380
-      slam with VFX_6: -1593029392
-      slam with VFX_7: -568402175
-      slam with VFX_8: 1318596380
-      slam with VFX_9: -1632341315
+      shuffe(move)_0: -852531559
+      shuffe(move)_1: -446299453
+      shuffe(move)_2: 2137375111
+      shuffe(move)_3: 1642444816
+      shuffe(move)_4: -312579654
+      shuffe(move)_5: 551309977
+      shuffe(move)_6: 1746384472
+      shuffe(move)_7: -1650603419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

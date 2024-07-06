@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: abfaa76df7f46504bbab3f7a7c5f506d
+guid: 5c54ae58e3eff6246bb888a68ef4f707
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sweep without VFX_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7941176, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcd8a19130a8f24490bc004a1d08468
+      internalID: 1364948597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sweep without VFX_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7941176, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17c0a39e11449746a4a8035414286e6
+      internalID: 175293399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sweep without VFX_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7941176, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c9ad12b47dbea43bef54f44f06f828
+      internalID: 366288814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +169,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sweep without VFX_0: 1364948597
+      Sweep without VFX_1: 175293399
+      Sweep without VFX_2: 366288814
+      Sweep without VFX_3: 209980380
+      Sweep without VFX_4: 1072555384
+      Sweep without VFX_5: 879248354
+      Sweep without VFX_6: -1567756369
+      Sweep without VFX_7: 143392400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
