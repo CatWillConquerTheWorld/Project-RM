@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 2e5e6009416611e49bc28d28b4865a83
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ideas-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100d7a62d88f24949b6922d98746210a
+      internalID: -2128191075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83904453b8390874990c38324a6ddb56
+      internalID: 339888626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0462ba932b3bf08489003555544eac96
+      internalID: 1860495087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92f468e058783349a7b5140f2654c7a
+      internalID: 839069389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0524866b6d0a246b75945fee7b8239
+      internalID: -2077271595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1dca70964e7194383ef99ef2c75067
+      internalID: -1772093108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31df84fdd5aaf841ac95596926c964e
+      internalID: -91379848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1438
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12e5bb00e2edbb47b7bb1df255a1bef
+      internalID: -1999766249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974e5f8ef51d8c54fab0070e2044f958
+      internalID: 313885435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63305fa778013b94182c9a1656b1d390
+      internalID: 1420616433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f609ecf5ce4f8e4cab4b95b8454b922
+      internalID: -579248550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc4bbf3b188686408c3b2ba6532c41a
+      internalID: 531052257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f26c65f75389ff4b931e118b228639e
+      internalID: -1377931338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82e0b05cb96a6e48a951226ad17bba9
+      internalID: 1342629496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c86dae3014f7c4ebd9328f449ddfe8
+      internalID: 598660986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57623de3333dc94ea8965e08bf1db54
+      internalID: 1091991118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1246
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d597de35b6c38624fa6a8798a6818307
+      internalID: 1133600811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f26cce9fdcbf7459bd1db0c563c447
+      internalID: 1373586148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d7ca460b06df54c823a1b5cf23c880
+      internalID: -1479005588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f65425591b6b4844853e79c60cabdd1
+      internalID: -1411896244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8b0cb626684e04d86f3c02f9cfbb19
+      internalID: -1710714199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29faa3b394a72448820ecfa8d440c53
+      internalID: -933655670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2340f7ad0a4894c429b3d54f58077dec
+      internalID: -789772939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb0cdddce376a74ebd5ebbbf89cdeff
+      internalID: -1316239209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0879d979347ed4b8678d279db16f47
+      internalID: -1239054247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1054
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc60611abc03ad4bb665bce3bf5d476
+      internalID: 1044715870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87eccb12f39b3394c963c31671f0ca70
+      internalID: -1489121748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b5ec55bf7e9234f82db2baeeacca82
+      internalID: 1818451373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02304c9f5c9b59f46b9e0e150bc828f3
+      internalID: -703000805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92cc22f35540fc45b820807db5ab4a1
+      internalID: 1138788325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c4d960c4623fb4887d75b3b126329f
+      internalID: -739467535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1210825ae8e496347978fad88236a513
+      internalID: 1213812280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f3beabcc95a6e4aa4c263b06f7ff87
+      internalID: 1704219225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b61d04bed09f944a427bcc93d27bac
+      internalID: 55380642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 862
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf02461510d3a04e8bba41abd283b6f
+      internalID: -1625749484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ced6797cb5cb2b42a85d5a883e2f013
+      internalID: 309524516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ad066823803374493fab716971875f
+      internalID: -647037454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08359243a1feb4042b32b9a3f7a0f712
+      internalID: -2073732705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b22aef4d5890184c877f634bd41eecf
+      internalID: -101457235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e45239da630f649a2d06601f58f13a
+      internalID: -1750325206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 670
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5881db2fc5c7a59409e737a0dca4b397
+      internalID: 734005272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 670
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.44270834, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859c38896cbd9c429e1db97c150a0a0
+      internalID: 1393542685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 670
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.390625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e52454bf6ee57f43aa366a39733d747
+      internalID: -1888681067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 670
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.390625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f2c26234d07b242a58ee70f599ef09
+      internalID: 1047857468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.390625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98080d77cf0d7464a8a9c22c4474bca5
+      internalID: 592523831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.390625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1a377d39b3a2e42bde3a76ebbac820
+      internalID: -1426335793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22216d3e784d454f9e03b3bff609686
+      internalID: 1198351697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbedd8877a751843b5e174d80c6a129
+      internalID: -1025047081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24af31c096409548a42845834ade6b6
+      internalID: 1026081913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39e44edab85f364380045e7c2b8e7a7
+      internalID: -1585808843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a357409537055e643b998a6f47a658f0
+      internalID: 935962578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 478
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.20833333, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dc532389a448743bb6d58f9f76568a
+      internalID: 922550393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f539f30d59148d41a88e4d089629efb
+      internalID: 313210732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5683f4f76867749bf118adae9a5d89
+      internalID: -332923214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3905c9355abecc04c9f092a41c4d1278
+      internalID: -988829953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f48cbac81404464cb788147885f05fa
+      internalID: 342877873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e677dc7d4b826647814754f8d4c8438
+      internalID: 1432014059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb01b46f370100645bffad09732a6143
+      internalID: 578920099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9371750f192625b42982921ae3ac2efa
+      internalID: 1938115136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 286
+        width: 192
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236a4e421728b464e9f147bd1a9e5763
+      internalID: -1835138292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 286
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c011c536c67c1484b81ab345180d5ea6
+      internalID: -1974105474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146ba0accf7b33c4cb823524e60aa6f9
+      internalID: 811624611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e9658bb1649740ba4f10ecf685287
+      internalID: 2061660588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8510cf5b07b1d1841ad23c1567273eee
+      internalID: 550873283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75ed90807df3d2429bc1b752d05a548
+      internalID: 1218259849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c675620b9ff07e4eb0ecd9b01e17af1
+      internalID: 780967239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 94
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee1f03472e644946ac33bb86d51f71a
+      internalID: 1089128990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ideas-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 478
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2564a437247dcb2479923b1704680ace
+      internalID: -66933357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ideas-Sheet_0: -66933357
+      ideas-Sheet_1: 967521814
+      ideas-Sheet_10: -313665951
+      ideas-Sheet_11: 313885435
+      ideas-Sheet_12: 1420616433
+      ideas-Sheet_13: -579248550
+      ideas-Sheet_14: 531052257
+      ideas-Sheet_15: -1377931338
+      ideas-Sheet_16: 1342629496
+      ideas-Sheet_17: 598660986
+      ideas-Sheet_18: 1091991118
+      ideas-Sheet_19: 1133600811
+      ideas-Sheet_2: -2128191075
+      ideas-Sheet_20: 1373586148
+      ideas-Sheet_21: -1479005588
+      ideas-Sheet_22: -1411896244
+      ideas-Sheet_23: -1710714199
+      ideas-Sheet_24: -933655670
+      ideas-Sheet_25: -789772939
+      ideas-Sheet_26: -1316239209
+      ideas-Sheet_27: -1239054247
+      ideas-Sheet_28: 1044715870
+      ideas-Sheet_29: -1489121748
+      ideas-Sheet_3: 339888626
+      ideas-Sheet_30: 1818451373
+      ideas-Sheet_31: -703000805
+      ideas-Sheet_32: 1138788325
+      ideas-Sheet_33: -739467535
+      ideas-Sheet_34: 1213812280
+      ideas-Sheet_35: 1704219225
+      ideas-Sheet_36: 55380642
+      ideas-Sheet_37: -1625749484
+      ideas-Sheet_38: 309524516
+      ideas-Sheet_39: -647037454
+      ideas-Sheet_4: 1860495087
+      ideas-Sheet_40: -2073732705
+      ideas-Sheet_41: -101457235
+      ideas-Sheet_42: -1750325206
+      ideas-Sheet_43: 734005272
+      ideas-Sheet_44: 1393542685
+      ideas-Sheet_45: -1888681067
+      ideas-Sheet_46: 1047857468
+      ideas-Sheet_47: 592523831
+      ideas-Sheet_48: -1426335793
+      ideas-Sheet_49: 1198351697
+      ideas-Sheet_5: 839069389
+      ideas-Sheet_50: -1025047081
+      ideas-Sheet_51: 1026081913
+      ideas-Sheet_52: -1585808843
+      ideas-Sheet_53: 935962578
+      ideas-Sheet_54: 922550393
+      ideas-Sheet_55: 313210732
+      ideas-Sheet_56: -332923214
+      ideas-Sheet_57: -988829953
+      ideas-Sheet_58: 342877873
+      ideas-Sheet_59: 1432014059
+      ideas-Sheet_6: -2077271595
+      ideas-Sheet_60: 578920099
+      ideas-Sheet_61: 1938115136
+      ideas-Sheet_62: -1835138292
+      ideas-Sheet_63: -1974105474
+      ideas-Sheet_64: 811624611
+      ideas-Sheet_65: 2061660588
+      ideas-Sheet_66: 550873283
+      ideas-Sheet_67: 1218259849
+      ideas-Sheet_68: 780967239
+      ideas-Sheet_69: 1089128990
+      ideas-Sheet_7: -1772093108
+      ideas-Sheet_8: -91379848
+      ideas-Sheet_9: -1999766249
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

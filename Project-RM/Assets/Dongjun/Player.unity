@@ -257,6 +257,11 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!1 &1120275235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8661935088539161800, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+  m_PrefabInstance: {fileID: 4714722049685737454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1143106330
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +286,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143106330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3e798f0b35e8ae4682e3ce7cec22573, type: 3}
   m_Name: 
@@ -290,6 +295,7 @@ MonoBehaviour:
   - {fileID: 1312796225}
   - {fileID: 199534524}
   - {fileID: 2070292950}
+  - {fileID: 1120275235}
 --- !u!4 &1143106332
 Transform:
   m_ObjectHideFlags: 0
@@ -3615,10 +3621,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Sweeper
       objectReference: {fileID: 0}
-    - target: {fileID: 176845538816567415, guid: 04795f790986da44ea804e561545b7cf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5962320623820029633, guid: 04795f790986da44ea804e561545b7cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.53
@@ -3664,6 +3666,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04795f790986da44ea804e561545b7cf, type: 3}
+--- !u!1001 &4714722049685737454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.341318
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.210424
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08902363
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824648005297370947, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661935088539161800, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
+      propertyPath: m_Name
+      value: Enemy_Archer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
 --- !u!1001 &4930488779675113336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3737,10 +3796,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_OrbMage
       objectReference: {fileID: 0}
-    - target: {fileID: 19068289200896819, guid: 38b0941f8b7531a478ceee9919d0d4a7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6131325829195970192, guid: 38b0941f8b7531a478ceee9919d0d4a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.79
@@ -3796,4 +3851,5 @@ SceneRoots:
   - {fileID: 4930488779675113336}
   - {fileID: 9220238462286353386}
   - {fileID: 2894517168074121061}
+  - {fileID: 4714722049685737454}
   - {fileID: 1143106332}

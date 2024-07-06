@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Text;
 using Unity.VisualScripting;
@@ -42,7 +43,6 @@ public class PlayerController : MonoBehaviour
     private bool flip;
 
     public float knockBack;
-    private int accel;
     private bool isHitting;
     void Awake()
     {
@@ -65,7 +65,6 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
-        accel = 1;
     }
 
     void Update()
@@ -163,9 +162,6 @@ public class PlayerController : MonoBehaviour
 
             // 총 위치 조정
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
-
-            //피격시 넉백 방향 조정
-            accel = -1;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -176,9 +172,6 @@ public class PlayerController : MonoBehaviour
 
             //총 위치 조정
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
-
-            //피격시 넉백 방향 조정
-            accel = 1;
         }
         else
         {
@@ -235,6 +228,7 @@ public class PlayerController : MonoBehaviour
                 gunAnimator.SetBool("isCharging", false);
                 Attack("Normal");
             }
+            gunAnimator.SetTrigger("back");
         }
     }
 
@@ -299,26 +293,44 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        int accel = 0;
         if (collision.gameObject.tag == "Enemy" && !isDead)
         {
-            Hit(5);
+            if (transform.position.x > collision.transform.position.x)
+            {
+                accel = -1;
+            }
+            else if (transform.position.x < collision.transform.position.x)
+            {
+                accel = 1;
+            }
+            Hit(5, accel);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        int accel = 0;
         if (collision.gameObject.tag == "EnemyBullet" && !isDead)
         {
-            Hit(10);
+            if (transform.position.x > collision.transform.position.x)
+            {
+                accel = -1;
+            }
+            else if (transform.position.x < collision.transform.position.x)
+            {
+                accel = 1;
+            }
+            Hit(10, accel);
         }
     }
 
-    private void Hit(int damage)
+    private void Hit(int damage, int accelerator)
     {
         isHitting = true;
         transform.Find("Gun").gameObject.SetActive(false);
         animator.SetTrigger("hit");
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accel, transform.position.y, 0), 1f);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accelerator, transform.position.y, 0), 1f);
         hp -= damage;
         if (hp <= 0f)
         {
