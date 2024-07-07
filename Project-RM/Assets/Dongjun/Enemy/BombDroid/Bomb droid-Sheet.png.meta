@@ -1,0 +1,1148 @@
+fileFormatVersion: 2
+guid: aaf5f626488265b4baa1548354c13ee2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8864
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269c67a63b2a06e4c9db5ced0ce88bed
+      internalID: -849053995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8672
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407ffb12d98cc1a408551910b0fdbd9d
+      internalID: -1806896614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8480
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a67afd60767b54db7b1229946938d8
+      internalID: -1624756663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8288
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1f2eeeda757814c9ecbe1da8a97d55
+      internalID: -1651220961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8096
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea56ca523047664c8d071b9a8ff9212
+      internalID: 1104510436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 7904
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dc9a1d6f873384fa84b8514d15a58b
+      internalID: -369043828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 7712
+        width: 116
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7922078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f0cb1dc8b34284cbeca7dcba86c983
+      internalID: 1880106665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 7520
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d75a5c4db0275741bc2be5265eec338
+      internalID: 473563073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 7328
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa438d20956df1b42b6c1cfd0022c1f2
+      internalID: -1799336640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 7136
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1572d176b53d74d4f8e6eff999f27326
+      internalID: -1064842348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6944
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1805e67b1bc854295e15722cd05d23
+      internalID: -2059651084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6752
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48598ba84753b74b9cbc22f7bc39bf2
+      internalID: -508536439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6560
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d33dc33894169e4298adb111abc30b1
+      internalID: 252770067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6368
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2227662ccd9e5f488c466b1ea891727
+      internalID: -1748061892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6176
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f929b7654478af34fb33f073a1211614
+      internalID: 449992158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5984
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a2fbb1b40a5e84192c690fcbd9b2f3
+      internalID: -838505155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5792
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e8b9865dae01544a00fcf2a58e9765
+      internalID: 521817613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5600
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10241650d88093469a53d49e142f1e4
+      internalID: -1123947134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5408
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00caefb41ab0e7a4b906abc7fc5cfa75
+      internalID: -1486265743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5216
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cf8bc1a001bbf45a35bbd507c836e8
+      internalID: 84163815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5024
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f134691a85aa9c4d803d215040e7625
+      internalID: -1437814989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4832
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c6e33c9e97b11489b3bdac056b96c2
+      internalID: 518450362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4640
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3158ef6042eae1e46974ed341a4ab940
+      internalID: -818111860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4448
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30dc3b9e08e9374884d47bdd14d31de
+      internalID: 1568461504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4256
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810314ebfc26ced47a9164964e92cbcf
+      internalID: -1598674856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4064
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2a14702c9618c458c4c66ebc512e4a
+      internalID: -1550217412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3872
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c607c53e137bdb4e9a435090026fda4
+      internalID: -96053150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3680
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780d7106f53223e40b8408fb8e510d31
+      internalID: -1208434340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3488
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cda92c62adafda4589118b06e54b5c2
+      internalID: -448501857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3296
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e56bec7e94a7c4b847ed86c8dffafe
+      internalID: 1430678257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3104
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c823b67cb09b04c93466deaef0b5c2
+      internalID: -102285208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2912
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403f3dc79932dd74d983afaf95f46bb3
+      internalID: -1113143907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2720
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70eb3b0dee59b934dba5d0aa3feca793
+      internalID: -101261073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2528
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99d19a63f2061a40885e5488a73e1a4
+      internalID: -1881529375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2336
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bd17a33a13aa049baefdef8b129809
+      internalID: -240125858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2144
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb8a645240083347a3ed1dc6c45759b
+      internalID: 2120143580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1952
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181149ccf949eb34286d2516dda82893
+      internalID: -969058795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1760
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48261c4f12ad9584ebab13e4e08f2191
+      internalID: 483236973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1568
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e79466745ae69342913b58186e1326b
+      internalID: 824226518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1376
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fcf63c6801780428a0542517613784
+      internalID: -1646933665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1184
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a5d481bbec629479cbffb52b7fb841
+      internalID: -1376203218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 992
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d542a0fd4b36c4f9875680a1c90729
+      internalID: -651087859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 800
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c7b28b3e1eb1244bce4b50e8409285
+      internalID: 1603569334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 608
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae61a40006c59746a714e763629bd1b
+      internalID: 511232019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9a3c8d3eb18f448a4e542677dde4e8
+      internalID: -229749335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695e7400a4ec0b14ba7938f9f7b00316
+      internalID: -1669096612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bomb droid-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 116
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e7ac521a838b74a84d429862d371d9
+      internalID: -1130210188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bomb droid-Sheet_0: -849053995
+      Bomb droid-Sheet_1: -1806896614
+      Bomb droid-Sheet_10: -2059651084
+      Bomb droid-Sheet_11: -508536439
+      Bomb droid-Sheet_12: 252770067
+      Bomb droid-Sheet_13: -1748061892
+      Bomb droid-Sheet_14: 449992158
+      Bomb droid-Sheet_15: -838505155
+      Bomb droid-Sheet_16: 521817613
+      Bomb droid-Sheet_17: -1123947134
+      Bomb droid-Sheet_18: -1486265743
+      Bomb droid-Sheet_19: 84163815
+      Bomb droid-Sheet_2: -1624756663
+      Bomb droid-Sheet_20: -1437814989
+      Bomb droid-Sheet_21: 518450362
+      Bomb droid-Sheet_22: -818111860
+      Bomb droid-Sheet_23: 1568461504
+      Bomb droid-Sheet_24: -1598674856
+      Bomb droid-Sheet_25: -1550217412
+      Bomb droid-Sheet_26: -96053150
+      Bomb droid-Sheet_27: -1208434340
+      Bomb droid-Sheet_28: -448501857
+      Bomb droid-Sheet_29: 1430678257
+      Bomb droid-Sheet_3: -1651220961
+      Bomb droid-Sheet_30: -102285208
+      Bomb droid-Sheet_31: -1113143907
+      Bomb droid-Sheet_32: -101261073
+      Bomb droid-Sheet_33: -1881529375
+      Bomb droid-Sheet_34: -240125858
+      Bomb droid-Sheet_35: 2120143580
+      Bomb droid-Sheet_36: -969058795
+      Bomb droid-Sheet_37: 483236973
+      Bomb droid-Sheet_38: 824226518
+      Bomb droid-Sheet_39: -1646933665
+      Bomb droid-Sheet_4: 1104510436
+      Bomb droid-Sheet_40: -1376203218
+      Bomb droid-Sheet_41: -651087859
+      Bomb droid-Sheet_42: 1603569334
+      Bomb droid-Sheet_43: 511232019
+      Bomb droid-Sheet_44: -229749335
+      Bomb droid-Sheet_45: -1669096612
+      Bomb droid-Sheet_46: -1130210188
+      Bomb droid-Sheet_5: -369043828
+      Bomb droid-Sheet_6: 1880106665
+      Bomb droid-Sheet_7: 473563073
+      Bomb droid-Sheet_8: -1799336640
+      Bomb droid-Sheet_9: -1064842348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

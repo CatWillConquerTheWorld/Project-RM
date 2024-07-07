@@ -87,7 +87,7 @@ public class EnemyController : MonoBehaviour
     void Wander()
     {
         attackStack = 1;
-        isGrounded = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y+ 0.1f, LayerMask.GetMask("Ground"));
+        isGrounded = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y+ 5f, LayerMask.GetMask("Ground"));
         wanderTimer -= Time.deltaTime;
 
         if (wanderTimer < 0f && !moved)
