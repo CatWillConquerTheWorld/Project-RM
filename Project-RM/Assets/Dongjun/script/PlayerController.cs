@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
     public float knockBack;
     private bool isHitting;
+
+    private bool align;
     void Awake()
     {
         if (instance == null)
@@ -65,6 +67,8 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
+
+        align = false;
     }
 
     void Update()
@@ -85,6 +89,7 @@ public class PlayerController : MonoBehaviour
         FindClosestEnemy();
         if (closestEnemy != null)
         {
+            align = true;
             flip = false;
             LookAtEnemy();
             FlipTowardsEnemy();
@@ -94,6 +99,17 @@ public class PlayerController : MonoBehaviour
             transform.Find("Gun").transform.rotation = Quaternion.identity;
             transform.Find("Gun").transform.localScale = Vector3.one;
             flip = true;
+            if (align)
+            {
+                if (transform.localScale.x > 0)
+                {
+                    firePoint.rotation = new Quaternion(0, 0, 0, 0);
+                } else if (transform.localScale.x < 0)
+                {
+                    firePoint.rotation = new Quaternion(0, 0, 180, 0);
+                }
+                align = false;
+            }
         }
 
     }
