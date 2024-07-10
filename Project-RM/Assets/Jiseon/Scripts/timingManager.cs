@@ -10,8 +10,11 @@ public class timingManager : MonoBehaviour
     [SerializeField] RectTransform[] timingRect = null; // 타이밍 재는 기준 영역들
     Vector2[] timingBoxs = null; // 판정범위 최댓값, 최솟값
 
+    EffectManager theEffect;
+
     void Start()
     {
+        theEffect = FindObjectOfType<EffectManager>();
         // 타이밍 박스 생성
         timingBoxs = new Vector2[timingRect.Length];
 
@@ -40,27 +43,17 @@ public class timingManager : MonoBehaviour
                 {
                     boxNoteList[i].GetComponent<Note>().HideNote();
                     boxNoteList.RemoveAt(i);
-                    switch (x)
-                    {
-                        case 0:
-                            Debug.Log("Critical");
-                            break;
-                        case 1:
-                            Debug.Log("Hit!");
-                            break;
-                        case 2:
-                            Debug.Log("Bad");
-                            break;
-                        default :
-                            Debug.Log("Miss");
-                            break;
 
+                    if (x < timingBoxs.Length - 1) // 0~2만 나옴 . 0 - 퍼펙트 , 1 - 쿨 , 2 - 굳 3  - 배드 4 - 미스
+                    {
+                        theEffect.NoteHitEffect();
                     }
+                    theEffect.JudgementEffect(x);
                     return;
                 }
             }
         }
-
+        theEffect.JudgementEffect(timingBoxs.Length);
         // Debug.Log("Miss"); // 완전히 빗나갔을경우.
     }
 }
