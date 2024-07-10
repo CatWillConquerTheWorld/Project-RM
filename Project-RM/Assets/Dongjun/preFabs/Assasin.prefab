@@ -12,15 +12,16 @@ GameObject:
   - component: {fileID: 1623754620085496332}
   - component: {fileID: 940889729084863745}
   - component: {fileID: 7588757861783531581}
-  - component: {fileID: 3141684424493208053}
   - component: {fileID: 2367516633000521772}
+  - component: {fileID: 900326605725843434}
+  - component: {fileID: 8621530489983992939}
   m_Layer: 7
   m_Name: Assasin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5675346695112200520
 Transform:
   m_ObjectHideFlags: 0
@@ -50,7 +51,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -62,7 +63,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &940889729084863745
@@ -162,21 +163,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3141684424493208053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3226880350209017586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c022a34b2b951fc4fa03da332dfca4d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 100
-  playerRadius: 5
-  moveSpeed: 2
 --- !u!95 &2367516633000521772
 Animator:
   serializedVersion: 5
@@ -198,6 +184,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &900326605725843434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3226880350209017586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c022a34b2b951fc4fa03da332dfca4d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  playerRadius: 5
+  moveSpeed: 2
+  velocity: 0
+  animator: {fileID: 2367516633000521772}
+  attackStack: 0
+  isCharging: 0
+--- !u!114 &8621530489983992939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3226880350209017586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52740fc46176c1f419197b43459eaadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6050008212230621431
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +227,7 @@ GameObject:
   - component: {fileID: 3352760168730817739}
   m_Layer: 7
   m_Name: longAttackCollider
-  m_TagString: Enemy
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +279,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06805125, y: 0.006107088}
+  m_Offset: {x: -0.06085068, y: -0.0042934865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -273,7 +290,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6859185, y: 0.19909182}
+  m_Size: {x: 0.70031965, y: 0.17829067}
   m_EdgeRadius: 0
 --- !u!1 &7108794510717055849
 GameObject:
@@ -287,7 +304,7 @@ GameObject:
   - component: {fileID: 3662674515512868888}
   m_Layer: 7
   m_Name: attackCollider
-  m_TagString: Enemy
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
