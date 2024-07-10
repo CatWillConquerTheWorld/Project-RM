@@ -14,7 +14,7 @@ public class Boss : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -37,5 +37,15 @@ public class Boss : MonoBehaviour
     void Attack1()
     {
         animator.SetTrigger("Attack2");
+    }
+
+    void EndJump()
+    {
+        animator.SetBool("IsJump", false);
+    }
+
+    void Back()
+    {
+        animator.SetTrigger("Back");
     }
 }
