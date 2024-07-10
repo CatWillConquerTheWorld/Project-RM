@@ -6,7 +6,7 @@ public class Boss : MonoBehaviour
 {
     Rigidbody2D rigid;
     Animator animator;
-
+    float maxSpeed = 4.0f;
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -16,6 +16,7 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.S))
         {
             Jump();
@@ -23,11 +24,20 @@ public class Boss : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D))
         {
+            Attack2();
+        }
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
             Attack1();
         }
 
-    }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Buff();
+        }
 
+    }
 
     void Jump()
     {
@@ -36,7 +46,17 @@ public class Boss : MonoBehaviour
 
     void Attack1()
     {
+        animator.SetTrigger("Attack1");
+    }
+
+    void Attack2()
+    {
         animator.SetTrigger("Attack2");
+    }
+    
+    void Buff()
+    {
+        animator.SetTrigger("buff");
     }
 
     void EndJump()
