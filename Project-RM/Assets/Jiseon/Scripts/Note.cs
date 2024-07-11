@@ -32,4 +32,9 @@ public class Note : MonoBehaviour
     {
         noteImage.enabled = false;
     }
+
+    public bool GetNoteFlag()
+    {
+        return noteImage.enabled; // trie면 이미지가 보여지고 있는상태
+    }
 }

@@ -11,6 +11,7 @@ public class timingManager : MonoBehaviour
     Vector2[] timingBoxs = null; // ÆÇÁ¤¹üÀ§ ÃÖ´ñ°ª, ÃÖ¼Ú°ª
 
     EffectManager theEffect;
+    ComboManager theComboManager;
 
     void Start()
     {
@@ -23,6 +24,8 @@ public class timingManager : MonoBehaviour
             timingBoxs[i].Set(Center.localPosition.x - timingRect[i].rect.width / 2,
                 Center.localPosition.x + timingRect[i].rect.width / 2); // ÆÇÁ¤¹üÀ§ = ÃÖ¼Ò°ª, ÃÖ´ë°ª
         }
+
+        theComboManager = FindObjectOfType<ComboManager>();
     }
 
     // Update is called once per frame
@@ -44,15 +47,30 @@ public class timingManager : MonoBehaviour
                     boxNoteList[i].GetComponent<Note>().HideNote();
                     boxNoteList.RemoveAt(i);
 
-                    if (x < timingBoxs.Length - 1) // 0~2¸¸ ³ª¿È . 0 - ÆÛÆåÆ® , 1 - Äð , 2 - ±» 3  - ¹èµå 4 - ¹Ì½º
+                    if(x < timingBoxs.Length - 2) // 0~1¸¸ ³ª¿È . 0 - ÆÛÆåÆ® , 1 - Äð
                     {
+                        theComboManager.IncreaseCombo();
+                        theEffect.JudgementEffect(x);
                         theEffect.NoteHitEffect();
+                        return;
+                    } else if (x == 2) // 2 - ±» 
+                    {
+                        theEffect.JudgementEffect(x);
+                        theEffect.NoteHitEffect();
+                        theComboManager.ResetCombo();
+                        return;
                     }
-                    theEffect.JudgementEffect(x);
-                    return;
+                    else if(x == 3)
+                    {
+                        theEffect.JudgementEffect(x); // 3- ¹èµå
+                        theComboManager.ResetCombo();
+                        return;
+                    }
+                    
                 }
             }
         }
+        theComboManager.ResetCombo(); // 4 - ¹Ì½º
         theEffect.JudgementEffect(timingBoxs.Length);
         // Debug.Log("Miss"); // ¿ÏÀüÈ÷ ºø³ª°¬À»°æ¿ì.
     }
