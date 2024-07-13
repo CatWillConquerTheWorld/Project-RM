@@ -1,8 +1,6 @@
-using JetBrains.Annotations;
-using System;
-using System.Text;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,6 +40,11 @@ public class PlayerController : MonoBehaviour
     private Transform closestEnemy;
     private bool flip;
 
+    public GameObject enemyInfoUI;
+    private TextMeshProUGUI name;
+    private Image healthBar;
+    private TextMeshProUGUI health;
+
     public float knockBack;
     private bool isHitting;
 
@@ -68,6 +71,10 @@ public class PlayerController : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
 
+        name = enemyInfoUI.GetComponent<RectTransform>().Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
+        healthBar = enemyInfoUI.GetComponent<RectTransform>().Find("HealthBar").gameObject.GetComponent<Image>();
+        health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
+
         align = false;
     }
 
@@ -93,9 +100,11 @@ public class PlayerController : MonoBehaviour
             flip = false;
             LookAtEnemy();
             FlipTowardsEnemy();
+            EnemyInfo();
         }
         else
         {
+            enemyInfoUI.SetActive(false);
             transform.Find("Gun").transform.rotation = Quaternion.identity;
             transform.Find("Gun").transform.localScale = Vector3.one;
             flip = true;
@@ -165,6 +174,19 @@ public class PlayerController : MonoBehaviour
 
         transform.localScale = scale;
         transform.Find("Gun").transform.localScale = scale / 3;
+    }
+
+     void EnemyInfo()
+    {
+        float enemyHp = closestEnemy.GetComponent<EnemyController>().hp;
+        float enemyFullHp = closestEnemy.GetComponent<EnemyController>().fullHp;
+        string enemyName = closestEnemy.name.Substring(0,closestEnemy.name.IndexOf("("));
+        name.text = enemyName;
+        health.text = enemyHp + " / " + enemyFullHp;
+        healthBar.fillAmount = enemyHp / enemyFullHp;
+
+        print("this is " + enemyHp + " and " + enemyFullHp + " also " + enemyHp / enemyFullHp);
+        enemyInfoUI.SetActive(true);
     }
 
     private void Move()

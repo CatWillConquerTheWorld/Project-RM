@@ -1,10 +1,13 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     //public static EnemyController instance { get; private set; }
 
     public int hp;
+    public int fullHp;
 
     public float playerRadius;
     public float moveSpeed;
@@ -43,6 +46,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        fullHp = hp;
         boxCollider = GetComponent<BoxCollider2D>();
         moved = false;
         direction = new int[2] { 1, -1 };
