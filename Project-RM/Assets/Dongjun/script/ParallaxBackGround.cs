@@ -15,8 +15,12 @@ public class ParallaxBackGround : MonoBehaviour
 
     void Update()
     {
+        DoParallax();
+    }
+
+    void DoParallax()
+    {
         Vector3 pos = MainCamera.transform.position;
-        float temp = pos.x * (1 - AmountOfParallax);
         float dist = pos.x * AmountOfParallax;
 
         Vector3 newPos = new Vector3(startingPos + dist, transform.position.y, transform.position.z);
