@@ -19,8 +19,8 @@ public class Chatting : MonoBehaviour
 
     void Start()
     {
-        chatter.SetActive(false);
-        innerText.SetActive(false);
+        //chatter.SetActive(false);
+        //innerText.SetActive(false);
         chatterSpriteRenderer = chatter.GetComponent<SpriteRenderer>();
         innerTextTMPro = innerText.GetComponent<TextMeshPro>();
 
@@ -29,18 +29,12 @@ public class Chatting : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            chatter.SetActive(true);
-            innerText.SetActive(true);
-            StartCoroutine(Chat(4, 0.75f, "¿ï¶ö¶ó ¼¼¼Ç"));
-        }
     }
 
 
-    IEnumerator Chat(float chatSizeX, float chatSizeY, string text)
+    public IEnumerator Chat(float chatSizeX, float chatSizeY, string text)
     {
+        innerText.GetComponent<RectTransform>().sizeDelta = new Vector2(chatSizeX - 1, chatSizeY);
         innerTextTMPro.text = "";
         chatterSpriteRenderer.size = new Vector2 (chatSizeX, chatSizeY);
 

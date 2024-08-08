@@ -247,7 +247,6 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot()
     {
-        print(chargedTime);
         if (Input.GetKeyDown(KeyCode.A))
         {
             chargedTime = 0;
