@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private bool flip;
 
     public GameObject enemyInfoUI;
-    private TextMeshProUGUI name;
+    private TextMeshProUGUI enemyName;
     private Image healthBar;
     private TextMeshProUGUI health;
 
@@ -71,11 +71,14 @@ public class PlayerController : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
 
-        name = enemyInfoUI.GetComponent<RectTransform>().Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
-        healthBar = enemyInfoUI.GetComponent<RectTransform>().Find("HealthBar").gameObject.GetComponent<Image>();
-        health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
+        if (enemyInfoUI != null)
+        {
+            enemyName = enemyInfoUI.GetComponent<RectTransform>().Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
+            healthBar = enemyInfoUI.GetComponent<RectTransform>().Find("HealthBar").gameObject.GetComponent<Image>();
+            health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
+        }
 
-        align = false;
+            align = false;
     }
 
     void Update()
@@ -90,9 +93,6 @@ public class PlayerController : MonoBehaviour
         // 총 발사
         Shoot();
 
-        //시야 위/아래로 전환
-        CameraControl();
-
         FindClosestEnemy();
         if (closestEnemy != null)
         {
@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            enemyInfoUI.SetActive(false);
+            if (enemyInfoUI != null) enemyInfoUI.SetActive(false);
             transform.Find("Gun").transform.rotation = Quaternion.identity;
             transform.Find("Gun").transform.localScale = Vector3.one;
             flip = true;
@@ -178,10 +178,11 @@ public class PlayerController : MonoBehaviour
 
      void EnemyInfo()
     {
+        if (enemyInfoUI == null) return;
         float enemyHp = closestEnemy.GetComponent<EnemyController>().hp;
         float enemyFullHp = closestEnemy.GetComponent<EnemyController>().fullHp;
-        string enemyName = closestEnemy.name.Substring(0,closestEnemy.name.IndexOf("("));
-        name.text = enemyName;
+        string _enemyName = closestEnemy.name.Substring(0,closestEnemy.name.IndexOf("("));
+        enemyName.text = _enemyName;
         health.text = enemyHp + " / " + enemyFullHp;
         healthBar.fillAmount = enemyHp / enemyFullHp;
 
@@ -312,20 +313,6 @@ public class PlayerController : MonoBehaviour
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * bulletSpeed;
             bullet.GetComponent<Animator>().SetTrigger("normal");
-        }
-    }
-
-    private void CameraControl()
-    {
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            CameraController.instance.offset = Vector3.Lerp(CameraController.instance.offset, new Vector3(0, 2, 0), 0.05f);
-        } else if (Input.GetKey(KeyCode.Alpha2))
-        {
-            CameraController.instance.offset = Vector3.Lerp(CameraController.instance.offset, new Vector3(0, -2, 0), 0.05f);
-        } else
-        {
-            CameraController.instance.offset = Vector3.Lerp(CameraController.instance.offset, Vector3.zero, 0.05f);
         }
     }
 
