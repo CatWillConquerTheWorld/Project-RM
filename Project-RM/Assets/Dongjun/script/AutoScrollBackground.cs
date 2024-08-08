@@ -13,16 +13,6 @@ public class AutoScrollBackground : MonoBehaviour
 
     void Update()
     {
-        ////print(name + transform.position.x);
-        //if (transform.position.x > targetPos.transform.position.x + container.transform.position.x)
-        //{
-        //    //print("Done");
-        //    transform.position = new Vector3(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y , transform.position.z);
-        //} else
-        //{
-        //    transform.position = new Vector3(returnPos + container.transform.position.x, transform.position.y, transform.position.z);
-        //}
-
         if (transform.position.x <= targetPos.transform.position.x)
         {
             transform.position = returnPos.transform.position;
