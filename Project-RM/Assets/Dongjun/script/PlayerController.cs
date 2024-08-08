@@ -194,6 +194,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                animator.SetBool("isWalking", false);
+                return;
+            }
             animator.SetBool("isWalking", true);
             if (flip) transform.localScale = new Vector3(-3, 3, 0);
             if (flip) firePoint.rotation = new Quaternion(0, 0, 180, 0);
@@ -204,6 +209,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                animator.SetBool("isWalking", false);
+                return;
+            }
             animator.SetBool("isWalking", true);
             if (flip) transform.localScale = new Vector3(3, 3, 0);
             if (flip) firePoint.rotation = new Quaternion(0, 0, 0, 0);
