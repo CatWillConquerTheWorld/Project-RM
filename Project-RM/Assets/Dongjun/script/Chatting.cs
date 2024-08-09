@@ -32,11 +32,11 @@ public class Chatting : MonoBehaviour
     }
 
 
-    public IEnumerator Chat(float chatSizeX, float chatSizeY, string text)
+    public IEnumerator Chat(float chatSizeX, string text)
     {
-        innerText.GetComponent<RectTransform>().sizeDelta = new Vector2(chatSizeX - 1, chatSizeY);
+        innerText.GetComponent<RectTransform>().sizeDelta = new Vector2(chatSizeX - 1f, 0.75f);
         innerTextTMPro.text = "";
-        chatterSpriteRenderer.size = new Vector2 (chatSizeX, chatSizeY);
+        chatterSpriteRenderer.size = new Vector2 (chatSizeX, 0.75f);
 
         for (int i = 0; i < text.Length; i++)
         {
