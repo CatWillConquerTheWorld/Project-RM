@@ -102,6 +102,7 @@ public class Tutorial : MonoBehaviour
         //카메라 무빙
         yield return StartCoroutine(CameraMoveX(10f, 1f, "flex"));
         yield return StartCoroutine(chatting.Chat(6.7f, "저 앞에 총이 보이는가? 가서 한번 잡아보게."));
+        yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(MovieEnd());
         //카메라 무빙 해제
         yield return StartCoroutine(CameraMoveX(-10f, 1f, "flex"));
