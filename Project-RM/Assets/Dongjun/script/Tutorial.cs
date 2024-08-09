@@ -1,18 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using TMPro;
 
 public class Tutorial : MonoBehaviour
 {
+    public static Tutorial Instance;
+
     public GameObject chatManager;
+    public RectTransform movieEffectorUp;
+    public RectTransform movieEffectorDown;
+
+    public GameObject infoText;
+
+    public GameObject gun;
+
+    private RectTransform infoTextRect;
+    private TextMeshProUGUI infoTextTMP;
 
     private Chatting chatting;
 
+    //skipping to next description
     private bool isNext;
-    
+
+    //checks if player is in the interactive gun's field
+    public bool canHoldGun;
+    public bool holdingGun;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     void Start()
     {
         chatting = chatManager.GetComponent<Chatting>();
+
+        infoTextRect = infoText.GetComponent<RectTransform>();
+        infoTextTMP = infoText.GetComponent<TextMeshProUGUI>();
+
+        canHoldGun = false;
+        holdingGun = false;
+
         StartCoroutine(TutorialFlow());
 
         isNext = false;
@@ -59,6 +96,17 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(chatting.Chat(3f, 1.5f, "말 한번 잘했네."));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(3f, 1.5f, "장비는 줄걸세. 그리고 사용법도 친히 알려주지."));
+        yield return StartCoroutine(WaitForUser());
+        //카메라 무빙
+        yield return StartCoroutine(chatting.Chat(3f, 1.5f, "저 앞에 총이 보이는가? 가서 한번 잡아보게."));
+        yield return StartCoroutine(MovieEnd());
+        //카메라 무빙 해제
+        InfoTextChange("방향키를 눌러 이동하세요.");
+        InfoTextAppear();
+        yield return StartCoroutine(WaitForGun());
+        InfoTextDisappear();
+        StartCoroutine(MovieStart());
+        yield return StartCoroutine(chatting.Chat(3f, 1.5f, "여기까진 순조롭습니다! 개발에 정진하세요!"));
         //카메라 무빙
     }
 
@@ -68,4 +116,42 @@ public class Tutorial : MonoBehaviour
         while (!isNext) yield return null;
     }
 
+    IEnumerator MovieStart()
+    {
+        movieEffectorUp.DOAnchorPosY(0f, 0.5f).SetEase(Ease.OutSine);
+        movieEffectorDown.DOAnchorPosY(0f, 0.5f).SetEase(Ease.OutSine);
+        yield return null;
+    }
+
+    IEnumerator MovieEnd()
+    {
+        movieEffectorUp.DOAnchorPosY(150f, 0.5f).SetEase(Ease.OutSine);
+        movieEffectorDown.DOAnchorPosY(-150f, 0.5f).SetEase(Ease.OutSine);
+        yield return null;
+    }
+
+    IEnumerator WaitForGun()
+    {
+        canHoldGun = false;
+        while (!canHoldGun) yield return null;
+        InfoTextChange("F를 눌러 총을 잡으세요.");
+        while (!holdingGun) yield return null;
+        gun.SetActive(false);
+        yield return null;
+    }
+
+    void InfoTextAppear()
+    {
+        infoTextRect.DOAnchorPosY(-50f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    void InfoTextDisappear()
+    {
+        infoTextRect.DOAnchorPosY(50f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    void InfoTextChange(string text)
+    {
+        infoTextTMP.text = text;
+    }
 }

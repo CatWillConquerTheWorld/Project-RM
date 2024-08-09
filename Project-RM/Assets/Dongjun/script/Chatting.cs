@@ -24,7 +24,7 @@ public class Chatting : MonoBehaviour
         chatterSpriteRenderer = chatter.GetComponent<SpriteRenderer>();
         innerTextTMPro = innerText.GetComponent<TextMeshPro>();
 
-        chatDelay = new WaitForSeconds(0.075f);
+        chatDelay = new WaitForSeconds(0.05f);
     }
 
     void Update()
