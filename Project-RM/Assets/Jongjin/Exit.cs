@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -21,18 +22,17 @@ public class Exit : MonoBehaviour
 
    void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
-            if(pause){
+            if(SettingsMenu){
+                ExitSettings();
+            }
+            else if(pause){
+                Debug.Log("1");
                 Resume();
             } else {
                 Pause();
             }
-            Debug.Log(pause);
         }
-        if(SettingsMenu){
-            if(Input.GetKeyDown(KeyCode.Escape)){
-                ExitSettings();
-            }
-        }
+        Debug.Log(pause);
     }
 
     public void Resume(){
@@ -42,9 +42,9 @@ public class Exit : MonoBehaviour
     }
 
     public void Pause(){
+        pause = true;
         Menu.SetActive(true);
         Time.timeScale = 0f;
-        pause = true;
     }
 
     public void Restart(){
