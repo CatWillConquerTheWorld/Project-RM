@@ -22,7 +22,7 @@ public class Exit : MonoBehaviour
 
    void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
-            if(SettingsMenu){
+            if(SettingsMenu.activeSelf){
                 ExitSettings();
             }
             else if(pause){
@@ -32,7 +32,6 @@ public class Exit : MonoBehaviour
                 Pause();
             }
         }
-        Debug.Log(pause);
     }
 
     public void Resume(){
