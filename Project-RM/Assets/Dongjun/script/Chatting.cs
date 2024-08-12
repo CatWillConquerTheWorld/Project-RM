@@ -48,4 +48,14 @@ public class Chatting : MonoBehaviour
             yield return chatDelay;
         }
     }
+
+    public void EnableChat()
+    {
+        chatter.SetActive(true);
+    }
+
+    public void DisableChat()
+    {
+        chatter.SetActive(false);
+    }
 }

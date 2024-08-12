@@ -4,13 +4,23 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 using Cinemachine;
+using UnityEngine.UIElements;
+using System.Globalization;
 
 public class Tutorial : MonoBehaviour
 {
     public static Tutorial Instance;
 
+    public GameObject player;
+    private GameObject playerGun;
+    private SpriteRenderer playerGunSpriteRenderer;
+    private PlayerController playerPlayerController;
+    private SpriteRenderer playerSpriteRenderer;
+    private Animator playerAnimator; 
+
     public Camera mainCamera;
-    public GameObject chatManager;
+    public GameObject chatManagerTutorialNPC;
+    public GameObject chatManagerYeller;
     public RectTransform movieEffectorUp;
     public RectTransform movieEffectorDown;
 
@@ -18,10 +28,13 @@ public class Tutorial : MonoBehaviour
 
     public GameObject gun;
 
+
     private RectTransform infoTextRect;
     private TextMeshProUGUI infoTextTMP;
 
+    private Chatting yellerChat;
     private Chatting chatting;
+    private WaitForSeconds waitOneSec;
 
     //skipping to next description
     private bool isNext;
@@ -44,7 +57,16 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        chatting = chatManager.GetComponent<Chatting>();
+        playerPlayerController = player.GetComponent<PlayerController>();
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
+        playerAnimator = player.GetComponent<Animator>();
+
+        playerGun = player.transform.Find("Gun").gameObject;
+        playerGunSpriteRenderer = playerGun.GetComponent<SpriteRenderer>();
+
+        yellerChat = chatManagerYeller.GetComponent<Chatting>();
+        chatting = chatManagerTutorialNPC.GetComponent<Chatting>();
+        waitOneSec = new WaitForSeconds(1);
 
         infoTextRect = infoText.GetComponent<RectTransform>();
         infoTextTMP = infoText.GetComponent<TextMeshProUGUI>();
@@ -67,6 +89,18 @@ public class Tutorial : MonoBehaviour
 
     IEnumerator TutorialFlow()
     {
+        playerGun.SetActive(false);
+        chatting.DisableChat();
+        yellerChat.DisableChat();
+        yield return waitOneSec;
+        yellerChat.EnableChat();
+        playerPlayerController.enabled = false;
+        yield return StartCoroutine(yellerChat.Chat(2f, "다음!"));
+        yield return waitOneSec;
+        yellerChat.DisableChat();
+        yield return StartCoroutine(PlayerMoveX(10f, 1, 2f));
+        yield return new WaitForSeconds(0.2f);
+        chatting.EnableChat();
         yield return StartCoroutine(chatting.Chat(4.1f, "자네가 다음 지원자인가?"));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(5.7f, "이렇게 건강한 사람들만 와서야 원..."));
@@ -108,12 +142,15 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(CameraMoveX(-10f, 1f, "flex"));
         //yield return StartCoroutine(CameraMoveX(-20f, 0.5f));
         CameraReturns();
+        playerPlayerController.enabled = true;
         InfoTextChange("방향키를 눌러 이동하세요.");
         InfoTextAppear();
         yield return StartCoroutine(WaitForGun());
         InfoTextDisappear();
         StartCoroutine(MovieStart());
-        yield return StartCoroutine(chatting.Chat(3f, "여기까진 순조롭습니다! 개발에 정진하세요!"));
+        playerPlayerController.enabled = false;
+        yield return StartCoroutine(PlayerMoveX(9f, -1, 4f));
+        yield return StartCoroutine(PlayerMoveX(10f, 1, 4f));
         //카메라 무빙
     }
 
@@ -121,6 +158,34 @@ public class Tutorial : MonoBehaviour
     {
         isNext = false;
         while (!isNext) yield return null;
+    }
+
+    IEnumerator PlayerMoveX(float destinationX, float direction, float moveSpeed)
+    {
+        if (direction == 1)
+        {
+            playerSpriteRenderer.flipX = false;
+            playerGunSpriteRenderer.flipX = false;
+            playerGun.transform.position = player.transform.position + new Vector3(-0.1f, -0.275f, 0);
+        }
+        else if (direction == -1)
+        {
+            playerSpriteRenderer.flipX = true;
+            playerGunSpriteRenderer.flipX = true;
+            playerGun.transform.position = player.transform.position + new Vector3(0.1f, -0.275f, 0);
+        }
+        else print("Wrong Direction!");
+        playerAnimator.SetBool("isWalking", true);
+        playerAnimator.SetFloat("SpeedHandler", moveSpeed / 2.5f);
+        while (true)
+        {
+            if (direction == 1 && player.transform.position.x > destinationX) break;
+            if (direction == -1 && player.transform.position.x < destinationX) break;
+            player.transform.Translate(Vector3.right * direction * moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+        playerAnimator.SetBool("isWalking", false);
+        playerAnimator.SetFloat("SpeedHandler", 1f);
     }
 
     IEnumerator MovieStart()
@@ -157,6 +222,7 @@ public class Tutorial : MonoBehaviour
         InfoTextChange("F를 눌러 총을 잡으세요.");
         while (!holdingGun) yield return null;
         gun.SetActive(false);
+        playerGun.SetActive(true);
         yield return null;
     }
 
