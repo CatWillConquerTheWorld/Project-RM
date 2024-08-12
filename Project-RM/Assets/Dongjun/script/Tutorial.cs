@@ -18,7 +18,6 @@ public class Tutorial : MonoBehaviour
     private SpriteRenderer playerSpriteRenderer;
     private Animator playerAnimator; 
 
-    public Camera mainCamera;
     public GameObject chatManagerTutorialNPC;
     public GameObject chatManagerYeller;
     public RectTransform movieEffectorUp;
@@ -28,6 +27,7 @@ public class Tutorial : MonoBehaviour
 
     public GameObject gun;
 
+    public GameObject testRoom;
 
     private RectTransform infoTextRect;
     private TextMeshProUGUI infoTextTMP;
@@ -35,6 +35,7 @@ public class Tutorial : MonoBehaviour
     private Chatting yellerChat;
     private Chatting chatting;
     private WaitForSeconds waitOneSec;
+    private WaitForSeconds waitForDisableChatter;
 
     //skipping to next description
     private bool isNext;
@@ -66,10 +67,12 @@ public class Tutorial : MonoBehaviour
 
         yellerChat = chatManagerYeller.GetComponent<Chatting>();
         chatting = chatManagerTutorialNPC.GetComponent<Chatting>();
-        waitOneSec = new WaitForSeconds(1);
 
         infoTextRect = infoText.GetComponent<RectTransform>();
         infoTextTMP = infoText.GetComponent<TextMeshProUGUI>();
+
+        waitOneSec = new WaitForSeconds(1);
+        waitForDisableChatter = new WaitForSeconds(0.7f);
 
         canHoldGun = false;
         holdingGun = false;
@@ -85,16 +88,21 @@ public class Tutorial : MonoBehaviour
         {
             isNext = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            StartCoroutine(TestRoomAppear());
+        }
     }
 
     IEnumerator TutorialFlow()
     {
+        playerPlayerController.enabled = false;
         playerGun.SetActive(false);
         chatting.DisableChat();
         yellerChat.DisableChat();
         yield return waitOneSec;
         yellerChat.EnableChat();
-        playerPlayerController.enabled = false;
         yield return StartCoroutine(yellerChat.Chat(2f, "다음!"));
         yield return waitOneSec;
         yellerChat.DisableChat();
@@ -143,6 +151,7 @@ public class Tutorial : MonoBehaviour
         //yield return StartCoroutine(CameraMoveX(-20f, 0.5f));
         CameraReturns();
         playerPlayerController.enabled = true;
+        StartCoroutine(DisableWithDelay(chatting));
         InfoTextChange("방향키를 눌러 이동하세요.");
         InfoTextAppear();
         yield return StartCoroutine(WaitForGun());
@@ -151,13 +160,38 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = false;
         yield return StartCoroutine(PlayerMoveX(9f, -1, 4f));
         yield return StartCoroutine(PlayerMoveX(10f, 1, 4f));
-        //카메라 무빙
+        chatting.EnableChat();
+        yield return StartCoroutine(chatting.Chat(4f, "그 총은 '리듬 건' 일세."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(5.5f, "음악이 흘러나오는 신기한 무기지."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(6.5f, "그 음악의 박자에 맞춰야 총탄을 내뱉는다네."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(5f, "한번 시험삼아 써 보겠나?"));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(3f, "그렇다면..."));
+        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
+        StartCoroutine(TestRoomAppear());
+        yield return StartCoroutine(CameraShake(3f, 0.1f, 40, false));
+        yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));;
+        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
+        CameraReturns();
+        yield return StartCoroutine(chatting.Chat(7f, "카메라 진도도도동료가 돼라"));
     }
 
     IEnumerator WaitForUser()
     {
         isNext = false;
         while (!isNext) yield return null;
+    }
+
+    IEnumerator DisableWithDelay(Chatting target)
+    {
+        yield return waitForDisableChatter;
+        target.DisableChat();
+        yield return null;
     }
 
     IEnumerator PlayerMoveX(float destinationX, float direction, float moveSpeed)
@@ -186,6 +220,7 @@ public class Tutorial : MonoBehaviour
         }
         playerAnimator.SetBool("isWalking", false);
         playerAnimator.SetFloat("SpeedHandler", 1f);
+        yield return null;
     }
 
     IEnumerator MovieStart()
@@ -204,15 +239,22 @@ public class Tutorial : MonoBehaviour
 
     IEnumerator CameraMoveX(float amount, float duration, string method)
     {
-        if (method == "flex") amount += mainCamera.transform.position.x;
-        mainCamera.GetComponent<CinemachineBrain>().enabled = false;
-        mainCamera.transform.DOMoveX(amount, duration).SetEase(Ease.Linear);
+        if (method == "flex") amount += Camera.main.transform.position.x;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = false;
+        Camera.main.transform.DOMoveX(amount, duration).SetEase(Ease.Linear);
+        yield return new WaitForSeconds(duration);
+    }
+
+    IEnumerator CameraShake(float duration, float amount, int vibrato, bool isFadeOut)
+    {
+        Camera.main.GetComponent<CinemachineBrain>().enabled = false;
+        Camera.main.DOShakePosition(duration, amount, vibrato, 90, isFadeOut);
         yield return new WaitForSeconds(duration);
     }
 
     void CameraReturns()
     {
-        mainCamera.GetComponent<CinemachineBrain>().enabled = true;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = true;
     }
 
     IEnumerator WaitForGun()
@@ -223,6 +265,16 @@ public class Tutorial : MonoBehaviour
         while (!holdingGun) yield return null;
         gun.SetActive(false);
         playerGun.SetActive(true);
+        yield return null;
+    }
+
+    IEnumerator TestRoomAppear()
+    {
+        while (testRoom.transform.position.y != 8f)
+        {
+            testRoom.transform.position = Vector3.MoveTowards(testRoom.transform.position, new Vector3(testRoom.transform.position.x, 8f, testRoom.transform.position.z), 3f * Time.deltaTime);
+            yield return null;
+        }
         yield return null;
     }
 
