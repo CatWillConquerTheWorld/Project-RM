@@ -30,6 +30,8 @@ public class Tutorial : MonoBehaviour
     public GameObject gun;
 
     public GameObject testRoom;
+    public GameObject levelOneEnemies;
+    public int deadEnemies;
 
     private RectTransform infoTextRect;
     private TextMeshProUGUI infoTextTMP;
@@ -81,6 +83,8 @@ public class Tutorial : MonoBehaviour
 
         canHoldGun = false;
         holdingGun = false;
+
+        levelOneEnemies.SetActive(false);
 
         StartCoroutine(TutorialFlow());
 
@@ -179,7 +183,8 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
         StartCoroutine(TestRoomAppear());
         yield return StartCoroutine(CameraShake(3f, 0.1f, 40, false));
-        yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));;
+        yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
+        yield return StartCoroutine(SparkBugsEnable());
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
         CameraReturns();
@@ -195,6 +200,12 @@ public class Tutorial : MonoBehaviour
         InfoTextChange("모든 벌레를 처치하세요.");
         InfoTextAppear();
         playerPlayerController.enabled = true;
+        yield return WaitForElemenations(levelOneEnemies.transform.childCount);
+        playerPlayerController.enabled = false;
+        StartCoroutine(MovieStart());
+        chatting.EnableChat();
+        yield return StartCoroutine(chatting.Chat(5f, "잘 했네. 재능이 있구만."));
+        yield return StartCoroutine(WaitForUser());
     }
 
     IEnumerator WaitForUser()
@@ -295,6 +306,17 @@ public class Tutorial : MonoBehaviour
         yield return null;
     }
 
+    IEnumerator SparkBugsEnable()
+    {
+        levelOneEnemies.SetActive(true);
+        for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
+        {
+            levelOneEnemies.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f);
+            yield return new WaitForSeconds(0.25f);
+        }
+        yield return waitHalfSec;
+    }
+
     IEnumerator NPCMoves(float destinationX)
     {
         tutorialNPC.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).SetEase(Ease.Linear);
@@ -303,6 +325,13 @@ public class Tutorial : MonoBehaviour
         Color temp = tutorialNPC.GetComponent<SpriteRenderer>().color;
         temp.a = 1;
         tutorialNPC.GetComponent<SpriteRenderer>().color = temp;
+        yield return null;
+    }
+
+    IEnumerator WaitForElemenations(int amount)
+    {
+        while (deadEnemies < amount) yield return null;
+        deadEnemies = 0;
         yield return null;
     }
 
