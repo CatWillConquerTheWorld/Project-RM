@@ -6,6 +6,7 @@ using TMPro;
 using Cinemachine;
 using UnityEngine.UIElements;
 using System.Globalization;
+using Unity.VisualScripting;
 
 public class Tutorial : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class Tutorial : MonoBehaviour
 
     public GameObject testRoom;
     public GameObject levelOneEnemies;
+    public GameObject levelTwoEnemies;
     public int deadEnemies;
 
     private RectTransform infoTextRect;
@@ -84,9 +86,20 @@ public class Tutorial : MonoBehaviour
         canHoldGun = false;
         holdingGun = false;
 
-        levelOneEnemies.SetActive(false);
+        for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
+        {
+            levelOneEnemies.transform.GetChild(i).GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(levelOneEnemies.transform.GetChild(i).GetComponent<Rigidbody2D>());
+        }
+        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++) 
+        {
+            levelTwoEnemies.transform.GetChild(i).GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(levelTwoEnemies.transform.GetChild(i).GetComponent<Rigidbody2D>());
+            levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = false;
+            levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = false;
+        }
 
-        StartCoroutine(TutorialFlow());
+        //StartCoroutine(TutorialFlow());
 
         isNext = false;
     }
@@ -184,7 +197,6 @@ public class Tutorial : MonoBehaviour
         StartCoroutine(TestRoomAppear());
         yield return StartCoroutine(CameraShake(3f, 0.1f, 40, false));
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
-        yield return StartCoroutine(SparkBugsEnable());
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
         CameraReturns();
@@ -300,21 +312,35 @@ public class Tutorial : MonoBehaviour
     {
         while (testRoom.transform.position.y != 8f)
         {
+            for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
+            {
+                GameObject levelOneEnemy = levelOneEnemies.transform.GetChild(i).gameObject;
+                levelOneEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelOneEnemy.transform.position, levelOneEnemy.transform.position + new Vector3(0,8,0), 3f * Time.deltaTime);
+            }
+            for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
+            {
+                GameObject levelTwoEnemy = levelTwoEnemies.transform.GetChild(i).gameObject;
+                levelTwoEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelTwoEnemy.transform.position, levelTwoEnemy.transform.position + new Vector3(0,8,0), 3f * Time.deltaTime);
+            }
             testRoom.transform.position = Vector3.MoveTowards(testRoom.transform.position, new Vector3(testRoom.transform.position.x, 8f, testRoom.transform.position.z), 3f * Time.deltaTime);
             yield return null;
         }
-        yield return null;
-    }
-
-    IEnumerator SparkBugsEnable()
-    {
-        levelOneEnemies.SetActive(true);
         for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
         {
-            levelOneEnemies.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f);
-            yield return new WaitForSeconds(0.25f);
+            GameObject levelOneEnemy = levelOneEnemies.transform.GetChild(i).gameObject;
+            levelOneEnemy.AddComponent<Rigidbody2D>();
+            levelOneEnemy.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            levelOneEnemy.GetComponent<Rigidbody2D>().freezeRotation = true;
+            levelOneEnemy.GetComponent<BoxCollider2D>().enabled = true; 
         }
-        yield return waitHalfSec;
+        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
+        {
+            GameObject levelTwoEnemy = levelTwoEnemies.transform.GetChild(i).gameObject;
+            levelTwoEnemy.AddComponent<Rigidbody2D>();
+            levelTwoEnemy.GetComponent<Rigidbody2D>().freezeRotation = true;
+            levelTwoEnemy.GetComponent<BoxCollider2D>().enabled = true;
+        }
+        yield return null;
     }
 
     IEnumerator NPCMoves(float destinationX)
