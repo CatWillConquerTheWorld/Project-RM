@@ -16,10 +16,12 @@ public class Tutorial : MonoBehaviour
     private SpriteRenderer playerGunSpriteRenderer;
     private PlayerController playerPlayerController;
     private SpriteRenderer playerSpriteRenderer;
-    private Animator playerAnimator; 
+    private Animator playerAnimator;
 
-    public GameObject chatManagerTutorialNPC;
     public GameObject chatManagerYeller;
+    public GameObject tutorialNPC;
+    public GameObject chatManagerTutorialNPC;
+
     public RectTransform movieEffectorUp;
     public RectTransform movieEffectorDown;
 
@@ -34,7 +36,9 @@ public class Tutorial : MonoBehaviour
 
     private Chatting yellerChat;
     private Chatting chatting;
+
     private WaitForSeconds waitOneSec;
+    private WaitForSeconds waitHalfSec;
     private WaitForSeconds waitForDisableChatter;
 
     //skipping to next description
@@ -72,6 +76,7 @@ public class Tutorial : MonoBehaviour
         infoTextTMP = infoText.GetComponent<TextMeshProUGUI>();
 
         waitOneSec = new WaitForSeconds(1);
+        waitHalfSec = new WaitForSeconds(0.5f);
         waitForDisableChatter = new WaitForSeconds(0.7f);
 
         canHoldGun = false;
@@ -170,15 +175,26 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(chatting.Chat(5f, "한번 시험삼아 써 보겠나?"));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(3f, "그렇다면..."));
-        yield return new WaitForSeconds(0.5f);
+        yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
         StartCoroutine(TestRoomAppear());
         yield return StartCoroutine(CameraShake(3f, 0.1f, 40, false));
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));;
-        yield return new WaitForSeconds(0.5f);
+        yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
         CameraReturns();
-        yield return StartCoroutine(chatting.Chat(7f, "카메라 진도도도동료가 돼라"));
+        yield return StartCoroutine(chatting.Chat(7f, "저 앞에 있는 건물 안에 시험용 벌레들이 있다네."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(7f, "무기를 얕봤다간 큰코 다치니 작은 것부터 해보자고."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(7f, "그럼 건물 뒤로 가 있을테니 다 처치하고 오게."));
+        yield return StartCoroutine(WaitForUser());
+        chatting.DisableChat();
+        yield return StartCoroutine(NPCMoves(37.5f));
+        yield return StartCoroutine(MovieEnd());
+        InfoTextChange("모든 벌레를 처치하세요.");
+        InfoTextAppear();
+        playerPlayerController.enabled = true;
     }
 
     IEnumerator WaitForUser()
@@ -210,6 +226,7 @@ public class Tutorial : MonoBehaviour
         }
         else print("Wrong Direction!");
         playerAnimator.SetBool("isWalking", true);
+        playerAnimator.SetBool("isJump", false);
         playerAnimator.SetFloat("SpeedHandler", moveSpeed / 2.5f);
         while (true)
         {
@@ -275,6 +292,17 @@ public class Tutorial : MonoBehaviour
             testRoom.transform.position = Vector3.MoveTowards(testRoom.transform.position, new Vector3(testRoom.transform.position.x, 8f, testRoom.transform.position.z), 3f * Time.deltaTime);
             yield return null;
         }
+        yield return null;
+    }
+
+    IEnumerator NPCMoves(float destinationX)
+    {
+        tutorialNPC.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).SetEase(Ease.Linear);
+        yield return waitHalfSec;
+        tutorialNPC.transform.position = new Vector3(destinationX, tutorialNPC.transform.position.y, tutorialNPC.transform.position.z);
+        Color temp = tutorialNPC.GetComponent<SpriteRenderer>().color;
+        temp.a = 1;
+        tutorialNPC.GetComponent<SpriteRenderer>().color = temp;
         yield return null;
     }
 

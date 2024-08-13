@@ -5749,8 +5749,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1912473784}
-  chatManagerTutorialNPC: {fileID: 1317082949}
   chatManagerYeller: {fileID: 1331299942}
+  tutorialNPC: {fileID: 1612971623}
+  chatManagerTutorialNPC: {fileID: 1317082949}
   movieEffectorUp: {fileID: 1058276294}
   movieEffectorDown: {fileID: 659601884}
   infoText: {fileID: 1533946375}
