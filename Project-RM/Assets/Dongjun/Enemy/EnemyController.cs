@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     public int hp;
     public int fullHp;
 
+    public bool onGround;
+
     public float playerRadius;
     public float moveSpeed;
 
@@ -46,19 +48,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
-        fullHp = hp;
-        boxCollider = GetComponent<BoxCollider2D>();
-        moved = false;
-        direction = new int[2] { 1, -1 };
-        wanderTimer = 0;
-        animator = GetComponent<Animator>();
-        isHitting = false;
-        isDead = false;
-        isCharging = false;
-
-        normalAttackRate = PlayerController.instance.normalAttackRate;
-        semiAttackRate = PlayerController.instance.semiAttackRate;
-        chargedAttackRate = PlayerController.instance.chargedAttackRate;
+        FirstSettings();
     }
 
     void Update()
@@ -91,7 +81,11 @@ public class EnemyController : MonoBehaviour
     void Wander()
     {
         attackStack = 1;
-        isGrounded = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y+ 5f, LayerMask.GetMask("Ground"));
+        float groundCheckAmount = 1f;
+        Vector2 groundChecker = boxCollider.bounds.max;
+        if (!onGround) groundCheckAmount = 5f;
+        if (velocity == -1) groundChecker = boxCollider.bounds.min;
+        isGrounded = Physics2D.Raycast(groundChecker, Vector2.down, boxCollider.bounds.extents.y+ groundCheckAmount, LayerMask.GetMask("Ground"));
         wanderTimer -= Time.deltaTime;
 
         if (wanderTimer < 0f && !moved)
@@ -108,7 +102,7 @@ public class EnemyController : MonoBehaviour
         if (!isGrounded)
         {
             velocity *= -1;
-            transform.Translate(Vector3.right * velocity * moveSpeed * 10 * Time.deltaTime);
+            //transform.Translate(Vector3.right * velocity * moveSpeed * 10 * Time.deltaTime);
         }
         transform.Translate(Vector3.right * velocity * moveSpeed * Time.deltaTime);
 
@@ -169,4 +163,27 @@ public class EnemyController : MonoBehaviour
         boxCollider.enabled = false;
     }
 
+
+    private void FirstSettings()
+    {
+        fullHp = hp;
+        boxCollider = GetComponent<BoxCollider2D>();
+        moved = false;
+        direction = new int[2] { 1, -1 };
+        wanderTimer = 0;
+        animator = GetComponent<Animator>();
+        isHitting = false;
+        isDead = false;
+        isCharging = false;
+
+        normalAttackRate = PlayerController.instance.normalAttackRate;
+        semiAttackRate = PlayerController.instance.semiAttackRate;
+        chargedAttackRate = PlayerController.instance.chargedAttackRate;
+    }
+
+
+    private void OnEnable()
+    {
+         FirstSettings();
+    }
 }

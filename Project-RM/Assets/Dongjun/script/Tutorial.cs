@@ -115,6 +115,9 @@ public class Tutorial : MonoBehaviour
         {
             StartCoroutine(TestRoomAppear());
         }
+
+        if (Input.GetKeyDown(KeyCode.D)) StartCoroutine(WakeUpLevelTwoEnemies());
+        if (Input.GetKeyDown (KeyCode.W)) LevelTwoEnemiesGiveSettings();
     }
 
     IEnumerator TutorialFlow()
@@ -359,6 +362,28 @@ public class Tutorial : MonoBehaviour
         while (deadEnemies < amount) yield return null;
         deadEnemies = 0;
         yield return null;
+    }
+
+    IEnumerator WakeUpLevelTwoEnemies()
+    {
+        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
+        {
+            levelTwoEnemies.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
+            levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+            levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = true;
+            yield return new WaitForSeconds(0.1f);
+        }
+        yield return null;
+    }
+
+    void LevelTwoEnemiesGiveSettings()
+    {
+        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
+        {
+            levelTwoEnemies.transform.GetChild(i).tag = "Enemy";
+            levelTwoEnemies.transform.GetChild(i).gameObject.layer = 7;
+            levelTwoEnemies.transform.GetChild(i).transform.Find("attackCollider").tag = "EnemyBullet";
+        }
     }
 
     void InfoTextAppear()

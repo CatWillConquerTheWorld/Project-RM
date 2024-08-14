@@ -197,6 +197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  fullHp: 0
+  onGround: 1
   playerRadius: 7
   moveSpeed: 2
   velocity: 0
