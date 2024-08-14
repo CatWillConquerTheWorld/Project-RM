@@ -106,18 +106,7 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P)) 
-        {
-            isNext = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            StartCoroutine(TestRoomAppear());
-        }
-
-        if (Input.GetKeyDown(KeyCode.D)) StartCoroutine(WakeUpLevelTwoEnemies());
-        if (Input.GetKeyDown (KeyCode.W)) LevelTwoEnemiesGiveSettings();
+        if (Input.GetKeyDown(KeyCode.P)) isNext = true;
     }
 
     IEnumerator TutorialFlow()
@@ -237,7 +226,6 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(chatting.Chat(4f, "이번에는 쉽지 않을걸세."));
         yield return StartCoroutine(WaitForUser());
         StartCoroutine(DisableWithDelay(chatting));
-        LevelTwoEnemiesGiveSettings();
         yield return StartCoroutine(MovieEnd());
         InfoTextAppear();
         InfoTextChange("모든 케이지를 처치하세요.");
@@ -412,19 +400,12 @@ public class Tutorial : MonoBehaviour
             levelTwoEnemies.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
             levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
             levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = true;
-            yield return new WaitForSeconds(0.1f);
-        }
-        yield return null;
-    }
-
-    void LevelTwoEnemiesGiveSettings()
-    {
-        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
-        {
             levelTwoEnemies.transform.GetChild(i).tag = "Enemy";
             levelTwoEnemies.transform.GetChild(i).gameObject.layer = 7;
             levelTwoEnemies.transform.GetChild(i).transform.Find("attackCollider").tag = "EnemyBullet";
+            yield return new WaitForSeconds(0.1f);
         }
+        yield return null;
     }
 
     void InfoTextAppear()
