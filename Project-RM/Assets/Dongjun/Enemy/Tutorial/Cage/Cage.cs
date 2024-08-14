@@ -35,8 +35,13 @@ public class Cage : MonoBehaviour
     public void back()
     {
         enemyController.isCharging = false;
-        enemyController.animator.SetBool("isCharging", false);
         attack1Collider.SetActive(false);
         enemyController.animator.SetTrigger("back");
+    }
+
+    public void Dead()
+    {
+        Tutorial.Instance.deadEnemies += 1;
+        gameObject.SetActive(false);
     }
 }

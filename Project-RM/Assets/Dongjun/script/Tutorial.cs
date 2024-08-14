@@ -99,7 +99,7 @@ public class Tutorial : MonoBehaviour
             levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = false;
         }
 
-        //StartCoroutine(TutorialFlow());
+        StartCoroutine(TutorialFlow());
 
         isNext = false;
     }
@@ -128,10 +128,10 @@ public class Tutorial : MonoBehaviour
         yellerChat.DisableChat();
         yield return waitOneSec;
         yellerChat.EnableChat();
-        yield return StartCoroutine(yellerChat.Chat(2f, "다음!"));
+        yield return StartCoroutine(yellerChat.Chat(1.7f, "다음!"));
         yield return waitOneSec;
         yellerChat.DisableChat();
-        yield return StartCoroutine(PlayerMoveX(10f, 1, 2f));
+        yield return StartCoroutine(PlayerMoveX(10f, 2f));
         yield return new WaitForSeconds(0.2f);
         chatting.EnableChat();
         yield return StartCoroutine(chatting.Chat(4.1f, "자네가 다음 지원자인가?"));
@@ -183,18 +183,18 @@ public class Tutorial : MonoBehaviour
         InfoTextDisappear();
         StartCoroutine(MovieStart());
         playerPlayerController.enabled = false;
-        yield return StartCoroutine(PlayerMoveX(9f, -1, 4f));
-        yield return StartCoroutine(PlayerMoveX(10f, 1, 4f));
+        yield return StartCoroutine(PlayerMoveX(9.5f, 4f));
+        yield return StartCoroutine(PlayerMoveX(10f, 4f));
         chatting.EnableChat();
         yield return StartCoroutine(chatting.Chat(4f, "그 총은 '리듬 건' 일세."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(5.5f, "음악이 흘러나오는 신기한 무기지."));
+        yield return StartCoroutine(chatting.Chat(5.2f, "음악이 흘러나오는 신기한 무기지."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(6.5f, "그 음악의 박자에 맞춰야 총탄을 내뱉는다네."));
+        yield return StartCoroutine(chatting.Chat(6.7f, "그 음악의 박자에 맞춰야 총탄을 내뱉는다네."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(5f, "한번 시험삼아 써 보겠나?"));
+        yield return StartCoroutine(chatting.Chat(4.2f, "한번 시험삼아 써 보겠나?"));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(3f, "그렇다면..."));
+        yield return StartCoroutine(chatting.Chat(2.35f, "그렇다면..."));
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
         StartCoroutine(TestRoomAppear());
@@ -203,14 +203,14 @@ public class Tutorial : MonoBehaviour
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
         CameraReturns();
-        yield return StartCoroutine(chatting.Chat(7f, "저 앞에 있는 건물 안에 시험용 벌레들이 있다네."));
+        yield return StartCoroutine(chatting.Chat(7.2f, "저 앞에 있는 건물 안에 시험용 벌레들이 있다네."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(7f, "무기를 얕봤다간 큰코 다치니 작은 것부터 해보자고."));
+        yield return StartCoroutine(chatting.Chat(7.55f, "무기를 얕봤다간 큰코 다치니 작은 것부터 해보자고."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(chatting.Chat(7f, "그럼 건물 뒤로 가 있을테니 다 처치하고 오게."));
+        yield return StartCoroutine(chatting.Chat(6.9f, "그럼 건물 뒤로 가 있을테니 다 처치하고 오게."));
         yield return StartCoroutine(WaitForUser());
         chatting.DisableChat();
-        yield return StartCoroutine(NPCMoves(37.5f));
+        yield return StartCoroutine(NPCMoves(40f));
         yield return StartCoroutine(MovieEnd());
         InfoTextChange("모든 벌레를 처치하세요.");
         InfoTextAppear();
@@ -218,9 +218,49 @@ public class Tutorial : MonoBehaviour
         yield return WaitForElemenations(levelOneEnemies.transform.childCount);
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
+        yield return waitHalfSec;
+        yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
-        yield return StartCoroutine(chatting.Chat(5f, "잘 했네. 재능이 있구만."));
+        InfoTextDisappear();
+        yield return StartCoroutine(chatting.Chat(3.95f, "잘 했네. 재능이 있구만."));
         yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(4.6f, "그럼 바로 다음 단계로 가지."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(CameraMoveX(-5f, 0.5f, "flex"));
+        yield return waitOneSec;
+        yield return StartCoroutine(WakeUpLevelTwoEnemies());
+        yield return waitOneSec;
+        yield return StartCoroutine(CameraMoveX(5f, 0.5f, "flex"));
+        CameraReturns();
+        yield return StartCoroutine(chatting.Chat(8.4f, "저 무시무시한 애들은 '케이지' 라고 불리는 괴생명체라네."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(4f, "이번에는 쉽지 않을걸세."));
+        yield return StartCoroutine(WaitForUser());
+        StartCoroutine(DisableWithDelay(chatting));
+        LevelTwoEnemiesGiveSettings();
+        yield return StartCoroutine(MovieEnd());
+        InfoTextAppear();
+        InfoTextChange("모든 케이지를 처치하세요.");
+        playerPlayerController.enabled = true;
+        yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
+        playerPlayerController.enabled = false;
+        StartCoroutine(MovieStart());
+        InfoTextDisappear();
+        yield return PlayerMoveX(38f, 3f);
+        chatting.EnableChat();
+        yield return StartCoroutine(chatting.Chat(3.1f, "벌써 해치웠는가?"));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(6f, "이정도면 거기에 들어가서도 잘 하겠군."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(5.8f, "그럼 그 총을 가지고 안으로 들어가게."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(5.1f, "자네라면 꼭 성공할거라고 믿네."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(chatting.Chat(2.4f, "행운을 빌지."));
+        yield return StartCoroutine(WaitForUser());
+        StartCoroutine(MovieEnd());
+        StartCoroutine(DisableWithDelay(chatting));
+        playerPlayerController.enabled = true;
     }
 
     IEnumerator WaitForUser()
@@ -236,18 +276,19 @@ public class Tutorial : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator PlayerMoveX(float destinationX, float direction, float moveSpeed)
+    IEnumerator PlayerMoveX(float destinationX, float moveSpeed)
     {
-        if (direction == 1)
+        int direction = 0;
+        if (player.transform.position.x < destinationX) 
         {
-            playerSpriteRenderer.flipX = false;
-            playerGunSpriteRenderer.flipX = false;
+            direction = 1;
+            player.transform.localScale = new Vector3(3, 3, 0);
             playerGun.transform.position = player.transform.position + new Vector3(-0.1f, -0.275f, 0);
         }
-        else if (direction == -1)
+        else if (player.transform.position.x > destinationX)
         {
-            playerSpriteRenderer.flipX = true;
-            playerGunSpriteRenderer.flipX = true;
+            direction = -1;
+            player.transform.localScale = new Vector3(-3, 3, 0);
             playerGun.transform.position = player.transform.position + new Vector3(0.1f, -0.275f, 0);
         }
         else print("Wrong Direction!");
