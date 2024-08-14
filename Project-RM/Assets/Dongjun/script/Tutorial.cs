@@ -30,7 +30,7 @@ public class Tutorial : MonoBehaviour
 
     public GameObject gun;
 
-    public GameObject testRoom;
+    public GameObject[] testRoom;
     public GameObject levelOneEnemies;
     public GameObject levelTwoEnemies;
     public int deadEnemies;
@@ -99,7 +99,7 @@ public class Tutorial : MonoBehaviour
             levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = false;
         }
 
-        //StartCoroutine(TutorialFlow());
+        StartCoroutine(TutorialFlow());
 
         isNext = false;
     }
@@ -107,6 +107,7 @@ public class Tutorial : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) isNext = true;
+        //if (Input.GetKeyDown(KeyCode.Q)) StartCoroutine(TestRoomAppear());
     }
 
     IEnumerator TutorialFlow()
@@ -187,7 +188,7 @@ public class Tutorial : MonoBehaviour
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
         StartCoroutine(TestRoomAppear());
-        yield return StartCoroutine(CameraShake(3f, 0.1f, 40, false));
+        yield return StartCoroutine(CameraShake(5f, 0.1f, 40, false));
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
@@ -342,19 +343,22 @@ public class Tutorial : MonoBehaviour
 
     IEnumerator TestRoomAppear()
     {
-        while (testRoom.transform.position.y != 8f)
+        while (testRoom[0].transform.position.y != 12f)
         {
             for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
             {
                 GameObject levelOneEnemy = levelOneEnemies.transform.GetChild(i).gameObject;
-                levelOneEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelOneEnemy.transform.position, levelOneEnemy.transform.position + new Vector3(0,8,0), 3f * Time.deltaTime);
+                levelOneEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelOneEnemy.transform.position, levelOneEnemy.transform.position + new Vector3(0,13,0), 3f * Time.deltaTime);
             }
             for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
             {
                 GameObject levelTwoEnemy = levelTwoEnemies.transform.GetChild(i).gameObject;
-                levelTwoEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelTwoEnemy.transform.position, levelTwoEnemy.transform.position + new Vector3(0,8,0), 3f * Time.deltaTime);
+                levelTwoEnemies.transform.GetChild(i).gameObject.transform.position = Vector3.MoveTowards(levelTwoEnemy.transform.position, levelTwoEnemy.transform.position + new Vector3(0,13,0), 3f * Time.deltaTime);
             }
-            testRoom.transform.position = Vector3.MoveTowards(testRoom.transform.position, new Vector3(testRoom.transform.position.x, 8f, testRoom.transform.position.z), 3f * Time.deltaTime);
+            for (int i = 0; i < testRoom.Length; i++)
+            {
+                testRoom[i].transform.position = Vector3.MoveTowards(testRoom[i].transform.position, new Vector3(testRoom[i].transform.position.x, 12f, testRoom[i].transform.position.z), 3f * Time.deltaTime);
+            }
             yield return null;
         }
         for (int i = 0; i < levelOneEnemies.transform.childCount; i++)

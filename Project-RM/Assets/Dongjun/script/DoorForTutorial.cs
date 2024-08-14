@@ -24,6 +24,6 @@ public class DoorForTutorial : MonoBehaviour
 
     IEnumerator OpenDoor()
     {
-
+        yield return null;
     }
 }
