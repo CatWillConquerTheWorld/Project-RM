@@ -110,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3667560830143571162, guid: b0289d0978ee1d74f89bfdf506543486, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -338,7 +338,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5758462221868230158, guid: d5369cfe8ce078a40a960455deaa8511, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -405,6 +405,7 @@ MonoBehaviour:
   gunAnimator: {fileID: 7772306442505255744}
   gunVFXAnimator: {fileID: 13838556812785867}
   detectionRadius: 5
+  enemyInfoUI: {fileID: 0}
   knockBack: 0.3
 --- !u!61 &1823088573665876954
 BoxCollider2D:

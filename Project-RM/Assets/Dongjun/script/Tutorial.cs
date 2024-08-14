@@ -99,7 +99,7 @@ public class Tutorial : MonoBehaviour
             levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = false;
         }
 
-        StartCoroutine(TutorialFlow());
+        //StartCoroutine(TutorialFlow());
 
         isNext = false;
     }
