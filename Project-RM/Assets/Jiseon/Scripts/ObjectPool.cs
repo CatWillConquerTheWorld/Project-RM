@@ -17,13 +17,13 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] ObjectInfo[] objectInfo = null;
     
     public Queue<GameObject> noteQueue = new Queue<GameObject>();
-
+    public Queue<GameObject> longNoteQueue = new Queue<GameObject>();
 
     void Start()
     {
         instance = this;
         noteQueue = InsertQueue(objectInfo[0]);
-
+        longNoteQueue = InsertQueue(objectInfo[1]);
     }
 
 
@@ -35,14 +35,26 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject t_clone = Instantiate(p_objectInfo.goPrefab, transform.position, Quaternion.identity);
             t_clone.SetActive(false);
+            
+            RectTransform rectTransform = t_clone.GetComponent<RectTransform>();
 
-            if(p_objectInfo.tPoolParent != null)
+
+            if (t_clone.name == "LONGNOTE(Clone)") // 롱노트 배치
             {
-                t_clone.transform.SetParent(p_objectInfo.tPoolParent);
+                rectTransform.SetParent(p_objectInfo.tPoolParent, false); // UI 부모 설정
+                rectTransform.anchoredPosition = Vector2.zero; // 원하는 위치로 조정
             }
-            else
+            else // 일반 노트 배치
             {
-                t_clone.transform.SetParent(this.transform);
+                // 일반 오브젝트인 경우
+                if (p_objectInfo.tPoolParent != null)
+                {
+                    t_clone.transform.SetParent(p_objectInfo.tPoolParent);
+                }
+                else
+                {
+                    t_clone.transform.SetParent(this.transform);
+                }
             }
 
             t_queue.Enqueue(t_clone);

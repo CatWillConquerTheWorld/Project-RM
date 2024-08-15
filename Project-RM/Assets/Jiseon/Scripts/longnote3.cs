@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEngine.UI;
 public class longnote3 : MonoBehaviour
@@ -11,6 +12,13 @@ public class longnote3 : MonoBehaviour
     public GameObject lineObject;
     public Image lineImg;
     public RectTransform lineRect;
+    public Note endNoteScript;
+    public int bpm;
+    public float bpminterval;
+    double currentTime = 0d;
+    public bool isNoteActive = true;
+
+    RectTransform noteSpawnPos;
 
     void Start()
     {
@@ -19,7 +27,16 @@ public class longnote3 : MonoBehaviour
         endNote.SetActive(true);
         lineObject.SetActive(true);
         lineRect.SetParent(transform, false); // 부모 설정
-        lineRect.localPosition = Vector3.zero; // 로컬 위치를 (0, 0)으로 초기화
+        // lineRect.localPosition = Vector3.zero; // 로컬 위치를 (0, 0)으로 초기화
+        noteSpawnPos = startNote.GetComponent<RectTransform>();
+        bpm = 120;
+        bpminterval = 60f / bpm;
+    }
+
+    private void OnEnable()
+    {
+        currentTime = 0d;
+        FinishEndNote();
     }
 
     // Update is called once per frame
@@ -31,11 +48,17 @@ public class longnote3 : MonoBehaviour
             lineObject.SetActive(false);
             gameObject.SetActive(false);
         }
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            StartEndNote();
-        }
 
+        if (isNoteActive)
+        {
+            currentTime += Time.deltaTime;
+            
+            if (currentTime >= bpminterval * 2) // 1비트의 시간 (2박)
+            {
+                StartEndNote();
+                isNoteActive = false;
+            }
+        }
     }
 
 
@@ -61,5 +84,14 @@ public class longnote3 : MonoBehaviour
     {
         Note note = endNote.GetComponent<Note>();
         note.enabled = true;
+    }
+
+    public void FinishEndNote()
+    {
+        if (endNoteScript == null)
+        {
+            endNoteScript = endNote.GetComponent<Note>();
+        }
+        endNoteScript.enabled = false;
     }
 }

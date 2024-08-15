@@ -20,7 +20,7 @@ public class Note : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveNote();
+       moveNote();
     }
 
     public void moveNote()

@@ -8,6 +8,7 @@ public class NoteManager : MonoBehaviour
     double currentTime = 0d;
 
     [SerializeField] Transform tfNoteAppear = null; // 노트 생성위치
+    [SerializeField] RectTransform tfLongNoteAppear = null; // 노트 생성위치
     // [SerializeField] GameObject goNote = null; // 노트 프리팹
 
     EffectManager effectManager;
@@ -29,32 +30,80 @@ public class NoteManager : MonoBehaviour
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
-
-        if (currentTime >= 60d / bpm) // 1비트의 시간 
+        double BeatTime = (60d / bpm) * 3;
+        if (currentTime >= BeatTime) // 1비트의 시간 
         {
-            GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
-            t_note.transform.position = tfNoteAppear.position;
-            t_note.SetActive(true);
-            timingManager.boxNoteList.Add(t_note);
-            currentTime -= 60d / bpm;
+            MakeLongNote();
+            currentTime -= BeatTime;
 
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Note"))
+        if (collision.gameObject.name == "StartNote" ||  collision.gameObject.name == "EndNote")
         {
-            if (collision.GetComponent<Note>().GetNoteFlag())
-            {
-                effectManager.JudgementEffect(4);
-                comboManager.ResetCombo();
-            }
-
-            timingManager.boxNoteList.Remove(collision.gameObject);
-            ObjectPool.instance.noteQueue.Enqueue(collision.gameObject);
             collision.gameObject.SetActive(false);
-            
+
+            if (collision.gameObject.name == "EndNote")
+            {
+                Note note = collision.GetComponent<Note>();
+                note.enabled = false;
+
+                GameObject parentGameObject = collision.transform.parent?.gameObject;
+
+                if(parentGameObject != null)
+                {
+                    parentGameObject.transform.position = tfLongNoteAppear.position;
+                    parentGameObject.gameObject.SetActive(false);
+                    timingManager.boxNoteList.Remove(parentGameObject.gameObject);
+                    ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
+
+
+                }
+            }
         }
+        else
+        {
+            if (collision.CompareTag("Note"))
+            {
+                if (collision.GetComponent<Note>().GetNoteFlag())
+                {
+                    effectManager.JudgementEffect(4);
+                    comboManager.ResetCombo();
+                }
+
+                timingManager.boxNoteList.Remove(collision.gameObject);
+                ObjectPool.instance.noteQueue.Enqueue(collision.gameObject);
+                collision.gameObject.SetActive(false);
+
+            }
+        }
+    }
+
+    public void MakeNote()
+    {
+        GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
+        t_note.transform.position = tfNoteAppear.position;
+        t_note.SetActive(true);
+        timingManager.boxNoteList.Add(t_note);
+    }
+
+    public void MakeLongNote()
+    {
+        GameObject t_note = ObjectPool.instance.longNoteQueue.Dequeue();
+        RectTransform rect = t_note.GetComponent<RectTransform>();
+        rect.position = tfLongNoteAppear.position;
+        t_note.SetActive(true);
+        longnote3 longnote3 = t_note.GetComponent<longnote3>();
+        longnote3.isNoteActive = true;
+        longnote3.lineObject.SetActive(true);
+        longnote3.startNote.SetActive(true);
+        longnote3.endNote.SetActive(true);
+
+        longnote3.startNote.transform.position = tfNoteAppear.position;
+        longnote3.endNote.transform.position = tfNoteAppear.position;
+        longnote3.FinishEndNote();
+        timingManager.boxNoteList.Add(t_note);
     }
 }
