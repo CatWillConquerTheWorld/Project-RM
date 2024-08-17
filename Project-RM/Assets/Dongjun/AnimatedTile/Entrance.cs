@@ -19,6 +19,17 @@ public class Entrance : MonoBehaviour
         if (collision.tag == "Player") animator.SetBool("lightUp", true);
     }
 
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                SceneLoader.LoadSceneWithLoading("Temp");
+            }
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player") animator.SetBool("lightUp", false);

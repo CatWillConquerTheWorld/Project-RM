@@ -21,9 +21,4 @@ public class DoorForTutorial : MonoBehaviour
             boxCollider.enabled = isOpen; // 문이 열리면 콜라이더를 비활성화하여 지나갈 수 있게 함
         }
     }
-
-    IEnumerator OpenDoor()
-    {
-        yield return null;
-    }
 }
