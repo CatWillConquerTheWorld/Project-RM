@@ -10,6 +10,7 @@ public class StartSceneManager : MonoBehaviour
     public PlayerController playerPlayerController;
     public GameObject playerGun;
 
+    public Image logo;
     public CanvasGroup startCanvasGroup;
     public TMP_Text pressStart;
 

@@ -5,7 +5,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     //½Ì±ÛÅæ ¼±¾ð
-    public static PlayerController instance { get; private set; }
+    //public static PlayerController instance { get; private set; }
 
     public int hp;
     private bool isDead;
@@ -20,9 +20,9 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     //ÃÑ ¿ä¼Ò
-    public int normalAttackRate;
-    public int semiAttackRate;
-    public int chargedAttackRate;
+    public static int normalAttackRate;
+    public static int semiAttackRate;
+    public static int chargedAttackRate;
     public GameObject bulletPrefab;
     public GameObject chargedBulletPrefab;
     public GameObject semiChargedBP;
@@ -49,16 +49,16 @@ public class PlayerController : MonoBehaviour
     private bool isHitting;
 
     private bool align;
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        } else
-        {
-            Destroy(this);
-        }
-    }
+    //void Awake()
+    //{
+    //    if (instance == null)
+    //    {
+    //        instance = this;
+    //    } else
+    //    {
+    //        Destroy(this);
+    //    }
+    //}
 
     void Start()
     {
@@ -78,7 +78,11 @@ public class PlayerController : MonoBehaviour
             health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
         }
 
-            align = false;
+        normalAttackRate = 10;
+        semiAttackRate = 20;
+        chargedAttackRate = 30;
+
+        align = false;
     }
 
     void Update()

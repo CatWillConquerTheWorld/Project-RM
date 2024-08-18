@@ -176,9 +176,9 @@ public class EnemyController : MonoBehaviour
         isDead = false;
         isCharging = false;
 
-        normalAttackRate = PlayerController.instance.normalAttackRate;
-        semiAttackRate = PlayerController.instance.semiAttackRate;
-        chargedAttackRate = PlayerController.instance.chargedAttackRate;
+        normalAttackRate = PlayerController.normalAttackRate;
+        semiAttackRate = PlayerController.semiAttackRate;
+        chargedAttackRate = PlayerController.chargedAttackRate;
     }
 
 
