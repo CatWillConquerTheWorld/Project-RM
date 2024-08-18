@@ -14,9 +14,7 @@ public class Tutorial : MonoBehaviour
 
     public GameObject player;
     private GameObject playerGun;
-    private SpriteRenderer playerGunSpriteRenderer;
     private PlayerController playerPlayerController;
-    private SpriteRenderer playerSpriteRenderer;
     private Animator playerAnimator;
 
     public GameObject chatManagerYeller;
@@ -27,6 +25,8 @@ public class Tutorial : MonoBehaviour
     public RectTransform movieEffectorDown;
 
     public GameObject infoText;
+    public GameObject keyP;
+    public CanvasGroup arrowContainer;
 
     public GameObject gun;
 
@@ -67,11 +67,9 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
-        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
         playerAnimator = player.GetComponent<Animator>();
 
         playerGun = player.transform.Find("Gun").gameObject;
-        playerGunSpriteRenderer = playerGun.GetComponent<SpriteRenderer>();
 
         yellerChat = chatManagerYeller.GetComponent<Chatting>();
         chatting = chatManagerTutorialNPC.GetComponent<Chatting>();
@@ -82,8 +80,6 @@ public class Tutorial : MonoBehaviour
         waitOneSec = new WaitForSeconds(1);
         waitHalfSec = new WaitForSeconds(0.5f);
         waitForDisableChatter = new WaitForSeconds(0.7f);
-
-        canHoldGun = false;
         holdingGun = false;
 
         for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
@@ -164,10 +160,9 @@ public class Tutorial : MonoBehaviour
         CameraReturns();
         playerPlayerController.enabled = true;
         StartCoroutine(DisableWithDelay(chatting));
-        InfoTextChange("방향키를 눌러 이동하세요.");
-        InfoTextAppear();
+        ArrowAppear();
         yield return StartCoroutine(WaitForGun());
-        InfoTextDisappear();
+        ArrowDisappear();
         StartCoroutine(MovieStart());
         playerPlayerController.enabled = false;
         yield return StartCoroutine(PlayerMoveX(9.5f, 4f));
@@ -252,7 +247,9 @@ public class Tutorial : MonoBehaviour
     IEnumerator WaitForUser()
     {
         isNext = false;
+        keyP.SetActive(true);
         while (!isNext) yield return null;
+        keyP.SetActive(false);
     }
 
     IEnumerator DisableWithDelay(Chatting target)
@@ -329,9 +326,6 @@ public class Tutorial : MonoBehaviour
 
     IEnumerator WaitForGun()
     {
-        canHoldGun = false;
-        while (!canHoldGun) yield return null;
-        InfoTextChange("F를 눌러 총을 잡으세요.");
         while (!holdingGun) yield return null;
         gun.SetActive(false);
         playerGun.SetActive(true);
@@ -407,6 +401,16 @@ public class Tutorial : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         yield return null;
+    }
+
+    void ArrowAppear()
+    {
+        arrowContainer.DOFade(1f, 0.1f).SetEase(Ease.OutSine);
+    }
+
+    void ArrowDisappear()
+    {
+        arrowContainer.DOFade(0f, 0.1f).SetEase(Ease.OutSine);
     }
 
     void InfoTextAppear()

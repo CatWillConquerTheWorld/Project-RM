@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Chatting : MonoBehaviour
@@ -24,7 +23,7 @@ public class Chatting : MonoBehaviour
         chatterSpriteRenderer = chatter.GetComponent<SpriteRenderer>();
         innerTextTMPro = innerText.GetComponent<TextMeshPro>();
 
-        chatDelay = new WaitForSeconds(0.05f);
+        chatDelay = new WaitForSeconds(0.03f);
     }
 
     void Update()
@@ -47,6 +46,7 @@ public class Chatting : MonoBehaviour
             innerTextTMPro.text += text[i];
             yield return chatDelay;
         }
+        yield return chatDelay;
     }
 
     public void EnableChat()

@@ -6,6 +6,7 @@ public class InteractiveGun : MonoBehaviour
 {
     public GameObject playerGun;
 
+    public GameObject keyF;
     public Material outline;
     public Material noOutline;
     private Material myMaterial;
@@ -18,12 +19,14 @@ public class InteractiveGun : MonoBehaviour
         isPlayerEnteredFieldOnce = false;
         isPlayerHoldingGun = false;
         myMaterial = GetComponent<Material>();
+        keyF.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            keyF.SetActive(true);
             GetComponent<SpriteRenderer>().material = outline;
             if (!isPlayerEnteredFieldOnce)
             {
@@ -50,6 +53,7 @@ public class InteractiveGun : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            keyF.SetActive(false);
             GetComponent<SpriteRenderer>().material = noOutline;
         }
     }
