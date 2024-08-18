@@ -51,6 +51,8 @@ public class NoteManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if(!collision.gameObject.activeSelf) { return;  }
+
         if (collision.gameObject.name == "StartNote" ||  collision.gameObject.name == "EndNote")
         {
             collision.gameObject.SetActive(false);
@@ -75,10 +77,13 @@ public class NoteManager : MonoBehaviour
 
                 GameObject parentGameObject = collision.transform.parent?.gameObject;
 
-                if(parentGameObject != null)
+                if(parentGameObject != null && parentGameObject.activeSelf )
                 {
                     parentGameObject.transform.position = tfLongNoteAppear.position;
-                    parentGameObject.gameObject.SetActive(false);
+                    if (parentGameObject.activeSelf)  // 활성화 상태 확인
+                    {
+                        parentGameObject.gameObject.SetActive(false);
+                    }
                     timingManager.boxNoteList.Remove(parentGameObject.gameObject);
                     ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
                 }
@@ -132,7 +137,7 @@ public class NoteManager : MonoBehaviour
 
                 GameObject parentGameObject = longNote.transform.parent?.gameObject;
 
-                if (parentGameObject != null)
+                if (parentGameObject != null && parentGameObject.activeSelf)
                 {
                     parentGameObject.transform.position = tfLongNoteAppear.position;
                     parentGameObject.gameObject.SetActive(false);
@@ -146,8 +151,11 @@ public class NoteManager : MonoBehaviour
     public void MakeNote()
     {
         GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
+        Note note = t_note.GetComponent<Note>();
+        
         t_note.transform.position = tfNoteAppear.position;
         t_note.SetActive(true);
+        note.noteDir = Vector3.right;
         timingManager.boxNoteList.Add(t_note);
     }
 

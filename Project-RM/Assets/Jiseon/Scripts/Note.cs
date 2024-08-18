@@ -7,6 +7,9 @@ public class Note : MonoBehaviour
 
     UnityEngine.UI.Image noteImage;
 
+    public bool isEnemyNote = false;
+    public Vector3 noteDir = Vector3.right;
+
     void OnEnable()
     {
         if(noteImage == null)
@@ -15,6 +18,8 @@ public class Note : MonoBehaviour
         }
         
         noteImage.enabled = true;
+
+        // noteDir = Vector3.right;
     }
     // Update is called once per frame
     void Update()
@@ -24,7 +29,7 @@ public class Note : MonoBehaviour
 
     public void moveNote()
     {
-        transform.position += Vector3.right * noteSpeed * Time.deltaTime;
+        transform.position += noteDir * noteSpeed * Time.deltaTime;
     }
 
     public void HideNote()

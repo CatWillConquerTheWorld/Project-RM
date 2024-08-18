@@ -77,7 +77,8 @@ public class timingManager : MonoBehaviour
                 {
                     if (!centerFrame.musicStart && !startMusic)
                     {
-                        centerFrame.MusicStart();
+                        Debug.Log("music start long note");
+                        // centerFrame.MusicStart();
                         startMusic = true;
                     }
                     isHolding = true;
@@ -118,7 +119,7 @@ public class timingManager : MonoBehaviour
         }
         
 
-        if (CheckTiming(endNote))
+        if (CheckTiming2(endNote))
         {
             endNote.transform.SetParent(curLongNote.transform);
             endNote.transform.SetSiblingIndex(2);
@@ -133,10 +134,11 @@ public class timingManager : MonoBehaviour
             endNote.transform.SetParent(curLongNote.transform);
             endNote.transform.SetSiblingIndex(2);
             isHolding = false;
-            endNote.SetActive(false);
+            
             Debug.Log("롱노트 끝 판정 리셋");
             theComboManager.ResetCombo();
             theEffect.JudgementEffect(timingBoxs.Length); // 미스 처리
+            // noteManager.resetLongNote(endNote);
         }
         isLongNote = false;
         noteManager.resetLongNote(endNote);
@@ -155,6 +157,31 @@ public class timingManager : MonoBehaviour
         float t_noteRecX = notes.transform.localPosition.x;
 
         for (int x = 0; x < 2; x++)
+        {
+            // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
+            if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
+            {
+                theEffect.JudgementEffect(x);
+                theEffect.NoteHitEffect();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool CheckTiming2(GameObject note)
+    {
+        if (note == null)
+        {
+            return false;
+        }
+        GameObject notes = note;
+
+        note.transform.SetParent(notePos);
+
+        float t_noteRecX = notes.transform.localPosition.x;
+
+        for (int x = 0; x < 1; x++)
         {
             // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)

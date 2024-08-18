@@ -34,6 +34,14 @@ public class longnote3 : MonoBehaviour
     private void OnEnable()
     {
         currentTime = 0d;
+
+        // lineObject의 위치와 크기를 초기화
+        Resize();
+
+        // lineObject를 활성화하기 전에 미리 위치를 설정
+        lineRect.position = (startUI.position + endUI.position) / 2;
+
+
         FinishEndNote();
     }
 

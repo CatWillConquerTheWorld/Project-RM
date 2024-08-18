@@ -18,12 +18,14 @@ public class ObjectPool : MonoBehaviour
     
     public Queue<GameObject> noteQueue = new Queue<GameObject>();
     public Queue<GameObject> longNoteQueue = new Queue<GameObject>();
+    public Queue<GameObject> enemyLongNoteQueue = new Queue<GameObject>();
 
     void Start()
     {
         instance = this;
         noteQueue = InsertQueue(objectInfo[0]);
         longNoteQueue = InsertQueue(objectInfo[1]);
+        enemyLongNoteQueue = InsertQueue(objectInfo[2]);
     }
 
 
@@ -42,7 +44,7 @@ public class ObjectPool : MonoBehaviour
             if (t_clone.name == "LONGNOTE(Clone)") // 롱노트 배치
             {
                 rectTransform.SetParent(p_objectInfo.tPoolParent, false); // UI 부모 설정
-                rectTransform.anchoredPosition = Vector2.zero; // 원하는 위치로 조정
+                // rectTransform.anchoredPosition = Vector2.zero; // 원하는 위치로 조정
             }
             else // 일반 노트 배치
             {

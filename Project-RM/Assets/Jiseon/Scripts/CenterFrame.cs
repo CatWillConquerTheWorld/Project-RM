@@ -27,7 +27,10 @@ public class CenterFrame : MonoBehaviour
 
     public void MusicStart()
     {
-        myAudio?.Play();
-        musicStart = true;
+        if (!musicStart)
+        {
+            myAudio.Play();
+            musicStart = true;
+        }
     }
 }
