@@ -5,13 +5,15 @@ using UnityEngine;
 public class CenterFrame : MonoBehaviour
 {
     AudioSource myAudio;
-    bool musicStart = false;
+    public bool musicStart = false;
     
     void Start()
     {
         myAudio = GetComponent<AudioSource>();
     }
-
+    private void Update()
+    {
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!musicStart)
@@ -23,5 +25,11 @@ public class CenterFrame : MonoBehaviour
             }
         }
         
+    }
+
+    public void MusicStart()
+    {
+        myAudio?.Play();
+        musicStart = true;
     }
 }

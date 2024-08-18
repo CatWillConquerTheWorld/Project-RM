@@ -30,9 +30,10 @@ public class NoteManager : MonoBehaviour
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
-        double BeatTime = (60d / bpm) * 3;
+        double BeatTime = (60d / bpm) * 6;
         if (currentTime >= BeatTime) // 1비트의 시간 
         {
+            // MakeNote();
             MakeLongNote();
             currentTime -= BeatTime;
 
@@ -44,6 +45,12 @@ public class NoteManager : MonoBehaviour
         if (collision.gameObject.name == "StartNote" ||  collision.gameObject.name == "EndNote")
         {
             collision.gameObject.SetActive(false);
+
+            if (collision.GetComponent<Note>().GetNoteFlag())
+            {
+                effectManager.JudgementEffect(4);
+                comboManager.ResetCombo();
+            }
 
             if (collision.gameObject.name == "EndNote")
             {
@@ -58,8 +65,6 @@ public class NoteManager : MonoBehaviour
                     parentGameObject.gameObject.SetActive(false);
                     timingManager.boxNoteList.Remove(parentGameObject.gameObject);
                     ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
-
-
                 }
             }
         }
@@ -81,6 +86,47 @@ public class NoteManager : MonoBehaviour
         }
     }
 
+    public void resetLongNote(GameObject longNote)
+    {
+        Note note = longNote.GetComponent<Note>();
+        note.enabled = false;
+        longNote.SetActive(false);
+
+        GameObject parentGameObject = longNote.transform.parent?.gameObject;
+
+        if (parentGameObject != null)
+        {
+            parentGameObject.transform.position = tfLongNoteAppear.position;
+            parentGameObject.gameObject.SetActive(false);
+            timingManager.boxNoteList.Remove(parentGameObject.gameObject);
+            ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
+        }
+    }
+
+    public void finishLongNote(GameObject longNote)
+    {
+        if (longNote.gameObject.name == "StartNote" || longNote.gameObject.name == "EndNote")
+        {
+            longNote.gameObject.SetActive(false);
+
+            if (longNote.gameObject.name == "EndNote")
+            {
+                Note note = longNote.GetComponent<Note>();
+                note.enabled = false;
+
+                GameObject parentGameObject = longNote.transform.parent?.gameObject;
+
+                if (parentGameObject != null)
+                {
+                    parentGameObject.transform.position = tfLongNoteAppear.position;
+                    parentGameObject.gameObject.SetActive(false);
+                    timingManager.boxNoteList.Remove(parentGameObject.gameObject);
+                    ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
+                }
+            }
+        }
+    }
+
     public void MakeNote()
     {
         GameObject t_note = ObjectPool.instance.noteQueue.Dequeue();
@@ -96,6 +142,7 @@ public class NoteManager : MonoBehaviour
         rect.position = tfLongNoteAppear.position;
         t_note.SetActive(true);
         longnote3 longnote3 = t_note.GetComponent<longnote3>();
+
         longnote3.isNoteActive = true;
         longnote3.lineObject.SetActive(true);
         longnote3.startNote.SetActive(true);
