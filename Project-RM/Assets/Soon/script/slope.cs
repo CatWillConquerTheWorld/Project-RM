@@ -10,6 +10,7 @@ public class slope : MonoBehaviour
     public float speed = 5f;          // 이동 속도
     public bool isOnRope = false;    // 로프를 잡았는지 여부
     public bool isMoving = false;    // 이동 중인지 여부
+    public bool isRiding = false;
     private Vector2 moveDirection;    // 이동 방향
     public Rigidbody2D rb;
 
@@ -21,15 +22,28 @@ public class slope : MonoBehaviour
     void Update()
     {
         // 로프 잡기 (E 키 입력)
-        if (isOnRope && Input.GetKeyDown(KeyCode.E))
+        // F 키 입력으로 로프 타기/내리기
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            isMoving = true;
-            moveDirection = (targetPosition.position - transform.position).normalized;
-            player.transform.SetParent(transform);
-
-            // 플레이어의 Rigidbody2D를 kinematic으로 전환 (물리적 자유를 제한)
-            player.GetComponent<Rigidbody2D>().isKinematic = true;
-
+            if (isRiding)
+            {
+                // 로프에서 내려오기
+                isMoving = false;
+                isOnRope = false;
+                isRiding = false;
+                player.transform.SetParent(null);  // 부모에서 분리
+                player.GetComponent<Rigidbody2D>().isKinematic = false;  // 물리 활성화
+            }
+            else
+            {
+                // 로프 타기
+                isOnRope = true;
+                isMoving = true;
+                isRiding = true;
+                moveDirection = (targetPosition.position - transform.position).normalized;
+                player.transform.SetParent(transform);  // 로프의 자식으로 설정
+                player.GetComponent<Rigidbody2D>().isKinematic = true;  // 물리 비활성화
+            }
         }
 
         // 목표 위치에 도달하면 멈춤
@@ -39,15 +53,7 @@ public class slope : MonoBehaviour
             rb.velocity = Vector2.zero;  // 속도를 0으로 설정
         }
 
-        // 로프에서 내려오기 (스페이스바 입력)
-        if (isOnRope && Input.GetKeyDown(KeyCode.Space))
-        {
-            isMoving = false;
-            isOnRope = false;
-            player.transform.SetParent(null);
-            player.GetComponent<Rigidbody2D>().isKinematic = false;
-
-        }
+        
 
         // 이동 중일 때 이동 처리
         if (isMoving)

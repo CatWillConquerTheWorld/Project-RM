@@ -7,7 +7,14 @@ public class Boss : MonoBehaviour
     public int HP;
     Rigidbody2D rigid;
     Animator animator;
-    float maxSpeed = 4.0f;
+    public GameObject laserPrefab; // 레이저 프리팹
+    public GameObject dangerPrefab; // Danger 이미지 프리팹
+    public Transform laserSpawnPoint; // 레이저 발사 위치
+    public float laserDelay = 1.0f; // Danger 이미지가 사라진 후 레이저가 발사되는 딜레이
+    public float dangerDuration = 1.5f; // Danger 이미지 표시 시간
+    public float laserDuration = 2f;
+    public int laserCount = 3; // 레이저 발사 횟수
+
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -19,30 +26,30 @@ public class Boss : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            HP = HP - 50;
+            Attack2();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Attack1();
         }
         
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Attack2();
-        }
-
-        if(Input.GetKeyDown(KeyCode.F))
-        {
-            Attack1();
-        }
-
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Buff();
         }
 
-        if(HP <= 0)
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            HP = HP - 50;
+        }
+
+        if (HP <= 0)
         {
             Die();
         }
