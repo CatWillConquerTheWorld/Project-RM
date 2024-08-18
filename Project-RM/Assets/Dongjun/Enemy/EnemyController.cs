@@ -161,6 +161,7 @@ public class EnemyController : MonoBehaviour
         transform.tag = "Untagged";
         Destroy(GetComponent<Rigidbody2D>());
         boxCollider.enabled = false;
+        Stage1.enemies.Remove(gameObject);
     }
 
 
