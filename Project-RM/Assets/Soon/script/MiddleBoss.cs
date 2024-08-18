@@ -32,6 +32,7 @@ public class MiddleBoss : MonoBehaviour
         {
             Dash();
             Attack1();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -61,7 +62,6 @@ public class MiddleBoss : MonoBehaviour
     }
     void Attack1()
     {
-
         animator.SetTrigger("Attack1");
     }
 
@@ -76,7 +76,15 @@ public class MiddleBoss : MonoBehaviour
         this.dashTime += Time.deltaTime;
         this.isDash = true;
 
-        if (this.tmpDir == Vector2.zero) this.tmpDir = Vector2.left;
+        if (this.tmpDir == Vector2.zero || this.tmpDir == new Vector2(1f, 0f))
+        {
+            this.tmpDir = Vector2.left;
+        }
+        else
+        {
+            this.tmpDir = Vector2.right;
+
+        }
 
         StartCoroutine(DashCoroutine());
     }
@@ -95,6 +103,8 @@ public class MiddleBoss : MonoBehaviour
         this.isDash = false;
         this.ghost.makeGhost = false;
         this.dashTime = 0;
+        
+
     }
 
     void Die()
