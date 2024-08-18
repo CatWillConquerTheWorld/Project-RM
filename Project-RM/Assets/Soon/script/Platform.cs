@@ -29,13 +29,13 @@ public class Platform : MonoBehaviour
         while (true) // 무한 반복
         {
             // 현재 활성화된 발판을 비활성화
-            platforms[currentPlatformIndex].GetComponent<Material>().DOFade(0f, 0.1f).SetEase(Ease.OutSine).OnComplete(() => platforms[currentPlatformIndex].gameObject.SetActive(false));
+            platforms[currentPlatformIndex].SetActive(false);
 
             // 다음 발판의 인덱스로 변경
             currentPlatformIndex = (currentPlatformIndex + 1) % platforms.Length;
 
             // 다음 발판을 활성화
-            platforms[currentPlatformIndex].GetComponent<Material>().DOFade(1f, 0.1f).SetEase(Ease.OutSine).OnStart(() => platforms[currentPlatformIndex].gameObject.SetActive(true));
+            platforms[currentPlatformIndex].SetActive(true);
 
             // 지정된 시간만큼 대기
             yield return new WaitForSeconds(toggleInterval);

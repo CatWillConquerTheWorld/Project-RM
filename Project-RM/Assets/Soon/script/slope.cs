@@ -1,60 +1,78 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class slope : MonoBehaviour
 {
-    public DistanceJoint2D ropeJoint; // 로프와 연결할 조인트
-    public Rigidbody2D playerRb; // 캐릭터의 Rigidbody
-    public Rigidbody2D ropeRb;
-    public LayerMask ropeLayer; // 로프 레이어 설정
-    public float slideSpeed = 2f; // 내려가는 속도 설정
-    public Vector2 slideDirection = new Vector2(1f, -1f).normalized;
-    public GameObject stopRopeLocation;
-    private bool isOnRope = false;
+    public Transform targetPosition;  // 플레이어가 이동할 목표 위치
+    public GameObject player;
+    public float speed = 5f;          // 이동 속도
+    public bool isOnRope = false;    // 로프를 잡았는지 여부
+    public bool isMoving = false;    // 이동 중인지 여부
+    private Vector2 moveDirection;    // 이동 방향
+    public Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) // E 키를 누르면 로프 잡기
+        // 로프 잡기 (E 키 입력)
+        if (isOnRope && Input.GetKeyDown(KeyCode.E))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 1f, ropeLayer);
+            isMoving = true;
+            moveDirection = (targetPosition.position - transform.position).normalized;
+            player.transform.SetParent(transform);
 
-            if (hit.collider != null)
-            {
-                isOnRope = true;
-                ropeJoint.connectedBody = hit.collider.GetComponent<Rigidbody2D>();
-                ropeJoint.enabled = true;
-            }
+            // 플레이어의 Rigidbody2D를 kinematic으로 전환 (물리적 자유를 제한)
+            player.GetComponent<Rigidbody2D>().isKinematic = true;
+
         }
 
-        if (Input.GetKeyDown(KeyCode.Space)) // Space 키를 누르면 로프에서 떨어짐
+        // 목표 위치에 도달하면 멈춤
+        if (isMoving && Vector2.Distance(transform.position, targetPosition.position) < 0.1f)
+        {
+            isMoving = false;
+            rb.velocity = Vector2.zero;  // 속도를 0으로 설정
+        }
+
+        // 로프에서 내려오기 (스페이스바 입력)
+        if (isOnRope && Input.GetKeyDown(KeyCode.Space))
+        {
+            isMoving = false;
+            isOnRope = false;
+            player.transform.SetParent(null);
+            player.GetComponent<Rigidbody2D>().isKinematic = false;
+
+        }
+
+        // 이동 중일 때 이동 처리
+        if (isMoving)
+        {
+            // 중력을 0으로 설정
+            rb.velocity = moveDirection * speed;
+        }
+    }
+
+    // 로프와 충돌 시 처리
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isOnRope = true;
+
+        }
+    }
+
+    // 로프에서 벗어났을 때 처리
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
         {
             isOnRope = false;
-            ropeJoint.enabled = false;
-            ropeRb.velocity = Vector2.zero;
-        }
-
-    }
-
-    void FixedUpdate()
-    {
-        if (isOnRope)
-        {
-            // 캐릭터가 로프를 잡고 있을 때 경사면을 미끄러지도록 처리
-            playerRb.velocity = slideDirection * slideSpeed;
-            ropeRb.velocity = slideDirection * slideSpeed;
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // 충돌한 객체가 특정 GameObject와 일치하는지 확인
-        if (collision.gameObject == stopRopeLocation)
-        {
-            // 로프의 움직임을 멈춤
-            playerRb.velocity = Vector2.zero;
-            ropeRb.velocity = Vector2.zero;
-            ropeRb.angularVelocity = 0f;
         }
     }
 }
