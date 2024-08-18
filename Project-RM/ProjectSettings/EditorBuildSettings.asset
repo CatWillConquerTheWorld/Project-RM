@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Dongjun/Scenes/Loading.unity
     guid: 78fcf48605a6a664b839d82206fbfc0d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Dongjun/Scenes/Temp.unity
     guid: 447c913fe05098742b34ebf5183ca4db
   - enabled: 1

@@ -10,7 +10,6 @@ public class StartSceneManager : MonoBehaviour
     public PlayerController playerPlayerController;
     public GameObject playerGun;
 
-    public Image logo;
     public CanvasGroup startCanvasGroup;
     public TMP_Text pressStart;
 
@@ -23,7 +22,6 @@ public class StartSceneManager : MonoBehaviour
         //PlayerPrefs.SetInt("tutorialCleared", 1);
         playerGun.SetActive(false);
         playerPlayerController.enabled = false;
-        pressStart.DOFade(0.1f, 1f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
     }
 
     // Update is called once per frame
@@ -33,13 +31,14 @@ public class StartSceneManager : MonoBehaviour
         {
             StartCoroutine(StartFlow());
         }
+        
     }
 
     IEnumerator StartFlow()
     {
         isStarted = true;
         pressStart.DOKill();
-        startCanvasGroup.DOFade(0f, 1f).SetEase(Ease.Linear);
+        startCanvasGroup.DOFade(0f, 1f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(1);
         if (PlayerPrefs.GetInt("tutorialCleared") == 0)
         {
