@@ -12,7 +12,7 @@ public class playerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            // timingManager.CheckTiming();
+            timingManager.CheckTiming();
         }
     }
 }

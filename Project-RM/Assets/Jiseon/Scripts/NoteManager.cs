@@ -14,6 +14,8 @@ public class NoteManager : MonoBehaviour
     timingManager timingManager;
     ComboManager comboManager;
 
+    bool notecheck = false;
+
     private void Start()
     {
         effectManager = FindObjectOfType<EffectManager>();
@@ -29,11 +31,19 @@ public class NoteManager : MonoBehaviour
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
-        double BeatTime = (60d / bpm) * 6;
+        double BeatTime = (60d / bpm) * 3;
         if (currentTime >= BeatTime) // 1비트의 시간 
         {
-            // MakeNote();
-            MakeLongNote();
+            if(notecheck)
+            {
+                MakeLongNote();
+                notecheck = false;
+            }
+            else
+            {
+                MakeNote();
+                notecheck = true;
+            }
             currentTime -= BeatTime;
 
         }
@@ -48,7 +58,14 @@ public class NoteManager : MonoBehaviour
             if (collision.GetComponent<Note>().GetNoteFlag())
             {
                 effectManager.JudgementEffect(4);
-                comboManager.ResetCombo();
+                timingManager.isLongNote = false;
+                
+                if(collision.gameObject.name == "StartNote")
+                {
+                    comboManager.ResetCombo();
+                }
+                // comboManager.ResetCombo();
+                
             }
 
             if (collision.gameObject.name == "EndNote")

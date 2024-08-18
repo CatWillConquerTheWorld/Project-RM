@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ public class timingManager : MonoBehaviour
     GameObject endNote, curLongNote;
     public Transform notePos;
 
+    public bool isLongNote = false;
     void Start()
     {
         theEffect = FindObjectOfType<EffectManager>();
@@ -66,6 +68,7 @@ public class timingManager : MonoBehaviour
         {
             if (note.name == "LONGNOTE(Clone)")
             {
+                isLongNote = true;
                 GameObject middleNote = note.transform.GetChild(0).gameObject;
                 GameObject startNote = note.transform.GetChild(1).gameObject;
                 endNote = note.transform.GetChild(2).gameObject;
@@ -77,7 +80,6 @@ public class timingManager : MonoBehaviour
                         centerFrame.MusicStart();
                         startMusic = true;
                     }
-                    
                     isHolding = true;
                     startNote.SetActive(false);
                     currentNote = startNote;
@@ -108,6 +110,7 @@ public class timingManager : MonoBehaviour
         {
             isHolding = false;
             theComboManager.ResetCombo();
+            Debug.Log("스타트 노트 못누름 판정 리셋");
             theEffect.JudgementEffect(timingBoxs.Length); // 미스 처리
             noteManager.resetLongNote(endNote);
             currentNote = null;
@@ -122,22 +125,20 @@ public class timingManager : MonoBehaviour
             isHolding = false;
             endNote.SetActive(false);
             theComboManager.IncreaseCombo();
-            // theEffect.JudgementEffect(0); // 퍼펙트로 가정
         }
         else // 롱 노트를 놓쳤다면?
         {
-
             // Debug.Log("여기가 문제?");
             // EndNote 판정이 범위에 없으면 미스 처리
             endNote.transform.SetParent(curLongNote.transform);
             endNote.transform.SetSiblingIndex(2);
             isHolding = false;
             endNote.SetActive(false);
-
+            Debug.Log("롱노트 끝 판정 리셋");
             theComboManager.ResetCombo();
             theEffect.JudgementEffect(timingBoxs.Length); // 미스 처리
         }
-
+        isLongNote = false;
         noteManager.resetLongNote(endNote);
         currentNote = null;
     }
@@ -159,6 +160,7 @@ public class timingManager : MonoBehaviour
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
             {
                 theEffect.JudgementEffect(x);
+                theEffect.NoteHitEffect();
                 return true;
             }
         }
@@ -167,83 +169,92 @@ public class timingManager : MonoBehaviour
 
     public void CheckTiming()
     {
-        for (int i = 0; i < boxNoteList.Count; i++)
+        if (isLongNote == false)
         {
-            GameObject note = boxNoteList[i];
-
-            float t_noteRecX = note.transform.localPosition.x;
-
-
-            for (int x = 0; x < timingBoxs.Length; x++)
+            for (int i = 0; i < boxNoteList.Count; i++)
             {
-                // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
-                if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y) // NO
+                GameObject note = boxNoteList[i];
+
+                float t_noteRecX = note.transform.localPosition.x;
+
+
+                for (int x = 0; x < timingBoxs.Length; x++)
                 {
-                    Note noteComponent = note.GetComponent<Note>();
-
-                    if (note.name == "LONGNOTE(Clone)")
+                    // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
+                    if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y) // NO
                     {
-                        // 롱노트의 시작, 중간, 끝 노트를 구분하여 처리
-                        GameObject startNote = note.transform.GetChild(1).gameObject;
-                        GameObject endNote = note.transform.GetChild(2).gameObject;
+                        Note noteComponent = note.GetComponent<Note>();
+                        // Debug.Log(note.gameObject.name);
+                        if (note.gameObject.name != "Note(Clone)")
+                        {
+                            //// 롱노트의 시작, 중간, 끝 노트를 구분하여 처리
+                            //GameObject startNote = note.transform.GetChild(1).gameObject;
+                            //GameObject endNote = note.transform.GetChild(2).gameObject;
 
-                        if (CheckTiming(startNote))
-                        {
-                            // 시작 노트 판정
-                            // noteComponent.HideNote(); // 시작 노트 비활성화
-                            startNote.SetActive(false);
-                            theComboManager.IncreaseCombo();
-                            theEffect.JudgementEffect(x);
-                        }
-                        else if (CheckTiming(endNote))
-                        {
-                            // 끝 노트 판정
-                            // noteComponent.HideNote(); // 끝 노트 비활성화
-                            endNote.SetActive(false);
-                            theComboManager.IncreaseCombo();
-                            theEffect.JudgementEffect(x);
+                            //if (CheckTiming(startNote))
+                            //{
+                            //    // 시작 노트 판정
+                            //    // noteComponent.HideNote(); // 시작 노트 비활성화
+                            //    startNote.SetActive(false);
+                            //    theComboManager.IncreaseCombo();
+                            //    theEffect.JudgementEffect(x);
+                            //}
+                            //else if (CheckTiming(endNote))
+                            //{
+                            //    // 끝 노트 판정
+                            //    // noteComponent.HideNote(); // 끝 노트 비활성화
+                            //    endNote.SetActive(false);
+                            //    theComboManager.IncreaseCombo();
+                            //    theEffect.JudgementEffect(x);
+                            //}
+                            //else
+                            //{
+                            //    // 롱노트의 시작 또는 끝이 아닐 경우, 일반 노트와 동일하게 처리
+                            //    theComboManager.ResetCombo();
+                            //    theEffect.JudgementEffect(timingBoxs.Length);
+                            //}
+
+                            //// 리스트에서 제거
+                            //boxNoteList.RemoveAt(i);
+                            //return;
+                            return;
                         }
                         else
                         {
-                            // 롱노트의 시작 또는 끝이 아닐 경우, 일반 노트와 동일하게 처리
-                            theComboManager.ResetCombo();
-                            theEffect.JudgementEffect(timingBoxs.Length);
-                        }
+                            // 단일 노트 처리
+                            noteComponent.HideNote();
+                            boxNoteList.RemoveAt(i);
 
-                        // 리스트에서 제거
-                        boxNoteList.RemoveAt(i);
-                        return;
-                    }
-                    else
-                    {
-                        // 단일 노트 처리
-                        noteComponent.HideNote();
-                        boxNoteList.RemoveAt(i);
-
-                        if (x < timingBoxs.Length - 2)
-                        {
-                            theComboManager.IncreaseCombo();
-                            theEffect.JudgementEffect(x);
-                            theEffect.NoteHitEffect();
+                            if (x < timingBoxs.Length - 2)
+                            {
+                                theComboManager.IncreaseCombo();
+                                theEffect.JudgementEffect(x);
+                                theEffect.NoteHitEffect();
+                            }
+                            else if (x == 2)
+                            {
+                                theEffect.JudgementEffect(x);
+                                theEffect.NoteHitEffect();
+                                theComboManager.ResetCombo();
+                            }
+                            else if (x == 3)
+                            {
+                                theEffect.JudgementEffect(x);
+                                theComboManager.ResetCombo();
+                            }
+                            return;
                         }
-                        else if (x == 2)
-                        {
-                            theEffect.JudgementEffect(x);
-                            theEffect.NoteHitEffect();
-                            theComboManager.ResetCombo();
-                        }
-                        else if (x == 3)
-                        {
-                            theEffect.JudgementEffect(x);
-                            theComboManager.ResetCombo();
-                        }
-                        return;
                     }
                 }
             }
+            Debug.Log("단일노트 판정 리셋");
+            theComboManager.ResetCombo();
+            theEffect.JudgementEffect(timingBoxs.Length);
         }
-        // Miss 처리
-        theComboManager.ResetCombo();
-        theEffect.JudgementEffect(timingBoxs.Length);
+        else
+        {
+            return;
+        }
+        
     }
 }
