@@ -23,23 +23,10 @@ public class Sweeper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            LongAttackPrepare();
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            LongAttack();
-        }
     }
 
 
-    void Attack()
+    public void Attack()
     {
         attack1Collider.SetActive(false);
         attack2Collider.SetActive(false);
@@ -70,7 +57,7 @@ public class Sweeper : MonoBehaviour
         }
     }
 
-    void LongAttackPrepare()
+    public void LongAttackPrepare()
     {
         longAttackCollider.SetActive(false);
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -87,7 +74,7 @@ public class Sweeper : MonoBehaviour
         enemyController.animator.SetBool("isCharging", true);
     }
 
-    void LongAttack()
+    public void LongAttack()
     {
         longAttackCollider.SetActive(true);
         enemyController.animator.SetTrigger("longAttack");

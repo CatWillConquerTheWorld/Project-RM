@@ -20,23 +20,10 @@ public class OrbMage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            LongAttackPrepare();
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            LongAttack();
-        }
     }
 
 
-    void Attack()
+    public void Attack()
     {
         enemyController.velocity = 0;
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -85,7 +72,7 @@ public class OrbMage : MonoBehaviour
 
     }
 
-    void LongAttackPrepare()
+    public void LongAttackPrepare()
     {
         longAttackCollider.SetActive(false);
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -102,7 +89,7 @@ public class OrbMage : MonoBehaviour
         enemyController.animator.SetBool("isCharging", true);
     }
 
-    void LongAttack()
+    public void LongAttack()
     {
         longAttackCollider.SetActive(true);
         enemyController.animator.SetTrigger("longAttack");

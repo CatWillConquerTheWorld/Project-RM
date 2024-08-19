@@ -21,13 +21,9 @@ public class BombDroid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        }
     }
 
-    void Attack()
+    public void Attack()
     {
         enemyController.velocity = 0;
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;

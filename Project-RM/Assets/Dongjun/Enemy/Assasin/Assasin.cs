@@ -20,23 +20,10 @@ public class Assasin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            LongAttackPrepare();
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            LongAttack();
-        }
     }
 
 
-    void Attack()
+    public void Attack()
     {
         attackCollider.SetActive(false);
         enemyController.velocity = 0;
@@ -56,7 +43,7 @@ public class Assasin : MonoBehaviour
         if (enemyController.attackStack % 2 == 0) enemyController.animator.SetTrigger("attack2");
     }
 
-    void LongAttackPrepare()
+    public void LongAttackPrepare()
     {
         longAttackCollider.SetActive(false);
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -73,7 +60,7 @@ public class Assasin : MonoBehaviour
         enemyController.animator.SetBool("isCharging", true);
     }
 
-    void LongAttack()
+    public void LongAttack()
     {
         longAttackCollider.SetActive(true);
         enemyController.animator.SetTrigger("longAttack");

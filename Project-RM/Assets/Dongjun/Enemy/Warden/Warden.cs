@@ -19,14 +19,10 @@ public class Warden : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        }
     }
 
 
-    void Attack()
+    public void Attack()
     {
         attackCollider.SetActive(false);
         enemyController.velocity = 0;

@@ -1,11 +1,11 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     //public static EnemyController instance { get; private set; }
-
     public float hp;
     public float fullHp;
 

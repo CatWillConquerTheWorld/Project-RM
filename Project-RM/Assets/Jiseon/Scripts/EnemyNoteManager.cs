@@ -64,6 +64,25 @@ public class EnemyNoteManager : MonoBehaviour
                     parentGameObject.gameObject.SetActive(false);
                     ObjectPool.instance.enemyLongNoteQueue.Enqueue(parentGameObject.gameObject);
                 }
+                List<GameObject> enemies = Stage1.enemies;
+                for (int i = 0; i < enemies.Count; i++)
+                {
+                    if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttack();
+                    else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().LongAttack();
+                    else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().LongAttack();
+                    else if (enemies[i].name == "Enemy_Sweeper(Clone)") enemies[i].GetComponent<Sweeper>().LongAttack();
+                }
+            }
+            else
+            {
+                List<GameObject> enemies = Stage1.enemies;
+                for (int i = 0; i < enemies.Count; i++)
+                {
+                    if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttackPrepare();
+                    else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().LongAttackPrepare();
+                    else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().LongAttackPrepare();
+                    else if (enemies[i].name == "Enemy_Sweeper(Clone)") enemies[i].GetComponent<Sweeper>().LongAttackPrepare();
+                }
             }
         }
         else
@@ -72,7 +91,17 @@ public class EnemyNoteManager : MonoBehaviour
             {
                 ObjectPool.instance.noteQueue.Enqueue(collision.gameObject);
                 collision.gameObject.SetActive(false);
-
+                List<GameObject> enemies = Stage1.enemies;
+                for (int i = 0; i < enemies.Count; i++)
+                {
+                    if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().Attack();
+                    else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().Attack();
+                    else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().Attack();
+                    else if (enemies[i].name == "Enemy_Sweeper(Clone)") enemies[i].GetComponent<Sweeper>().Attack();
+                    else if (enemies[i].name == "Enemy_CageShocker(Clone)") enemies[i].GetComponent<CagedShocker>().Attack();
+                    else if (enemies[i].name == "Enemy_BombDroid(Clone)") enemies[i].GetComponent<BombDroid>().Attack();
+                    else if (enemies[i].name == "Enemy_Warden(Clone)") enemies[i].GetComponent<Warden>().Attack();
+                }
             }
         }
     }
