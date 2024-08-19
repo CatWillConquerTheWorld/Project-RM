@@ -63,6 +63,8 @@ public class Stage1 : MonoBehaviour
         }
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        NoteManager.isMusicStarted = true;
+        EnemyNoteManager.isMusicStart = true;
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
         countText.text = "3";

@@ -12,22 +12,25 @@ public class EnemyNoteManager : MonoBehaviour
 
     bool notecheck = false; // long short 번갈아가며 출력위해.
     
+    public static bool isMusicStart;
 
     void Start()
     {
+        isMusicStart = false;
         bpm = bpmManager.instance.bpm;
     }
 
     void Update()
     {
-        NoteMaking();
+        if (isMusicStart) NoteMaking();
+        else if (!isMusicStart) currentTime = 0d;
     }
 
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
         double BeatTime = bpmManager.instance.bpmInterval * 3;
-        if (currentTime >= BeatTime) // 1비트의 시간 
+        if (currentTime >= BeatTime && gameObject.activeSelf) // 1비트의 시간 
         {
             if (notecheck)
             {

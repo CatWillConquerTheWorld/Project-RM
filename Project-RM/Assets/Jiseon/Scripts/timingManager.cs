@@ -75,7 +75,7 @@ public class timingManager : MonoBehaviour
                 curLongNote = note;
                 if (CheckTiming(startNote))
                 {
-                    if (!centerFrame.musicStart && !startMusic)
+                    if (!CenterFrame.musicStart && !startMusic)
                     {
                         Debug.Log("music start long note");
                         // centerFrame.MusicStart();

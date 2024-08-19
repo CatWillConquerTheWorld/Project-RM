@@ -16,8 +16,11 @@ public class NoteManager : MonoBehaviour
 
     bool notecheck = false;
 
+    public static bool isMusicStarted;
+
     private void Start()
     {
+        isMusicStarted = false;
         bpm = bpmManager.instance.bpm;
         effectManager = FindObjectOfType<EffectManager>();
         timingManager = GetComponent<timingManager>();
@@ -26,14 +29,18 @@ public class NoteManager : MonoBehaviour
 
     void Update()
     {
-        NoteMaking();
+        if (isMusicStarted)
+        {
+            NoteMaking();
+        }
+        if (!isMusicStarted) currentTime = 0f;
     }
 
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
         double BeatTime = bpmManager.instance.bpmInterval * 3;
-        if (currentTime >= BeatTime) // 1비트의 시간 
+        if (currentTime >= BeatTime && gameObject.activeSelf) // 1비트의 시간 
         {
             if(notecheck)
             {

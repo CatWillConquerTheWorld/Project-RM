@@ -7,6 +7,7 @@ using Cinemachine;
 using UnityEngine.UIElements;
 using System.Globalization;
 using Unity.VisualScripting;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class Tutorial : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class Tutorial : MonoBehaviour
     public GameObject[] testRoom;
     public GameObject levelOneEnemies;
     public GameObject levelTwoEnemies;
+    public GameObject doorLeft;
+    public GameObject doorRight;
     public int deadEnemies;
 
     private RectTransform infoTextRect;
@@ -45,12 +48,21 @@ public class Tutorial : MonoBehaviour
     private WaitForSeconds waitHalfSec;
     private WaitForSeconds waitForDisableChatter;
 
+    public CanvasGroup noteUIContainer;
+
     //skipping to next description
     private bool isNext;
 
     //checks if player is in the interactive gun's field
     public bool canHoldGun;
     public bool holdingGun;
+
+    public bool isDoorOpened;
+    public float stageBPM;
+
+    public TMP_Text readyText;
+    public TMP_Text countText;
+    public float readyTextCharacterSpace;
 
     void Awake()
     {
@@ -97,6 +109,12 @@ public class Tutorial : MonoBehaviour
         yellerChat.DisableChat();
         chatting.DisableChat();
         //StartCoroutine(TutorialFlow());
+
+        readyText.enabled = false;
+        countText.enabled = false;
+
+        noteUIContainer.gameObject.SetActive(false);
+        isDoorOpened = false;
 
         isNext = false;
     }
@@ -197,13 +215,41 @@ public class Tutorial : MonoBehaviour
         InfoTextChange("모든 벌레를 처치하세요.");
         InfoTextAppear();
         playerPlayerController.enabled = true;
-        yield return WaitForElemenations(levelOneEnemies.transform.childCount);
+        yield return StartCoroutine(WaitForDoorOpen());
+        playerPlayerController.enabled = false;
+        readyText.enabled = true;
+        EnableNote();
+        DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
+        readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        yield return new WaitForSeconds(2f);
+        NoteManager.isMusicStarted = true;
+        //EnemyNoteManager.isMusicStart = true;
+        countText.enabled = true;
+        countText.text = "3";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "2";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "1";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "GO!";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.enabled = false;
+        playerPlayerController.enabled = true;
+        yield return StartCoroutine(WaitForElemenations(levelOneEnemies.transform.childCount));
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
+        NoteManager.isMusicStarted = false;
+        CenterFrame.MusicFadeOut();
+        //EnemyNoteManager.isMusicStart = false;
+        DisableNote();
+        readyText.enabled = false;
+        countText.enabled = false;
+        isDoorOpened = false;
         yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
         InfoTextDisappear();
+        TestRoomDoor.Reset();
         yield return StartCoroutine(chatting.Chat(3.85f, "잘 했네. 재능이 있구만."));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(4.5f, "그럼 바로 다음 단계로 가지."));
@@ -223,10 +269,41 @@ public class Tutorial : MonoBehaviour
         InfoTextAppear();
         InfoTextChange("모든 케이지를 처치하세요.");
         playerPlayerController.enabled = true;
+        yield return StartCoroutine(WaitForDoorOpen());
+        playerPlayerController.enabled = false;
+        EnableNote();
+        readyText.enabled = true;
+        readyText.DOFade(1f, 0.00001f);
+        CenterFrame.musicStart = false;
+        readyTextCharacterSpace = 50f;
+        readyText.characterSpacing = readyTextCharacterSpace;
+        DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
+        readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        yield return new WaitForSeconds(2f);
+        NoteManager.isMusicStarted = true;
+        EnemyNoteManager.isMusicStart = true;
+        countText.enabled = true;
+        countText.text = "3";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "2";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "1";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.text = "GO!";
+        yield return new WaitForSeconds(60f / stageBPM);
+        countText.enabled = false;
+        readyText.enabled = false;
+        GiveCagesEnemyController();
+        playerPlayerController.enabled = true;
         yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
+        NoteManager.isMusicStarted = false;
+        EnemyNoteManager.isMusicStart = false;
+        CenterFrame.MusicFadeOut();
+        DisableNote();
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         InfoTextDisappear();
+        yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
         yield return StartCoroutine(chatting.Chat(3.1f, "벌써 해치웠는가?"));
@@ -350,6 +427,8 @@ public class Tutorial : MonoBehaviour
             {
                 testRoom[i].transform.position = Vector3.MoveTowards(testRoom[i].transform.position, new Vector3(testRoom[i].transform.position.x, 12f, testRoom[i].transform.position.z), 3f * Time.deltaTime);
             }
+            doorLeft.transform.position = Vector3.MoveTowards(doorLeft.transform.position, doorLeft.transform.position + new Vector3(0, 13, 0), 3f * Time.deltaTime);
+            doorRight.transform.position = Vector3.MoveTowards(doorRight.transform.position, doorRight.transform.position + new Vector3(0, 13, 0), 3f * Time.deltaTime);
             yield return null;
         }
         for (int i = 0; i < levelOneEnemies.transform.childCount; i++)
@@ -381,6 +460,12 @@ public class Tutorial : MonoBehaviour
         yield return null;
     }
 
+    IEnumerator WaitForDoorOpen()
+    {
+        while (!isDoorOpened) yield return null;
+        yield return null;
+    }
+
     IEnumerator WaitForElemenations(int amount)
     {
         while (deadEnemies < amount) yield return null;
@@ -393,7 +478,7 @@ public class Tutorial : MonoBehaviour
         for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
         {
             levelTwoEnemies.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
-            levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+            levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = false;
             levelTwoEnemies.transform.GetChild(i).GetComponent<Cage>().enabled = true;
             levelTwoEnemies.transform.GetChild(i).tag = "Enemy";
             levelTwoEnemies.transform.GetChild(i).gameObject.layer = 7;
@@ -401,6 +486,25 @@ public class Tutorial : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         yield return null;
+    }
+
+    void GiveCagesEnemyController()
+    {
+        for (int i = 0; i < levelTwoEnemies.transform.childCount; i++)
+        {
+            levelTwoEnemies.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+        }
+    }
+
+    void EnableNote()
+    {
+        noteUIContainer.gameObject.SetActive(true);
+        noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    void DisableNote()
+    {
+        noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine).OnComplete(() => noteUIContainer.gameObject.SetActive(false));
     }
 
     void ArrowAppear()
