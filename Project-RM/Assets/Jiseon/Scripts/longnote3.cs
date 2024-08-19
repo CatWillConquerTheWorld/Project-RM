@@ -12,7 +12,7 @@ public class longnote3 : MonoBehaviour
     public RectTransform lineRect;
     public Note endNoteScript;
     public int bpm;
-    public float bpminterval;
+    public double bpminterval;
     double currentTime = 0d;
     public bool isNoteActive = true;
 
@@ -27,8 +27,8 @@ public class longnote3 : MonoBehaviour
         lineRect.SetParent(transform, false); // 부모 설정
         // lineRect.localPosition = Vector3.zero; // 로컬 위치를 (0, 0)으로 초기화
         noteSpawnPos = startNote.GetComponent<RectTransform>();
-        bpm = 120;
-        bpminterval = 60f / bpm;
+        bpm = bpmManager.instance.bpm;
+        bpminterval = bpmManager.instance.bpmInterval;
     }
 
     private void OnEnable()

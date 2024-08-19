@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyNoteManager : MonoBehaviour
 {
-    public int bpm = 0; // 분당 비트 수 의미
+    public int bpm; // 분당 비트 수 의미
     double currentTime = 0d;
 
     [SerializeField] Transform tfEnemyNoteAppear = null; // 노트 생성위치
@@ -15,6 +15,7 @@ public class EnemyNoteManager : MonoBehaviour
 
     void Start()
     {
+        bpm = bpmManager.instance.bpm;
     }
 
     void Update()
@@ -25,7 +26,7 @@ public class EnemyNoteManager : MonoBehaviour
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
-        double BeatTime = (60d / bpm) * 3;
+        double BeatTime = bpmManager.instance.bpmInterval * 3;
         if (currentTime >= BeatTime) // 1비트의 시간 
         {
             if (notecheck)

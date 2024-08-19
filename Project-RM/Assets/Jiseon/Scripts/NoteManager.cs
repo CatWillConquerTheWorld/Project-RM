@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class NoteManager : MonoBehaviour
 {
-    public int bpm = 0; // 분당 비트 수 의미
+    public int bpm; // 분당 비트 수 의미
     double currentTime = 0d;
 
     [SerializeField] Transform tfNoteAppear = null; // 노트 생성위치
@@ -18,6 +18,7 @@ public class NoteManager : MonoBehaviour
 
     private void Start()
     {
+        bpm = bpmManager.instance.bpm;
         effectManager = FindObjectOfType<EffectManager>();
         timingManager = GetComponent<timingManager>();
         comboManager = FindObjectOfType<ComboManager>();
@@ -31,7 +32,7 @@ public class NoteManager : MonoBehaviour
     public void NoteMaking()
     {
         currentTime += Time.deltaTime;
-        double BeatTime = (60d / bpm) * 3;
+        double BeatTime = bpmManager.instance.bpmInterval * 3;
         if (currentTime >= BeatTime) // 1비트의 시간 
         {
             if(notecheck)
