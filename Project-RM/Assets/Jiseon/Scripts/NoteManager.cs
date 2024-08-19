@@ -87,6 +87,9 @@ public class NoteManager : MonoBehaviour
                     timingManager.boxNoteList.Remove(parentGameObject.gameObject);
                     ObjectPool.instance.longNoteQueue.Enqueue(parentGameObject.gameObject);
                 }
+
+                comboManager.ResetCombo();
+                GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackCancel();
             }
         }
         else

@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour
     private bool isHitting;
 
     private bool align;
+
+    private float longNotePrepareMultiplier;
+    private float longNoteEndMultiplier;
+    private bool isLongAttackCanceled;
     //void Awake()
     //{
     //    if (instance == null)
@@ -64,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        isLongAttackCanceled = false;
         isDead = false;
 
         flip = true;
@@ -97,7 +102,7 @@ public class PlayerController : MonoBehaviour
         Jump();
 
         // 총 발사
-        Shoot();
+        //Shoot();
 
         //FindClosestEnemy();
         //if (closestEnemy != null)
@@ -188,12 +193,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius); // 감지 범위 표시
     }
 
     void LookAtEnemy()
@@ -295,39 +294,78 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    //private void Shoot()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.A))
+    //    {
+    //        chargedTime = 0;
+    //        gunAnimator.SetBool("isCharging", true);
+    //    }
+    //    if (Input.GetKey(KeyCode.A))
+    //    {
+    //        chargedTime += Time.deltaTime;
+    //    }
+    //    if (Input.GetKeyUp(KeyCode.A))
+    //     {
+    //        if (chargedTime >= maxChargeTime)
+    //        {
+    //            GunEffect("Charged");
+    //            gunAnimator.SetBool("isCharging", false);
+    //            Attack("Charged");
+    //        } 
+    //        else if (chargedTime >= maxChargeTime / 3 * 2)
+    //        {
+    //            GunEffect("Charged");
+    //            gunAnimator.SetBool("isCharging", false);
+    //            Attack("SemiCharged");
+    //        }
+    //        else
+    //        {
+    //            GunEffect("Normal");
+    //            gunAnimator.SetBool("isCharging", false);
+    //            Attack("Normal");
+    //        }
+    //    }
+    //}
+
+    public void ShortAttack(float multiplier)
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        GunEffect("Normal");
+        gunAnimator.SetBool("isCharging", false);
+        Attack("Normal", multiplier);
+        gunAnimator.SetTrigger("back");
+    }
+
+    public void LongAttackPrepare(float multiplier)
+    {
+        isLongAttackCanceled = false;
+        longNotePrepareMultiplier = multiplier;
+        gunAnimator.SetBool("isCharging", true);
+    }
+
+    public void LongAttack(float multiplier)
+    {
+        if (isLongAttackCanceled)
         {
-            chargedTime = 0;
-            gunAnimator.SetBool("isCharging", true);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            chargedTime += Time.deltaTime;
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-         {
-            if (chargedTime >= maxChargeTime)
-            {
-                GunEffect("Charged");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("Charged");
-            } 
-            else if (chargedTime >= maxChargeTime / 3 * 2)
-            {
-                GunEffect("Charged");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("SemiCharged");
-            }
-            else
-            {
-                GunEffect("Normal");
-                gunAnimator.SetBool("isCharging", false);
-                Attack("Normal");
-            }
+            isLongAttackCanceled = false;
+            gunAnimator.SetBool("isCharging", false);
             gunAnimator.SetTrigger("back");
+            return;
         }
+        longNoteEndMultiplier = multiplier;
+        float finalMultiplier = longNoteEndMultiplier * longNotePrepareMultiplier;
+        gunAnimator.SetBool("isCharging", false);
+        gunAnimator.SetTrigger("back");
+        GunEffect("Charged");
+        if (finalMultiplier >= 1) Attack("Charged", finalMultiplier);
+        else Attack("SemiCharged", finalMultiplier);
+    }
+
+    public void LongAttackCancel()
+    {
+        isLongAttackCanceled = true;
+        gunAnimator.SetBool("isCharging", false);
+        gunAnimator.SetTrigger("back");
     }
 
     private void GunEffect(string type)
@@ -347,12 +385,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Attack(string type)
+    private void Attack(string type, float multiplier)
     {
+        print("Done" + type);
         if (type == "Charged")
         {
             GameObject chargedBullet = Instantiate(chargedBulletPrefab, firePoint.position, firePoint.rotation);
-            chargedBullet.gameObject.SetActive(true);
+            chargedBullet.SetActive(true);
+            chargedBullet.GetComponent<Bullet>().myAttackRate = 30 * multiplier;
             Rigidbody2D rb = chargedBullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * chargedBulletSpeed ;
             chargedBullet.GetComponent<Animator>().SetTrigger("charged");
@@ -360,7 +400,8 @@ public class PlayerController : MonoBehaviour
         else if (type == "SemiCharged")
         {
             GameObject semiChargedBullet = Instantiate(semiChargedBP, firePoint.position, firePoint.rotation);
-            semiChargedBullet.gameObject.SetActive(true);
+            semiChargedBullet.SetActive(true);
+            semiChargedBullet.GetComponent<Bullet>().myAttackRate = 20 * multiplier;
             Rigidbody2D rb = semiChargedBullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * chargedBulletSpeed;
             semiChargedBullet.GetComponent<Animator>().SetTrigger("semi");
@@ -368,7 +409,8 @@ public class PlayerController : MonoBehaviour
         else if (type == "Normal")
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            bullet.gameObject.SetActive(true);
+            bullet.SetActive(true);
+            bullet.GetComponent<Bullet>().myAttackRate = 10 * multiplier;
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * bulletSpeed;
             bullet.GetComponent<Animator>().SetTrigger("normal");

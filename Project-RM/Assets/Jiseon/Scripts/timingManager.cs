@@ -43,19 +43,19 @@ public class timingManager : MonoBehaviour
     // 시작 콤보 + 1 / 홀딩 / 끝 콤보 + 1 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isHolding)
+        if (Input.GetKeyDown(KeyCode.D) && !isHolding)
         {
             // Debug.Log("startlongnote");
             StartLongNote();
         }
 
         // 스페이스바를 눌렀을 때 롱노트를 유지
-        if (Input.GetKey(KeyCode.Space) && isHolding)
+        if (Input.GetKey(KeyCode.D) && isHolding)
         {
         }
 
         // 스페이스바를 떼었을 때 롱노트를 종료
-        if (Input.GetKeyUp(KeyCode.Space) && isHolding)
+        if (Input.GetKeyUp(KeyCode.D) && isHolding)
         {
             // Debug.Log("EndLongNote");
             EndLongNote();
@@ -156,11 +156,14 @@ public class timingManager : MonoBehaviour
 
         float t_noteRecX = notes.transform.localPosition.x;
 
-        for (int x = 0; x < 2; x++)
+        for (int x = 0; x < 3; x++)
         {
             // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
             {
+                if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1.5f);
+                else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1f);
+                else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
                 return true;
@@ -181,11 +184,14 @@ public class timingManager : MonoBehaviour
 
         float t_noteRecX = notes.transform.localPosition.x;
 
-        for (int x = 0; x < 1; x++)
+        for (int x = 0; x < 3; x++)
         {
             // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
             {
+                if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1.5f);
+                else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1f);
+                else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
                 return true;
@@ -252,22 +258,33 @@ public class timingManager : MonoBehaviour
                             noteComponent.HideNote();
                             boxNoteList.RemoveAt(i);
 
-                            if (x < timingBoxs.Length - 2)
+                            if (x == 0)
                             {
                                 theComboManager.IncreaseCombo();
                                 theEffect.JudgementEffect(x);
                                 theEffect.NoteHitEffect();
+                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1.5f);
+                            }
+                            else if (x == 1)
+                            {
+                                theComboManager.IncreaseCombo();
+                                theEffect.JudgementEffect(x);
+                                theEffect.NoteHitEffect();
+                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1f);
                             }
                             else if (x == 2)
                             {
+                                theComboManager.IncreaseCombo();
                                 theEffect.JudgementEffect(x);
                                 theEffect.NoteHitEffect();
-                                theComboManager.ResetCombo();
+                                //theComboManager.ResetCombo();
+                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.8f);
                             }
                             else if (x == 3)
                             {
                                 theEffect.JudgementEffect(x);
                                 theComboManager.ResetCombo();
+                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.5f);
                             }
                             return;
                         }

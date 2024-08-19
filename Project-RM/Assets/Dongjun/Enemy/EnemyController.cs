@@ -6,8 +6,8 @@ public class EnemyController : MonoBehaviour
 {
     //public static EnemyController instance { get; private set; }
 
-    public int hp;
-    public int fullHp;
+    public float hp;
+    public float fullHp;
 
     public bool onGround;
 
@@ -132,19 +132,19 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.name == "Bullet(Clone)")
         {
             isHitting = true;
-            hp -= normalAttackRate;
+            hp -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
         else if (collision.gameObject.name == "SemiChargedBullet(Clone)")
         {
             isHitting = true;
-            hp -= semiAttackRate;
+            hp -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
         else if (collision.gameObject.name == "ChargedBullet(Clone)")
         {
             isHitting = true;
-            hp -= chargedAttackRate;
+            hp -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
         if (hp <= 0f)

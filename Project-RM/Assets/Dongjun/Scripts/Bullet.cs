@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float myAttackRate;
+
     public float maxDistance = 10f; // 파괴될 최대 거리
     private Transform playerTransform;
     private Animator animator;
