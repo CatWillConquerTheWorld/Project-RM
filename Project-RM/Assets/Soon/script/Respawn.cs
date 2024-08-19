@@ -13,14 +13,14 @@ public class Respawn : MonoBehaviour
     public bool isFadeOut = false;
     private void Start()
     {
-        StartCoroutine(FadeIn());
+        //StartCoroutine(FadeIn());
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine(FadeOut());
+            //StartCoroutine(FadeOut());
         }
     }
 
