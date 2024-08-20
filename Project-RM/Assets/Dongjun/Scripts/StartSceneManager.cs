@@ -19,7 +19,7 @@ public class StartSceneManager : MonoBehaviour
     void Start()
     {
         isStarted = false;
-        //PlayerPrefs.SetInt("tutorialCleared", 1);
+        PlayerPrefs.SetInt("tutorialCleared", 1);
         playerGun.SetActive(false);
         playerPlayerController.enabled = false;
     }
@@ -47,6 +47,7 @@ public class StartSceneManager : MonoBehaviour
         else
         {
             StartCoroutine(Tutorial.Instance.MovieEnd());
+            playerPlayerController.enabled = true;
         }
         yield return null;
     }

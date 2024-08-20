@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Dongjun/Scenes/Loading.unity
     guid: 78fcf48605a6a664b839d82206fbfc0d
   - enabled: 0
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dongjun/Scenes/Tutorial.unity
     guid: fdd4b59be5041aa41a4bf17471897e33
+  - enabled: 1
+    path: Assets/Dongjun/Scenes/Stage1.unity
+    guid: 3deec2fcacf6f544c80121ea73d10650
   m_configObjects: {}

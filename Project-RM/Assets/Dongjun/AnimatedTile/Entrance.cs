@@ -25,7 +25,7 @@ public class Entrance : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.F))
             {
-                SceneLoader.LoadSceneWithLoading("Temp");
+                SceneLoader.LoadSceneWithLoading("Stage1");
             }
         }
     }

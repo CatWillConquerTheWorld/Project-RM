@@ -22,13 +22,13 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneLoading()
     {
-        yield return null;
+        yield return new WaitForSeconds(1f);
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         op.allowSceneActivation = false;
         float timer = 0.0f;
         while (!op.isDone)
         {
-            yield return null;
+            yield return new WaitForSeconds(0.01f);
             print(op.progress);
             timer += Time.deltaTime;
             if (op.progress < 0.9f)
