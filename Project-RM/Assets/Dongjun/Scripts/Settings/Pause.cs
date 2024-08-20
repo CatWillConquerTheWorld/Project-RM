@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pause : MonoBehaviour
@@ -12,10 +13,14 @@ public class Pause : MonoBehaviour
     private bool isSettings;
     private bool isExitingPause;
 
+    public static bool isOKToPause;
+
     public TMP_Text countText;
     // Start is called before the first frame update
     void Start()
     {
+        isOKToPause = false;
+
         isExitingPause = false;
         isPaused = false;
         isSettings = false;
@@ -30,10 +35,13 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!isPaused) PauseOn();
-            else if (isPaused && !isSettings && NoteManager.isMusicStarted && !isExitingPause) StartCoroutine(CountToResume());
-            else if (isPaused && !isSettings) PauseOff();
-            else if (isPaused && isSettings) SettingsBackButton();
+            if (isOKToPause)
+            {
+                if (!isPaused) PauseOn();
+                else if (isPaused && !isSettings && NoteManager.isMusicStarted && !isExitingPause) StartCoroutine(CountToResume());
+                else if (isPaused && !isSettings) PauseOff();
+                else if (isPaused && isSettings) SettingsBackButton();
+            }
         }
         //if (isPaused && !isSettings && Input.GetKeyDown(KeyCode.Escape))
         //{

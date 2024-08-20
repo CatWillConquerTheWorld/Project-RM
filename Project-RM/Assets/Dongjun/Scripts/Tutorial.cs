@@ -60,6 +60,8 @@ public class Tutorial : MonoBehaviour
     public bool isDoorOpened;
     public float stageBPM;
 
+    public GameObject keysInfo;
+
     public TMP_Text readyText;
     public TMP_Text countText;
     public float readyTextCharacterSpace;
@@ -212,8 +214,8 @@ public class Tutorial : MonoBehaviour
         chatting.DisableChat();
         yield return StartCoroutine(NPCMoves(40f));
         yield return StartCoroutine(MovieEnd());
-        InfoTextChange("모든 벌레를 처치하세요.");
-        InfoTextAppear();
+        Pause.isOKToPause = true;
+        keysInfo.GetComponent<RectTransform>().DOAnchorPosY(-50f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForDoorOpen());
         playerPlayerController.enabled = false;
@@ -236,10 +238,12 @@ public class Tutorial : MonoBehaviour
         countText.enabled = false;
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForElemenations(levelOneEnemies.transform.childCount));
+        keysInfo.GetComponent<RectTransform>().DOAnchorPosY(150f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         NoteManager.isMusicStarted = false;
         CenterFrame.MusicFadeOut();
+        Pause.isOKToPause = false;
         //EnemyNoteManager.isMusicStart = false;
         DisableNote();
         readyText.enabled = false;
@@ -268,8 +272,7 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(MovieEnd());
         InfoTextAppear();
         InfoTextChange("모든 케이지를 처치하세요.");
-        playerPlayerController.enabled = true;
-        yield return StartCoroutine(WaitForDoorOpen());
+        Pause.isOKToPause = true;
         playerPlayerController.enabled = false;
         EnableNote();
         readyText.enabled = true;
@@ -296,6 +299,7 @@ public class Tutorial : MonoBehaviour
         GiveCagesEnemyController();
         playerPlayerController.enabled = true;
         yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
+        Pause.isOKToPause = false;
         NoteManager.isMusicStarted = false;
         EnemyNoteManager.isMusicStart = false;
         CenterFrame.MusicFadeOut();
