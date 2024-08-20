@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Pause : MonoBehaviour
@@ -9,13 +10,17 @@ public class Pause : MonoBehaviour
 
     private bool isPaused;
     private bool isSettings;
+    private bool isExitingPause;
 
+    public TMP_Text countText;
     // Start is called before the first frame update
     void Start()
     {
+        isExitingPause = false;
         isPaused = false;
         isSettings = false;
 
+        countText.enabled = false;  
         paused.SetActive(false);
         settings.SetActive(false);
     }
@@ -26,7 +31,7 @@ public class Pause : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused) PauseOn();
-            else if (isPaused && !isSettings && NoteManager.isMusicStarted) StartCoroutine(CountToResume());
+            else if (isPaused && !isSettings && NoteManager.isMusicStarted && !isExitingPause) StartCoroutine(CountToResume());
             else if (isPaused && !isSettings) PauseOff();
             else if (isPaused && isSettings) SettingsBackButton();
         }
@@ -43,6 +48,8 @@ public class Pause : MonoBehaviour
 
     void PauseOn()
     {
+        isExitingPause = false;
+        if (NoteManager.isMusicStarted) CenterFrame.MusicPause();
         isPaused = true;
         isSettings = false;
         settings.SetActive(false);
@@ -86,7 +93,21 @@ public class Pause : MonoBehaviour
 
     IEnumerator CountToResume()
     {
-        print("done!");
+        isExitingPause = false;
+        countText.enabled = true;
+        paused.SetActive(false);
+        isPaused = false;
+        countText.text = "3";
+        yield return new WaitForSecondsRealtime(60f / bpmManager.instance.bpm);
+        countText.text = "2";
+        yield return new WaitForSecondsRealtime(60f / bpmManager.instance.bpm);
+        countText.text = "1";
+        yield return new WaitForSecondsRealtime(60f / bpmManager.instance.bpm);
+        countText.text = "GO!";
+        yield return new WaitForSecondsRealtime(60f / bpmManager.instance.bpm);
+        countText.enabled = false;
+        Time.timeScale = 1;
+        CenterFrame.MusicUnPause();
         yield return null;
     }
 

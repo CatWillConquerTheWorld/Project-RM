@@ -41,4 +41,14 @@ public class CenterFrame : MonoBehaviour
     {
         DOTween.To(() => volume, x => volume = x, 0f, 0.5f).SetEase(Ease.OutSine).OnUpdate(() => myAudio.volume = volume).OnComplete(() => myAudio.Stop());
     }
+
+    public static void MusicPause()
+    {
+        myAudio.Pause();
+    }
+
+    public static void MusicUnPause()
+    {
+        myAudio.UnPause();
+    }
 }
