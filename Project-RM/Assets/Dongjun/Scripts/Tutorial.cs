@@ -3,6 +3,7 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
@@ -60,6 +61,8 @@ public class Tutorial : MonoBehaviour
     public TMP_Text readyText;
     public TMP_Text countText;
     public float readyTextCharacterSpace;
+
+    public GameObject pauseButton;
 
     void Awake()
     {
@@ -318,6 +321,8 @@ public class Tutorial : MonoBehaviour
         StartCoroutine(MovieEnd());
         StartCoroutine(DisableWithDelay(chatting));
         playerPlayerController.enabled = true;
+        Pause.isOKToPause = true;
+        pauseButton.gameObject.SetActive(true);
     }
 
     IEnumerator WaitForUser()

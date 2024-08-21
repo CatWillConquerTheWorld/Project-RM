@@ -17,16 +17,19 @@ public class StartSceneManager : MonoBehaviour
     private bool isStarted;
     private bool startAnimationFinished;
 
+    public GameObject pauseButton;
+
     // Start is called before the first frame update
     void Start()
     {
+        pauseButton.SetActive(false);
         startCanvasGroup.alpha = 0f;
         startCanvasGroup.DOFade(1f, 2f).SetEase(Ease.InOutSine);
         top.DOScaleY(0.125f, 1f).SetEase(Ease.OutSine).SetDelay(2f);
         bottom.DOScaleY(0.125f, 1f).SetEase(Ease.OutSine).SetDelay(2f).OnComplete(() => startAnimationFinished = true);
         Pause.isOKToPause = false;
         isStarted = false;
-        PlayerPrefs.SetInt("tutorialCleared", 0);
+        PlayerPrefs.SetInt("tutorialCleared", 1);
         playerGun.SetActive(false);
         playerPlayerController.enabled = false;
     }
@@ -56,6 +59,7 @@ public class StartSceneManager : MonoBehaviour
             StartCoroutine(Tutorial.Instance.MovieEnd());
             playerPlayerController.enabled = true;
             Pause.isOKToPause = true;
+            pauseButton.SetActive(true);
         }
         top.gameObject.SetActive(false);
         bottom.gameObject.SetActive(false);
