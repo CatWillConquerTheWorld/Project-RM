@@ -101,7 +101,7 @@ public class EnemyNoteManager : MonoBehaviour
                     else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().Attack();
                     else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().Attack();
                     else if (enemies[i].name == "Enemy_Sweeper(Clone)") enemies[i].GetComponent<Sweeper>().Attack();
-                    else if (enemies[i].name == "Enemy_CageShocker(Clone)") enemies[i].GetComponent<CagedShocker>().Attack();
+                    else if (enemies[i].name == "Enemy_CagedShocker(Clone)") enemies[i].GetComponent<CagedShocker>().Attack();
                     else if (enemies[i].name == "Enemy_BombDroid(Clone)") enemies[i].GetComponent<BombDroid>().Attack();
                     else if (enemies[i].name == "Enemy_Warden(Clone)") enemies[i].GetComponent<Warden>().Attack();
                 }
