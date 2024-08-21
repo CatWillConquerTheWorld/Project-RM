@@ -248,7 +248,7 @@ public class Tutorial : MonoBehaviour
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
         InfoTextDisappear();
-        TestRoomDoor.Reset();
+        //TestRoomDoor.Reset();
         yield return StartCoroutine(chatting.Chat(3.85f, "잘 했네. 재능이 있구만."));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(4.5f, "그럼 바로 다음 단계로 가지."));
