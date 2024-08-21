@@ -6,6 +6,8 @@ public class MiddleBoss : MonoBehaviour
 {
     public int HP;
     public Animator animator;
+    Animator SRanimator;
+    Animator SLanimator;
     public Rigidbody2D rigid;
     public Ghost ghost;
     public float moveSpeed;
@@ -15,29 +17,48 @@ public class MiddleBoss : MonoBehaviour
     private float dashTime = 0;
     public Vector2 tmpDir;
 
+
+    private GameObject attack1Collider;
+    private GameObject attack2Collider;
+    private GameObject specialCollider;
+    public GameObject special2RCollider;
+    public GameObject special2LCollider;
+    public GameObject[] DangerSqaures;
+
     // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        SRanimator = special2RCollider.GetComponent<Animator>();
+        SLanimator = special2LCollider.GetComponent<Animator>();
+        attack1Collider = transform.Find("attack1Collider").gameObject;
+        attack2Collider = transform.Find("attack2Collider").gameObject;
+        specialCollider = transform.Find("specialCollider").gameObject;
+        special2RCollider = transform.Find("specialCollider2_R").gameObject;
+        special2LCollider = transform.Find("specialCollider2_L").gameObject;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
         
 
         if (Input.GetKeyDown(KeyCode.A))
         {
             Dash();
-            Attack1();
-            
+            StartCoroutine(Attack1());          
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z)) 
+        {
+            StartCoroutine(Attack2()); 
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Special();
+            StartCoroutine(Special());
         }
 
         if (Input.GetKeyDown(KeyCode.D))
@@ -60,14 +81,57 @@ public class MiddleBoss : MonoBehaviour
             Die();
         }
     }
-    void Attack1()
+    IEnumerator Attack1()
     {
+        DangerSqaures[0].SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        DangerSqaures[0].SetActive(false);
+        yield return null;
+        attack1Collider.SetActive(true);
         animator.SetTrigger("Attack1");
     }
 
-    void Special()
+    IEnumerator Attack2()
     {
+        DangerSqaures[1].SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        DangerSqaures[1].SetActive(false);
+        yield return null;
+        attack2Collider.SetActive(true);
+        animator.SetTrigger("Attack2");
+    }
+
+    IEnumerator Special()
+    {
+        DangerSqaures[2].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        DangerSqaures[2].SetActive(false);
+        specialCollider.SetActive(true);
         animator.SetTrigger("SpecialAttack");
+    }
+
+    IEnumerator Special2R()
+    {
+        DangerSqaures[3].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        DangerSqaures[3].SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+        special2RCollider.SetActive(true);
+        SRanimator.SetTrigger("Special2R");
+        yield return new WaitForSeconds(1f);
+        special2RCollider.SetActive(false);
+    }
+
+    IEnumerator Special2L()
+    {
+        DangerSqaures[4].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        DangerSqaures[4].SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+        special2LCollider.SetActive(true);
+        SLanimator.SetTrigger("Special2L");
+        yield return new WaitForSeconds(1f);
+        special2LCollider.SetActive(false);
     }
 
     void Dash()
@@ -76,7 +140,7 @@ public class MiddleBoss : MonoBehaviour
         this.dashTime += Time.deltaTime;
         this.isDash = true;
 
-        if (this.tmpDir == Vector2.zero || this.tmpDir == new Vector2(1f, 0f))
+        if (transform.localScale.x <= 0f)
         {
             this.tmpDir = Vector2.left;
         }
@@ -115,5 +179,20 @@ public class MiddleBoss : MonoBehaviour
     void Hit()
     {
         animator.SetTrigger("Hit");
+    }
+
+    void Attack1False()
+    {
+        attack1Collider.SetActive(false);
+    }
+
+    void Attack2False()
+    {
+        attack2Collider.SetActive(false);
+    }
+
+    void SpecialFalse()
+    {
+        specialCollider.SetActive(false);
     }
 }

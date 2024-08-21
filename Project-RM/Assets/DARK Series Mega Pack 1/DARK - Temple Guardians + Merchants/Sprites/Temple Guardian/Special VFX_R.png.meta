@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eabe6c0f0785c27419c993668dc29beb
+guid: 6d5f5156badfdde428f8e24974ffd9c5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -154,9 +154,9 @@ TextureImporter:
       name: VFX for Special_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 531
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -175,9 +175,9 @@ TextureImporter:
       name: VFX for Special_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 472
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -196,9 +196,9 @@ TextureImporter:
       name: VFX for Special_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 412
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -217,10 +217,10 @@ TextureImporter:
       name: VFX for Special_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 355
-        width: 64
-        height: 21
+        x: 85
+        y: 354
+        width: 75
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,9 +238,9 @@ TextureImporter:
       name: VFX for Special_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 295
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -259,9 +259,9 @@ TextureImporter:
       name: VFX for Special_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 236
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -280,9 +280,9 @@ TextureImporter:
       name: VFX for Special_7
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 177
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -301,9 +301,9 @@ TextureImporter:
       name: VFX for Special_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 118
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -322,9 +322,9 @@ TextureImporter:
       name: VFX for Special_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 59
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -343,9 +343,9 @@ TextureImporter:
       name: VFX for Special_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 85
         y: 0
-        width: 160
+        width: 75
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
