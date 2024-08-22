@@ -27,7 +27,7 @@ public class MiddleBoss : MonoBehaviour
     public GameObject[] DangerSqaures;
     public GameObject portal;
 
-    public Image healthBarForeground;
+    public Image healthBarFiller;
 
     public Transform player;  // 플레이어의 위치를 참조하기 위한 변수
     public float offsetX = 2f;
@@ -55,7 +55,7 @@ public class MiddleBoss : MonoBehaviour
     void Update()
     {
 
-        healthBarForeground.fillAmount = currentHealth / maxHealth;
+        healthBarFiller.fillAmount = currentHealth / maxHealth;
 
         if (Input.GetKeyDown(KeyCode.A))
         {
