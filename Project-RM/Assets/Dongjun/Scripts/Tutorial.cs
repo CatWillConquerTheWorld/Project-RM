@@ -66,6 +66,8 @@ public class Tutorial : MonoBehaviour
 
     public CanvasGroup playerCanvas;
 
+    public BoxCollider2D blocker;
+
     void Awake()
     {
         if (Instance == null)
@@ -119,6 +121,8 @@ public class Tutorial : MonoBehaviour
         isDoorOpened = false;
 
         playerCanvas.alpha = 0f;
+
+        blocker.enabled = true;
 
         isNext = false;
     }
@@ -191,6 +195,7 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(PlayerMoveX(9.5f, 4f));
         yield return StartCoroutine(PlayerMoveX(10f, 4f));
         chatting.EnableChat();
+        blocker.enabled = false;
         yield return StartCoroutine(chatting.Chat(3.6f, "그 총은 '리듬 건' 일세."));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(chatting.Chat(5.2f, "음악이 흘러나오는 신기한 무기지."));
