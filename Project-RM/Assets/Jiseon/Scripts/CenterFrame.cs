@@ -39,6 +39,7 @@ public class CenterFrame : MonoBehaviour
 
     public static void MusicFadeOut()
     {
+        volume = 1.0f;
         DOTween.To(() => volume, x => volume = x, 0f, 0.5f).SetEase(Ease.OutSine).OnUpdate(() => myAudio.volume = volume).OnComplete(() => myAudio.Stop());
     }
 
