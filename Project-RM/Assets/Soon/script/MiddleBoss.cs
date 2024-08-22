@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MiddleBoss : MonoBehaviour
 {
-    public int HP;
     public Animator animator;
     Animator SRanimator;
     Animator SLanimator;
@@ -27,8 +27,13 @@ public class MiddleBoss : MonoBehaviour
     public GameObject[] DangerSqaures;
     public GameObject portal;
 
+    public Image healthBarForeground;
+
     public Transform player;  // 플레이어의 위치를 참조하기 위한 변수
     public float offsetX = 2f;
+
+    public float maxHealth = 100f;  // 보스의 최대 체력
+    public float currentHealth;
 
     // Start is called before the first frame update
     void Awake()
@@ -43,13 +48,14 @@ public class MiddleBoss : MonoBehaviour
         specialCollider = transform.Find("specialCollider").gameObject;
         special2RCollider = transform.Find("specialCollider2_R").gameObject;
         special2LCollider = transform.Find("specialCollider2_L").gameObject;
-
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        healthBarForeground.fillAmount = currentHealth / maxHealth;
 
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -69,7 +75,7 @@ public class MiddleBoss : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            HP -= 50;
+            currentHealth -= 50;
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
