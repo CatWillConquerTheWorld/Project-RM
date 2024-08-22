@@ -59,7 +59,7 @@ public class LoadBMS : MonoBehaviour
     public List<string> notesData = new List<string>();
     int noteNum = 0;
     public List<string> twonotesDatas = new List<string>();
-    double currentTime = 0d;
+    public static double currentTime = 0d;
 
     public NoteManager noteManager;
     public CenterFrame centerFrame;

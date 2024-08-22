@@ -128,7 +128,7 @@ public class NoteManager : MonoBehaviour
                 }
 
                 comboManager.ResetCombo();
-                //GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackCancel(); // 얘 나중에 다시 주석풀기
+                GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackCancel(); // 얘 나중에 다시 주석풀기
             }
         }
         else
