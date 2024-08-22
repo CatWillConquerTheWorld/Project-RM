@@ -17,14 +17,15 @@ public class MiddleBoss : MonoBehaviour
     public bool isDash = false;
     private float dashTime = 0;
     public Vector2 tmpDir;
-    
 
+    private PolygonCollider2D polygonCollider;
     private GameObject attack1Collider;
     private GameObject attack2Collider;
     private GameObject specialCollider;
     public GameObject special2RCollider;
     public GameObject special2LCollider;
     public GameObject[] DangerSqaures;
+    public GameObject portal;
 
     public Transform player;  // 플레이어의 위치를 참조하기 위한 변수
     public float offsetX = 2f;
@@ -34,6 +35,7 @@ public class MiddleBoss : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        polygonCollider = GetComponent<PolygonCollider2D>();
         SRanimator = special2RCollider.GetComponent<Animator>();
         SLanimator = special2LCollider.GetComponent<Animator>();
         attack1Collider = transform.Find("attack1Collider").gameObject;
@@ -145,11 +147,12 @@ public class MiddleBoss : MonoBehaviour
 
     IEnumerator Teleport()
     {
+        polygonCollider.enabled = false;
         animator.SetTrigger("Teleport");
         yield return new WaitForSeconds(0.4f);
 
         int direction = Random.value > 0.5f ? 1 : -1;
-        Vector3 newPosition = new Vector3(player.position.x + direction * offsetX, player.position.y + 1f, player.position.z);
+        Vector3 newPosition = new Vector3(player.position.x + direction * offsetX, transform.position.y, transform.position.z);
         transform.position = newPosition;
 
         yield return new WaitForSeconds(waitTP);
@@ -157,6 +160,7 @@ public class MiddleBoss : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         DangerSqaures[5].SetActive(false);
         animator.SetTrigger("Appear");
+        polygonCollider.enabled = true;
     }
 
     void Dash()
@@ -199,6 +203,7 @@ public class MiddleBoss : MonoBehaviour
     public void Die()
     {
         animator.SetTrigger("Death");
+        portal.SetActive(true);
     }
 
     void Hit()

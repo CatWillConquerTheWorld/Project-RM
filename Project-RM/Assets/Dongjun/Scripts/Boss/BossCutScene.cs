@@ -137,7 +137,7 @@ public class BossCutScene : MonoBehaviour
                 print("Dead");
                 yield break;
             }
-            else if (boss.GetComponent<MiddleBoss>().HP <= 0)
+            else if (boss.GetComponent<MiddleBoss>().currentHealth <= 0)
             {
                 yield break;
             }
