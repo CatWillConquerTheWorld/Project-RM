@@ -56,16 +56,16 @@ public class longnote3 : MonoBehaviour
             ObjectPool.instance.longNoteQueue.Enqueue(gameObject);
         }
 
-        if (isNoteActive)
-        {
-            currentTime += Time.deltaTime;
+        //if (isNoteActive)
+        //{
+        //    currentTime += Time.deltaTime;
             
-            if (currentTime >= bpminterval * 2) // 1비트의 시간 (2박)
-            {
-                StartEndNote();
-                isNoteActive = false;
-            }
-        }
+        //    if (currentTime >= bpminterval * 2) // 1비트의 시간 (2박)
+        //    {
+        //        StartEndNote();
+        //        isNoteActive = false;
+        //    }
+        //}
     }
 
 

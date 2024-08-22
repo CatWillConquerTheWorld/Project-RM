@@ -161,9 +161,9 @@ public class timingManager : MonoBehaviour
             // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
             {
-                if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1.5f);
-                else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1f);
-                else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(0.8f);
+                //if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1.5f);
+                //else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(1f);
+                //else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
                 return true;
@@ -189,9 +189,9 @@ public class timingManager : MonoBehaviour
             // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
             if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
             {
-                if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1.5f);
-                else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1f);
-                else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(0.8f);
+                //if (x == 0) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1.5f);
+                //else if (x == 1) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(1f);
+                //else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
                 return true;
@@ -263,14 +263,14 @@ public class timingManager : MonoBehaviour
                                 theComboManager.IncreaseCombo();
                                 theEffect.JudgementEffect(x);
                                 theEffect.NoteHitEffect();
-                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1.5f);
+                                // GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1.5f);
                             }
                             else if (x == 1)
                             {
                                 theComboManager.IncreaseCombo();
                                 theEffect.JudgementEffect(x);
                                 theEffect.NoteHitEffect();
-                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1f);
+                                // GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(1f);
                             }
                             else if (x == 2)
                             {
@@ -278,13 +278,13 @@ public class timingManager : MonoBehaviour
                                 theEffect.JudgementEffect(x);
                                 theEffect.NoteHitEffect();
                                 //theComboManager.ResetCombo();
-                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.8f);
+                                // GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.8f);
                             }
                             else if (x == 3)
                             {
                                 theEffect.JudgementEffect(x);
                                 theComboManager.ResetCombo();
-                                GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.5f);
+                                // GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.5f);
                             }
                             return;
                         }

@@ -35,6 +35,37 @@ public class NoteManager : MonoBehaviour
         }
         if (!isMusicStarted) currentTime = 0f;
     }
+    GameObject curLongNote;
+    longnote3 curLongNoteScript;
+    bool is_longnote_start = false;
+    public void NoteMaker(string note)
+    {
+        // Debug.Log(note);
+        if (note == "AA")
+        {
+            MakeNote();
+
+        }
+        else if(note == "AB")
+        {
+            if (!is_longnote_start)
+            { // 롱노트 시작부분이라면
+                MakeLongNote();
+                is_longnote_start = true;
+                Debug.Log("long note start");
+            }
+            else
+            {
+                is_longnote_start = false;
+                curLongNoteScript.StartEndNote();
+                Debug.Log("long note end");
+                curLongNote = null;
+                curLongNoteScript = null;
+            }
+        }else if(note == "00"){
+
+        }
+    }
 
     public void NoteMaking()
     {
@@ -97,7 +128,7 @@ public class NoteManager : MonoBehaviour
                 }
 
                 comboManager.ResetCombo();
-                GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackCancel();
+                // GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackCancel(); // 얘 나중에 다시 주석풀기
             }
         }
         else
@@ -173,6 +204,8 @@ public class NoteManager : MonoBehaviour
     public void MakeLongNote()
     {
         GameObject t_note = ObjectPool.instance.longNoteQueue.Dequeue();
+        curLongNote = t_note;
+        curLongNoteScript = curLongNote.GetComponent<longnote3>();
         RectTransform rect = t_note.GetComponent<RectTransform>();
         rect.position = tfLongNoteAppear.position;
         t_note.SetActive(true);

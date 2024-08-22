@@ -819,6 +819,53 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2384175768371682627, guid: 45f24aa5891429940b9fb133a533876e, type: 3}
   m_PrefabInstance: {fileID: 1043351364}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &601846566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601846568}
+  - component: {fileID: 601846567}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &601846567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601846566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db25542eec3c3c64dac44da1cf82c746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  BPM: 
+  notesData: []
+--- !u!4 &601846568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601846566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 157.80681, y: 771.89484, z: -6.1094584}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604893926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +2902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3339ad90a8f9eb147b8ec092b6241b36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicStart: 0
 --- !u!82 &1762210041
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2866,7 +2912,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8183754b5f53af5488dcbb1bacdfea37, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7313524f186c0884f95a2f22525e0be8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3028,3 +3074,4 @@ SceneRoots:
   - {fileID: 604893927}
   - {fileID: 764867030}
   - {fileID: 1118057305}
+  - {fileID: 601846568}
