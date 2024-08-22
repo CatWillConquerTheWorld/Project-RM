@@ -12,11 +12,12 @@ public class MiddleBoss : MonoBehaviour
     public Ghost ghost;
     public float moveSpeed;
     public float maxDashTime;
+    public float waitTP = 0.5f;
     public bool makeGhost = false;
     public bool isDash = false;
     private float dashTime = 0;
     public Vector2 tmpDir;
-
+    
 
     private GameObject attack1Collider;
     private GameObject attack2Collider;
@@ -24,6 +25,9 @@ public class MiddleBoss : MonoBehaviour
     public GameObject special2RCollider;
     public GameObject special2LCollider;
     public GameObject[] DangerSqaures;
+
+    public Transform player;  // 플레이어의 위치를 참조하기 위한 변수
+    public float offsetX = 2f;
 
     // Start is called before the first frame update
     void Awake()
@@ -74,6 +78,11 @@ public class MiddleBoss : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            StartCoroutine("Teleport");
         }
 
         //if (HP <= 0)
@@ -132,6 +141,22 @@ public class MiddleBoss : MonoBehaviour
         SLanimator.SetTrigger("Special2L");
         yield return new WaitForSeconds(1f);
         special2LCollider.SetActive(false);
+    }
+
+    IEnumerator Teleport()
+    {
+        animator.SetTrigger("Teleport");
+        yield return new WaitForSeconds(0.4f);
+
+        int direction = Random.value > 0.5f ? 1 : -1;
+        Vector3 newPosition = new Vector3(player.position.x + direction * offsetX, player.position.y + 1f, player.position.z);
+        transform.position = newPosition;
+
+        yield return new WaitForSeconds(waitTP);
+        DangerSqaures[5].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        DangerSqaures[5].SetActive(false);
+        animator.SetTrigger("Appear");
     }
 
     void Dash()
