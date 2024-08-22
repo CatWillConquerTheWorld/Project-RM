@@ -64,6 +64,8 @@ public class Tutorial : MonoBehaviour
 
     public GameObject pauseButton;
 
+    public CanvasGroup playerCanvas;
+
     void Awake()
     {
         if (Instance == null)
@@ -116,6 +118,8 @@ public class Tutorial : MonoBehaviour
         noteUIContainer.gameObject.SetActive(false);
         isDoorOpened = false;
 
+        playerCanvas.alpha = 0f;
+
         isNext = false;
     }
 
@@ -127,6 +131,7 @@ public class Tutorial : MonoBehaviour
 
     public IEnumerator TutorialFlow()
     {
+        Pause.isOKToPause = false;
         yield return waitOneSec;
         yellerChat.EnableChat();
         yield return StartCoroutine(yellerChat.Chat(1.65f, "다음!"));
@@ -212,7 +217,8 @@ public class Tutorial : MonoBehaviour
         chatting.DisableChat();
         yield return StartCoroutine(NPCMoves(40f));
         yield return StartCoroutine(MovieEnd());
-        Pause.isOKToPause = true;
+        //Pause.isOKToPause = true;
+        playerCanvas.alpha = 1f;
         keysInfo.GetComponent<RectTransform>().DOAnchorPosY(-50f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForDoorOpen());
@@ -241,12 +247,13 @@ public class Tutorial : MonoBehaviour
         StartCoroutine(MovieStart());
         NoteManager.isMusicStarted = false;
         CenterFrame.MusicFadeOut();
-        Pause.isOKToPause = false;
+        //Pause.isOKToPause = false;
         //EnemyNoteManager.isMusicStart = false;
         DisableNote();
         readyText.enabled = false;
         countText.enabled = false;
         isDoorOpened = false;
+        playerCanvas.alpha = 0f;
         yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
@@ -270,8 +277,9 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(MovieEnd());
         InfoTextAppear();
         InfoTextChange("모든 케이지를 처치하세요.");
-        Pause.isOKToPause = true;
+        //Pause.isOKToPause = true;
         playerPlayerController.enabled = false;
+        playerCanvas.alpha = 1f;
         EnableNote();
         readyText.enabled = true;
         readyText.DOFade(1f, 0.00001f);
@@ -297,7 +305,7 @@ public class Tutorial : MonoBehaviour
         GiveCagesEnemyController();
         playerPlayerController.enabled = true;
         yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
-        Pause.isOKToPause = false;
+        //Pause.isOKToPause = false;
         NoteManager.isMusicStarted = false;
         EnemyNoteManager.isMusicStart = false;
         CenterFrame.MusicFadeOut();
@@ -305,6 +313,7 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         InfoTextDisappear();
+        playerCanvas.alpha = 0f;
         yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();

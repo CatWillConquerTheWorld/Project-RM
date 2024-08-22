@@ -77,6 +77,7 @@ public class Sweeper : MonoBehaviour
     public void LongAttack()
     {
         longAttackCollider.SetActive(true);
+        enemyController.animator.SetBool("isCharging", false);
         enemyController.animator.SetTrigger("longAttack");
     }
 

@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
     //½Ì±ÛÅæ ¼±¾ð
     //public static PlayerController instance { get; private set; }
 
-    public int hp;
+    private float maxHp = 1000;
+    public float hp;
     private bool isDead;
 
     public float moveSpeed = 4f;
@@ -42,10 +43,12 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     private bool flip;
 
-    public GameObject enemyInfoUI;
-    private TextMeshProUGUI enemyName;
-    private Image healthBar;
-    private TextMeshProUGUI health;
+    //public GameObject enemyInfoUI;
+    //private TextMeshProUGUI enemyName;
+    //private Image healthBar;
+    //private TextMeshProUGUI health;
+
+    public Image healthBar;
 
     public float knockBack;
     private bool isHitting;
@@ -78,12 +81,12 @@ public class PlayerController : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
 
-        if (enemyInfoUI != null)
-        {
-            enemyName = enemyInfoUI.GetComponent<RectTransform>().Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
-            healthBar = enemyInfoUI.GetComponent<RectTransform>().Find("HealthBar").gameObject.GetComponent<Image>();
-            health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
-        }
+        //if (enemyInfoUI != null)
+        //{
+        //    enemyName = enemyInfoUI.GetComponent<RectTransform>().Find("Name").gameObject.GetComponent<TextMeshProUGUI>();
+        //    healthBar = enemyInfoUI.GetComponent<RectTransform>().Find("HealthBar").gameObject.GetComponent<Image>();
+        //    health = enemyInfoUI.GetComponent<RectTransform>().Find("Health").gameObject.GetComponent<TextMeshProUGUI>();
+        //}
 
         normalAttackRate = 10;
         semiAttackRate = 20;
@@ -225,19 +228,19 @@ public class PlayerController : MonoBehaviour
         transform.Find("Gun").transform.localScale = scale / 3;
     }
 
-     void EnemyInfo()
-    {
-        if (enemyInfoUI == null) return;
-        float enemyHp = closestEnemy.GetComponent<EnemyController>().hp;
-        float enemyFullHp = closestEnemy.GetComponent<EnemyController>().fullHp;
-        string _enemyName = closestEnemy.name.Substring(0,closestEnemy.name.IndexOf("("));
-        enemyName.text = _enemyName;
-        health.text = enemyHp + " / " + enemyFullHp;
-        healthBar.fillAmount = enemyHp / enemyFullHp;
+    // void EnemyInfo()
+    //{
+    //    if (enemyInfoUI == null) return;
+    //    float enemyHp = closestEnemy.GetComponent<EnemyController>().hp;
+    //    float enemyFullHp = closestEnemy.GetComponent<EnemyController>().fullHp;
+    //    string _enemyName = closestEnemy.name.Substring(0,closestEnemy.name.IndexOf("("));
+    //    enemyName.text = _enemyName;
+    //    health.text = enemyHp + " / " + enemyFullHp;
+    //    healthBar.fillAmount = enemyHp / enemyFullHp;
 
-        print("this is " + enemyHp + " and " + enemyFullHp + " also " + enemyHp / enemyFullHp);
-        enemyInfoUI.SetActive(true);
-    }
+    //    print("this is " + enemyHp + " and " + enemyFullHp + " also " + enemyHp / enemyFullHp);
+    //    enemyInfoUI.SetActive(true);
+    //}
 
     private void Move()
     {
@@ -452,13 +455,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Hit(int damage, int accelerator)
+    private void Hit(float damage, int accelerator)
     {
         isHitting = true;
         transform.Find("Gun").gameObject.SetActive(false);
         animator.SetTrigger("hit");
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accelerator, transform.position.y, 0), 1f);
         hp -= damage;
+        healthBar.fillAmount = hp / maxHp;
         if (hp <= 0f)
         {
             Death();
