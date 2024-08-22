@@ -48,7 +48,7 @@ public class longnote3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Resize();
+        
         if (startNote.activeSelf == false && endNote.activeSelf == false)
         {
             lineObject.SetActive(false);
@@ -66,6 +66,11 @@ public class longnote3 : MonoBehaviour
         //        isNoteActive = false;
         //    }
         //}
+    }
+
+    private void LateUpdate()
+    {
+        Resize();
     }
 
 

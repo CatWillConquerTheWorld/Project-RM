@@ -26,7 +26,7 @@ public class Note : MonoBehaviour
         targetPoint = GameObject.Find("CenterFrame").GetComponent <RectTransform>();
         noteImage.enabled = true;
         float distanceToTarget = Vector3.Distance(startPoint.position, targetPoint.position);
-        float sixteenthNoteTime = 60f / bpmManager.instance.bpm; // 16분음표 시간
+        float sixteenthNoteTime = 60f / bpmManager.instance.bpm * 2; // 16분음표 시간
         Speed = distanceToTarget / sixteenthNoteTime; // 이동 속도 계산
         // noteDir = Vector3.right;
     }

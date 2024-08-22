@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class CenterFrame : MonoBehaviour
 {
-    static AudioSource myAudio;
+    public static AudioSource myAudio;
+    public AudioClip[] audioClips;
     public static bool musicStart = false;
 
     static float volume;
@@ -15,6 +16,10 @@ public class CenterFrame : MonoBehaviour
     }
     private void Update()
     {
+        if (!myAudio.isPlaying)
+        {
+            musicStart = false;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,6 +32,10 @@ public class CenterFrame : MonoBehaviour
         }
     }
 
+    public void ChangeMusic(int number)
+    {
+        myAudio.clip = audioClips[number];
+    }
     public void MusicStart()
     {
         if (!musicStart)

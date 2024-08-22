@@ -52,13 +52,13 @@ public class NoteManager : MonoBehaviour
             { // 롱노트 시작부분이라면
                 MakeLongNote();
                 is_longnote_start = true;
-                Debug.Log("long note start");
+                // Debug.Log("long note start");
             }
             else
             {
                 is_longnote_start = false;
                 curLongNoteScript.StartEndNote();
-                Debug.Log("long note end");
+                // Debug.Log("long note end");
                 curLongNote = null;
                 curLongNoteScript = null;
             }
