@@ -10,18 +10,18 @@ using UnityEngine.SceneManagement;
 
 public class LoadBMS : MonoBehaviour
 {
-    public static LoadBMS instance = null;
+    public static LoadBMS Instance = null;
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-            if(instance!= this)
+            if(Instance!= this)
             {
                 Destroy(this.gameObject);
             }

@@ -29,10 +29,10 @@ public class NoteManager : MonoBehaviour
 
     void Update()
     {
-        if (isMusicStarted)
-        {
-            NoteMaking();
-        }
+        //if (isMusicStarted)
+        //{
+        //    NoteMaking();
+        //}
         if (!isMusicStarted) currentTime = 0f;
     }
     GameObject curLongNote;

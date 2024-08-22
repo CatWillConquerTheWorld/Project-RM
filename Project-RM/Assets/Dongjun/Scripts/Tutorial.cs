@@ -228,7 +228,7 @@ public class Tutorial : MonoBehaviour
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
-        NoteManager.isMusicStarted = true;
+        LoadBMS.Instance.play_song("tutorialLevel1");
         //EnemyNoteManager.isMusicStart = true;
         countText.enabled = true;
         countText.text = "3";
@@ -245,7 +245,6 @@ public class Tutorial : MonoBehaviour
         keysInfo.GetComponent<RectTransform>().DOAnchorPosY(150f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
-        NoteManager.isMusicStarted = false;
         CenterFrame.MusicFadeOut();
         //Pause.isOKToPause = false;
         //EnemyNoteManager.isMusicStart = false;
@@ -283,14 +282,12 @@ public class Tutorial : MonoBehaviour
         EnableNote();
         readyText.enabled = true;
         readyText.DOFade(1f, 0.00001f);
-        CenterFrame.musicStart = false;
         readyTextCharacterSpace = 50f;
         readyText.characterSpacing = readyTextCharacterSpace;
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
-        NoteManager.isMusicStarted = true;
-        EnemyNoteManager.isMusicStart = true;
+        LoadBMS.Instance.play_song("tutorialLevel2");
         countText.enabled = true;
         countText.text = "3";
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
@@ -306,8 +303,6 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = true;
         yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
         //Pause.isOKToPause = false;
-        NoteManager.isMusicStarted = false;
-        EnemyNoteManager.isMusicStart = false;
         CenterFrame.MusicFadeOut();
         DisableNote();
         playerPlayerController.enabled = false;
