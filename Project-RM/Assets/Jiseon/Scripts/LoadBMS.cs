@@ -39,6 +39,7 @@ public class LoadBMS : MonoBehaviour
     {
         centerFrame = FindObjectOfType<CenterFrame>();
         noteManager = FindObjectOfType<NoteManager>();
+        enemyNoteManager = FindObjectOfType<EnemyNoteManager>();
         //Debug.Log("OnSceneLoaded: " + scene.name);
         //Debug.Log(mode);
     }
@@ -49,9 +50,13 @@ public class LoadBMS : MonoBehaviour
     }
 
 
-    public List<string> deads = new List<string>();
     public List<string> tutorialLevel1 = new List<string>();
     public List<string> tutorialLevel2 = new List<string>();
+    public List<string> tutorialLevel2Enemy = new List<string>();
+    public List<string> WTF = new List<string>();
+    public List<string> WTFEnemy = new List<string>();
+    public List<string> deads = new List<string>();
+    public List<string> deadsEnemy = new List<string>();
 
     private string bmsFilePath = "";
     public string[] lineData;
@@ -59,10 +64,12 @@ public class LoadBMS : MonoBehaviour
     public List<string> notesData = new List<string>();
     int noteNum = 0;
     public List<string> twonotesDatas = new List<string>();
+    public List<string> twonotesEnemyDatas = new List<string>();
     public static double currentTime = 0d;
 
     public NoteManager noteManager;
     public CenterFrame centerFrame;
+    public EnemyNoteManager enemyNoteManager;
 
     public int notes;
     void Start()
@@ -71,8 +78,12 @@ public class LoadBMS : MonoBehaviour
         centerFrame = FindObjectOfType<CenterFrame>();
 
         deads = notesetting("deads");
+        deadsEnemy = notesetting("deads_enemy");
         tutorialLevel1 = notesetting("tutorialLevel1");
         tutorialLevel2 = notesetting("tutorialLevel2");
+        tutorialLevel2Enemy = notesetting("enemyTutorialLevel2");
+        WTF = notesetting("WTF");
+        WTFEnemy = notesetting("enemyWTF");
 
         NoteManager.isMusicStarted = true;
     }
@@ -83,23 +94,29 @@ public class LoadBMS : MonoBehaviour
         {
             bpmManager.instance.bpm = 120;
             twonotesDatas = deads;
+            twonotesEnemyDatas = deadsEnemy;
             centerFrame.ChangeMusic(3);
         }
         else if (name == "WTF")
         {
             bpmManager.instance.bpm = 150;
+            twonotesEnemyDatas = WTFEnemy;
+            twonotesDatas = WTF;
+            centerFrame.ChangeMusic(2);
 
         }
         else if (name == "tutorialLevel1")
         {
             bpmManager.instance.bpm = 120;
             twonotesDatas = tutorialLevel1;
+            twonotesEnemyDatas.Clear();
             centerFrame.ChangeMusic(0);
 
         }else if(name == "tutorialLevel2")
         {
             bpmManager.instance.bpm = 120;
             twonotesDatas = tutorialLevel2;
+            twonotesEnemyDatas = tutorialLevel2Enemy;
             centerFrame.ChangeMusic(1);
         }
     }
@@ -128,7 +145,12 @@ public class LoadBMS : MonoBehaviour
 
         if (currentTime >= BeatTime)
         {
-            if (noteNum < twonotesDatas.Count)
+            if (noteNum < twonotesDatas.Count && noteNum < twonotesEnemyDatas.Count)
+            {
+                noteManager.NoteMaker(twonotesDatas[noteNum]);
+                enemyNoteManager.NoteMaker(twonotesEnemyDatas[noteNum]);
+                noteNum++;
+            }else if (noteNum < twonotesDatas.Count)
             {
                 noteManager.NoteMaker(twonotesDatas[noteNum]);
                 noteNum++;
@@ -139,6 +161,7 @@ public class LoadBMS : MonoBehaviour
                 // Debug.Log("노래가 끝났습니다.");
                 
                 twonotesDatas.Clear();
+                twonotesEnemyDatas.Clear();
 
                 Debug.Log(twonotesDatas.Count);
             }
@@ -235,7 +258,16 @@ public class LoadBMS : MonoBehaviour
         string merge = "";
         string convert1 = "", convert2 = "";
 
-        if (line_1.Length == 4)
+        if (line_1.Length == 2)
+        {
+            for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
+            {
+                convert1 += line_1.Substring(i, 2); // 2글자씩 잘라서 추가
+                convert1 += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+            }
+            line_1 = convert1;
+        }
+        else if (line_1.Length == 4)
         {
             for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
             {
@@ -263,7 +295,16 @@ public class LoadBMS : MonoBehaviour
             line_1 = convert1;
         }
 
-        if (line_2.Length == 4)
+        if (line_2.Length == 2)
+        {
+            for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
+            {
+                convert2 += line_2.Substring(i, 2); // 2글자씩 잘라서 추가
+                convert2 += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+            }
+            line_2 = convert2;
+        }
+        else if (line_2.Length == 4)
         {
             for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
             {
@@ -330,7 +371,16 @@ public class LoadBMS : MonoBehaviour
             string data = list[j]; // 현재 데이터 가져오기
             string convert = "";
 
-            if (data.Length == 4)
+            if (data.Length == 2)
+            {
+                for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
+                {
+                    convert += data.Substring(i, 2); // 2글자씩 잘라서 추가
+                    convert += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+                }
+                list[j] = convert;
+            }
+            else if (data.Length == 4)
             {
                 for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
                 {

@@ -22,9 +22,44 @@ public class EnemyNoteManager : MonoBehaviour
 
     void Update()
     {
-        if (isMusicStart) NoteMaking();
-        else if (!isMusicStart) currentTime = 0d;
+        // if (isMusicStart) NoteMaking();
+        if (!isMusicStart) currentTime = 0f;
     }
+
+    GameObject curLongNote;
+    longnote3 curLongNoteScript;
+    bool is_longnote_start = false;
+
+    public void NoteMaker(string note)
+    {
+        if (note == "AA")
+        {
+            MakeNote();
+
+        }
+        else if (note == "AB")
+        {
+            if (!is_longnote_start)
+            { // 롱노트 시작부분이라면
+                MakeLongNote();
+                is_longnote_start = true;
+                // Debug.Log("long note start");
+            }
+            else
+            {
+                is_longnote_start = false;
+                curLongNoteScript.StartEndNote();
+                // Debug.Log("long note end");
+                curLongNote = null;
+                curLongNoteScript = null;
+            }
+        }
+        else if (note == "00")
+        {
+
+        }
+    }
+
 
     public void NoteMaking()
     {
@@ -121,6 +156,8 @@ public class EnemyNoteManager : MonoBehaviour
     public void MakeLongNote()
     {
         GameObject t_note = ObjectPool.instance.enemyLongNoteQueue.Dequeue();
+        curLongNote = t_note;
+        curLongNoteScript = curLongNote.GetComponent<longnote3>();
         RectTransform rect = t_note.GetComponent<RectTransform>();
         longnote3 longnote3 = t_note.GetComponent<longnote3>();
         
