@@ -76,10 +76,10 @@ public class MiddleBoss : MonoBehaviour
             
         }
 
-        if (HP <= 0)
-        {
-            Die();
-        }
+        //if (HP <= 0)
+        //{
+        //    Die();
+        //}
     }
     IEnumerator Attack1()
     {
@@ -171,7 +171,7 @@ public class MiddleBoss : MonoBehaviour
 
     }
 
-    void Die()
+    public void Die()
     {
         animator.SetTrigger("Death");
     }

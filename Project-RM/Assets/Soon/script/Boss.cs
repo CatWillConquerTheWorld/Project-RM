@@ -49,10 +49,10 @@ public class Boss : MonoBehaviour
             HP = HP - 50;
         }
 
-        if (HP <= 0)
-        {
-            Die();
-        }
+        //if (HP <= 0)
+        //{
+        //    Die();
+        //}
 
     }
 
@@ -86,7 +86,7 @@ public class Boss : MonoBehaviour
         animator.SetTrigger("Back");
     }
 
-    void Die()
+    public void Die()
     {
         animator.SetTrigger("die");
     }
