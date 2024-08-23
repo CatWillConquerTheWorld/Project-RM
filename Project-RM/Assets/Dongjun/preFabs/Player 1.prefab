@@ -389,9 +389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc54759b5599ec74d932c4f6dbb461cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1000
+  hp: 300
   moveSpeed: 5
-  jumpForce: 10
+  jumpForce: 12
   bulletPrefab: {fileID: 2560407839554203676}
   chargedBulletPrefab: {fileID: 1688764712298644102}
   semiChargedBP: {fileID: 8461987379167544042}
@@ -408,7 +408,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  enemyInfoUI: {fileID: 0}
+  healthBar: {fileID: 0}
   knockBack: 0.1
 --- !u!61 &1823088573665876954
 BoxCollider2D:
@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55c3e4ec30248047ad98b7dfb4051f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAttackRate: 0
   maxDistance: 10
 --- !u!1001 &6382465409026684367
 PrefabInstance:
@@ -804,6 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55c3e4ec30248047ad98b7dfb4051f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAttackRate: 0
   maxDistance: 10
 --- !u!4 &7785175237729847327 stripped
 Transform:
@@ -971,6 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55c3e4ec30248047ad98b7dfb4051f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAttackRate: 0
   maxDistance: 10
 --- !u!4 &6407963053237238405 stripped
 Transform:
