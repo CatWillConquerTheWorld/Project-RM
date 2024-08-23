@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     //½Ì±ÛÅæ ¼±¾ð
     //public static PlayerController instance { get; private set; }
 
-    private float maxHp = 1000;
+    private float maxHp = 300;
     public float hp;
     private bool isDead;
 

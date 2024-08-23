@@ -18,6 +18,7 @@ public class Stage1 : MonoBehaviour
     public int[] amountOfEnemies;
 
     public static List<GameObject> enemies = new List<GameObject>();
+    public static bool isSpawn = false;
 
     public float stageBPM;
 
@@ -80,6 +81,7 @@ public class Stage1 : MonoBehaviour
         yield return new WaitForSeconds(60f / stageBPM);
         countText.enabled = false;
         yield return StartCoroutine(WaitForElemenation());
+        isSpawn = true;
     }
 
     IEnumerator WaitForElemenation()
