@@ -1,11 +1,8 @@
 using Cinemachine;
 using DG.Tweening;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class BossCutScene : MonoBehaviour
 {
@@ -74,15 +71,15 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(CameraMoveX(3f, 1f, "flex"));
         yield return new WaitForSeconds(0.5f);
         bossChat.EnableChat();
-        yield return StartCoroutine(bossChat.Chat(4f, "... 또 나를 죽이러 왔는가..."));
+        yield return StartCoroutine(bossChat.Chat(4.5f, "... 또 나를 죽이러 왔는가..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(4f, "이번에도 초짜인 것 같군..."));
+        yield return StartCoroutine(bossChat.Chat(4.4f, "이번에도 초짜인 것 같군..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(2.3f, "...그렇다면..."));
+        yield return StartCoroutine(bossChat.Chat(2.5f, "...그렇다면..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(4.2f, "...다시는 발을 못 들이도록..."));
+        yield return StartCoroutine(bossChat.Chat(4.7f, "...다시는 발을 못 들이도록..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(3.5f, "...목숨을 끊어주겠다..."));
+        yield return StartCoroutine(bossChat.Chat(3.8f, "...목숨을 끊어주겠다..."));
         yield return StartCoroutine(WaitForUser());
         bossChat.DisableChat();
         StartCoroutine(MovieEnd());

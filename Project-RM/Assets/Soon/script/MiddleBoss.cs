@@ -220,6 +220,14 @@ public class MiddleBoss : MonoBehaviour
         attack1Collider.SetActive(false);
         attack2Collider.SetActive(false);
         specialCollider.SetActive(false);
+        GetComponent<PolygonCollider2D>().enabled = false;
+        StartCoroutine(DemoEnd());
+    }
+
+    IEnumerator DemoEnd()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneLoader.LoadSceneWithLoading("DemoEnd");
     }
 
     void Hit()
