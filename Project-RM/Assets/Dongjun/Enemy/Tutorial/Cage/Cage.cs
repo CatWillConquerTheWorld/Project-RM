@@ -17,14 +17,10 @@ public class Cage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack();
-        } 
     }
 
 
-    void Attack()
+    public void Attack()
     {
         attack1Collider.SetActive(false);
         enemyController.velocity = 0;

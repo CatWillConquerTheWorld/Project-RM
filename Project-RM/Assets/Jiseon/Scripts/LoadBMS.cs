@@ -71,6 +71,8 @@ public class LoadBMS : MonoBehaviour
     public CenterFrame centerFrame;
     public EnemyNoteManager enemyNoteManager;
 
+    public bool isEnded;
+
     public int notes;
     void Start()
     {
@@ -86,10 +88,12 @@ public class LoadBMS : MonoBehaviour
         WTFEnemy = notesetting("enemyWTF");
 
         NoteManager.isMusicStarted = true;
+        isEnded = false;
     }
 
     public void play_song(string name)
     {
+        isEnded = false;
         if (name == "deads")
         {
             bpmManager.instance.bpm = 120;
@@ -159,7 +163,9 @@ public class LoadBMS : MonoBehaviour
             {
                 noteNum = 0;
                 // Debug.Log("노래가 끝났습니다.");
-                
+
+                isEnded = true;
+
                 twonotesDatas.Clear();
                 twonotesEnemyDatas.Clear();
 

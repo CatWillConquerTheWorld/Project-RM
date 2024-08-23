@@ -29,7 +29,6 @@ public class StartSceneManager : MonoBehaviour
         bottom.DOScaleY(0.125f, 1f).SetEase(Ease.OutSine).SetDelay(2f).OnComplete(() => startAnimationFinished = true);
         Pause.isOKToPause = false;
         isStarted = false;
-        PlayerPrefs.SetInt("tutorialCleared", 0);
         playerGun.SetActive(false);
         playerPlayerController.enabled = false;
     }

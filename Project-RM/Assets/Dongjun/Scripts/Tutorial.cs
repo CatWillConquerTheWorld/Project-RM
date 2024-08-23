@@ -68,6 +68,8 @@ public class Tutorial : MonoBehaviour
 
     public BoxCollider2D blocker;
 
+    public BoxCollider2D blocker2;
+
     void Awake()
     {
         if (Instance == null)
@@ -246,7 +248,7 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
         countText.enabled = false;
         playerPlayerController.enabled = true;
-        yield return StartCoroutine(WaitForElemenations(levelOneEnemies.transform.childCount));
+        yield return StartCoroutine(WaitForElemenations(levelOneEnemies.transform.childCount, 1));
         keysInfo.GetComponent<RectTransform>().DOAnchorPosY(150f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
@@ -307,7 +309,7 @@ public class Tutorial : MonoBehaviour
         readyText.enabled = false;
         GiveCagesEnemyController();
         playerPlayerController.enabled = true;
-        yield return WaitForElemenations(levelTwoEnemies.transform.childCount);
+        yield return WaitForElemenations(levelTwoEnemies.transform.childCount, 2);
         //Pause.isOKToPause = false;
         CenterFrame.MusicFadeOut();
         DisableNote();
@@ -333,6 +335,8 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = true;
         Pause.isOKToPause = true;
         pauseButton.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("tutorialCleared", 1);
+        blocker2.enabled = false;
     }
 
     IEnumerator WaitForUser()
@@ -480,9 +484,25 @@ public class Tutorial : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator WaitForElemenations(int amount)
+    IEnumerator WaitForElemenations(int amount, int level)
     {
-        while (deadEnemies < amount) yield return null;
+        while (deadEnemies < amount)
+        {
+            if (LoadBMS.Instance.isEnded)
+            {
+                LoadBMS.currentTime = 0d;
+                if (level == 1)
+                {
+                    LoadBMS.Instance.play_song("tutorialLevel1");
+                }
+                else if (level == 2)
+                {
+                    LoadBMS.Instance.play_song("tutorialLevel2");
+                }
+            }
+            yield return null;
+        }
+        yield return null;
         deadEnemies = 0;
         yield return null;
     }

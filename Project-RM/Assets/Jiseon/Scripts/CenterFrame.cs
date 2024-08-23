@@ -65,7 +65,7 @@ public class CenterFrame : MonoBehaviour
                 }
             }
         }
-        LoadBMS.currentTime = -1000d;
+        LoadBMS.currentTime = -1000000000d;
         volume = 1.0f;
         DOTween.To(() => volume, x => volume = x, 0f, 0.5f).SetEase(Ease.OutSine).OnUpdate(() => myAudio.volume = volume).OnComplete(() => myAudio.Stop());
     }

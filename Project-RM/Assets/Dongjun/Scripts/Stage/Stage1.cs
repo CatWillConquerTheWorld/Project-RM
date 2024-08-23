@@ -8,7 +8,7 @@ using UnityEngine;
 public class Stage1 : MonoBehaviour
 {
     private GameObject player;
-    private PlayerController playerController;
+    private PlayerController playerPlayerController;
 
     public GameObject spawnPoints;
     public int spawnAmount;
@@ -30,7 +30,7 @@ public class Stage1 : MonoBehaviour
     {
         spawnPointList = new GameObject[spawnAmount];
         player = GameObject.FindWithTag("Player");
-        playerController = player.GetComponent<PlayerController>();
+        playerPlayerController = player.GetComponent<PlayerController>();
         for (int i = 0; i < spawnPoints.transform.childCount; i++)
         {
             spawnPointList[i] = spawnPoints.transform.GetChild(i).gameObject;
@@ -49,8 +49,10 @@ public class Stage1 : MonoBehaviour
 
     IEnumerator StageFlow()
     {
+        playerPlayerController.enabled = false;
         yield return new WaitForSeconds(4f);
         int spawnIndex = 0;
+        enemies.Clear();
         for (int i = 0; i < amountOfEnemies.Length; i++)
         {
             for (int j = 0; j < amountOfEnemies[i]; j++)
@@ -63,24 +65,21 @@ public class Stage1 : MonoBehaviour
         }
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
-        NoteManager.isMusicStarted = true;
-        EnemyNoteManager.isMusicStart = true;
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
         countText.text = "3";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "2";
         yield return new WaitForSeconds(60f / stageBPM);
+        LoadBMS.currentTime = 0d;
+        LoadBMS.Instance.play_song("WTF");
         countText.text = "1";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "GO!";
+        playerPlayerController.enabled = true;
         yield return new WaitForSeconds(60f / stageBPM);
         countText.enabled = false;
         yield return StartCoroutine(WaitForElemenation());
-        print("Well done!");
-        readyText.text = "Clear!";
-        DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 50f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnStart(() => readyText.enabled = true);
-        readyText.DOFade(1f, 2f).SetEase(Ease.InQuart);
     }
 
     IEnumerator WaitForElemenation()
@@ -89,12 +88,25 @@ public class Stage1 : MonoBehaviour
         {
             if (player.GetComponent<PlayerController>().GetIsDead())
             {
-                print("GameOver");
+                LoadBMS.currentTime = -10000000d;
+                CenterFrame.MusicFadeOut();
+                StartCoroutine(GameOver.instance.GameOverAnim());
+                yield break;
+
+            }
+            else if (LoadBMS.Instance.isEnded)
+            {
+                LoadBMS.currentTime = -10000000d;
+                CenterFrame.MusicFadeOut();
+                StartCoroutine(GameOver.instance.GameOverAnim());
                 yield break;
             }
             else if (enemies.Count == 0)
             {
-                print("Clear!");
+                readyText.text = "Æ÷Å»ÀÌ ¿­·È½À´Ï´Ù.";
+                DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 50f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnStart(() => readyText.enabled = true);
+                readyText.DOFade(1f, 2f).SetEase(Ease.InQuart);
+                CenterFrame.MusicFadeOut();
                 yield break;
             }
             yield return null;
