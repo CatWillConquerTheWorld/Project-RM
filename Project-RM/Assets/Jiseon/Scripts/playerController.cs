@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    timingManager timingManager;
+    public timingManager timingManager;
 
     private void Start()
     {
-        timingManager = FindObjectOfType<timingManager>();
+        //timingManager = FindObjectOfType<timingManager>();
     }
     void Update()
     {

@@ -2692,6 +2692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de57df96089b834a86623cb41e3dfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timingManager: {fileID: 1321969954}
 --- !u!4 &214402670
 Transform:
   m_ObjectHideFlags: 0
@@ -4124,10 +4125,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1959501592}
-  - {fileID: 1483834307}
   - {fileID: 491876330}
   - {fileID: 1693304944}
   - {fileID: 1929216812}
+  - {fileID: 1483834307}
   m_Father: {fileID: 1321969953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -13095,7 +13096,6 @@ MonoBehaviour:
   countText: {fileID: 995372930}
   readyTextCharacterSpace: 50
   pauseButton: {fileID: 2138065465}
-  playerCanvas: {fileID: 0}
   blocker: {fileID: 424547064}
   blocker2: {fileID: 1408105948}
 --- !u!4 &1130523319
@@ -17201,7 +17201,7 @@ GameObject:
   - component: {fileID: 1483834307}
   m_Layer: 5
   m_Name: NoteAppearLocation
-  m_TagString: Untagged
+  m_TagString: NoteAppearLocation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23916,7 +23916,7 @@ GameObject:
   - component: {fileID: 1929216813}
   m_Layer: 5
   m_Name: CenterFrame
-  m_TagString: Untagged
+  m_TagString: CenterFrame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

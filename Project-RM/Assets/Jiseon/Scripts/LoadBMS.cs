@@ -122,21 +122,21 @@ public class LoadBMS : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            currentTime = 0d;
-            noteNum = 0;
-            play_song("deads");
-        }else if (Input.GetKeyDown(KeyCode.U))
-        {
-            currentTime = 0d;
-            noteNum = 0;
-            play_song("tutorialLevel2");
-        }
-        else if(Input.GetKeyDown(KeyCode.O))
-        {
-            SceneManager.LoadScene("Stage1");
-        }
+        //if (Input.GetKeyDown(KeyCode.Y))
+        //{
+        //    currentTime = 0d;
+        //    noteNum = 0;
+        //    play_song("deads");
+        //}else if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    currentTime = 0d;
+        //    noteNum = 0;
+        //    play_song("tutorialLevel2");
+        //}
+        //else if(Input.GetKeyDown(KeyCode.O))
+        //{
+        //    SceneManager.LoadScene("Stage1");
+        //}
 
         if (twonotesDatas.Count == 0) return;
 
@@ -175,7 +175,7 @@ public class LoadBMS : MonoBehaviour
     public List<string> notesetting(string bms_name)
     {
         List<string> noteDatalist = new List<string>();
-        string bmsFilePath = "Assets/Jiseon/BMS/" + bms_name + ".bms"; // 노트 이름 받아오기
+        string bmsFilePath = Application.streamingAssetsPath + "/" +bms_name + ".bms"; // 노트 이름 받아오기
 
         string[] lineData = File.ReadAllLines(bmsFilePath)
                        .Where(line => !string.IsNullOrWhiteSpace(line))

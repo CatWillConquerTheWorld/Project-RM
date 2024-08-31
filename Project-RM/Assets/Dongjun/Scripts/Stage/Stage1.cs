@@ -81,7 +81,7 @@ public class Stage1 : MonoBehaviour
         yield return new WaitForSeconds(60f / stageBPM);
         countText.enabled = false;
         yield return StartCoroutine(WaitForElemenation());
-        isSpawn = true;
+        //isSpawn = true;
     }
 
     IEnumerator WaitForElemenation()

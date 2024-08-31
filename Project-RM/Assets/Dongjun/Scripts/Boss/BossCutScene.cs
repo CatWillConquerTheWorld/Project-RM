@@ -48,7 +48,7 @@ public class BossCutScene : MonoBehaviour
 
         healthContainer.gameObject.SetActive(false);
 
-        noteUIContainer.gameObject.SetActive(false);
+        noteUIContainer.alpha = 0f;
 
         wall.enabled = false;
 
@@ -88,7 +88,6 @@ public class BossCutScene : MonoBehaviour
         healthContainer.alpha = 0f;
         healthContainer.gameObject.SetActive(true);
         healthContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
-        noteUIContainer.gameObject.SetActive(true);
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         wall.enabled = true;
         readyText.enabled = true;

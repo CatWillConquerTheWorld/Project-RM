@@ -64,8 +64,6 @@ public class Tutorial : MonoBehaviour
 
     public GameObject pauseButton;
 
-    public CanvasGroup playerCanvas;
-
     public BoxCollider2D blocker;
 
     public BoxCollider2D blocker2;
@@ -119,10 +117,10 @@ public class Tutorial : MonoBehaviour
         readyText.enabled = false;
         countText.enabled = false;
 
-        noteUIContainer.gameObject.SetActive(false);
+        noteUIContainer.alpha = 0f;
+        //noteUIContainer.gameObject.SetActive(false);
         isDoorOpened = false;
 
-        playerCanvas.alpha = 0f;
 
         blocker.enabled = true;
 
@@ -225,7 +223,6 @@ public class Tutorial : MonoBehaviour
         yield return StartCoroutine(NPCMoves(40f));
         yield return StartCoroutine(MovieEnd());
         //Pause.isOKToPause = true;
-        playerCanvas.alpha = 1f;
         keysInfo.GetComponent<RectTransform>().DOAnchorPosY(-50f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForDoorOpen());
@@ -259,7 +256,6 @@ public class Tutorial : MonoBehaviour
         readyText.enabled = false;
         countText.enabled = false;
         isDoorOpened = false;
-        playerCanvas.alpha = 0f;
         yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
@@ -285,7 +281,6 @@ public class Tutorial : MonoBehaviour
         InfoTextChange("모든 케이지를 처치하세요.");
         //Pause.isOKToPause = true;
         playerPlayerController.enabled = false;
-        playerCanvas.alpha = 1f;
         EnableNote();
         readyText.enabled = true;
         readyText.DOFade(1f, 0.00001f);
@@ -316,7 +311,6 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         InfoTextDisappear();
-        playerCanvas.alpha = 0f;
         yield return waitHalfSec;
         yield return PlayerMoveX(38f, 3f);
         chatting.EnableChat();
@@ -532,13 +526,12 @@ public class Tutorial : MonoBehaviour
 
     void EnableNote()
     {
-        noteUIContainer.gameObject.SetActive(true);
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
     }
 
     void DisableNote()
     {
-        noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine).OnComplete(() => noteUIContainer.gameObject.SetActive(false));
+        noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine); ;
     }
 
     void ArrowAppear()
