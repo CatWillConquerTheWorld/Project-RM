@@ -11,7 +11,7 @@ public class NoteManager : MonoBehaviour
     // [SerializeField] GameObject goNote = null; // ≥Î∆Æ «¡∏Æ∆’
 
     EffectManager effectManager;
-    timingManager timingManager;
+    public timingManager timingManager;
     ComboManager comboManager;
 
     bool notecheck = false;
@@ -23,7 +23,7 @@ public class NoteManager : MonoBehaviour
         isMusicStarted = false;
         bpm = bpmManager.instance.bpm;
         effectManager = FindObjectOfType<EffectManager>();
-        timingManager = GetComponent<timingManager>();
+        // timingManager = GetComponent<timingManager>();
         comboManager = FindObjectOfType<ComboManager>();
     }
 

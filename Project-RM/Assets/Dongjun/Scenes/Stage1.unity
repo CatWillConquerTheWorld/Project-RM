@@ -31665,6 +31665,7 @@ MonoBehaviour:
   bpm: 120
   tfNoteAppear: {fileID: 1643520213}
   tfLongNoteAppear: {fileID: 1893549818}
+  timingManager: {fileID: 1792709257}
 --- !u!1 &1812046683
 GameObject:
   m_ObjectHideFlags: 0

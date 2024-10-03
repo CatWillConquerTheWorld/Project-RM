@@ -22,7 +22,7 @@ public class StartSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("tutorialCleared", 0);
+        PlayerPrefs.SetInt("tutorialCleared", 1);
         pauseButton.SetActive(false);
         startCanvasGroup.alpha = 0f;
         startCanvasGroup.DOFade(1f, 2f).SetEase(Ease.InOutSine);

@@ -4430,7 +4430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &424547064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15904,6 +15904,7 @@ MonoBehaviour:
   bpm: 120
   tfNoteAppear: {fileID: 1483834307}
   tfLongNoteAppear: {fileID: 594486946}
+  timingManager: {fileID: 1321969954}
 --- !u!1 &1331299942
 GameObject:
   m_ObjectHideFlags: 0
@@ -16333,7 +16334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1408105948
 BoxCollider2D:
   m_ObjectHideFlags: 0
