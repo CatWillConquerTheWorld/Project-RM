@@ -107,33 +107,34 @@ public class PlayerController : MonoBehaviour
         // 총 발사
         //Shoot();
 
-        //FindClosestEnemy();
-        //if (closestEnemy != null)
-        //{
-        //    align = true;
-        //    flip = false;
-        //    LookAtEnemy();
-        //    FlipTowardsEnemy();
-        //    EnemyInfo();
-        //}
-        //else
-        //{
-        //    if (enemyInfoUI != null) enemyInfoUI.SetActive(false);
-        //    transform.Find("Gun").transform.rotation = Quaternion.identity;
-        //    transform.Find("Gun").transform.localScale = Vector3.one;
-        //    flip = true;
-        //    if (align)
-        //    {
-        //        if (transform.localScale.x > 0)
-        //        {
-        //            firePoint.rotation = new Quaternion(0, 0, 0, 0);
-        //        } else if (transform.localScale.x < 0)
-        //        {
-        //            firePoint.rotation = new Quaternion(0, 0, 180, 0);
-        //        }
-        //        align = false;
-        //    }
-        //}
+        FindClosestEnemy();
+        if (closestEnemy != null)
+        {
+            align = true;
+            flip = false;
+            LookAtEnemy();
+            FlipTowardsEnemy();
+            //EnemyInfo();
+        }
+        else
+        {
+            //if (enemyInfoUI != null) enemyInfoUI.SetActive(false);
+            transform.Find("Gun").transform.rotation = Quaternion.identity;
+            transform.Find("Gun").transform.localScale = Vector3.one;
+            flip = true;
+            if (align)
+            {
+                if (transform.localScale.x > 0)
+                {
+                    firePoint.rotation = new Quaternion(0, 0, 0, 0);
+                }
+                else if (transform.localScale.x < 0)
+                {
+                    firePoint.rotation = new Quaternion(0, 0, 180, 0);
+                }
+                align = false;
+            }
+        }
 
     }
 
@@ -145,19 +146,19 @@ public class PlayerController : MonoBehaviour
 
     void FindClosestEnemy()
     {
-        //GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        //float closestDistance = Mathf.Infinity;
-        //closestEnemy = null;
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        float closestDistance = Mathf.Infinity;
+        closestEnemy = null;
 
-        //foreach (GameObject enemy in enemies)
-        //{
-        //    float distance = Vector2.Distance(transform.position, enemy.transform.position);
-        //    if (distance < detectionRadius && distance < closestDistance)
-        //    {
-        //        closestDistance = distance;
-        //        closestEnemy = enemy.transform;
-        //    }
-        //}
+        foreach (GameObject enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < detectionRadius && distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestEnemy = enemy.transform;
+            }
+        }
 
         //Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, detectionRadius, enemyLayer);
         //closestEnemy = null;
@@ -172,30 +173,31 @@ public class PlayerController : MonoBehaviour
         //        closestEnemy = enemy.transform;
         //    }
         //}
-        closestEnemy = null;
-        for (int i = 0; i < 36; i++)
-        {
-            // 각 레이의 각도 계산
-            float angle = i * (360f / 36);
-            Vector2 direction = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
+        //closestEnemy = null;
+        //for (int i = 0; i < 36; i++)
+        //{
+        //    // 각 레이의 각도 계산
+        //    float angle = i * (360f / 36);
+        //    Vector2 direction = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
 
-            // 레이캐스트 쏘기
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRadius, groundLayer);
+        //    // 레이캐스트 쏘기
+        //    RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRadius, groundLayer);
 
-            // 레이캐스트가 장애물에 닿지 않은 경우
-            if (hit.collider == null)
-            {
-                // 레이캐스트 끝 점
-                Vector2 endPoint = (Vector2)transform.position + direction * detectionRadius;
-                // 적 탐지
-                Collider2D[] enemies = Physics2D.OverlapCircleAll(endPoint, 0.1f, enemyLayer);
+        //    // 레이캐스트가 장애물에 닿지 않은 경우
+        //    if (hit.collider == null)
+        //    {
+        //        // 레이캐스트 끝 점
+        //        Vector2 endPoint = (Vector2)transform.position + direction * detectionRadius;
+        //        // 적 탐지
+        //        Collider2D[] enemies = Physics2D.OverlapCircleAll(endPoint, 0.1f, enemyLayer);
 
-                foreach (Collider2D enemy in enemies)
-                {
-                    closestEnemy = enemy.transform;
-                }
-            }
-        }
+        //        foreach (Collider2D enemy in enemies)
+        //        {
+        //            closestEnemy = enemy.transform;
+        //        }
+        //    }
+        //}
+
     }
 
     void LookAtEnemy()
