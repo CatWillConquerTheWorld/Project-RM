@@ -5,7 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class Stage1 : MonoBehaviour
+public class Stage2 : MonoBehaviour
 {
     private GameObject player;
     private PlayerController playerPlayerController;
