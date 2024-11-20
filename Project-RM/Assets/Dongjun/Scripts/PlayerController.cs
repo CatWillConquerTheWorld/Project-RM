@@ -464,6 +464,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("hit");
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accelerator, transform.position.y, 0), 1f);
         hp -= damage;
+        PlayerUIManager.Instance.ManageHealth(maxHp, hp);
         //healthBar.fillAmount = hp / maxHp;
         if (hp <= 0f)
         {

@@ -45,6 +45,7 @@ public class Tutorial : MonoBehaviour
     private WaitForSeconds waitForDisableChatter;
 
     public CanvasGroup noteUIContainer;
+    public CanvasGroup playerUIContainer;
 
     //skipping to next description
     private bool isNext;
@@ -118,6 +119,7 @@ public class Tutorial : MonoBehaviour
         countText.enabled = false;
 
         noteUIContainer.alpha = 0f;
+        playerUIContainer.alpha = 0f;
         //noteUIContainer.gameObject.SetActive(false);
         isDoorOpened = false;
 
@@ -229,6 +231,7 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = false;
         readyText.enabled = true;
         EnableNote();
+        EnablePlayerUI();
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
@@ -253,6 +256,7 @@ public class Tutorial : MonoBehaviour
         //Pause.isOKToPause = false;
         //EnemyNoteManager.isMusicStart = false;
         DisableNote();
+        DisablePlayerUI();
         readyText.enabled = false;
         countText.enabled = false;
         isDoorOpened = false;
@@ -282,6 +286,7 @@ public class Tutorial : MonoBehaviour
         //Pause.isOKToPause = true;
         playerPlayerController.enabled = false;
         EnableNote();
+        EnablePlayerUI();
         readyText.enabled = true;
         readyText.DOFade(1f, 0.00001f);
         readyTextCharacterSpace = 50f;
@@ -308,6 +313,7 @@ public class Tutorial : MonoBehaviour
         //Pause.isOKToPause = false;
         CenterFrame.MusicFadeOut();
         DisableNote();
+        DisablePlayerUI();
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         InfoTextDisappear();
@@ -331,6 +337,7 @@ public class Tutorial : MonoBehaviour
         pauseButton.gameObject.SetActive(true);
         PlayerPrefs.SetInt("tutorialCleared", 1);
         blocker2.enabled = false;
+        EnablePlayerUI();
     }
 
     IEnumerator WaitForUser()
@@ -529,9 +536,19 @@ public class Tutorial : MonoBehaviour
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
     }
 
+    void EnablePlayerUI()
+    {
+        playerUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
+
     void DisableNote()
     {
         noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine); ;
+    }
+
+    void DisablePlayerUI()
+    {
+        playerUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine);
     }
 
     void ArrowAppear()
