@@ -5,80 +5,79 @@ using UnityEngine;
 
 public class slope : MonoBehaviour
 {
-    public Transform targetPosition;  // 플레이어가 이동할 목표 위치
-    public GameObject player;
-    public float speed = 5f;          // 이동 속도
-    public bool isOnRope = false;    // 로프를 잡았는지 여부
-    public bool isMoving = false;    // 이동 중인지 여부
-    public bool isRiding = false;
-    private Vector2 moveDirection;    // 이동 방향
-    public Rigidbody2D rb;
+    public Transform ropeStartPoint; // 로프 시작 위치
+    public Transform ropeEndPoint;   // 로프 끝 위치
+    public float moveSpeed = 2f;     // 로프 이동 속도
+    public KeyCode interactKey = KeyCode.F; // 상호작용 키
+    private bool isPlayerAttached = false;  // 플레이어가 로프에 붙었는지 여부
+    public Transform player;               // 플레이어 트랜스폼
+    private Vector3 targetPosition;         // 로프의 목표 위치
+    private bool ropeStopped = true;       // 로프가 정지했는지 여부
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        targetPosition = ropeEndPoint.position;
     }
 
     void Update()
     {
-        // 로프 잡기 (E 키 입력)
-        // F 키 입력으로 로프 타기/내리기
-        if (Input.GetKeyDown(KeyCode.F))
+        if (isPlayerAttached)
         {
-            if (isRiding)
+            // 로프가 움직이는 동안 플레이어를 고정
+            player.position = new Vector3(transform.position.x, transform.position.y - 1.1f, transform.position.z);
+
+            // 로프가 정지하고 F 키를 누르면 로프에서 내림
+            if (ropeStopped && Input.GetKeyDown(interactKey))
             {
-                // 로프에서 내려오기
-                isMoving = false;
-                isOnRope = false;
-                isRiding = false;
-                player.transform.SetParent(null);  // 부모에서 분리
-                player.GetComponent<Rigidbody2D>().isKinematic = false;  // 물리 활성화
+                DetachPlayer();
             }
-            else
+        }
+        else
+        {
+            // 로프와 충돌 시 F 키를 눌러 로프에 탑승
+            if (Input.GetKeyDown(interactKey) && IsPlayerInRange() && ropeStopped)
             {
-                // 로프 타기
-                isOnRope = true;
-                isMoving = true;
-                isRiding = true;
-                moveDirection = (targetPosition.position - transform.position).normalized;
-                player.transform.SetParent(transform);  // 로프의 자식으로 설정
-                player.GetComponent<Rigidbody2D>().isKinematic = true;  // 물리 비활성화
+                AttachPlayer();
+                ropeStopped = false;
             }
         }
 
-        // 목표 위치에 도달하면 멈춤
-        if (isMoving && Vector2.Distance(transform.position, targetPosition.position) < 0.1f)
+        // 로프 이동
+        if (!ropeStopped)
         {
-            isMoving = false;
-            rb.velocity = Vector2.zero;  // 속도를 0으로 설정
-        }
-
-        
-
-        // 이동 중일 때 이동 처리
-        if (isMoving)
-        {
-            // 중력을 0으로 설정
-            rb.velocity = moveDirection * speed;
+            MoveRope();
         }
     }
 
-    // 로프와 충돌 시 처리
-    private void OnTriggerEnter2D(Collider2D collision)
+    void MoveRope()
     {
-        if (collision.CompareTag("Player"))
-        {
-            isOnRope = true;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
+        // 목표 위치에 도달하면 정지
+        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            ropeStopped = true;
         }
     }
 
-    // 로프에서 벗어났을 때 처리
-    private void OnTriggerExit2D(Collider2D collision)
+    void AttachPlayer()
     {
-        if (collision.CompareTag("Player"))
-        {
-            isOnRope = false;
-        }
+        isPlayerAttached = true;
+        player.GetComponent<PlayerController>().enabled = false; // 플레이어 조작 비활성화
     }
+
+    void DetachPlayer()
+    {
+        isPlayerAttached = false;
+        player.GetComponent<PlayerController>().enabled = true; // 플레이어 조작 활성화
+        player = null; // 플레이어 참조 해제
+    }
+
+    bool IsPlayerInRange()
+    {
+        // 플레이어와 로프 사이의 거리가 특정 범위 내인지 확인
+        return Vector3.Distance(player.position, transform.position) < 2f;
+    }
+
+    
 }

@@ -81,7 +81,9 @@ public class WaveStart : MonoBehaviour
         StartCoroutine(CameraMoveX(3f, 1f, "flex"));
         yield return new WaitForSeconds(1f);
         doorAnimator.SetBool("isOpen", true);
+        door.GetComponent<BoxCollider2D>().enabled = false;
 
+        yield return new WaitForSeconds(3f);
         CameraReturns();
         playerPlayerController.enabled = true;
         yield return StartCoroutine(MovieEnd());
