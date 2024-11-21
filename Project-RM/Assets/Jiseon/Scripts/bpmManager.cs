@@ -30,4 +30,9 @@ public class bpmManager : MonoBehaviour
         bpmInterval = 60d / bpm;
     }
 
+    private void Update()
+    {
+        bpmInterval = 60d / bpm;
+    }
+
 }
