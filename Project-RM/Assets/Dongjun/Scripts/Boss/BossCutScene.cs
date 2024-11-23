@@ -31,6 +31,7 @@ public class BossCutScene : MonoBehaviour
     public BoxCollider2D wall;
 
     public CanvasGroup healthContainer;
+    public CanvasGroup playerHealth;
 
     void Start()
     {
@@ -53,6 +54,8 @@ public class BossCutScene : MonoBehaviour
         wall.enabled = false;
 
         bossChat.DisableChat();
+
+        playerHealth.alpha = 0f;
     }
 
     void Update()
@@ -91,6 +94,7 @@ public class BossCutScene : MonoBehaviour
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         wall.enabled = true;
         readyText.enabled = true;
+        EnableHealth();
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
@@ -234,4 +238,9 @@ public class BossCutScene : MonoBehaviour
         noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine).OnComplete(() => noteUIContainer.gameObject.SetActive(false));
     }
 
+
+    void EnableHealth()
+    {
+        playerHealth.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
 }
