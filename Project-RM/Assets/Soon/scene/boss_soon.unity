@@ -3225,7 +3225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &426668321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3782,7 +3782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &513351105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27872,6 +27872,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18905887, y: 0.29584473}
   m_EdgeRadius: 0
+--- !u!95 &764417420 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6411129445715158597, guid: 8c88c464b75c3de4696582199c403d80, type: 3}
+  m_PrefabInstance: {fileID: 764417392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &808251904
 GameObject:
   m_ObjectHideFlags: 0
@@ -29637,6 +29642,8 @@ MonoBehaviour:
   playerHealth: {fileID: 97746915}
   doorCollider: {fileID: 251997024}
   doorAnimator: {fileID: 251997025}
+  clock: {fileID: 1785399827}
+  bossAnimator: {fileID: 764417420}
 --- !u!1 &1114740888
 GameObject:
   m_ObjectHideFlags: 0
@@ -35754,6 +35761,8 @@ MonoBehaviour:
   WTFEnemy: []
   deads: []
   deadsEnemy: []
+  C_Diminished: []
+  C_DiminishedEnemy: []
   lineData: []
   title: 
   BPM: 
@@ -36716,7 +36725,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9b5b53dceecd862408d33a6713255048, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -38,6 +38,8 @@ public class BossCutScene : MonoBehaviour
 
     public GameObject clock;
 
+    public Animator bossAnimator;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -88,6 +90,13 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(bossChat.Chat(2.5f, "...그렇다면..."));
         yield return StartCoroutine(WaitForUser());
+        bossAnimator.SetTrigger("SpecialAttack");
+        yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
+        StartCoroutine(CameraShake(0.5f, 0.1f, 40, true));
+        clock.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+        yield return new WaitForSeconds(1f);
+        bossAnimator.SetTrigger("SpecialBack");
+        yield return StartCoroutine(CameraMoveY(-3.5f, 1f, "flex"));
         yield return StartCoroutine(bossChat.Chat(4.7f, "...다시는 발을 못 들이도록..."));
         yield return StartCoroutine(WaitForUser());
         yield return StartCoroutine(bossChat.Chat(3.8f, "...목숨을 끊어주겠다..."));
@@ -222,6 +231,14 @@ public class BossCutScene : MonoBehaviour
         if (method == "flex") amount += Camera.main.transform.position.x;
         Camera.main.GetComponent<CinemachineBrain>().enabled = false;
         Camera.main.transform.DOMoveX(amount, duration).SetEase(Ease.Linear);
+        yield return new WaitForSeconds(duration);
+    }
+
+    IEnumerator CameraMoveY(float amount, float duration, string method)
+    {
+        if (method == "flex") amount += Camera.main.transform.position.y;
+        Camera.main.GetComponent<CinemachineBrain>().enabled = false;
+        Camera.main.transform.DOMoveY(amount, duration).SetEase(Ease.Linear);
         yield return new WaitForSeconds(duration);
     }
 
