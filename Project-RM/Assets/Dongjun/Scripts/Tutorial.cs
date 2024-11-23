@@ -131,6 +131,12 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
+        if (PlayerPrefs.GetInt("tutorialCleared") == 1)
+        {
+            blocker.enabled = false;
+            blocker2.enabled = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.P)) isNext = true;
         //if (Input.GetKeyDown(KeyCode.Q)) StartCoroutine(TestRoomAppear());
     }
