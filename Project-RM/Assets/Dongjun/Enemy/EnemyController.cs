@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
 
     private bool isHitting;
 
-    private bool isDead;
+    public bool isDead;
 
     //void Awake()
     //{
@@ -162,6 +162,7 @@ public class EnemyController : MonoBehaviour
         Destroy(GetComponent<Rigidbody2D>());
         boxCollider.enabled = false;
         Stage1.enemies.Remove(gameObject);
+        Stage2.enemies.Remove(gameObject);
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).GetComponent<BoxCollider2D>().enabled = false;
