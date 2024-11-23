@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +12,20 @@ public class PortalController : MonoBehaviour
     public Material material;
     public GameObject KeyF;
     public GameObject[] enemies;
-    private Stage1 stage1;
+    public Stage1 stage1;
+
+    public GameObject player;
+    private GameObject playerGun;
+    private Animator playerAnimator;
+    public GameObject greyBG_up;
+    public GameObject greyBG_down;
 
     private void Start()
     {
-        stage1 = GetComponent<Stage1>();
+        playerAnimator = player.GetComponent<Animator>();
+
+        playerGun = player.transform.Find("Gun").gameObject;
+        //stage1 = GetComponent<Stage1>();
     }
     void Update()
     {
@@ -30,13 +40,13 @@ public class PortalController : MonoBehaviour
             }
         }
 
-        if (isOnPortal && isNoEnemy)
+        if (isOnPortal && stage1.isOkToGo)
         {
             KeyF.SetActive(true);
             
             if(Input.GetKeyDown(KeyCode.F))
             {
-                SceneLoader.LoadSceneWithLoading("boss_soon");
+                StartCoroutine(NextScene());
             }
         }
         else KeyF.SetActive(false); 
@@ -69,5 +79,19 @@ public class PortalController : MonoBehaviour
             portalRenderer.material = material;
             Debug.Log("New material applied to the portal.");
         }
+    }
+
+    IEnumerator NextScene()
+    {
+        player.GetComponent<PlayerController>().enabled = false;
+        playerAnimator.SetBool("isWalking", false);
+        transform.GetComponent<Animator>().SetBool("isTeleport", true);
+        player.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f);
+        playerGun.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        greyBG_up.GetComponent<RectTransform>().DOAnchorPosY(270f, 0.25f).SetEase(Ease.InSine);
+        greyBG_down.GetComponent<RectTransform>().DOAnchorPosY(-270f, 0.25f).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(0.3f);
+        SceneLoader.LoadSceneWithLoading("boss_soon");
     }
 }

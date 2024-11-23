@@ -1,4 +1,5 @@
 using DG.Tweening;
+using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,11 @@ public class Stage1 : MonoBehaviour
     public TMP_Text countText;
     private float readyTextCharacterSpace;
 
+    public RectTransform greyBG_up;
+    public RectTransform greyBG_down;
+
+    public bool isOkToGo = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +57,10 @@ public class Stage1 : MonoBehaviour
     IEnumerator StageFlow()
     {
         playerPlayerController.enabled = false;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(0.5f);
+        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine);
+        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(1f);
         int spawnIndex = 0;
         enemies.Clear();
         for (int i = 0; i < amountOfEnemies.Length; i++)
@@ -82,6 +91,7 @@ public class Stage1 : MonoBehaviour
         countText.enabled = false;
         yield return StartCoroutine(WaitForElemenation());
         //isSpawn = true;
+        isOkToGo = true;
     }
 
     IEnumerator WaitForElemenation()
