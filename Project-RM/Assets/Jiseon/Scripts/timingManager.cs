@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class timingManager : MonoBehaviour
@@ -59,6 +60,18 @@ public class timingManager : MonoBehaviour
         {
             // Debug.Log("EndLongNote");
             EndLongNote();
+        }
+
+        if(centerFrame.music_change == true)
+        {
+            foreach (GameObject note in boxNoteList)
+            {
+                Destroy(note);
+            }
+
+            // 리스트를 비운다
+            boxNoteList.Clear();
+            centerFrame.music_change = false;
         }
     }
     

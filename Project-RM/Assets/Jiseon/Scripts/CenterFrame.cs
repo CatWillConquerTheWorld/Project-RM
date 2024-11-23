@@ -12,6 +12,7 @@ public class CenterFrame : MonoBehaviour
     public static NoteManager noteManager;
 
     static float volume;
+    public bool music_change;
 
     void Start()
     {
@@ -42,6 +43,7 @@ public class CenterFrame : MonoBehaviour
     public void ChangeMusic(int number)
     {
         myAudio.clip = audioClips[number];
+        music_change = true;
     }
     public void MusicStart()
     {
