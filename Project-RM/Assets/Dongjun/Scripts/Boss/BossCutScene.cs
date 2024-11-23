@@ -36,6 +36,8 @@ public class BossCutScene : MonoBehaviour
     public BoxCollider2D doorCollider;
     public Animator doorAnimator;
 
+    public GameObject clock;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
