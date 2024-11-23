@@ -73,7 +73,7 @@ public class Stage2 : MonoBehaviour
         countText.text = "2";
         yield return new WaitForSeconds(60f / stageBPM);
         LoadBMS.currentTime = 0d;
-        LoadBMS.Instance.play_song("WTF");                      //노래 이름 바꿔야함
+        LoadBMS.Instance.play_song("C-Diminished");                      //노래 이름 바꿔야함
         countText.text = "1";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "GO!";
