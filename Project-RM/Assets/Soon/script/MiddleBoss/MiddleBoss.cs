@@ -37,10 +37,6 @@ public class MiddleBoss : MonoBehaviour
 
     public int attackStack;
 
-    public GameObject clock;
-    public GameObject firstPin;
-    public GameObject secondPin;
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -109,11 +105,6 @@ public class MiddleBoss : MonoBehaviour
         //{
         //    Die();
         //}
-
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            ClockPatternTemp();
-        }
     }
     public void Attack1()
     {
@@ -290,11 +281,5 @@ public class MiddleBoss : MonoBehaviour
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
-    }
-
-    public void ClockPatternTemp()
-    {
-        firstPin.transform.Rotate(0, 0, 10f);
-        secondPin.transform.Rotate(0, 0, -10f);
     }
 }

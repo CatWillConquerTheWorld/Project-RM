@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    public int HP;
     Rigidbody2D rigid;
     Animator animator;
     public GameObject laserPrefab; // 레이저 프리팹
@@ -15,10 +14,14 @@ public class Boss : MonoBehaviour
     public float laserDuration = 2f;
     public int laserCount = 3; // 레이저 발사 횟수
 
+    public float maxHealth = 500f;  // 보스의 최대 체력
+    public float currentHealth;
+
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -46,7 +49,7 @@ public class Boss : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            HP = HP - 50;
+            currentHealth -= 50;
         }
 
         //if (HP <= 0)
@@ -89,5 +92,24 @@ public class Boss : MonoBehaviour
     public void Die()
     {
         animator.SetTrigger("die");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Bullet(Clone)")
+        {
+            currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
+            animator.SetTrigger("hit");
+        }
+        else if (collision.gameObject.name == "SemiChargedBullet(Clone)")
+        {
+            currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
+            animator.SetTrigger("hit");
+        }
+        else if (collision.gameObject.name == "ChargedBullet(Clone)")
+        {
+            currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
+            animator.SetTrigger("hit");
+        }
     }
 }
