@@ -342,10 +342,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4268408637331851004}
   - component: {fileID: 8359044482281983075}
-  - component: {fileID: 8491037237249262889}
   - component: {fileID: 2622572505102761776}
   - component: {fileID: 2306441056668280015}
-  - component: {fileID: 5404381808229821553}
+  - component: {fileID: 1363942367758820002}
+  - component: {fileID: 8425083348148274122}
+  - component: {fileID: 878257932569334064}
   m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
@@ -363,7 +364,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 27.109, y: -22.655, z: 0}
-  m_LocalScale: {x: -3.7878494, y: 4.165, z: 1}
+  m_LocalScale: {x: 3.787849, y: 4.165, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9015404033618141509}
@@ -423,27 +424,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8491037237249262889
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898816352702042634}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2cb4623a8545177469ef229f9cb6801f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &2622572505102761776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -505,7 +485,73 @@ MonoBehaviour:
   outline: {fileID: 2100000, guid: c6408537349c6974182d99baa8851a60, type: 2}
   noOutline: {fileID: 2100000, guid: 1730a8194a81f274d80b277850d8b5e1, type: 2}
   startBattle: {fileID: 4226263183192184812}
---- !u!50 &5404381808229821553
+--- !u!95 &1363942367758820002
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898816352702042634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2cb4623a8545177469ef229f9cb6801f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &8425083348148274122
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898816352702042634}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.010000001, y: 0.24}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.35714287, y: 0}
+    oldSize: {x: 0.07, y: 0.48}
+    newSize: {x: 0.07, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.07, y: 0.48}
+  m_EdgeRadius: 0
+--- !u!50 &878257932569334064
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
