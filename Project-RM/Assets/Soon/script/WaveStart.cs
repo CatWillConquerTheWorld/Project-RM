@@ -51,9 +51,10 @@ public class WaveStart : MonoBehaviour
     void Update()
     {
         //StartCoroutine(SpawnWave());
-        GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0 && !canSpawn && !isClear)
+        //GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (wave.numberOfEnemies == 0 && !canSpawn && !isClear)
         {
+            
             StartCoroutine(Clear());
             isClear = true;
         }
@@ -76,6 +77,7 @@ public class WaveStart : MonoBehaviour
 
     IEnumerator Clear()
     {
+        Stage2.waveClear = true;
         playerPlayerController.enabled = false;
         yield return StartCoroutine(MovieStart());
         StartCoroutine(CameraMoveX(3f, 1f, "flex"));
@@ -87,6 +89,8 @@ public class WaveStart : MonoBehaviour
         CameraReturns();
         playerPlayerController.enabled = true;
         yield return StartCoroutine(MovieEnd());
+
+        
     }
 
     IEnumerator SpawnWave()
@@ -100,7 +104,7 @@ public class WaveStart : MonoBehaviour
 
                 // 利 积己
                 Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
-
+                randomEnemy.SetActive(true);
                 // 利狼 荐甫 皑家
                 wave.numberOfEnemies--;
 

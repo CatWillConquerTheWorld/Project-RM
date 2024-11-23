@@ -5943,7 +5943,7 @@ Transform:
   m_GameObject: {fileID: 751232814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8, y: 3.6, z: -10}
+  m_LocalPosition: {x: 35.5, y: -27.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27189,7 +27189,7 @@ Transform:
   m_GameObject: {fileID: 1102980645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8, y: 3.6, z: -10}
+  m_LocalPosition: {x: 35.5, y: -27.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30166,11 +30166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973727936567845275, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.8
+      value: 35.5
       objectReference: {fileID: 0}
     - target: {fileID: 4973727936567845275, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6
+      value: -27.2
       objectReference: {fileID: 0}
     - target: {fileID: 4973727936567845275, guid: 1cdda622b4125954982752e91f9788da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31103,11 +31103,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wave:
-    numberOfEnemies: 5
+    numberOfEnemies: 8
     typeOfEnemies:
     - {fileID: 3226880350209017586, guid: c679d7b5be9141747b0c519fb7f16dc5, type: 3}
     - {fileID: 8661935088539161800, guid: a5400f645ae41224d9dea19fc1528660, type: 3}
-    spawnInterval: 2
+    spawnInterval: 1.5
   spawnPoint:
   - {fileID: 997756597}
   - {fileID: 1015802825}

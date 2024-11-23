@@ -19,7 +19,7 @@ public class Stage2 : MonoBehaviour
 
     public static List<GameObject> enemies = new List<GameObject>();
     public static bool isSpawn = false;
-
+    public static bool waveClear = false;
     public float stageBPM;
 
     public TMP_Text readyText;
@@ -103,7 +103,7 @@ public class Stage2 : MonoBehaviour
                 StartCoroutine(GameOver.instance.GameOverAnim());
                 yield break;
             }
-            else if (enemies.Count == 0)
+            else if (enemies.Count == 0 && waveClear)
             {
                 readyText.text = "Æ÷Å»ÀÌ ¿­·È½À´Ï´Ù.";
                 DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 50f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnStart(() => readyText.enabled = true);
