@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using JetBrains.Annotations;
 
 public class PlayerController : MonoBehaviour
 {
@@ -155,9 +156,19 @@ public class PlayerController : MonoBehaviour
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < detectionRadius && distance < closestDistance)
             {
-                closestDistance = distance;
-                closestEnemy = enemy.transform;
+                Vector2 direction = (enemy.transform.position - transform.position).normalized;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, LayerMask.GetMask("Enemy", "Ground"));
+                Debug.DrawRay(transform.position, direction * distance, Color.red);
+                if (hit.collider != null && hit.collider.gameObject.layer != LayerMask.NameToLayer("Ground"))
+                {
+                    print("hit! name is " + hit.collider.name);
+                    closestDistance = distance;
+                    closestEnemy = enemy.transform;
+                }
             }
+
+            //float distance = Vector2.Distance(transform.position, enemy.transform.position);
+
         }
 
         //Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, detectionRadius, enemyLayer);
