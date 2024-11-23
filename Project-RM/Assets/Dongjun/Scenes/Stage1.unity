@@ -1768,26 +1768,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 22, y: -10, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 88
-      m_TileSpriteIndex: 87
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 23, y: -10, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 89
-      m_TileSpriteIndex: 88
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 24, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -1963,16 +1943,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 87
       m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 5, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 89
-      m_TileSpriteIndex: 88
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2186,9 +2156,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: aa74ef2997583d7498764ea51a000019, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: de6468f60c244074b91944da13a731c4, type: 2}
-  - m_RefCount: 7
+  - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 09c1791599c5cbe48bb65e660a5029fd, type: 2}
-  - m_RefCount: 10
+  - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: b08e2b4aa909c8a49ae45262f0b16f1e, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 9249ea1fd86cad440adbbf438e4a1336, type: 2}
@@ -2387,9 +2357,9 @@ Tilemap:
     m_Data: {fileID: -2102429284, guid: 8b407e05507ae344185bb682d1d1e6d2, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -5892098717060535622, guid: 523076d95664e544a9d43bd0cf8d5474, type: 3}
-  - m_RefCount: 7
+  - m_RefCount: 6
     m_Data: {fileID: 870878333, guid: 8b407e05507ae344185bb682d1d1e6d2, type: 3}
-  - m_RefCount: 10
+  - m_RefCount: 8
     m_Data: {fileID: 245193757, guid: 8b407e05507ae344185bb682d1d1e6d2, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -1983440881, guid: 8b407e05507ae344185bb682d1d1e6d2, type: 3}
@@ -2416,7 +2386,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1745903115, guid: 8b407e05507ae344185bb682d1d1e6d2, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 113
+  - m_RefCount: 110
     m_Data:
       e00: 1
       e01: 0
@@ -2489,7 +2459,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 127
+  - m_RefCount: 124
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2621,9 +2591,9 @@ CompositeCollider2D:
         Y: -13125000
     - - X: 80000000
         Y: -40000000
-      - X: 50000000
+      - X: 60000000
         Y: -40000000
-      - X: 50000000
+      - X: 60000000
         Y: -43125000
       - X: 80000000
         Y: -43125000
@@ -2731,12 +2701,8 @@ CompositeCollider2D:
         Y: -97500000
       - X: 260000000
         Y: -90000000
-      - X: 220000000
-        Y: -90000000
-      - X: 220000000
-        Y: -93125000
       - X: 240000000
-        Y: -93125000
+        Y: -90000000
       - X: 240000000
         Y: -93750000
       - X: 248124992
@@ -3526,8 +3492,8 @@ CompositeCollider2D:
       - {x: 1.6250079, y: -1.3125}
     - - {x: 7.9999704, y: -4.3125}
       - {x: 7.9999704, y: -4}
-      - {x: 5, y: -4.000029}
-      - {x: 5.000029, y: -4.3125}
+      - {x: 6, y: -4.000029}
+      - {x: 6.000029, y: -4.3125}
     - - {x: 7.49998, y: -6.3125}
       - {x: 7.5625, y: -6.124996}
       - {x: 7.5624704, y: -6}
@@ -3574,9 +3540,7 @@ CompositeCollider2D:
       - {x: 25.31251, y: -9.75}
       - {x: 26, y: -9.74997}
       - {x: 25.999971, y: -9}
-      - {x: 22, y: -9.00003}
-      - {x: 22.000029, y: -9.3125}
-      - {x: 24, y: -9.31253}
+      - {x: 24, y: -9.00003}
       - {x: 24.00001, y: -9.375009}
       - {x: 24.81251, y: -10}
     - - {x: -11.250004, y: -9.4375}
@@ -24643,7 +24607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.6, y: -377.4309}
+  m_AnchoredPosition: {x: 70, y: -377.4309}
   m_SizeDelta: {x: 20, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951285240

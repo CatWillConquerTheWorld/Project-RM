@@ -112,6 +112,7 @@ public class MiddleBoss : MonoBehaviour
         //yield return new WaitForSeconds(0.3f);
         //DangerSqaures[0].SetActive(false);
         //yield return null;
+        this.rigid.velocity = Vector2.zero; // 대쉬 종료 후 속도 0
         attack1Collider.SetActive(true);
         animator.SetTrigger("Attack1");
     }
@@ -122,6 +123,7 @@ public class MiddleBoss : MonoBehaviour
         //yield return new WaitForSeconds(0.3f);
         //DangerSqaures[1].SetActive(false);
         //yield return null;
+        this.rigid.velocity = Vector2.zero; // 대쉬 종료 후 속도 0
         attack2Collider.SetActive(true);
         animator.SetTrigger("Attack2");
     }
@@ -131,6 +133,7 @@ public class MiddleBoss : MonoBehaviour
         //DangerSqaures[2].SetActive(true);
         //yield return new WaitForSeconds(0.5f);
         //DangerSqaures[2].SetActive(false);
+        this.rigid.velocity = Vector2.zero; // 대쉬 종료 후 속도 0
         specialCollider.SetActive(true);
         animator.SetTrigger("SpecialAttack");
     }
@@ -141,8 +144,9 @@ public class MiddleBoss : MonoBehaviour
         //yield return new WaitForSeconds(0.5f);
         //DangerSqaures[3].SetActive(false);
         //yield return new WaitForSeconds(0.1f);
+        special2RCollider.SetActive(false);
         special2RCollider.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.75f);
         special2RCollider.SetActive(false);
     }
 
@@ -152,9 +156,10 @@ public class MiddleBoss : MonoBehaviour
         //yield return new WaitForSeconds(0.5f);
         //DangerSqaures[4].SetActive(false);
         //yield return new WaitForSeconds(0.1f);
+        special2LCollider.SetActive(false);
         special2LCollider.SetActive(true);
         SLanimator.SetTrigger("Special2L");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.75f);
         special2LCollider.SetActive(false);
     }
 
@@ -178,11 +183,12 @@ public class MiddleBoss : MonoBehaviour
 
     public void Dash()
     {
+        this.rigid.velocity = Vector2.zero; // 대쉬 종료 후 속도 0
         this.ghost.makeGhost = true;
         this.dashTime += Time.deltaTime;
         this.isDash = true;
 
-        if (transform.localScale.x <= 0f)
+        if (player.transform.position.x < transform.position.x)
         {
             this.tmpDir = Vector2.left;
         }

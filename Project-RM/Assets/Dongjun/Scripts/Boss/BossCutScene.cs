@@ -33,6 +33,9 @@ public class BossCutScene : MonoBehaviour
     public CanvasGroup healthContainer;
     public CanvasGroup playerHealth;
 
+    public BoxCollider2D doorCollider;
+    public Animator doorAnimator;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -56,6 +59,9 @@ public class BossCutScene : MonoBehaviour
         bossChat.DisableChat();
 
         playerHealth.alpha = 0f;
+
+        doorAnimator.SetTrigger("DoorOpen");
+        doorCollider.enabled = false;
     }
 
     void Update()
@@ -87,6 +93,8 @@ public class BossCutScene : MonoBehaviour
         bossChat.DisableChat();
         StartCoroutine(MovieEnd());
         yield return StartCoroutine(CameraMoveX(-3f, 1f, "flex"));
+        doorAnimator.SetTrigger("DoorClose");
+        doorCollider.enabled = true;
         CameraReturns();
         healthContainer.alpha = 0f;
         healthContainer.gameObject.SetActive(true);
