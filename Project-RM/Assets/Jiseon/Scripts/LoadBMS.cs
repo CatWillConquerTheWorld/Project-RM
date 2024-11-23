@@ -53,6 +53,8 @@ public class LoadBMS : MonoBehaviour
     public List<string> WTFEnemy = new List<string>();
     public List<string> deads = new List<string>();
     public List<string> deadsEnemy = new List<string>();
+    public List<string> C_Diminished = new List<string>();
+    public List<string> C_DiminishedEnemy = new List<string>();
 
     private string bmsFilePath = "";
     public string[] lineData;
@@ -82,6 +84,8 @@ public class LoadBMS : MonoBehaviour
         tutorialLevel2Enemy = notesetting("enemyTutorialLevel2");
         WTF = notesetting("WTF");
         WTFEnemy = notesetting("enemyWTF");
+        C_Diminished = notesetting("C-Diminished");
+        C_DiminishedEnemy = notesetting("C-DiminishedEnemy");
 
         NoteManager.isMusicStarted = true;
         isEnded = false;
@@ -118,6 +122,12 @@ public class LoadBMS : MonoBehaviour
             twonotesDatas = tutorialLevel2;
             twonotesEnemyDatas = tutorialLevel2Enemy;
             centerFrame.ChangeMusic(1);
+        }else if(name == "C-Diminished")
+        {
+            bpmManager.instance.bpm = 105;
+            twonotesDatas = C_Diminished;
+            twonotesEnemyDatas = C_DiminishedEnemy;
+            centerFrame.ChangeMusic(4);
         }
     }
     void Update()

@@ -4744,6 +4744,8 @@ MonoBehaviour:
   WTFEnemy: []
   deads: []
   deadsEnemy: []
+  C_Diminished: []
+  C_DiminishedEnemy: []
   lineData: []
   title: 
   BPM: 
@@ -23806,6 +23808,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: de07536cd75a647459301d3813c7228e, type: 3}
   - {fileID: 8300000, guid: b67684b6ed8b83c41aa012531bc73459, type: 3}
   - {fileID: 8300000, guid: 7313524f186c0884f95a2f22525e0be8, type: 3}
+  - {fileID: 8300000, guid: bde9d0c7d69dce64981b3b37798ea05b, type: 3}
 --- !u!82 &756037279
 AudioSource:
   m_ObjectHideFlags: 0

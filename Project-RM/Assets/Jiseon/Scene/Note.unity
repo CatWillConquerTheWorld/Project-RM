@@ -467,6 +467,8 @@ MonoBehaviour:
   bpm: 120
   tfEnemyNoteAppear: {fileID: 123089091}
   tfEnemyLongNoteAppear: {fileID: 1102566287}
+  isTutorial: 0
+  isBoss: 0
 --- !u!1 &338146498
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +857,8 @@ MonoBehaviour:
   WTFEnemy: []
   deads: []
   deadsEnemy: []
+  C_Diminished: []
+  C_DiminishedEnemy: []
   lineData: []
   title: 
   BPM: 
@@ -864,6 +868,7 @@ MonoBehaviour:
   noteManager: {fileID: 0}
   centerFrame: {fileID: 0}
   enemyNoteManager: {fileID: 0}
+  isEnded: 0
   notes: 0
 --- !u!4 &601846568
 Transform:
@@ -924,6 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de57df96089b834a86623cb41e3dfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timingManager: {fileID: 0}
 --- !u!1 &638269085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1428,8 @@ MonoBehaviour:
   bpm: 120
   tfEnemyNoteAppear: {fileID: 123089091}
   tfEnemyLongNoteAppear: {fileID: 1102566287}
+  isTutorial: 0
+  isBoss: 0
 --- !u!61 &854222423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2149,6 +2157,7 @@ MonoBehaviour:
   bpm: 120
   tfNoteAppear: {fileID: 843890742}
   tfLongNoteAppear: {fileID: 797774275}
+  timingManager: {fileID: 0}
 --- !u!61 &1165192610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3059,6 +3068,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: de07536cd75a647459301d3813c7228e, type: 3}
   - {fileID: 8300000, guid: b67684b6ed8b83c41aa012531bc73459, type: 3}
   - {fileID: 8300000, guid: 7313524f186c0884f95a2f22525e0be8, type: 3}
+  - {fileID: 8300000, guid: bde9d0c7d69dce64981b3b37798ea05b, type: 3}
 --- !u!82 &1762210041
 AudioSource:
   m_ObjectHideFlags: 0
