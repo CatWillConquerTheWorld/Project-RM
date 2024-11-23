@@ -24220,8 +24220,10 @@ MonoBehaviour:
   bpm: 120
   tfEnemyNoteAppear: {fileID: 1837973806}
   tfEnemyLongNoteAppear: {fileID: 453577061}
+  enemies: []
   isTutorial: 0
   isBoss: 0
+  stage: 1
 --- !u!61 &847082670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24736,8 +24738,10 @@ MonoBehaviour:
   bpm: 150
   tfEnemyNoteAppear: {fileID: 1837973806}
   tfEnemyLongNoteAppear: {fileID: 453577061}
+  enemies: []
   isTutorial: 0
   isBoss: 0
+  stage: 1
 --- !u!61 &951285241
 BoxCollider2D:
   m_ObjectHideFlags: 0

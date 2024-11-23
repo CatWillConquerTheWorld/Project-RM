@@ -11,11 +11,13 @@ public class EnemyNoteManager : MonoBehaviour
     [SerializeField] RectTransform tfEnemyLongNoteAppear = null; // 노트 생성위치
 
     bool notecheck = false; // long short 번갈아가며 출력위해.
-    
+    public List<GameObject> enemies;
+
     public static bool isMusicStart;
 
     public bool isTutorial;
     public bool isBoss;
+    public int stage;
 
     void Start()
     {
@@ -110,7 +112,12 @@ public class EnemyNoteManager : MonoBehaviour
                     GameObject.Find("middleBoss").GetComponent<MiddleBoss>().SpecialFalse();
                 } else
                 {
-                    List<GameObject> enemies = Stage1.enemies;
+
+                    if (stage == 1)
+                        enemies = Stage1.enemies;
+                    else if (stage == 2)
+                        enemies = Stage2.enemies;
+
                     for (int i = 0; i < enemies.Count; i++)
                     {
                         if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttack();
@@ -128,7 +135,11 @@ public class EnemyNoteManager : MonoBehaviour
                 }
                 else
                 {
-                    List<GameObject> enemies = Stage1.enemies;
+                    if (stage == 1)
+                        enemies = Stage1.enemies;
+                    else if (stage == 2)
+                        enemies = Stage2.enemies;
+
                     for (int i = 0; i < enemies.Count; i++)
                     {
                         if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttackPrepare();
@@ -167,7 +178,11 @@ public class EnemyNoteManager : MonoBehaviour
                     }
                     else
                     {
-                        List<GameObject> enemies = Stage1.enemies;
+                        if (stage == 1)
+                            enemies = Stage1.enemies;
+                        else if (stage == 2)
+                            enemies = Stage2.enemies;
+
                         for (int i = 0; i < enemies.Count; i++)
                         {
                             if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().Attack();
