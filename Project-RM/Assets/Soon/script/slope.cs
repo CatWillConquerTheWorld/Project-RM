@@ -14,6 +14,13 @@ public class slope : MonoBehaviour
     private Vector3 targetPosition;         // 로프의 목표 위치
     private bool ropeStopped = true;       // 로프가 정지했는지 여부
 
+
+    public Material outline;
+    public Material noOutline;
+    private Material myMaterial;
+
+    public GameObject keyF;
+
     void Start()
     {
         targetPosition = ropeEndPoint.position;
@@ -79,5 +86,21 @@ public class slope : MonoBehaviour
         return Vector3.Distance(player.position, transform.position) < 2f;
     }
 
-    
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            keyF.SetActive(true);
+            GetComponent<SpriteRenderer>().material = outline;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            keyF.SetActive(false);
+            GetComponent<SpriteRenderer>().material = noOutline;
+        }
+    }
 }

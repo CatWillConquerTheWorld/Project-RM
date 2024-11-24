@@ -20,12 +20,19 @@ public class Stage2 : MonoBehaviour
     public static List<GameObject> enemies = new List<GameObject>();
     public static bool isSpawn = false;
     public static bool waveClear = false;
+    public static bool wave = false;
     public float stageBPM;
 
     public TMP_Text readyText;
     public TMP_Text countText;
     private float readyTextCharacterSpace;
 
+    public CanvasGroup noteUIContainer;
+    public CanvasGroup playerUIContainer;
+    public CanvasGroup arrowContainer;
+
+    public RectTransform greyBG_up;
+    public RectTransform greyBG_down;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +58,10 @@ public class Stage2 : MonoBehaviour
     IEnumerator StageFlow()
     {
         playerPlayerController.enabled = false;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(0.5f);
+        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine);
+        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(1f);
         int spawnIndex = 0;
         enemies.Clear();
         for (int i = 0; i < amountOfEnemies.Length; i++)
@@ -73,7 +83,7 @@ public class Stage2 : MonoBehaviour
         countText.text = "2";
         yield return new WaitForSeconds(60f / stageBPM);
         LoadBMS.currentTime = 0d;
-        LoadBMS.Instance.play_song("C-Diminished");                      //노래 이름 바꿔야함
+        LoadBMS.Instance.play_song("C-Diminished");                     
         countText.text = "1";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "GO!";
@@ -81,9 +91,44 @@ public class Stage2 : MonoBehaviour
         yield return new WaitForSeconds(60f / stageBPM);
         countText.enabled = false;
         yield return StartCoroutine(WaitForElemenation());
-        //isSpawn = true;
-    }
+        DisableNote();
+        DisablePlayerUI();
 
+        yield return StartCoroutine(WaitForWave());
+        playerPlayerController.enabled = false;
+        EnableNote();
+        EnablePlayerUI();
+        countText.enabled = true;
+        countText.text = "3";
+        yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
+        countText.text = "2";
+        yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
+        LoadBMS.Instance.play_song("C-Diminished");
+        LoadBMS.currentTime = 0d;
+        countText.text = "1";
+        yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
+        countText.text = "GO!";
+        playerPlayerController.enabled = true;
+        yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
+        countText.enabled = false;
+        readyText.enabled = false;   
+        yield return StartCoroutine(WaitForElemenation());
+        
+
+    }
+    IEnumerator WaitForWave()
+    {
+        while (true)
+        {
+            if (wave)
+            {
+                yield break;
+            }
+            yield return null;
+        }
+
+
+    }
     IEnumerator WaitForElemenation()
     {
         while (true)
@@ -111,6 +156,12 @@ public class Stage2 : MonoBehaviour
                 CenterFrame.MusicFadeOut();
                 yield break;
             }
+            else if (enemies.Count == 0)
+            {
+                CenterFrame.MusicFadeOut();
+                yield break;
+            }
+            
             yield return null;
         }
     }
@@ -131,5 +182,25 @@ public class Stage2 : MonoBehaviour
         }
 
         return array;
+    }
+
+    void EnableNote()
+    {
+        noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    void EnablePlayerUI()
+    {
+        playerUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    void DisableNote()
+    {
+        noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine); ;
+    }
+
+    void DisablePlayerUI()
+    {
+        playerUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine);
     }
 }

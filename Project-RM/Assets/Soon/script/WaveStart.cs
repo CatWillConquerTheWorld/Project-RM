@@ -52,7 +52,7 @@ public class WaveStart : MonoBehaviour
     {
         //StartCoroutine(SpawnWave());
         //GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (wave.numberOfEnemies == 0 && !canSpawn && !isClear)
+        if (Stage2.enemies.Count == 0 && !canSpawn && !isClear)
         {
             
             StartCoroutine(Clear());
@@ -102,9 +102,10 @@ public class WaveStart : MonoBehaviour
                 GameObject randomEnemy = wave.typeOfEnemies[Random.Range(0, wave.typeOfEnemies.Length)];
                 Transform randomPoint = spawnPoint[Random.Range(0, spawnPoint.Length)];
 
+                GameObject spawnedEnemy = Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
                 // 적 생성
-                Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
-                randomEnemy.SetActive(true);
+                spawnedEnemy.SetActive(true);
+                Stage2.enemies.Add(spawnedEnemy);
                 // 적의 수를 감소
                 wave.numberOfEnemies--;
 
@@ -130,6 +131,7 @@ public class WaveStart : MonoBehaviour
         monsterSpawn.SetActive(true);
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
         CameraReturns();
+        Stage2.wave = true;
         StartCoroutine(MovieEnd());
         playerPlayerController.enabled = true;
         yield return new WaitForSeconds(2f);
@@ -149,7 +151,7 @@ public class WaveStart : MonoBehaviour
 
         // 이후에 추가적으로 수행할 작업이 있다면 여기에 작성
     }
-    IEnumerator WaitForUser()
+    public IEnumerator WaitForUser()
     {
         isNext = false;
         keyP.SetActive(true); // KeyP 활성화
