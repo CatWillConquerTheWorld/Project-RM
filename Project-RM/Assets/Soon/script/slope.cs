@@ -13,7 +13,7 @@ public class slope : MonoBehaviour
     public Transform player;               // 플레이어 트랜스폼
     private Vector3 targetPosition;         // 로프의 목표 위치
     private bool ropeStopped = true;       // 로프가 정지했는지 여부
-
+    public bool canInteract = true;
 
     public Material outline;
     public Material noOutline;
@@ -23,6 +23,7 @@ public class slope : MonoBehaviour
 
     void Start()
     {
+        canInteract = true;
         targetPosition = ropeEndPoint.position;
     }
 
@@ -31,12 +32,16 @@ public class slope : MonoBehaviour
         if (isPlayerAttached)
         {
             // 로프가 움직이는 동안 플레이어를 고정
-            player.position = new Vector3(transform.position.x, transform.position.y - 1.1f, transform.position.z);
+            player.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            
 
             // 로프가 정지하고 F 키를 누르면 로프에서 내림
+            if (ropeStopped)
+                keyF.SetActive(true);
             if (ropeStopped && Input.GetKeyDown(interactKey))
             {
                 DetachPlayer();
+                keyF.SetActive(false);
             }
         }
         else
@@ -44,8 +49,11 @@ public class slope : MonoBehaviour
             // 로프와 충돌 시 F 키를 눌러 로프에 탑승
             if (Input.GetKeyDown(interactKey) && IsPlayerInRange() && ropeStopped)
             {
+                canInteract = false;
                 AttachPlayer();
                 ropeStopped = false;
+                
+
             }
         }
 
@@ -78,6 +86,7 @@ public class slope : MonoBehaviour
         isPlayerAttached = false;
         player.GetComponent<PlayerController>().enabled = true; // 플레이어 조작 활성화
         player = null; // 플레이어 참조 해제
+        keyF.SetActive(false);
     }
 
     bool IsPlayerInRange()
@@ -88,16 +97,22 @@ public class slope : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (!canInteract && !ropeStopped)
+        {
+            keyF.SetActive(false);
+            GetComponent<SpriteRenderer>().material = noOutline;
+        }           
+        else if (collision.tag == "Player" && Stage2.clearChap1 && canInteract)
         {
             keyF.SetActive(true);
             GetComponent<SpriteRenderer>().material = outline;
         }
+
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && Stage2.clearChap1)
         {
             keyF.SetActive(false);
             GetComponent<SpriteRenderer>().material = noOutline;

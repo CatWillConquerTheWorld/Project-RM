@@ -21,6 +21,7 @@ public class Stage2 : MonoBehaviour
     public static bool isSpawn = false;
     public static bool waveClear = false;
     public static bool wave = false;
+    public static bool clearChap1 = false;
     public float stageBPM;
 
     public TMP_Text readyText;
@@ -93,6 +94,8 @@ public class Stage2 : MonoBehaviour
         yield return StartCoroutine(WaitForElemenation());
         DisableNote();
         DisablePlayerUI();
+
+        clearChap1 = true;
 
         yield return StartCoroutine(WaitForWave());
         playerPlayerController.enabled = false;
