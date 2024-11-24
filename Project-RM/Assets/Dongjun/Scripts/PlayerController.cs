@@ -98,6 +98,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            hp += 5;
+            PlayerUIManager.Instance.ManageHealth(maxHp, hp);
+        }
         if (isDead) return;
         //ÁÂ¿ì ÀÌµ¿
         Move();

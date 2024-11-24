@@ -10,6 +10,10 @@ public class PlayerUIManager : MonoBehaviour
 
     public Image healthBar;
 
+    public Image lowHealthIndicator;
+
+    private float amount;
+
     void Awake()
     {
         if (Instance == null)
@@ -24,18 +28,25 @@ public class PlayerUIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void ManageHealth(float maxHealth, float currentHealth)
     {
         healthBar.fillAmount = currentHealth / maxHealth;
-        //print(currentHealth / maxHealth);
+        if (healthBar.fillAmount < 0.4f) amount = 0.1f;
+        if (healthBar.fillAmount < 0.3f) amount = 0.2f;
+        if (healthBar.fillAmount < 0.15f) amount = 0.4f;
+        if (healthBar.fillAmount >= 0.4f) amount = 0f;
+        lowHealthAnim();
+    }
+
+    public void lowHealthAnim()
+    {
+        lowHealthIndicator.DOFade(amount, 0.5f).SetEase(Ease.InOutSine);
     }
 }
