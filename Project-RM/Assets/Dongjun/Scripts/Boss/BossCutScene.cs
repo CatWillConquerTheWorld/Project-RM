@@ -37,6 +37,8 @@ public class BossCutScene : MonoBehaviour
     public Animator doorAnimator;
 
     public GameObject clock;
+    public GameObject firstPin;
+    public GameObject secondPin;
 
     public Animator bossAnimator;
 
@@ -81,7 +83,7 @@ public class BossCutScene : MonoBehaviour
         playerAnimator.SetBool("isWaking", true);
         yield return StartCoroutine(PlayerMoveX(-1.55f, 2.5f));
         yield return new WaitForSeconds(0.5f);
-        yield return StartCoroutine(CameraMoveX(3f, 1f, "flex"));
+        yield return StartCoroutine(CameraMoveX(3.9f, 1f, "flex"));
         yield return new WaitForSeconds(0.5f);
         bossChat.EnableChat();
         yield return StartCoroutine(bossChat.Chat(4.5f, "... 또 나를 죽이러 왔는가..."));
@@ -94,6 +96,8 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
         StartCoroutine(CameraShake(0.5f, 0.1f, 40, true));
         clock.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+        firstPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+        secondPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         yield return new WaitForSeconds(1f);
         bossAnimator.SetTrigger("SpecialBack");
         yield return StartCoroutine(CameraMoveY(-3.5f, 1f, "flex"));
@@ -103,7 +107,7 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(WaitForUser());
         bossChat.DisableChat();
         StartCoroutine(MovieEnd());
-        yield return StartCoroutine(CameraMoveX(-3f, 1f, "flex"));
+        yield return StartCoroutine(CameraMoveX(-3.9f, 1f, "flex"));
         doorAnimator.SetTrigger("DoorClose");
         doorCollider.enabled = true;
         CameraReturns();

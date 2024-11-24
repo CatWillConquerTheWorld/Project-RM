@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     //½Ì±ÛÅæ ¼±¾ð
     //public static PlayerController instance { get; private set; }
 
-    private float maxHp = 300;
+    private float maxHp;
     public float hp;
     private bool isDead;
 
@@ -72,6 +72,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        maxHp = hp;
+
         isLongAttackCanceled = false;
         isDead = false;
 
@@ -100,7 +102,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            hp += 5;
+            hp += 50;
             PlayerUIManager.Instance.ManageHealth(maxHp, hp);
         }
         if (isDead) return;
@@ -506,5 +508,17 @@ public class PlayerController : MonoBehaviour
     public bool GetIsDead()
     {
         return isDead;
+    }
+
+    public void DealHP(float amount)
+    {
+        print("dealt " + amount);
+        hp -= amount;
+        PlayerUIManager.Instance.ManageHealth(maxHp, hp);
+        //healthBar.fillAmount = hp / maxHp;
+        if (hp <= 0f)
+        {
+            Death();
+        }
     }
 }

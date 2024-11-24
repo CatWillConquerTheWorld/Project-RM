@@ -1,3 +1,5 @@
+using Cinemachine;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +38,21 @@ public class MiddleBoss : MonoBehaviour
     public float currentHealth;
 
     public int attackStack;
+
+    public GameObject clock;
+    public GameObject firstPin;
+    public GameObject secondPin;
+
+    public GameObject underTilemap;
+    public GameObject underTilemapDec;
+    public GameObject leftTilemap;
+    public GameObject leftTilemapDec;
+    public GameObject rightTilemap;
+    public GameObject rightTilemapDec;
+
+    public GameObject enemiesUnder;
+    public GameObject enemiesLeft;
+    public GameObject enemiesRight;
 
     // Start is called before the first frame update
     void Awake()
@@ -281,5 +298,108 @@ public class MiddleBoss : MonoBehaviour
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
+    }
+
+    public void ClockPattern()
+    {
+        firstPin.transform.Rotate(0, 0, 360f / 62f);
+        secondPin.transform.Rotate(0, 0, -360f /62f);
+    }
+
+    public void TilemapsInitiate()
+    {
+        for (int i = 0; i < enemiesUnder.transform.childCount; i++)
+        {
+            enemiesUnder.transform.GetChild(i).transform.DOMoveY(0.3f, 2f).SetEase(Ease.Linear);
+        }
+        for (int i = 0; i < enemiesLeft.transform.childCount; i++)
+        {
+            enemiesLeft.transform.GetChild(i).transform.DOMoveX(enemiesLeft.transform.GetChild(i).transform.position.x + 7f, 2f).SetEase(Ease.Linear);
+        }
+        for (int i = 0; i < enemiesRight.transform.childCount; i++)
+        {
+            enemiesRight.transform.GetChild(i).transform.DOMoveX(enemiesRight.transform.GetChild(i).transform.position.x - 7f, 2f).SetEase(Ease.Linear);
+        }
+        Camera.main.DOShakePosition(2f, 0.1f, 20, 90, false);
+        underTilemap.transform.DOMoveY(0, 2f).SetEase(Ease.Linear);
+        underTilemapDec.transform.DOMoveY(0, 2f).SetEase(Ease.Linear);
+        leftTilemap.transform.DOMoveX(0, 2f).SetEase(Ease.Linear);
+        leftTilemapDec.transform.DOMoveX(0, 2f).SetEase(Ease.Linear);
+        rightTilemap.transform.DOMoveX(0, 2f).SetEase(Ease.Linear);
+        rightTilemapDec.transform.DOMoveX(0, 2f).SetEase(Ease.Linear).OnComplete(() => EnableEnemies());
+
+    }
+
+    void EnableEnemies()
+    {
+        print("Done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        for (int i = 0; i < enemiesUnder.transform.childCount; i++)
+        {
+            enemiesUnder.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
+            enemiesUnder.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+            enemiesUnder.transform.GetChild(i).GetComponent<Cage>().enabled = true;
+            //enemiesUnder.transform.GetChild(i).GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+            enemiesUnder.transform.GetChild(i).tag = "Enemy";
+            enemiesUnder.transform.GetChild(i).gameObject.layer = 7;
+            enemiesUnder.transform.GetChild(i).transform.Find("attackCollider").tag = "EnemyBullet";
+        }
+
+        for (int i = 0; i < enemiesLeft.transform.childCount; i++)
+        {
+            enemiesLeft.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
+            enemiesLeft.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+            enemiesLeft.transform.GetChild(i).GetComponent<Cage>().enabled = true;
+            //enemiesLeft.transform.GetChild(i).GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+            enemiesLeft.transform.GetChild(i).tag = "Enemy";
+            enemiesLeft.transform.GetChild(i).gameObject.layer = 7;
+            enemiesLeft.transform.GetChild(i).transform.Find("attackCollider").tag = "EnemyBullet";
+        }
+
+        for (int i = 0; i < enemiesRight.transform.childCount; i++)
+        {
+            enemiesRight.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);
+            enemiesRight.transform.GetChild(i).GetComponent<EnemyController>().enabled = true;
+            enemiesRight.transform.GetChild(i).GetComponent<Cage>().enabled = true;
+            //enemiesRight.transform.GetChild(i).GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+            enemiesRight.transform.GetChild(i).tag = "Enemy";
+            enemiesRight.transform.GetChild(i).gameObject.layer = 7;
+            enemiesRight.transform.GetChild(i).transform.Find("attackCollider").tag = "EnemyBullet";
+        }
+    }
+
+    public void TilemapsDisinitiate()
+    {
+        CheckEnemies();
+        Camera.main.DOShakePosition(1f, 0.1f, 40, 90, false);
+        underTilemap.transform.DOMoveY(-4, 1f).SetEase(Ease.Linear);
+        underTilemapDec.transform.DOMoveY(-4, 1f).SetEase(Ease.Linear);
+        leftTilemap.transform.DOMoveX(7, 1f).SetEase(Ease.Linear);
+        leftTilemapDec.transform.DOMoveX(7, 1f).SetEase(Ease.Linear);
+        rightTilemap.transform.DOMoveX(-7, 1f).SetEase(Ease.Linear);
+        rightTilemapDec.transform.DOMoveX(-7, 1f).SetEase(Ease.Linear);
+    }
+
+    private void CheckEnemies()
+    {
+        float amount = 0f;
+        for (int i = 0; i < enemiesUnder.transform.childCount; i++)
+        {
+            if (!enemiesUnder.transform.GetChild(i).GetComponent<EnemyController>().isDead) amount += 5f;
+            enemiesUnder.transform.GetChild(i).GetComponent<Animator>().SetTrigger("hit");
+            enemiesUnder.transform.GetChild(i).GetComponent<EnemyController>().Death();
+        }
+        for (int i = 0; i < enemiesLeft.transform.childCount; i++)
+        {
+            if (!enemiesLeft.transform.GetChild(i).GetComponent<EnemyController>().isDead) amount += 5f;
+            enemiesLeft.transform.GetChild(i).GetComponent<Animator>().SetTrigger("hit");
+            enemiesLeft.transform.GetChild(i).GetComponent<EnemyController>().Death();
+        }
+        for (int i = 0; i < enemiesRight.transform.childCount; i++)
+        {
+            if (!enemiesRight.transform.GetChild(i).GetComponent<EnemyController>().isDead) amount += 5f;
+            enemiesRight.transform.GetChild(i).GetComponent<Animator>().SetTrigger("hit");
+            enemiesRight.transform.GetChild(i).GetComponent<EnemyController>().Death();
+        }
+        player.GetComponent<PlayerController>().DealHP(amount);
     }
 }

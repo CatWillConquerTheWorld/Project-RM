@@ -19,9 +19,12 @@ public class EnemyNoteManager : MonoBehaviour
     public bool isBoss;
     public int stage;
 
+    private int bossAttackCount;
+
     void Start()
     {
         isMusicStart = false;
+        bossAttackCount = 0;
         bpm = bpmManager.instance.bpm;
     }
 
@@ -166,6 +169,13 @@ public class EnemyNoteManager : MonoBehaviour
                 {
                     if (isBoss)
                     {
+                        if (bossAttackCount == 87) GameObject.Find("middleBoss").GetComponent<MiddleBoss>().TilemapsInitiate();
+                        if (bossAttackCount == 153) GameObject.Find("middleBoss").GetComponent<MiddleBoss>().TilemapsDisinitiate();
+                        if (bossAttackCount >= 89 && bossAttackCount <= 150)
+                        {
+                            GameObject.Find("middleBoss").GetComponent<MiddleBoss>().ClockPattern();
+                        }
+                        bossAttackCount += 1;
                         GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack += 1;
                         if (GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack % 2 == 0)
                         {

@@ -37,7 +37,9 @@ public class Cage : MonoBehaviour
 
     public void Dead()
     {
-        Tutorial.Instance.deadEnemies += 1;
+        if (Tutorial.Instance != null) { 
+            Tutorial.Instance.deadEnemies += 1; 
+        }
         gameObject.SetActive(false);
     }
 }

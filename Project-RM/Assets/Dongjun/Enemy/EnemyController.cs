@@ -153,9 +153,10 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void Death()
+    public void Death()
     {
-        print("¿∏æ” ¡Í±›");
+        if (isDead) return;
+        print("¿∏æ” ¡Í±›" + gameObject.name);
         isDead = true;
         animator.SetBool("isDead", true);
         transform.tag = "Untagged";
