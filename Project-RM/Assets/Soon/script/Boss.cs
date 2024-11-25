@@ -6,9 +6,9 @@ public class Boss : MonoBehaviour
 {
     Rigidbody2D rigid;
     Animator animator;
-    public GameObject laserPrefab; // 레이저 프리팹
-    public GameObject dangerPrefab; // Danger 이미지 프리팹
-    public Transform laserSpawnPoint; // 레이저 발사 위치
+    //public GameObject laserPrefab; // 레이저 프리팹
+    //public GameObject dangerPrefab; // Danger 이미지 프리팹
+    //public Transform laserSpawnPoint; // 레이저 발사 위치
     public float laserDelay = 1.0f; // Danger 이미지가 사라진 후 레이저가 발사되는 딜레이
     public float dangerDuration = 1.5f; // Danger 이미지 표시 시간
     public float laserDuration = 2f;
@@ -59,32 +59,32 @@ public class Boss : MonoBehaviour
 
     }
 
-    void Jump()
+    public void Jump()
     {
         animator.SetBool("IsJump", true);
     }
 
-    void Attack1()
+    public void Attack1()
     {
         animator.SetTrigger("Attack1");
     }
 
-    void Attack2()
+    public void Attack2()
     {
         animator.SetTrigger("Attack2");
     }
-    
-    void Buff()
+
+    public void Buff()
     {
         animator.SetTrigger("buff");
     }
 
-    void EndJump()
+    public void EndJump()
     {
         animator.SetBool("IsJump", false);
     }
 
-    void Back()
+    public void Back()
     {
         animator.SetTrigger("Back");
     }

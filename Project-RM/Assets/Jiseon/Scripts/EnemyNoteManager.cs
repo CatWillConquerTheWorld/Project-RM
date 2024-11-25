@@ -17,6 +17,7 @@ public class EnemyNoteManager : MonoBehaviour
 
     public bool isTutorial;
     public bool isBoss;
+    public bool isMiddleBoss;
     public int stage;
 
     private int bossAttackCount;
@@ -113,7 +114,12 @@ public class EnemyNoteManager : MonoBehaviour
                 if (isBoss)
                 {
                     GameObject.Find("middleBoss").GetComponent<MiddleBoss>().SpecialFalse();
-                } else
+                }
+                else if (isMiddleBoss)
+                {
+                    Debug.Log("중보 롱노트 시작");
+                }
+                else
                 {
 
                     if (stage == 1)
@@ -135,6 +141,10 @@ public class EnemyNoteManager : MonoBehaviour
                 if (isBoss)
                 {
                     GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Special();
+                }
+                else if (isMiddleBoss)
+                {
+                    Debug.Log("중보 롱노트 끝");
                 }
                 else
                 {
@@ -185,6 +195,10 @@ public class EnemyNoteManager : MonoBehaviour
                         {
                             GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Attack2();
                         }
+                    }
+                    else if (isMiddleBoss)
+                    {
+                        Debug.Log("뭔가 패턴이네요?");
                     }
                     else
                     {
