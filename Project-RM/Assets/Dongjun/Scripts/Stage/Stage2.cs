@@ -36,7 +36,7 @@ public class Stage2 : MonoBehaviour
     public RectTransform greyBG_down;
     // Start is called before the first frame update
     void Start()
-    {
+    {      
         spawnPointList = new GameObject[spawnAmount];
         player = GameObject.FindWithTag("Player");
         playerPlayerController = player.GetComponent<PlayerController>();

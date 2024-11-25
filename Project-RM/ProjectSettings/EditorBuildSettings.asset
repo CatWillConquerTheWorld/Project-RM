@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Dongjun/Scenes/Temp.unity
     guid: 447c913fe05098742b34ebf5183ca4db
   - enabled: 1
+    path: Assets/Soon/scene/spiderBossMap.unity
+    guid: 52c9a0284e300ac47821a2b1bd332a64
+  - enabled: 1
+    path: Assets/Soon/scene/scene3_soon.unity
+    guid: d64a533fed9e6e34fa5cb227e62686a4
+  - enabled: 1
     path: Assets/Dongjun/Scenes/DemoEnd.unity
     guid: e6c1f91f295fa894db69da6a29a9ac89
   m_configObjects: {}

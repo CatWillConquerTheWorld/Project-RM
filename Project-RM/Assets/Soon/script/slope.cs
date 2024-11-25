@@ -21,6 +21,8 @@ public class slope : MonoBehaviour
 
     public GameObject keyF;
 
+    public AudioSource chain;
+
     void Start()
     {
         canInteract = true;
@@ -52,7 +54,8 @@ public class slope : MonoBehaviour
                 canInteract = false;
                 AttachPlayer();
                 ropeStopped = false;
-                
+                chain.Play();
+
 
             }
         }
@@ -66,12 +69,12 @@ public class slope : MonoBehaviour
 
     void MoveRope()
     {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime); 
         // 목표 위치에 도달하면 정지
         if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
         {
             ropeStopped = true;
+            chain.Stop();
         }
     }
 
