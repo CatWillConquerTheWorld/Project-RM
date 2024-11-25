@@ -3986,7 +3986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &72943542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4089,7 +4089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &74767485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,6 +4849,8 @@ MonoBehaviour:
   deadsEnemy: []
   C_Diminished: []
   C_DiminishedEnemy: []
+  C_Monstered: []
+  C_MonsteredEnemy: []
   lineData: []
   title: 
   BPM: 
@@ -32066,6 +32068,7 @@ MonoBehaviour:
   notePos: {fileID: 1792709256}
   isLongNote: 0
   UIGunAnimator: {fileID: 703169371}
+  inputCooldown: 0.1
 --- !u!61 &1792709258
 BoxCollider2D:
   m_ObjectHideFlags: 0

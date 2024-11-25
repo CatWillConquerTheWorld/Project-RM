@@ -243,7 +243,8 @@ public class MiddleBoss : MonoBehaviour
         attack1Collider.SetActive(false);
         attack2Collider.SetActive(false);
         specialCollider.SetActive(false);
-        GetComponent<BoxCollider2D>().enabled = false;
+        gameObject.tag = "Untagged";
+        //GetComponent<BoxCollider2D>().enabled = false;
         //StartCoroutine(DemoEnd());
     }
 

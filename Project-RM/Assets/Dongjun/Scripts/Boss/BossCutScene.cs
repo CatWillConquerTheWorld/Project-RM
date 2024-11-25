@@ -3,6 +3,8 @@ using DG.Tweening;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class BossCutScene : MonoBehaviour
 {
@@ -42,11 +44,18 @@ public class BossCutScene : MonoBehaviour
 
     public Animator bossAnimator;
 
+    public RectTransform greyBG_up;
+    public RectTransform greyBG_down;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
         playerAnimator = player.GetComponent<Animator>();
         playerGun = player.transform.Find("Gun").gameObject;
+
+        playerPlayerController.enabled = false;
+        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine).SetDelay(0.5f);
+        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine).SetDelay(0.5f).OnComplete(() => playerPlayerController.enabled = true);
 
         bossChat = boss.transform.Find("ChatManager").GetComponent<Chatting>();
 
@@ -135,8 +144,27 @@ public class BossCutScene : MonoBehaviour
         countText.enabled = false;
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForElemenation());
-        
-
+        playerPlayerController.enabled = false;
+        StartCoroutine(MovieStart());
+        yield return new WaitForSeconds(1f);
+        bossChat.EnableChat();
+        if (GameObject.Find("middleBoss").transform.localScale.x > 0)
+        {
+            boss.transform.localScale = new Vector3(-5, 5, 0);
+        }
+        yield return StartCoroutine(bossChat.Chat(2f, "크윽..."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(bossChat.Chat(2f, "나도..."));
+        yield return StartCoroutine(WaitForUser());
+        yield return StartCoroutine(bossChat.Chat(3.4f, "...여기까지인건가..."));
+        yield return StartCoroutine(WaitForUser());
+        bossChat.DisableChat();
+        GameObject.Find("middleBoss").GetComponent<Animator>().SetBool("isDisappear", true);
+        yield return new WaitForSeconds(1f);
+        greyBG_up.DOAnchorPosY(270f, 0.3f).SetEase(Ease.InSine);
+        greyBG_down.DOAnchorPosY(-270f, 0.3f).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(0.4f);
+        SceneManager.LoadScene("DemoEnd");
     }
 
     IEnumerator WaitForUser()
