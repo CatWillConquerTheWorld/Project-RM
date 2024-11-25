@@ -25,6 +25,9 @@ public class timingManager : MonoBehaviour
     public bool isLongNote = false;
 
     public Animator UIGunAnimator;
+
+    private float lastInputTime = 0f; // 마지막으로 입력 처리된 시간
+    public float inputCooldown = 0.1f; // 최소 입력 간격 (초)
     void Start()
     {
         theEffect = FindObjectOfType<EffectManager>();
@@ -48,8 +51,11 @@ public class timingManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D) && !isHolding)
         {
-            // Debug.Log("startlongnote");
-            StartLongNote();
+            if (Time.time - lastInputTime >= inputCooldown)
+            {
+                lastInputTime = Time.time; // 마지막 입력 시간 갱신
+                StartLongNote();
+            }
         }
 
         // 스페이스바를 눌렀을 때 롱노트를 유지
@@ -57,11 +63,13 @@ public class timingManager : MonoBehaviour
         {
         }
 
-        // 스페이스바를 떼었을 때 롱노트를 종료
         if (Input.GetKeyUp(KeyCode.D) && isHolding)
         {
-            // Debug.Log("EndLongNote");
-            EndLongNote();
+            if (Time.time - lastInputTime >= inputCooldown)
+            {
+                lastInputTime = Time.time; // 마지막 입력 시간 갱신
+                EndLongNote();
+            }
         }
 
         if(centerFrame.music_change == true)
