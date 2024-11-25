@@ -40,6 +40,10 @@ public class MiddleBossManager : MonoBehaviour
 
     public GameObject cutScene2Trigger;
 
+    public AudioSource playerDown;
+    public AudioSource middleBossDown;
+    public AudioSource doorLock;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -88,9 +92,12 @@ public class MiddleBossManager : MonoBehaviour
         yield return StartCoroutine(WaitForUser());
         yield return new WaitForSeconds(1f);
         yield return StartCoroutine(PlayerMoveX(11.5f, 4f));
-        yield return new WaitForSeconds(1.15f);
-        StartCoroutine(CameraShake(1f, 0.5f, 40, true));       
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.9f);
+        playerDown.Play();
+        yield return new WaitForSeconds(0.3f);
+        yield return StartCoroutine(CameraShake(1f, 0.5f, 40, true));
+
+        yield return new WaitForSeconds(1.5f);
         yield return StartCoroutine(CameraMoveY(-23.71721f, 0.5f, "notflex"));
         yield return new WaitForSeconds(0.5f);
         CameraReturns();
@@ -106,6 +113,7 @@ public class MiddleBossManager : MonoBehaviour
         playerPlayerController.enabled = false;
         playerAnimator.SetBool("isWalking", false);
         doorAnimator.SetTrigger("DoorClose");
+        doorLock.Play();
         doorCollider.enabled = true;
 
         yield return new WaitForSeconds(1.2f);
@@ -114,7 +122,9 @@ public class MiddleBossManager : MonoBehaviour
 
         rb.gravityScale = 10f;
         boss.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
+        middleBossDown.Play();
+        yield return new WaitForSeconds(0.1f);
         yield return StartCoroutine(CameraShake(1f, 1f, 40, false));
         yield return StartCoroutine(CameraShake(0.3f, 1f, 40, true));
         yield return new WaitForSeconds(0.5f);
