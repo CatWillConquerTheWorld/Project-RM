@@ -106,7 +106,7 @@ public class Stage2 : MonoBehaviour
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
         countText.text = "2";
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
-        LoadBMS.Instance.play_song("C-Diminished");
+        LoadBMS.Instance.play_song("C-Monstered");
         LoadBMS.currentTime = 0d;
         countText.text = "1";
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
