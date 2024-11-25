@@ -13,6 +13,7 @@ public class PortalController : MonoBehaviour
     public GameObject KeyF;
     public GameObject[] enemies;
     public Stage1 stage1;
+    public bool isMiddleBoss;
 
     public GameObject player;
     private GameObject playerGun;
@@ -29,27 +30,45 @@ public class PortalController : MonoBehaviour
     }
     void Update()
     {
-        if (Stage1.isSpawn == true)
-        {
-            enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-            if (enemies.Length == 0)
+        if (!isMiddleBoss)
+        {
+            if (Stage1.isSpawn == true)
             {
-                isNoEnemy = true;
-                ApplyMaterialToPortal();
+                enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+                if (enemies.Length == 0)
+                {
+                    isNoEnemy = true;
+                    ApplyMaterialToPortal();
+                }
+            }
+
+            if (isOnPortal && stage1.isOkToGo)
+            {
+                KeyF.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(NextScene());
+                }
+            }
+            else KeyF.SetActive(false);
+        }
+        else
+        {
+            ApplyMaterialToPortal();
+            if (isOnPortal && MiddleBossManager.clear)
+            {
+                KeyF.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(NextScene());
+                }
             }
         }
-
-        if (isOnPortal && stage1.isOkToGo)
-        {
-            KeyF.SetActive(true);
-            
-            if(Input.GetKeyDown(KeyCode.F))
-            {
-                StartCoroutine(NextScene());
-            }
-        }
-        else KeyF.SetActive(false); 
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -92,6 +111,9 @@ public class PortalController : MonoBehaviour
         greyBG_up.GetComponent<RectTransform>().DOAnchorPosY(270f, 0.25f).SetEase(Ease.InSine);
         greyBG_down.GetComponent<RectTransform>().DOAnchorPosY(-270f, 0.25f).SetEase(Ease.InSine);
         yield return new WaitForSeconds(0.3f);
-        SceneLoader.LoadSceneWithLoading("boss_soon");
+        if (isMiddleBoss)
+            SceneLoader.LoadSceneWithLoading("scene3_soon");
+        else
+            SceneLoader.LoadSceneWithLoading("boss_soon");
     }
 }

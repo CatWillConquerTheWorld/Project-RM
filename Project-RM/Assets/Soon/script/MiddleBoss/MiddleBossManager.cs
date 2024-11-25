@@ -44,6 +44,11 @@ public class MiddleBossManager : MonoBehaviour
     public AudioSource middleBossDown;
     public AudioSource doorLock;
 
+    public RectTransform greyBG_up;
+    public RectTransform greyBG_down;
+
+    public static bool clear = false;
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -66,6 +71,8 @@ public class MiddleBossManager : MonoBehaviour
         doorAnimator.SetTrigger("DoorOpen");
         doorCollider.enabled = false;
 
+        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine);
+        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine);
     }
 
     void Update()
@@ -240,6 +247,7 @@ public class MiddleBossManager : MonoBehaviour
                 boss.GetComponent<Boss>().Die();
                 doorAnimator.SetTrigger("DoorOpen");
                 doorCollider.enabled = false;
+                clear = true;
                 yield break;
             }
             yield return null;
