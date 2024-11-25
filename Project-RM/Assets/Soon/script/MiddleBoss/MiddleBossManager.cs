@@ -43,6 +43,7 @@ public class MiddleBossManager : MonoBehaviour
     public AudioSource playerDown;
     public AudioSource middleBossDown;
     public AudioSource doorLock;
+    public AudioSource wind;
 
     public RectTransform greyBG_up;
     public RectTransform greyBG_down;
@@ -98,8 +99,8 @@ public class MiddleBossManager : MonoBehaviour
         keyP.SetActive(true);
         yield return StartCoroutine(WaitForUser());
         yield return new WaitForSeconds(1f);
-        yield return StartCoroutine(PlayerMoveX(11.5f, 4f));
-        yield return new WaitForSeconds(0.9f);
+        yield return StartCoroutine(PlayerMoveX(11.5f, 4f));       
+        yield return new WaitForSeconds(0.9f);        
         playerDown.Play();
         yield return new WaitForSeconds(0.3f);
         yield return StartCoroutine(CameraShake(1f, 0.5f, 40, true));
@@ -129,6 +130,7 @@ public class MiddleBossManager : MonoBehaviour
 
         rb.gravityScale = 10f;
         boss.SetActive(true);
+        wind.Stop();
         yield return new WaitForSeconds(0.3f);
         middleBossDown.Play();
         yield return new WaitForSeconds(0.1f);

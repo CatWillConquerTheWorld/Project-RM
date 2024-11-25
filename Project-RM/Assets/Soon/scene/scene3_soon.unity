@@ -32248,6 +32248,7 @@ MonoBehaviour:
   arrowContainer: {fileID: 0}
   greyBG_up: {fileID: 1317190774}
   greyBG_down: {fileID: 2008884084}
+  wind: {fileID: 0}
 --- !u!4 &1687593067
 Transform:
   m_ObjectHideFlags: 0
