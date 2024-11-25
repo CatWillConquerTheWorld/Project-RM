@@ -57,7 +57,8 @@ public class LoadBMS : MonoBehaviour
     public List<string> C_DiminishedEnemy = new List<string>();
     public List<string> C_Monstered = new List<string>();
     public List<string> C_MonsteredEnemy = new List<string>();
-
+    public List<string> Venomous = new List<string>();
+    public List<string> VenomousEnemy = new List<string>();
 
     private string bmsFilePath = "";
     public string[] lineData;
@@ -91,6 +92,8 @@ public class LoadBMS : MonoBehaviour
         C_DiminishedEnemy = notesetting("C-DiminishedEnemy");
         C_Monstered = notesetting("C-Monstered");
         C_MonsteredEnemy = notesetting("C-MonsteredEnemy");
+        Venomous = notesetting("Venomous");
+        VenomousEnemy = notesetting("VenomousEnemy");
         NoteManager.isMusicStarted = true;
         isEnded = false;
     }
@@ -138,6 +141,12 @@ public class LoadBMS : MonoBehaviour
             twonotesDatas = C_Monstered;
             twonotesEnemyDatas = C_MonsteredEnemy;
             centerFrame.ChangeMusic(5);
+        }else if(name == "Venomous")
+        {
+            bpmManager.instance.bpm = 180;
+            twonotesDatas = Venomous;
+            twonotesEnemyDatas = VenomousEnemy;
+            centerFrame.ChangeMusic(6);
         }
     }
     void Update()
