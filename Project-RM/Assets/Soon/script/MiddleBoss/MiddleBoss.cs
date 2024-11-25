@@ -238,13 +238,24 @@ public class MiddleBoss : MonoBehaviour
 
     public void Die()
     {
-        animator.SetTrigger("Death");
-        portal.SetActive(true);
+        //animator.SetTrigger("Death");
+        //portal.SetActive(true);
         attack1Collider.SetActive(false);
         attack2Collider.SetActive(false);
         specialCollider.SetActive(false);
-        GetComponent<PolygonCollider2D>().enabled = false;
-        StartCoroutine(DemoEnd());
+        GetComponent<BoxCollider2D>().enabled = false;
+        //StartCoroutine(DemoEnd());
+    }
+
+    public void Disappear()
+    {
+        animator.SetBool("isDisappeared", true);
+    }
+
+    public void Appear()
+    {
+        animator.SetBool("isDisappeared", false);
+        animator.SetBool("isAppeared", true);
     }
 
     IEnumerator DemoEnd()
@@ -332,7 +343,7 @@ public class MiddleBoss : MonoBehaviour
 
     void EnableEnemies()
     {
-        print("Done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        //print("Done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         for (int i = 0; i < enemiesUnder.transform.childCount; i++)
         {
             enemiesUnder.transform.GetChild(i).GetComponent<Animator>().SetBool("initiated", true);

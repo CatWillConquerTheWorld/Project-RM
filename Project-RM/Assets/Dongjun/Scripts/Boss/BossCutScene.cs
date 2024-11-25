@@ -80,7 +80,6 @@ public class BossCutScene : MonoBehaviour
     {
         StartCoroutine(MovieStart());
         playerPlayerController.enabled = false;
-        playerAnimator.SetBool("isWaking", true);
         yield return StartCoroutine(PlayerMoveX(-1.55f, 2.5f));
         yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(CameraMoveX(3.9f, 1f, "flex"));
@@ -136,6 +135,8 @@ public class BossCutScene : MonoBehaviour
         countText.enabled = false;
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForElemenation());
+        
+
     }
 
     IEnumerator WaitForUser()

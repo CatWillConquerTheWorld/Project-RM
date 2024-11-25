@@ -183,17 +183,24 @@ public class EnemyNoteManager : MonoBehaviour
                         if (bossAttackCount == 153) GameObject.Find("middleBoss").GetComponent<MiddleBoss>().TilemapsDisinitiate();
                         if (bossAttackCount >= 89 && bossAttackCount <= 150)
                         {
+                            if (bossAttackCount == 89) GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Disappear();
+                            else if (bossAttackCount == 150) GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Appear();
                             GameObject.Find("middleBoss").GetComponent<MiddleBoss>().ClockPattern();
+                            bossAttackCount += 1;
                         }
-                        bossAttackCount += 1;
-                        GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack += 1;
-                        if (GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack % 2 == 0)
+                        else
                         {
-                            GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Dash();
-                            GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Attack1();
-                        } else if (GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack % 2 == 1)
-                        {
-                            GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Attack2();
+                            bossAttackCount += 1;
+                            GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack += 1;
+                            if (GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack % 2 == 0)
+                            {
+                                GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Dash();
+                                GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Attack1();
+                            }
+                            else if (GameObject.Find("middleBoss").GetComponent<MiddleBoss>().attackStack % 2 == 1)
+                            {
+                                GameObject.Find("middleBoss").GetComponent<MiddleBoss>().Attack2();
+                            }
                         }
                     }
                     else if (isMiddleBoss)
