@@ -94,12 +94,12 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(WaitForUser());
         bossAnimator.SetTrigger("SpecialAttack");
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
+        bossAnimator.SetTrigger("SpecialBack");
         StartCoroutine(CameraShake(0.5f, 0.1f, 40, true));
-        clock.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+        clock.GetComponent<SpriteRenderer>().DOFade(0.7f, 0.5f).SetEase(Ease.OutSine);
         firstPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         secondPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         yield return new WaitForSeconds(1f);
-        bossAnimator.SetTrigger("SpecialBack");
         yield return StartCoroutine(CameraMoveY(-3.5f, 1f, "flex"));
         yield return StartCoroutine(bossChat.Chat(4.7f, "...다시는 발을 못 들이도록..."));
         yield return StartCoroutine(WaitForUser());

@@ -286,17 +286,17 @@ public class MiddleBoss : MonoBehaviour
         if (collision.gameObject.name == "Bullet(Clone)")
         {
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
-            animator.SetTrigger("hit");
+            //animator.SetTrigger("hit");
         }
         else if (collision.gameObject.name == "SemiChargedBullet(Clone)")
         {
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
-            animator.SetTrigger("hit");
+            //animator.SetTrigger("hit");
         }
         else if (collision.gameObject.name == "ChargedBullet(Clone)")
         {
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
-            animator.SetTrigger("hit");
+            //animator.SetTrigger("hit");
         }
     }
 

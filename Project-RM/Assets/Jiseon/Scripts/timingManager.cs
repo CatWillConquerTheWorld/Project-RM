@@ -23,6 +23,8 @@ public class timingManager : MonoBehaviour
     public Transform notePos;
 
     public bool isLongNote = false;
+
+    public Animator UIGunAnimator;
     void Start()
     {
         theEffect = FindObjectOfType<EffectManager>();
@@ -179,9 +181,11 @@ public class timingManager : MonoBehaviour
                 else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttackPrepare(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
+                UIGunAnimator.SetTrigger("LongShoot");
                 return true;
             }
         }
+        UIGunAnimator.SetTrigger("back");
         return false;
     }
 
@@ -207,9 +211,11 @@ public class timingManager : MonoBehaviour
                 else if (x == 2) GameObject.FindWithTag("Player").GetComponent<PlayerController>().LongAttack(0.8f);
                 theEffect.JudgementEffect(x);
                 theEffect.NoteHitEffect();
+                UIGunAnimator.SetTrigger("Shoot");
                 return true;
             }
         }
+        UIGunAnimator.SetTrigger("back");
         return false;
     }
 
@@ -299,6 +305,7 @@ public class timingManager : MonoBehaviour
                                 theComboManager.ResetCombo();
                                 GameObject.FindWithTag("Player").GetComponent<PlayerController>().ShortAttack(0.5f);
                             }
+                            UIGunAnimator.SetTrigger("Shoot");
                             return;
                         }
                     }
@@ -307,6 +314,7 @@ public class timingManager : MonoBehaviour
             Debug.Log("단일노트 판정 리셋");
             theComboManager.ResetCombo();
             theEffect.JudgementEffect(timingBoxs.Length);
+            UIGunAnimator.SetTrigger("back");
         }
         else
         {

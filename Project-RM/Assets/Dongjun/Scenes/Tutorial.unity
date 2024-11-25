@@ -10421,6 +10421,7 @@ MonoBehaviour:
   animator: {fileID: 744370687}
   attackStack: 0
   isCharging: 0
+  isDead: 0
 --- !u!1 &751354190
 GameObject:
   m_ObjectHideFlags: 0
@@ -11123,6 +11124,8 @@ GameObject:
   - component: {fileID: 879005782}
   - component: {fileID: 879005784}
   - component: {fileID: 879005783}
+  - component: {fileID: 879005786}
+  - component: {fileID: 879005785}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -11169,7 +11172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2c92145ae07c59c4d9f2b9cf7bb5ae99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcebaa1f3c47a5d4d94bbcfa4ee4c2fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11187,6 +11190,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879005781}
   m_CullTransparentMesh: 1
+--- !u!114 &879005785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879005781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49298288089406c4e8f907a94888699e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnimator: {fileID: 879005786}
+--- !u!95 &879005786
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879005781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4dcde3f18682e45ac06225bddc115b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &881953131
 GameObject:
   m_ObjectHideFlags: 0
@@ -12141,6 +12178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1033391108}
+  lowHealthIndicator: {fileID: 0}
 --- !u!4 &1005437192
 Transform:
   m_ObjectHideFlags: 0
@@ -14128,8 +14166,11 @@ MonoBehaviour:
   bpm: 120
   tfEnemyNoteAppear: {fileID: 491876330}
   tfEnemyLongNoteAppear: {fileID: 1603267876}
+  enemies: []
   isTutorial: 1
   isBoss: 0
+  isMiddleBoss: 0
+  stage: 0
 --- !u!61 &1240104981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15540,6 +15581,7 @@ MonoBehaviour:
   startMusic: 0
   notePos: {fileID: 1321969953}
   isLongNote: 0
+  UIGunAnimator: {fileID: 879005786}
 --- !u!61 &1321969955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16353,8 +16395,11 @@ MonoBehaviour:
   bpm: 120
   tfEnemyNoteAppear: {fileID: 491876330}
   tfEnemyLongNoteAppear: {fileID: 1603267876}
+  enemies: []
   isTutorial: 0
   isBoss: 0
+  isMiddleBoss: 0
+  stage: 0
 --- !u!61 &1418348456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23606,6 +23651,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: de07536cd75a647459301d3813c7228e, type: 3}
   - {fileID: 8300000, guid: b67684b6ed8b83c41aa012531bc73459, type: 3}
   - {fileID: 8300000, guid: 7313524f186c0884f95a2f22525e0be8, type: 3}
+  music_change: 0
 --- !u!82 &1929216815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24620,6 +24666,7 @@ MonoBehaviour:
   animator: {fileID: 2001097010}
   attackStack: 0
   isCharging: 0
+  isDead: 0
 --- !u!1 &2021209512
 GameObject:
   m_ObjectHideFlags: 0
@@ -24836,6 +24883,7 @@ MonoBehaviour:
   animator: {fileID: 2021209518}
   attackStack: 0
   isCharging: 0
+  isDead: 0
 --- !u!1 &2027922376
 GameObject:
   m_ObjectHideFlags: 0
