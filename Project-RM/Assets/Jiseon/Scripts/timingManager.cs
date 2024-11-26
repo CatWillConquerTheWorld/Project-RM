@@ -126,6 +126,7 @@ public class timingManager : MonoBehaviour
                         startMusic = true;
                     }
                     isHolding = true;
+                    startNote.transform.position = centerFrame.transform.position;
                     startNote.SetActive(false);
                     currentNote = startNote;
                     theComboManager.IncreaseCombo();
