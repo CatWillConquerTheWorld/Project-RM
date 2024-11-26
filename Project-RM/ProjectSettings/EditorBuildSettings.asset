@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dongjun/Scenes/Stage1.unity
     guid: 3deec2fcacf6f544c80121ea73d10650
-  - enabled: 1
-    path: Assets/Soon/scene/boss_soon.unity
-    guid: 1a03a4aba4ea4554e8f12762af1eb37c
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -29,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Soon/scene/scene3_soon.unity
     guid: d64a533fed9e6e34fa5cb227e62686a4
+  - enabled: 1
+    path: Assets/Soon/scene/boss_soon.unity
+    guid: 1a03a4aba4ea4554e8f12762af1eb37c
   - enabled: 1
     path: Assets/Dongjun/Scenes/DemoEnd.unity
     guid: e6c1f91f295fa894db69da6a29a9ac89
