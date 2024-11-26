@@ -61,6 +61,8 @@ public class PlayerController : MonoBehaviour
     private bool isLongAttackCanceled;
 
     public GameObject alertMark;
+
+    public bool isInvincible;
     //void Awake()
     //{
     //    if (instance == null)
@@ -72,14 +74,18 @@ public class PlayerController : MonoBehaviour
     //    }
     //}
 
-    void Start()
+    void Awake()
     {
         DisableAlert();
+    }
+
+    void Start()
+    {
         maxHp = hp;
 
         isLongAttackCanceled = false;
         isDead = false;
-
+        isInvincible = false;
         flip = true;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -484,7 +490,7 @@ public class PlayerController : MonoBehaviour
         transform.Find("Gun").gameObject.SetActive(false);
         animator.SetTrigger("hit");
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x - knockBack * accelerator, transform.position.y, 0), 1f);
-        hp -= damage;
+        if (!isInvincible) hp -= damage;
         PlayerUIManager.Instance.ManageHealth(maxHp, hp);
         //healthBar.fillAmount = hp / maxHp;
         if (hp <= 0f)

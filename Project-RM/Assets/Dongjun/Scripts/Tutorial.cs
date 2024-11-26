@@ -234,6 +234,7 @@ public class Tutorial : MonoBehaviour
         keysInfo.GetComponent<RectTransform>().DOAnchorPosY(-50f, 0.5f).SetEase(Ease.OutSine);
         playerPlayerController.enabled = true;
         yield return StartCoroutine(WaitForDoorOpen());
+        playerPlayerController.isInvincible = true;
         playerPlayerController.enabled = false;
         readyText.enabled = true;
         EnableNote();
