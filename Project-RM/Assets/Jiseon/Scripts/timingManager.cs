@@ -24,6 +24,7 @@ public class timingManager : MonoBehaviour
 
     public bool isLongNote = false;
     public bool emptyNoteBoxListCheck = false;
+    public bool longNoteFail = false;
     public Animator UIGunAnimator;
 
     private float lastInputTime = 0f; // 마지막으로 입력 처리된 시간
@@ -59,7 +60,7 @@ public class timingManager : MonoBehaviour
             emptyNoteBoxListCheck = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.D) && !isHolding)
+        if (Input.GetKeyDown(KeyCode.D) && !isHolding && !longNoteFail)
         {
             if (Time.time - lastInputTime >= inputCooldown)
             {
@@ -117,19 +118,7 @@ public class timingManager : MonoBehaviour
                 GameObject startNote = note.transform.GetChild(1).gameObject;
                 endNote = note.transform.GetChild(2).gameObject;
 
-                bool endNoteCheck = false;
 
-                float t_noteRecX = endNote.transform.localPosition.x;
-
-                for (int x = 0; x < 3; x++)
-                {
-                    // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
-                    if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
-                    {
-                        endNoteCheck = true;
-                    }
-                }
-                if (endNoteCheck == false) break;
                 isLongNote = true;
                 curLongNote = note;
                 if (CheckTiming(startNote))

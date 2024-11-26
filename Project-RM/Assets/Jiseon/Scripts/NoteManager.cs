@@ -103,6 +103,7 @@ public class NoteManager : MonoBehaviour
                 
                 if(collision.gameObject.name == "StartNote")
                 {
+                    timingManager.longNoteFail = true;
                     comboManager.ResetCombo();
                 }
                 // comboManager.ResetCombo();
@@ -111,6 +112,7 @@ public class NoteManager : MonoBehaviour
 
             if (collision.gameObject.name == "EndNote")
             {
+                timingManager.longNoteFail = false;
                 Note note = collision.GetComponent<Note>();
                 note.enabled = false;
 
