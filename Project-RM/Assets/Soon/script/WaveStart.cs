@@ -2,6 +2,7 @@ using Cinemachine;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 [System.Serializable]
 public class Wave
@@ -38,7 +39,7 @@ public class WaveStart : MonoBehaviour
     private float nextSpawnTime;
     // Start is called before the first frame update
 
-    public AudioSource quake;
+    public AudioSource rumble;
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -130,12 +131,12 @@ public class WaveStart : MonoBehaviour
     {
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
         yield return new WaitForSeconds(1f);
-        quake.Play();
+        rumble.Play();
         yield return StartCoroutine(CameraShake(5f, 0.1f, 40, false));
         monsterSpawn.SetActive(true);
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
+        StartCoroutine(FadeOutRumble());
         CameraReturns();
-        quake.Stop();
         Stage2.wave = true;
         StartCoroutine(MovieEnd());
         playerPlayerController.enabled = true;
@@ -245,5 +246,19 @@ public class WaveStart : MonoBehaviour
         Camera.main.GetComponent<CinemachineBrain>().enabled = false;
         Camera.main.transform.DOMoveX(amount, duration).SetEase(Ease.Linear);
         yield return new WaitForSeconds(duration);
+    }
+
+    IEnumerator FadeOutRumble()
+    {
+        float startVolume = rumble.volume; // 현재 볼륨 저장
+
+        while (rumble.volume > 0)
+        {
+            rumble.volume -= startVolume * Time.deltaTime / 1f; // 볼륨 감소
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        rumble.Stop(); // 오디오 정지
+        rumble.volume = startVolume; // 볼륨을 원래대로 복구
     }
 }

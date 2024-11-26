@@ -4,6 +4,7 @@ using DG.Tweening;
 using TMPro;
 using Cinemachine;
 using UnityEngine.UI;
+using System.Data;
 
 public class Tutorial : MonoBehaviour
 {
@@ -69,6 +70,8 @@ public class Tutorial : MonoBehaviour
 
     public BoxCollider2D blocker2;
 
+    public AudioSource rumble;
+    public AudioSource wind;
     void Awake()
     {
         if (Instance == null)
@@ -83,6 +86,7 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
+        wind.Play();
         playerPlayerController = player.GetComponent<PlayerController>();
         playerAnimator = player.GetComponent<Animator>();
 
@@ -216,9 +220,11 @@ public class Tutorial : MonoBehaviour
         yield return waitHalfSec;
         yield return StartCoroutine(CameraMoveX(20f, 1f, "flex"));
         StartCoroutine(TestRoomAppear());
+        rumble.Play();
         yield return StartCoroutine(CameraShake(5f, 0.1f, 40, false));
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
         yield return waitHalfSec;
+        StartCoroutine(FadeOutRumble());
         yield return StartCoroutine(CameraMoveX(-20f, 1f, "flex"));
         CameraReturns();
         yield return StartCoroutine(chatting.Chat(7.2f, "저 앞에 있는 건물 안에 시험용 벌레들이 있다네."));
@@ -244,6 +250,7 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //EnemyNoteManager.isMusicStart = true;
         countText.enabled = true;
+        StartCoroutine(FadeOutWind());
         countText.text = "3";
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
         countText.text = "2";
@@ -260,6 +267,7 @@ public class Tutorial : MonoBehaviour
         playerPlayerController.enabled = false;
         StartCoroutine(MovieStart());
         CenterFrame.MusicFadeOut();
+        wind.Play();
         //Pause.isOKToPause = false;
         //EnemyNoteManager.isMusicStart = false;
         DisableNote();
@@ -299,9 +307,10 @@ public class Tutorial : MonoBehaviour
         readyTextCharacterSpace = 50f;
         readyText.characterSpacing = readyTextCharacterSpace;
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
-        readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart); 
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
+        StartCoroutine(FadeOutWind());
         countText.text = "3";
         yield return new WaitForSeconds(60f / bpmManager.instance.bpm);
         countText.text = "2";
@@ -319,6 +328,7 @@ public class Tutorial : MonoBehaviour
         yield return WaitForElemenations(levelTwoEnemies.transform.childCount, 2);
         //Pause.isOKToPause = false;
         CenterFrame.MusicFadeOut();
+        wind.Play();
         DisableNote();
         DisablePlayerUI();
         playerPlayerController.enabled = false;
@@ -581,5 +591,32 @@ public class Tutorial : MonoBehaviour
     void InfoTextChange(string text)
     {
         infoTextTMP.text = text;
+    }
+    IEnumerator FadeOutRumble()
+    {
+        float startVolume = rumble.volume; // 현재 볼륨 저장
+
+        while (rumble.volume > 0)
+        {
+            rumble.volume -= startVolume * Time.deltaTime / 1f; // 볼륨 감소
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        rumble.Stop(); // 오디오 정지
+        rumble.volume = startVolume; // 볼륨을 원래대로 복구
+    }
+
+    IEnumerator FadeOutWind()
+    {
+        float startVolume = wind.volume; // 현재 볼륨 저장
+
+        while (wind.volume > 0)
+        {
+            wind.volume -= startVolume * Time.deltaTime / 1f; // 볼륨 감소
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        wind.Stop(); // 오디오 정지
+        wind.volume = startVolume; // 볼륨을 원래대로 복구
     }
 }
