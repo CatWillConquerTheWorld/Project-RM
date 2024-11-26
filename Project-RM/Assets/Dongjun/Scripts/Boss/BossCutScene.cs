@@ -1,6 +1,7 @@
 using Cinemachine;
 using DG.Tweening;
 using System.Collections;
+using System.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -47,9 +48,12 @@ public class BossCutScene : MonoBehaviour
     public RectTransform greyBG_up;
     public RectTransform greyBG_down;
 
+    public AudioSource wind;
+    public AudioSource magic;
 
     void Start()
     {
+        wind.Play();
         playerPlayerController = player.GetComponent<PlayerController>();
         playerAnimator = player.GetComponent<Animator>();
         playerGun = player.transform.Find("Gun").gameObject;
@@ -105,6 +109,7 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
         bossAnimator.SetTrigger("SpecialBack");
         StartCoroutine(CameraShake(0.5f, 0.1f, 40, true));
+        magic.Play();
         clock.GetComponent<SpriteRenderer>().DOFade(0.7f, 0.5f).SetEase(Ease.OutSine);
         firstPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         secondPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
@@ -131,6 +136,7 @@ public class BossCutScene : MonoBehaviour
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
+        StartCoroutine(FadeOutWind());
         countText.text = "3";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "2";
@@ -304,5 +310,19 @@ public class BossCutScene : MonoBehaviour
     void EnableHealth()
     {
         playerHealth.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
+    }
+
+    IEnumerator FadeOutWind()
+    {
+        float startVolume = wind.volume; // 현재 볼륨 저장
+
+        while (wind.volume > 0)
+        {
+            wind.volume -= startVolume * Time.deltaTime / 1f; // 볼륨 감소
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        wind.Stop(); // 오디오 정지
+        wind.volume = startVolume; // 볼륨을 원래대로 복구
     }
 }
