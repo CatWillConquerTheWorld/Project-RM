@@ -1,7 +1,8 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Boss : MonoBehaviour
 {
     Rigidbody2D rigid;
@@ -21,6 +22,8 @@ public class Boss : MonoBehaviour
     public GameObject stumpCollider;
     public GameObject buffCollider;
     public GameObject jumpCollider;
+    public Image healthBarFiller;
+    public Transform player;
 
     private void Awake()
     {
@@ -36,30 +39,43 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        healthBarFiller.fillAmount = currentHealth / maxHealth;
+        if (player.position.x < transform.position.x)
         {
-            Attack2();
+            transform.localScale = new Vector3(-4, 4, 1); // X축 반전
+        }
+        else // 플레이어가 보스의 오른쪽에 있으면 보스가 오른쪽을 보게 함
+        {
+            transform.localScale = new Vector3(4, 4, 1); // 기본 방향
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Attack1();
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    Attack2();
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    Attack1();
+        //}
         
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Jump();
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Jump();
+        //}
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    EndJump();
+        //}
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    Buff();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Buff();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            currentHealth -= 50;
-        }
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    currentHealth -= 50;
+        //}
 
         //if (HP <= 0)
         //{
@@ -109,6 +125,17 @@ public class Boss : MonoBehaviour
 
     public void EndJump()
     {
+        if (transform.localScale.x < 0) //왼쪽
+        {
+            Vector3 newPosition = new Vector3(player.position.x + 2f, player.position.y + 1f, player.position.z);
+            transform.position = newPosition;
+        }
+        else
+        {
+            Vector3 newPosition = new Vector3(player.position.x + 2f, player.position.y + 1f, player.position.z);
+            transform.position = newPosition;
+        }
+        
         jumpCollider.SetActive(true);
         animator.SetTrigger("Land");
         animator.SetBool("IsJump", false);

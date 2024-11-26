@@ -2238,6 +2238,7 @@ MonoBehaviour:
   enemies: []
   stage1: {fileID: 0}
   isMiddleBoss: 1
+  isStage2: 0
   player: {fileID: 1403204796}
   greyBG_up: {fileID: 526286256}
   greyBG_down: {fileID: 1740509468}
@@ -2381,7 +2382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &433932287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,7 +3031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &527765637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8052,7 +8053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 590131527}
-  lowHealthIndicator: {fileID: 0}
+  lowHealthIndicator: {fileID: 1735413925}
 --- !u!4 &1066428544
 Transform:
   m_ObjectHideFlags: 0
@@ -8261,6 +8262,7 @@ RectTransform:
   m_Children:
   - {fileID: 590131526}
   - {fileID: 1716369252}
+  - {fileID: 1735413924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10089,6 +10091,14 @@ PrefabInstance:
       value: EnemyBullet
       objectReference: {fileID: 0}
     - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1403204795}
+    - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
       propertyPath: buffCollider
       value: 
       objectReference: {fileID: 871546252}
@@ -10104,6 +10114,10 @@ PrefabInstance:
       propertyPath: stumpCollider
       value: 
       objectReference: {fileID: 1408034527}
+    - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
+      propertyPath: healthBarFiller
+      value: 
+      objectReference: {fileID: 994173054}
     - target: {fileID: 6542154616305524776, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.26
@@ -14204,6 +14218,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727894322}
+  m_CullTransparentMesh: 1
+--- !u!1 &1735413923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735413924}
+  - component: {fileID: 1735413926}
+  - component: {fileID: 1735413925}
+  m_Layer: 0
+  m_Name: lowHealth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1735413924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735413923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1111409362}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1735413925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735413923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7421b5e5fc984d64088a58228b64edc5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1735413926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735413923}
   m_CullTransparentMesh: 1
 --- !u!1 &1740509468
 GameObject:
