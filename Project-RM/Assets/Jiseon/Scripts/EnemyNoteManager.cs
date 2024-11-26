@@ -21,11 +21,15 @@ public class EnemyNoteManager : MonoBehaviour
     public int stage;
 
     private int bossAttackCount;
+    private int middleBossAttackCount;
+    private bool middleBossIsAfterJump;
 
     void Start()
     {
         isMusicStart = false;
         bossAttackCount = 0;
+        middleBossAttackCount = 0;
+        middleBossIsAfterJump = false;
         bpm = bpmManager.instance.bpm;
     }
 
@@ -99,7 +103,6 @@ public class EnemyNoteManager : MonoBehaviour
 
             if (collision.gameObject.name == "EndNote")
             {
-                Debug.Log("enemy end long note");
                 Note note = collision.GetComponent<Note>();
                 note.enabled = false;
 
@@ -117,11 +120,11 @@ public class EnemyNoteManager : MonoBehaviour
                 }
                 else if (isMiddleBoss)
                 {
-                    Debug.Log("중보 롱노트 시작");
+                    //Debug.Log(Time.deltaTime.ToString() + "End");
+                    GameObject.Find("Boss").GetComponent<Boss>().EndJump();
                 }
                 else
                 {
-
                     if (stage == 1)
                         enemies = Stage1.enemies;
                     else if (stage == 2)
@@ -129,6 +132,7 @@ public class EnemyNoteManager : MonoBehaviour
 
                     for (int i = 0; i < enemies.Count; i++)
                     {
+                        print(enemies[i].name);
                         if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttack();
                         else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().LongAttack();
                         else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().LongAttack();
@@ -144,7 +148,8 @@ public class EnemyNoteManager : MonoBehaviour
                 }
                 else if (isMiddleBoss)
                 {
-                    Debug.Log("중보 롱노트 끝");
+                    Debug.Log(Time.deltaTime.ToString() + "Start");
+                    GameObject.Find("Boss").GetComponent<Boss>().Jump();
                 }
                 else
                 {
@@ -155,6 +160,7 @@ public class EnemyNoteManager : MonoBehaviour
 
                     for (int i = 0; i < enemies.Count; i++)
                     {
+                        //print(enemies[i].name);
                         if (enemies[i].name == "Assasin(Clone)") enemies[i].GetComponent<Assasin>().LongAttackPrepare();
                         else if (enemies[i].name == "OrbMage(Clone)") enemies[i].GetComponent<OrbMage>().LongAttackPrepare();
                         else if (enemies[i].name == "Enemy_Archer(Clone)") enemies[i].GetComponent<Archer>().LongAttackPrepare();
@@ -205,7 +211,16 @@ public class EnemyNoteManager : MonoBehaviour
                     }
                     else if (isMiddleBoss)
                     {
-                        Debug.Log("뭔가 패턴이네요?");
+                        middleBossAttackCount += 1;
+                        if (middleBossIsAfterJump) GameObject.Find("Boss").GetComponent<Boss>().Buff();
+                        if (middleBossAttackCount % 2 == 1)
+                        {
+                            GameObject.Find("Boss").GetComponent<Boss>().Attack1();
+                        }
+                        else
+                        {
+                            GameObject.Find("Boss").GetComponent<Boss>().Attack2();
+                        }
                     }
                     else
                     {

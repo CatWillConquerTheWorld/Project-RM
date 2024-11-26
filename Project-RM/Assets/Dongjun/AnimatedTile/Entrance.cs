@@ -16,8 +16,10 @@ public class Entrance : MonoBehaviour
     public GameObject greyBG_up;
     public GameObject greyBG_down;
 
+    private bool enterTriggered;
     void Start()
     {
+        enterTriggered = false;
         playerAnimator = player.GetComponent<Animator>();
 
         playerGun = player.transform.Find("Gun").gameObject;
@@ -38,8 +40,9 @@ public class Entrance : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (Input.GetKeyUp(KeyCode.F))
+            if (Input.GetKeyUp(KeyCode.F) && !enterTriggered)
             {
+                enterTriggered = true;
                 StartCoroutine(NextScene());
             }
         }

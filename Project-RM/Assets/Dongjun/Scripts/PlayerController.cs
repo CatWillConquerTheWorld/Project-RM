@@ -59,6 +59,8 @@ public class PlayerController : MonoBehaviour
     private float longNotePrepareMultiplier;
     private float longNoteEndMultiplier;
     private bool isLongAttackCanceled;
+
+    public GameObject alertMark;
     //void Awake()
     //{
     //    if (instance == null)
@@ -72,6 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        DisableAlert();
         maxHp = hp;
 
         isLongAttackCanceled = false;
@@ -520,5 +523,15 @@ public class PlayerController : MonoBehaviour
         {
             Death();
         }
+    }
+
+    public void Alert()
+    {
+        alertMark.SetActive(true);
+    }
+
+    public void DisableAlert()
+    {
+        alertMark.SetActive(false);
     }
 }

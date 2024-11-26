@@ -72,8 +72,8 @@ public class MiddleBossManager : MonoBehaviour
         doorAnimator.SetTrigger("DoorOpen");
         doorCollider.enabled = false;
 
-        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine);
-        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine);
+        greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine).SetDelay(0.5f);
+        greyBG_down.DOAnchorPosY(-810f, 0.3f).SetEase(Ease.InSine).SetDelay(0.5f);
     }
 
     void Update()
@@ -90,8 +90,6 @@ public class MiddleBossManager : MonoBehaviour
         yield return StartCoroutine(PlayerMoveX(10f, 2.5f));
         yield return new WaitForSeconds(0.5f);
 
-
-
         yield return StartCoroutine(CameraMoveY(-8f, 2f, "flex"));
         yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(CameraMoveY(8f, 0.5f, "flex"));
@@ -102,14 +100,14 @@ public class MiddleBossManager : MonoBehaviour
         yield return StartCoroutine(PlayerMoveX(11.5f, 4f));       
         yield return new WaitForSeconds(0.9f);        
         playerDown.Play();
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.4f);
         yield return StartCoroutine(CameraShake(1f, 0.5f, 40, true));
 
         yield return new WaitForSeconds(1.5f);
         yield return StartCoroutine(CameraMoveY(-23.71721f, 0.5f, "notflex"));
         yield return new WaitForSeconds(0.5f);
         CameraReturns();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.75f);
         StartCoroutine(MovieEnd());
         playerPlayerController.enabled = true;
 
@@ -123,9 +121,9 @@ public class MiddleBossManager : MonoBehaviour
         doorAnimator.SetTrigger("DoorClose");
         doorLock.Play();
         doorCollider.enabled = true;
-
+        playerPlayerController.Alert();
         yield return new WaitForSeconds(1.2f);
-
+        playerPlayerController.DisableAlert();
         yield return StartCoroutine(PlayerMoveX(19.5f, 1.5f));
 
         rb.gravityScale = 10f;
@@ -134,8 +132,8 @@ public class MiddleBossManager : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         middleBossDown.Play();
         yield return new WaitForSeconds(0.1f);
-        yield return StartCoroutine(CameraShake(1f, 1f, 40, false));
-        yield return StartCoroutine(CameraShake(0.3f, 1f, 40, true));
+        yield return StartCoroutine(CameraShake(1f, 0.5f, 40, false));
+        yield return StartCoroutine(CameraShake(0.3f, 0.5f, 40, true));
         yield return new WaitForSeconds(0.5f);
         CameraReturns();
         rb.gravityScale = 1f;
@@ -149,7 +147,7 @@ public class MiddleBossManager : MonoBehaviour
         readyText.enabled = true;
         EnableHealth();
         EnableNote();
-
+        StartCoroutine(MovieEnd());
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
         yield return new WaitForSeconds(2f);
@@ -159,7 +157,7 @@ public class MiddleBossManager : MonoBehaviour
         countText.text = "2";
         yield return new WaitForSeconds(60f / stageBPM);
         LoadBMS.currentTime = 0d;
-        LoadBMS.Instance.play_song("deads");
+        LoadBMS.Instance.play_song("Venomous");
         countText.text = "1";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "GO!";
@@ -236,6 +234,7 @@ public class MiddleBossManager : MonoBehaviour
             }
             else if (LoadBMS.Instance.isEnded)
             {
+                yield return new WaitForSeconds((60f / stageBPM) * 8);
                 LoadBMS.currentTime = -10000000d;
                 CenterFrame.MusicFadeOut();
                 StartCoroutine(GameOver.instance.GameOverAnim());

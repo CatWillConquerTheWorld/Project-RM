@@ -17,8 +17,17 @@ public class Boss : MonoBehaviour
     public float maxHealth = 500f;  // 보스의 최대 체력
     public float currentHealth;
 
+    public GameObject spitCollider;
+    public GameObject stumpCollider;
+    public GameObject buffCollider;
+    public GameObject jumpCollider;
+
     private void Awake()
     {
+        spitCollider.SetActive(false);
+        stumpCollider.SetActive(false);
+        buffCollider.SetActive(false);
+        jumpCollider.SetActive(false);
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
@@ -62,26 +71,53 @@ public class Boss : MonoBehaviour
     public void Jump()
     {
         animator.SetBool("IsJump", true);
+        print("Fuck~");
     }
 
     public void Attack1()
     {
+        spitCollider.SetActive(true);
         animator.SetTrigger("Attack1");
+    }
+
+    public void Attack1Back()
+    {
+        spitCollider.SetActive(false);
     }
 
     public void Attack2()
     {
+        stumpCollider.SetActive(true);
         animator.SetTrigger("Attack2");
+    }
+
+    public void Attack2Back()
+    {
+        stumpCollider.SetActive(false);
     }
 
     public void Buff()
     {
+        buffCollider.SetActive(true);
         animator.SetTrigger("buff");
+    }
+
+    public void BuffBack()
+    {
+        buffCollider.SetActive(false);
     }
 
     public void EndJump()
     {
+        jumpCollider.SetActive(true);
+        animator.SetTrigger("Land");
         animator.SetBool("IsJump", false);
+        print("Shit!!!!!!!!!!");
+    }
+
+    public void EndJumpEnd()
+    {
+        jumpCollider.SetActive(false);
     }
 
     public void Back()
@@ -111,5 +147,10 @@ public class Boss : MonoBehaviour
             currentHealth -= collision.gameObject.GetComponent<Bullet>().myAttackRate;
             animator.SetTrigger("hit");
         }
+    }
+
+    public void SpitColliderActivate()
+    {
+
     }
 }

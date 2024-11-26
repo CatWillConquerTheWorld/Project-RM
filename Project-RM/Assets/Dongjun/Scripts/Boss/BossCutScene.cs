@@ -234,6 +234,7 @@ public class BossCutScene : MonoBehaviour
             }
             else if (LoadBMS.Instance.isEnded)
             {
+                yield return new WaitForSeconds((60f / stageBPM) * 8);
                 LoadBMS.currentTime = -10000000d;
                 CenterFrame.MusicFadeOut();
                 StartCoroutine(GameOver.instance.GameOverAnim());
