@@ -36,6 +36,7 @@ public class Respawn : MonoBehaviour
     IEnumerator Restart()
     {     
         yield return new WaitForSeconds(0.3f);
+        LoadBMS.Instance.noteNum = 0;
         SceneManager.LoadScene("scene3_soon");
     }
 

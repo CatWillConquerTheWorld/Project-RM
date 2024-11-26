@@ -23,7 +23,7 @@ public class timingManager : MonoBehaviour
     public Transform notePos;
 
     public bool isLongNote = false;
-
+    public bool emptyNoteBoxListCheck = false;
     public Animator UIGunAnimator;
 
     private float lastInputTime = 0f; // 마지막으로 입력 처리된 시간
@@ -49,6 +49,16 @@ public class timingManager : MonoBehaviour
     // 시작 콤보 + 1 / 홀딩 / 끝 콤보 + 1 
     void Update()
     {
+        if (LoadBMS.Instance.noteNum == 0 && !emptyNoteBoxListCheck)
+        {
+            clearBoxNoteList();
+            emptyNoteBoxListCheck = true;
+        }
+        else if (LoadBMS.Instance.noteNum != 0)
+        {
+            emptyNoteBoxListCheck = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.D) && !isHolding)
         {
             if (Time.time - lastInputTime >= inputCooldown)
@@ -85,6 +95,17 @@ public class timingManager : MonoBehaviour
         }
     }
     
+    public void clearBoxNoteList()
+    {
+        foreach (GameObject note in boxNoteList)
+        {
+            Destroy(note);
+        }
+
+        // 리스트를 비운다
+        boxNoteList.Clear();
+    }
+
     public void StartLongNote()
     {
         foreach (GameObject note in boxNoteList)

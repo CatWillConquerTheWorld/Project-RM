@@ -38,6 +38,7 @@ public class LoadBMS : MonoBehaviour
         enemyNoteManager = FindObjectOfType<EnemyNoteManager>();
         //Debug.Log("OnSceneLoaded: " + scene.name);
         //Debug.Log(mode);
+
     }
 
     void OnDisable()
@@ -64,7 +65,7 @@ public class LoadBMS : MonoBehaviour
     public string[] lineData;
     public string title, BPM;
     public List<string> notesData = new List<string>();
-    int noteNum = 0;
+    public int noteNum = 0;
     public List<string> twonotesDatas = new List<string>();
     public List<string> twonotesEnemyDatas = new List<string>();
     public static double currentTime = 0d;
@@ -147,6 +148,9 @@ public class LoadBMS : MonoBehaviour
             twonotesDatas = Venomous;
             twonotesEnemyDatas = VenomousEnemy;
             centerFrame.ChangeMusic(6);
+        }else if(name == "")
+        {
+            centerFrame.music_change = true;
         }
     }
     void Update()
@@ -525,4 +529,5 @@ public class LoadBMS : MonoBehaviour
             }
         }
     }
+
 }

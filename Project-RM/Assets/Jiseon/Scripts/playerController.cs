@@ -10,7 +10,8 @@ public class playerController : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        int size = timingManager.boxNoteList.Count;
+        if (Input.GetKeyDown(KeyCode.A) && size > 0)
         {
             timingManager.CheckTiming();
         }
