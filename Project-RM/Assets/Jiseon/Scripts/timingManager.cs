@@ -112,10 +112,25 @@ public class timingManager : MonoBehaviour
         {
             if (note.name == "LONGNOTE(Clone)")
             {
-                isLongNote = true;
+                
                 GameObject middleNote = note.transform.GetChild(0).gameObject;
                 GameObject startNote = note.transform.GetChild(1).gameObject;
                 endNote = note.transform.GetChild(2).gameObject;
+
+                bool endNoteCheck = false;
+
+                float t_noteRecX = endNote.transform.localPosition.x;
+
+                for (int x = 0; x < 3; x++)
+                {
+                    // Debug.Log(t_noteRecX + " , " + timingBoxs[x].x + " , " + timingBoxs[x].y);
+                    if (timingBoxs[x].x <= t_noteRecX && t_noteRecX <= timingBoxs[x].y)
+                    {
+                        endNoteCheck = true;
+                    }
+                }
+                if (endNoteCheck == false) break;
+                isLongNote = true;
                 curLongNote = note;
                 if (CheckTiming(startNote))
                 {

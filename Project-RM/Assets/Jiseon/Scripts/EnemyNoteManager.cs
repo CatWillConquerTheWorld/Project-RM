@@ -37,6 +37,7 @@ public class EnemyNoteManager : MonoBehaviour
     {
         // if (isMusicStart) NoteMaking();
         if (!isMusicStart) currentTime = 0f;
+
     }
 
     GameObject curLongNote;
