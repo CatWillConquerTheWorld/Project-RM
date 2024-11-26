@@ -5285,7 +5285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBD80\uD328\uD55C \uC655"
+  m_text: "\uBC30\uD6C4 \uC138\uB825"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 733aa9827fd90754eb7982fc006b2963, type: 2}
   m_sharedMaterial: {fileID: 1984908092445310569, guid: 733aa9827fd90754eb7982fc006b2963, type: 2}
@@ -6890,6 +6890,8 @@ MonoBehaviour:
   startMusic: 0
   notePos: {fileID: 604404309}
   isLongNote: 0
+  emptyNoteBoxListCheck: 0
+  longNoteFail: 0
   UIGunAnimator: {fileID: 2140519230}
   inputCooldown: 0.1
 --- !u!61 &604404311
@@ -43526,10 +43528,13 @@ MonoBehaviour:
   C_DiminishedEnemy: []
   C_Monstered: []
   C_MonsteredEnemy: []
+  Venomous: []
+  VenomousEnemy: []
   lineData: []
   title: 
   BPM: 
   notesData: []
+  noteNum: 0
   twonotesDatas: []
   twonotesEnemyDatas: []
   noteManager: {fileID: 0}

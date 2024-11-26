@@ -7607,7 +7607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC655\uAC70\uBBF8"
+  m_text: "\uBD80\uD328\uD55C \uC655"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 733aa9827fd90754eb7982fc006b2963, type: 2}
   m_sharedMaterial: {fileID: 1984908092445310569, guid: 733aa9827fd90754eb7982fc006b2963, type: 2}
@@ -10096,7 +10096,7 @@ PrefabInstance:
       objectReference: {fileID: 1403204795}
     - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
       propertyPath: maxHealth
-      value: 300
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 2985609140317216914, guid: eda097a191166cf49803ecc03dd6d103, type: 3}
       propertyPath: buffCollider
@@ -17495,6 +17495,7 @@ MonoBehaviour:
   notePos: {fileID: 1975143093}
   isLongNote: 0
   emptyNoteBoxListCheck: 0
+  longNoteFail: 0
   UIGunAnimator: {fileID: 1453078680}
   inputCooldown: 0.1
 --- !u!61 &1975143095

@@ -164,6 +164,7 @@ MonoBehaviour:
   notePos: {fileID: 16607131}
   isLongNote: 0
   emptyNoteBoxListCheck: 0
+  longNoteFail: 0
   UIGunAnimator: {fileID: 839485485}
   inputCooldown: 0.1
 --- !u!224 &16607131
@@ -31076,7 +31077,7 @@ MonoBehaviour:
   targetXPosition: 39
   statueXPosition: 44
   moveSpeed: 2
-  quake: {fileID: 1568805243}
+  rumble: {fileID: 1568805243}
 --- !u!4 &1568805242
 Transform:
   m_ObjectHideFlags: 0

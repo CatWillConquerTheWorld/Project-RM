@@ -7,6 +7,7 @@ public class Boss : MonoBehaviour
 {
     Rigidbody2D rigid;
     Animator animator;
+    BoxCollider2D col;
     //public GameObject laserPrefab; // 레이저 프리팹
     //public GameObject dangerPrefab; // Danger 이미지 프리팹
     //public Transform laserSpawnPoint; // 레이저 발사 위치
@@ -33,6 +34,7 @@ public class Boss : MonoBehaviour
         jumpCollider.SetActive(false);
         rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        col = GetComponent<BoxCollider2D>();
         currentHealth = maxHealth;
     }
 
@@ -155,6 +157,7 @@ public class Boss : MonoBehaviour
     public void Die()
     {
         animator.SetTrigger("die");
+        col.enabled = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
