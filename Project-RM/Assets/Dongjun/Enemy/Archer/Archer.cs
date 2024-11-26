@@ -62,12 +62,13 @@ public class Archer : MonoBehaviour
     {
         longAttackCollider.SetActive(true);
         enemyController.animator.SetTrigger("longAttack");
+        enemyController.animator.SetBool("isCharging", false);
     }
 
     public void back()
     {
         enemyController.isCharging = false;
-        enemyController.animator.SetBool("isCharging", false);
+        //enemyController.animator.SetBool("isCharging", false);
         attackCollider.SetActive(false);
         longAttackCollider.SetActive(false);
         enemyController.animator.SetTrigger("back");
