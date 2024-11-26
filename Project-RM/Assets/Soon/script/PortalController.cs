@@ -14,6 +14,7 @@ public class PortalController : MonoBehaviour
     public GameObject[] enemies;
     public Stage1 stage1;
     public bool isMiddleBoss;
+    public bool isStage2;
 
     public GameObject player;
     private GameObject playerGun;
@@ -31,8 +32,40 @@ public class PortalController : MonoBehaviour
     void Update()
     {
 
-        if (!isMiddleBoss)
+        if (isMiddleBoss)
         {
+
+            ApplyMaterialToPortal();
+            if (isOnPortal && MiddleBossManager.clear)
+            {
+                KeyF.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(NextScene());
+                }
+            }
+
+        }
+        else if (isStage2)
+        {
+
+            if (isOnPortal && Stage2.waveClear)
+            {
+                ApplyMaterialToPortal();
+                KeyF.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    StartCoroutine(GoToBoss());
+                }
+            }
+            else KeyF.SetActive(false);
+        }
+        else
+        {
+            
+
             if (Stage1.isSpawn == true)
             {
                 enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -44,6 +77,9 @@ public class PortalController : MonoBehaviour
                 }
             }
 
+
+
+
             if (isOnPortal && stage1.isOkToGo)
             {
                 KeyF.SetActive(true);
@@ -54,19 +90,6 @@ public class PortalController : MonoBehaviour
                 }
             }
             else KeyF.SetActive(false);
-        }
-        else
-        {
-            ApplyMaterialToPortal();
-            if (isOnPortal && MiddleBossManager.clear)
-            {
-                KeyF.SetActive(true);
-
-                if (Input.GetKeyDown(KeyCode.F))
-                {
-                    StartCoroutine(NextScene());
-                }
-            }
         }
         
     }
@@ -114,6 +137,19 @@ public class PortalController : MonoBehaviour
         if (isMiddleBoss)
             SceneLoader.LoadSceneWithLoading("scene3_soon");
         else
-            SceneLoader.LoadSceneWithLoading("boss_soon");
+            SceneLoader.LoadSceneWithLoading("spiderBossMap");
+    }
+
+    IEnumerator GoToBoss()
+    {
+        player.GetComponent<PlayerController>().enabled = false;
+        playerAnimator.SetBool("isWalking", false);
+        player.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f);
+        playerGun.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        greyBG_up.GetComponent<RectTransform>().DOAnchorPosY(270f, 0.25f).SetEase(Ease.InSine);
+        greyBG_down.GetComponent<RectTransform>().DOAnchorPosY(-270f, 0.25f).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(0.3f);
+        SceneLoader.LoadSceneWithLoading("boss_soon");
     }
 }

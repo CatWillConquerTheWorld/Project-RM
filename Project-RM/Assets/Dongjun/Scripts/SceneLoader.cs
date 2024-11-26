@@ -16,6 +16,7 @@ public class SceneLoader : MonoBehaviour
 
     public static void LoadSceneWithLoading(string nextScene)
     {
+        LoadBMS.Instance.noteNum = 0;
         sceneName = nextScene;
         SceneManager.LoadScene("Loading");  
     }

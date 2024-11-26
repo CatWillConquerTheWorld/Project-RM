@@ -37,6 +37,8 @@ public class WaveStart : MonoBehaviour
     public float moveSpeed = 2.0f;
     private float nextSpawnTime;
     // Start is called before the first frame update
+
+    public AudioSource quake;
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -80,7 +82,8 @@ public class WaveStart : MonoBehaviour
         Stage2.waveClear = true;
         playerPlayerController.enabled = false;
         yield return StartCoroutine(MovieStart());
-        StartCoroutine(CameraMoveX(3f, 1f, "flex"));
+        StartCoroutine(CameraMoveX(56.3f, 1f, "noflex"));
+        StartCoroutine(CameraMoveY(-37.2f, 1f, "noflex"));
         yield return new WaitForSeconds(1f);
         doorAnimator.SetBool("isOpen", true);
         door.GetComponent<BoxCollider2D>().enabled = false;
@@ -127,10 +130,12 @@ public class WaveStart : MonoBehaviour
     {
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
         yield return new WaitForSeconds(1f);
+        quake.Play();
         yield return StartCoroutine(CameraShake(5f, 0.1f, 40, false));
         monsterSpawn.SetActive(true);
         yield return StartCoroutine(CameraShake(1f, 0.1f, 40, true));
         CameraReturns();
+        quake.Stop();
         Stage2.wave = true;
         StartCoroutine(MovieEnd());
         playerPlayerController.enabled = true;

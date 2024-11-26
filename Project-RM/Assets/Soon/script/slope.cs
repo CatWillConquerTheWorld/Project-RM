@@ -33,8 +33,6 @@ public class slope : MonoBehaviour
     {
         if (isPlayerAttached)
         {
-            // 로프가 움직이는 동안 플레이어를 고정
-            player.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             
 
             // 로프가 정지하고 F 키를 누르면 로프에서 내림
@@ -81,14 +79,19 @@ public class slope : MonoBehaviour
     void AttachPlayer()
     {
         isPlayerAttached = true;
-        player.GetComponent<PlayerController>().enabled = false; // 플레이어 조작 비활성화
+        player.SetParent(transform); // 밧줄을 부모로 설정
+        player.GetComponent<PlayerController>().enabled = false;
+        player.position = new Vector3(16.5f, -6.8f, 0f);
+
+        player.GetComponent<Rigidbody2D>().gravityScale = 0;
     }
 
     void DetachPlayer()
     {
         isPlayerAttached = false;
+        player.SetParent(null); // 부모 설정 해제
         player.GetComponent<PlayerController>().enabled = true; // 플레이어 조작 활성화
-        player = null; // 플레이어 참조 해제
+        player.GetComponent<Rigidbody2D>().gravityScale = 3;
         keyF.SetActive(false);
     }
 
