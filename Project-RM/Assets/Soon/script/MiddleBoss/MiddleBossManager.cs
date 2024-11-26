@@ -98,9 +98,10 @@ public class MiddleBossManager : MonoBehaviour
         yield return StartCoroutine(WaitForUser());
         yield return new WaitForSeconds(1f);
         yield return StartCoroutine(PlayerMoveX(11.5f, 4f));       
-        yield return new WaitForSeconds(0.9f);        
+        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.07f);
         playerDown.Play();
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.33f);
         yield return StartCoroutine(CameraShake(1f, 0.5f, 40, true));
 
         yield return new WaitForSeconds(1.5f);
@@ -234,7 +235,7 @@ public class MiddleBossManager : MonoBehaviour
             }
             else if (LoadBMS.Instance.isEnded)
             {
-                yield return new WaitForSeconds((60f / stageBPM) * 8);
+                yield return new WaitForSeconds((60f / stageBPM) * 12);
                 LoadBMS.currentTime = -10000000d;
                 CenterFrame.MusicFadeOut();
                 StartCoroutine(GameOver.instance.GameOverAnim());

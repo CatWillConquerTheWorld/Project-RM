@@ -47,6 +47,7 @@ public class BossCutScene : MonoBehaviour
     public RectTransform greyBG_up;
     public RectTransform greyBG_down;
 
+
     void Start()
     {
         playerPlayerController = player.GetComponent<PlayerController>();
@@ -213,7 +214,7 @@ public class BossCutScene : MonoBehaviour
             }
             else if (LoadBMS.Instance.isEnded)
             {
-                yield return new WaitForSeconds((60f / stageBPM) * 8);
+                yield return new WaitForSeconds((60f / stageBPM) * 12);
                 LoadBMS.currentTime = -10000000d;
                 CenterFrame.MusicFadeOut();
                 StartCoroutine(GameOver.instance.GameOverAnim());
