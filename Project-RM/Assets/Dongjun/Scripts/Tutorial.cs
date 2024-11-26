@@ -429,7 +429,7 @@ public class Tutorial : MonoBehaviour
     IEnumerator WaitForGun()
     {
         while (!holdingGun) yield return null;
-        gun.SetActive(false);
+        //gun.SetActive(false);
         playerGun.SetActive(true);
         yield return null;
     }

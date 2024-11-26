@@ -45,6 +45,7 @@ public class InteractiveGun : MonoBehaviour
                 Tutorial.Instance.holdingGun = true;
                 isPlayerHoldingGun = true;
                 playerGun.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
     }
