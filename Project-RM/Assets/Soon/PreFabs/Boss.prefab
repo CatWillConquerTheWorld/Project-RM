@@ -440,8 +440,14 @@ MonoBehaviour:
   dangerDuration: 1.5
   laserDuration: 2
   laserCount: 3
-  maxHealth: 10000
+  maxHealth: 700
   currentHealth: 0
+  spitCollider: {fileID: 0}
+  stumpCollider: {fileID: 0}
+  buffCollider: {fileID: 0}
+  jumpCollider: {fileID: 0}
+  healthBarFiller: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &7873754747210560636
 GameObject:
   m_ObjectHideFlags: 0

@@ -224,7 +224,7 @@ public class MiddleBoss : MonoBehaviour
         while (this.dashTime < this.maxDashTime)
         {
             this.dashTime += Time.deltaTime;
-            this.rigid.velocity = this.tmpDir.normalized * (this.moveSpeed * 7);
+            this.rigid.velocity = this.tmpDir.normalized * (this.moveSpeed * 5);
             yield return null; // 다음 프레임까지 기다림
         }
 
