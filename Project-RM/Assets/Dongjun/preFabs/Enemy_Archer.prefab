@@ -141,7 +141,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &5636523435341161304
 BoxCollider2D:
@@ -261,6 +261,7 @@ MonoBehaviour:
   animator: {fileID: 9044397603014616695}
   attackStack: 0
   isCharging: 0
+  isDead: 0
 --- !u!95 &9044397603014616695
 Animator:
   serializedVersion: 5

@@ -335,12 +335,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 50
+  fullHp: 0
+  onGround: 0
   playerRadius: 5
   moveSpeed: 3
   velocity: 0
   animator: {fileID: 5791313282504553794}
   attackStack: 0
   isCharging: 0
+  isDead: 0
 --- !u!114 &7446159206123728533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +381,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 6
 --- !u!1 &7099364715641584114
 GameObject:
