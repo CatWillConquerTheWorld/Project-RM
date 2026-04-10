@@ -1,15 +1,15 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class timingManager : MonoBehaviour
 {
-    public static List<GameObject> boxNoteList = new List<GameObject>(); // ���� ��Ʈ��
+    public static List<GameObject> boxNoteList = new List<GameObject>(); // 占쏙옙占쏙옙 占쏙옙트占쏙옙
 
     [SerializeField] Transform Center = null;
-    [SerializeField] RectTransform[] timingRect = null; // Ÿ�̹� ��� ���� ������
-    Vector2[] timingBoxs = null; // �������� �ִ�, �ּڰ�
+    [SerializeField] RectTransform[] timingRect = null; // 타占싱뱄옙 占쏙옙占?占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙
+    Vector2[] timingBoxs = null; // 占쏙옙占쏙옙占쏙옙占쏙옙 占쌍댐옙, 占쌍솟곤옙
 
     EffectManager theEffect;
     ComboManager theComboManager;
@@ -18,7 +18,7 @@ public class timingManager : MonoBehaviour
     public bool startMusic = false;
 
     private bool isHolding = false;
-    private GameObject currentNote = null; // ���� ó�� ���� ��Ʈ
+    private GameObject currentNote = null; // 占쏙옙占쏙옙 처占쏙옙 占쏙옙占쏙옙 占쏙옙트
     GameObject endNote, curLongNote;
     public Transform notePos;
 
@@ -27,27 +27,27 @@ public class timingManager : MonoBehaviour
     public bool longNoteFail = false;
     public Animator UIGunAnimator;
 
-    private float lastInputTime = 0f; // ���������� �Է� ó���� �ð�
-    public float inputCooldown = 0.1f; // �ּ� �Է� ���� (��)
+    private float lastInputTime = 0f; // 占쏙옙占쏙옙占쏙옙占쏙옙占쏙옙 占쌉뤄옙 처占쏙옙占쏙옙 占시곤옙
+    public float inputCooldown = 0.1f; // 占쌍쇽옙 占쌉뤄옙 占쏙옙占쏙옙 (占쏙옙)
     void Start()
     {
         theEffect = FindObjectOfType<EffectManager>();
         noteManager = FindObjectOfType<NoteManager>();
         centerFrame = FindObjectOfType<CenterFrame>();
 
-        // Ÿ�̹� �ڽ� ����
+        // 타占싱뱄옙 占쌘쏙옙 占쏙옙占쏙옙
         timingBoxs = new Vector2[timingRect.Length];
 
         for(int i = 0; i < timingBoxs.Length; i++)
         {
             timingBoxs[i].Set(Center.localPosition.x - timingRect[i].rect.width / 2,
-                Center.localPosition.x + timingRect[i].rect.width / 2); // �������� = �ּҰ�, �ִ밪
+                Center.localPosition.x + timingRect[i].rect.width / 2); // 占쏙옙占쏙옙占쏙옙占쏙옙 = 占쌍소곤옙, 占쌍대값
         }
 
         theComboManager = FindObjectOfType<ComboManager>();
     }
 
-    // ���� �޺� + 1 / Ȧ�� / �� �޺� + 1 
+    // 占쏙옙占쏙옙 占쌨븝옙 + 1 / 홀占쏙옙 / 占쏙옙 占쌨븝옙 + 1 
     void Update()
     {
         if (LoadBMS.Instance.noteNum == 0 && !emptyNoteBoxListCheck)
@@ -64,12 +64,12 @@ public class timingManager : MonoBehaviour
         {
             if (Time.time - lastInputTime >= inputCooldown)
             {
-                lastInputTime = Time.time; // ������ �Է� �ð� ����
+                lastInputTime = Time.time; // 占쏙옙占쏙옙占쏙옙 占쌉뤄옙 占시곤옙 占쏙옙占쏙옙
                 StartLongNote();
             }
         }
 
-        // �����̽��ٸ� ������ �� �ճ�Ʈ�� ����
+        // 占쏙옙占쏙옙占싱쏙옙占쌕몌옙 占쏙옙占쏙옙占쏙옙 占쏙옙 占쌌놂옙트占쏙옙 占쏙옙占쏙옙
         if (Input.GetKey(KeyCode.D) && isHolding)
         {
         }
@@ -78,20 +78,14 @@ public class timingManager : MonoBehaviour
         {
             if (Time.time - lastInputTime >= inputCooldown)
             {
-                lastInputTime = Time.time; // ������ �Է� �ð� ����
+                lastInputTime = Time.time; // 占쏙옙占쏙옙占쏙옙 占쌉뤄옙 占시곤옙 占쏙옙占쏙옙
                 EndLongNote();
             }
         }
 
         if(centerFrame.music_change == true)
         {
-            foreach (GameObject note in boxNoteList)
-            {
-                Destroy(note);
-            }
-
-            // ����Ʈ�� ����
-            boxNoteList.Clear();
+            clearBoxNoteList();
             centerFrame.music_change = false;
         }
     }
@@ -100,10 +94,33 @@ public class timingManager : MonoBehaviour
     {
         foreach (GameObject note in boxNoteList)
         {
-            Destroy(note);
+            if (note == null)
+            {
+                continue;
+            }
+
+            if (note.name == "LONGNOTE(Clone)")
+            {
+                longnote3 longNote = note.GetComponent<longnote3>();
+                if (longNote != null && ObjectPool.instance != null)
+                {
+                    ObjectPool.instance.ReturnLongNote(note, longNote.isEnemyLongNote);
+                }
+                else
+                {
+                    note.SetActive(false);
+                }
+            }
+            else
+            {
+                note.SetActive(false);
+                if (ObjectPool.instance != null)
+                {
+                    ObjectPool.instance.noteQueue.Enqueue(note);
+                }
+            }
         }
 
-        // ����Ʈ�� ����
         boxNoteList.Clear();
     }
 
@@ -152,16 +169,16 @@ public class timingManager : MonoBehaviour
     {
         if (currentNote == null) return; 
 
-        if (currentNote.activeSelf == false) // start note�� �ƴٸ�?
+        if (currentNote.activeSelf == false) // start note占쏙옙 占싣다몌옙?
         {
-            // Debug.Log("��ŸƮ ��Ʈ ����");
+            // Debug.Log("占쏙옙타트 占쏙옙트 占쏙옙占쏙옙");
         }
-        else // start long note �� �������ٸ�?
+        else // start long note 占쏙옙 占쏙옙占쏙옙占쏙옙占쌕몌옙?
         {
             isHolding = false;
             theComboManager.ResetCombo();
-            Debug.Log("��ŸƮ ��Ʈ ������ ���� ����");
-            theEffect.JudgementEffect(timingBoxs.Length); // �̽� ó��
+            Debug.Log("占쏙옙타트 占쏙옙트 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙");
+            theEffect.JudgementEffect(timingBoxs.Length); // 占싱쏙옙 처占쏙옙
             noteManager.resetLongNote(endNote);
             currentNote = null;
             return;
@@ -176,17 +193,17 @@ public class timingManager : MonoBehaviour
             endNote.SetActive(false);
             theComboManager.IncreaseCombo();
         }
-        else // �� ��Ʈ�� ���ƴٸ�?
+        else // 占쏙옙 占쏙옙트占쏙옙 占쏙옙占싣다몌옙?
         {
-            // Debug.Log("���Ⱑ ����?");
-            // EndNote ������ ������ ������ �̽� ó��
+            // Debug.Log("占쏙옙占썩가 占쏙옙占쏙옙?");
+            // EndNote 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙 占싱쏙옙 처占쏙옙
             endNote.transform.SetParent(curLongNote.transform);
             endNote.transform.SetSiblingIndex(2);
             isHolding = false;
             
-            Debug.Log("�ճ�Ʈ �� ���� ����");
+            Debug.Log("占쌌놂옙트 占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙");
             theComboManager.ResetCombo();
-            theEffect.JudgementEffect(timingBoxs.Length); // �̽� ó��
+            theEffect.JudgementEffect(timingBoxs.Length); // 占싱쏙옙 처占쏙옙
             // noteManager.resetLongNote(endNote);
         }
         isLongNote = false;
@@ -273,41 +290,41 @@ public class timingManager : MonoBehaviour
                         // Debug.Log(note.gameObject.name);
                         if (note.gameObject.name != "Note(Clone)")
                         {
-                            //// �ճ�Ʈ�� ����, �߰�, �� ��Ʈ�� �����Ͽ� ó��
+                            //// 占쌌놂옙트占쏙옙 占쏙옙占쏙옙, 占쌩곤옙, 占쏙옙 占쏙옙트占쏙옙 占쏙옙占쏙옙占싹울옙 처占쏙옙
                             //GameObject startNote = note.transform.GetChild(1).gameObject;
                             //GameObject endNote = note.transform.GetChild(2).gameObject;
 
                             //if (CheckTiming(startNote))
                             //{
-                            //    // ���� ��Ʈ ����
-                            //    // noteComponent.HideNote(); // ���� ��Ʈ ��Ȱ��ȭ
+                            //    // 占쏙옙占쏙옙 占쏙옙트 占쏙옙占쏙옙
+                            //    // noteComponent.HideNote(); // 占쏙옙占쏙옙 占쏙옙트 占쏙옙활占쏙옙화
                             //    startNote.SetActive(false);
                             //    theComboManager.IncreaseCombo();
                             //    theEffect.JudgementEffect(x);
                             //}
                             //else if (CheckTiming(endNote))
                             //{
-                            //    // �� ��Ʈ ����
-                            //    // noteComponent.HideNote(); // �� ��Ʈ ��Ȱ��ȭ
+                            //    // 占쏙옙 占쏙옙트 占쏙옙占쏙옙
+                            //    // noteComponent.HideNote(); // 占쏙옙 占쏙옙트 占쏙옙활占쏙옙화
                             //    endNote.SetActive(false);
                             //    theComboManager.IncreaseCombo();
                             //    theEffect.JudgementEffect(x);
                             //}
                             //else
                             //{
-                            //    // �ճ�Ʈ�� ���� �Ǵ� ���� �ƴ� ���, �Ϲ� ��Ʈ�� �����ϰ� ó��
+                            //    // 占쌌놂옙트占쏙옙 占쏙옙占쏙옙 占실댐옙 占쏙옙占쏙옙 占싣댐옙 占쏙옙占? 占싹뱄옙 占쏙옙트占쏙옙 占쏙옙占쏙옙占싹곤옙 처占쏙옙
                             //    theComboManager.ResetCombo();
                             //    theEffect.JudgementEffect(timingBoxs.Length);
                             //}
 
-                            //// ����Ʈ���� ����
+                            //// 占쏙옙占쏙옙트占쏙옙占쏙옙 占쏙옙占쏙옙
                             //boxNoteList.RemoveAt(i);
                             //return;
                             return;
                         }
                         else
                         {
-                            // ���� ��Ʈ ó��
+                            // 占쏙옙占쏙옙 占쏙옙트 처占쏙옙
                             noteComponent.HideNote();
                             boxNoteList.RemoveAt(i);
 
@@ -345,7 +362,7 @@ public class timingManager : MonoBehaviour
                     }
                 }
             }
-            Debug.Log("���ϳ�Ʈ ���� ����");
+            Debug.Log("占쏙옙占싹놂옙트 占쏙옙占쏙옙 占쏙옙占쏙옙");
             theComboManager.ResetCombo();
             theEffect.JudgementEffect(timingBoxs.Length);
             UIGunAnimator.SetTrigger("back");
@@ -357,3 +374,4 @@ public class timingManager : MonoBehaviour
         
     }
 }
+

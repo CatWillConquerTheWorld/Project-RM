@@ -8462,6 +8462,8 @@ MonoBehaviour:
   bpm: 0
   bpminterval: 0
   isNoteActive: 1
+  isEnemyLongNote: 0
+  isReturnedToPool: 0
 --- !u!1 &693976124
 GameObject:
   m_ObjectHideFlags: 0
@@ -32383,6 +32385,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1955687941}
     - target: {fileID: 2098545907917501659, guid: 8c88c464b75c3de4696582199c403d80, type: 3}
+      propertyPath: maxHealth
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098545907917501659, guid: 8c88c464b75c3de4696582199c403d80, type: 3}
       propertyPath: secondPin
       value: 
       objectReference: {fileID: 1231071482}
@@ -35795,6 +35801,8 @@ MonoBehaviour:
   wall: {fileID: 1389386987}
   healthContainer: {fileID: 139627002}
   playerHealth: {fileID: 97746915}
+  hiddenBossName: "\uBC30\uD6C4 \uC138\uB825"
+  revealedBossName: "\uD0C0\uB77D\uD55C \uAE30\uC0AC \uB79C\uC2AC\uB86F"
   doorCollider: {fileID: 251997024}
   doorAnimator: {fileID: 251997025}
   clock: {fileID: 1785399827}
@@ -36354,6 +36362,8 @@ MonoBehaviour:
   bpm: 0
   bpminterval: 0
   isNoteActive: 1
+  isEnemyLongNote: 0
+  isReturnedToPool: 0
 --- !u!1 &1179745331
 GameObject:
   m_ObjectHideFlags: 0

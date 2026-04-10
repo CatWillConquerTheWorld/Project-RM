@@ -147,7 +147,11 @@ public class LoadBMS : MonoBehaviour
     public void play_song(string name)
     {
         isEnded = false;
+        noteNum = 0;
+        currentTime = 0d;
         ComboManager.Instance?.ResetCombo();
+        noteManager?.ResetRhythmState();
+        enemyNoteManager?.ResetRhythmState();
 
         if (name == "deads")
         {

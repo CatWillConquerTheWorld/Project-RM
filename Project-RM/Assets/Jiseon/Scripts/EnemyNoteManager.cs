@@ -44,6 +44,15 @@ public class EnemyNoteManager : MonoBehaviour
     longnote3 curLongNoteScript;
     bool is_longnote_start = false;
 
+    public void ResetRhythmState()
+    {
+        is_longnote_start = false;
+        curLongNote = null;
+        curLongNoteScript = null;
+        notecheck = false;
+        currentTime = 0d;
+    }
+
     public void NoteMaker(string note)
     {
         if (note == "AA")
@@ -117,8 +126,8 @@ public class EnemyNoteManager : MonoBehaviour
                 if (parentGameObject != null)
                 {
                     parentGameObject.transform.position = tfEnemyLongNoteAppear.position;
-                    parentGameObject.gameObject.SetActive(false);
-                    ObjectPool.instance.enemyLongNoteQueue.Enqueue(parentGameObject.gameObject);
+                    longnote3 longNote = parentGameObject.GetComponent<longnote3>();
+                    ObjectPool.instance.ReturnLongNote(parentGameObject.gameObject, longNote == null || longNote.isEnemyLongNote);
                 }
                 if (isBoss)
                 {
@@ -271,6 +280,7 @@ public class EnemyNoteManager : MonoBehaviour
         
         rect.position = tfEnemyLongNoteAppear.position;
 
+        longnote3.isEnemyLongNote = true;
         longnote3.isNoteActive = true;
         longnote3.startNote.transform.position = tfEnemyNoteAppear.position;
         longnote3.endNote.transform.position = tfEnemyNoteAppear.position;
