@@ -35,6 +35,8 @@ public class BossCutScene : MonoBehaviour
 
     public CanvasGroup healthContainer;
     public CanvasGroup playerHealth;
+    public string hiddenBossName = "\uBC30\uD6C4 \uC138\uB825";
+    public string revealedBossName = "\uD0C0\uB77D\uD55C \uAE30\uC0AC \uB79C\uC2AC\uB86F";
 
     public BoxCollider2D doorCollider;
     public Animator doorAnimator;
@@ -50,6 +52,8 @@ public class BossCutScene : MonoBehaviour
 
     public AudioSource wind;
     public AudioSource magic;
+
+    private TMP_Text bossNameText;
 
     void Start()
     {
@@ -71,6 +75,11 @@ public class BossCutScene : MonoBehaviour
         readyText.enabled = false;
 
         healthContainer.gameObject.SetActive(false);
+        bossNameText = healthContainer.GetComponentInChildren<TMP_Text>(true);
+        if (bossNameText != null)
+        {
+            bossNameText.text = hiddenBossName;
+        }
 
         noteUIContainer.alpha = 0f;
 
@@ -99,11 +108,11 @@ public class BossCutScene : MonoBehaviour
         yield return StartCoroutine(CameraMoveX(3.9f, 1f, "flex"));
         yield return new WaitForSeconds(0.5f);
         bossChat.EnableChat();
-        yield return StartCoroutine(bossChat.Chat(4.5f, "... ¶Ç ³ª¸¦ Á×ÀÌ·¯ ¿Ô´Â°¡..."));
+        yield return StartCoroutine(bossChat.Chat(4.5f, "... ë˜ ë‚˜ë¥¼ ì£½ì´ëŸ¬ ì™”ëŠ”ê°€..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(4.4f, "ÀÌ¹ø¿¡µµ ÃÊÂ¥ÀÎ °Í °°±º..."));
+        yield return StartCoroutine(bossChat.Chat(4.4f, "ì´ë²ˆì—ë„ ì´ˆì§œì¸ ê²ƒ ê°™êµ°..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(2.5f, "...±×·¸´Ù¸é..."));
+        yield return StartCoroutine(bossChat.Chat(2.5f, "...ê·¸ë ‡ë‹¤ë©´..."));
         yield return StartCoroutine(WaitForUser());
         bossAnimator.SetTrigger("SpecialAttack");
         yield return StartCoroutine(CameraMoveY(3.5f, 1f, "flex"));
@@ -115,9 +124,9 @@ public class BossCutScene : MonoBehaviour
         secondPin.GetComponent<SpriteRenderer>().DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         yield return new WaitForSeconds(1f);
         yield return StartCoroutine(CameraMoveY(-3.5f, 1f, "flex"));
-        yield return StartCoroutine(bossChat.Chat(4.7f, "...´Ù½Ã´Â ¹ßÀ» ¸ø µéÀÌµµ·Ï..."));
+        yield return StartCoroutine(bossChat.Chat(4.7f, "...ë‹¤ì‹œëŠ” ë°œì„ ëª» ë“¤ì´ë„ë¡..."));
         yield return StartCoroutine(WaitForUser());
-        yield return StartCoroutine(bossChat.Chat(3.8f, "...¸ñ¼ûÀ» ²÷¾îÁÖ°Ú´Ù..."));
+        yield return StartCoroutine(bossChat.Chat(3.8f, "...ëª©ìˆ¨ì„ ëŠì–´ì£¼ê² ë‹¤..."));
         yield return StartCoroutine(WaitForUser());
         bossChat.DisableChat();
         StartCoroutine(MovieEnd());
@@ -127,6 +136,10 @@ public class BossCutScene : MonoBehaviour
         CameraReturns();
         healthContainer.alpha = 0f;
         healthContainer.gameObject.SetActive(true);
+        if (bossNameText != null)
+        {
+            bossNameText.text = revealedBossName;
+        }
         healthContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
         wall.enabled = true;
@@ -216,7 +229,6 @@ public class BossCutScene : MonoBehaviour
                 CenterFrame.MusicFadeOut();
                 StartCoroutine(GameOver.instance.GameOverAnim());
                 yield break;
-
             }
             else if (LoadBMS.Instance.isEnded)
             {
@@ -240,11 +252,11 @@ public class BossCutScene : MonoBehaviour
                 {
                     boss.transform.localScale = new Vector3(-5, 5, 0);
                 }
-                yield return StartCoroutine(bossChat.Chat(2f, "Å©À¹..."));
+                yield return StartCoroutine(bossChat.Chat(2f, "í¬ìœ½..."));
                 yield return StartCoroutine(WaitForUser());
-                yield return StartCoroutine(bossChat.Chat(2f, "³ªµµ..."));
+                yield return StartCoroutine(bossChat.Chat(2f, "ë‚˜ë„..."));
                 yield return StartCoroutine(WaitForUser());
-                yield return StartCoroutine(bossChat.Chat(3.4f, "...¿©±â±îÁöÀÎ°Ç°¡..."));
+                yield return StartCoroutine(bossChat.Chat(3.4f, "...ì—¬ê¸°ê¹Œì§€ì¸ê±´ê°€..."));
                 yield return StartCoroutine(WaitForUser());
                 bossChat.DisableChat();
                 GameObject.Find("middleBoss").GetComponent<Animator>().SetBool("isDisappear", true);
@@ -297,6 +309,7 @@ public class BossCutScene : MonoBehaviour
 
     void EnableNote()
     {
+        LoadBMS.Instance.ShowRhythmStartBanner();
         noteUIContainer.gameObject.SetActive(true);
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
     }
@@ -306,7 +319,6 @@ public class BossCutScene : MonoBehaviour
         noteUIContainer.DOFade(0f, 0.5f).SetEase(Ease.InSine).OnComplete(() => noteUIContainer.gameObject.SetActive(false));
     }
 
-
     void EnableHealth()
     {
         playerHealth.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
@@ -314,15 +326,14 @@ public class BossCutScene : MonoBehaviour
 
     IEnumerator FadeOutWind()
     {
-        float startVolume = wind.volume; // ÇöÀç º¼·ı ÀúÀå
-
+        float startVolume = wind.volume;
         while (wind.volume > 0)
         {
-            wind.volume -= startVolume * Time.deltaTime / 1f; // º¼·ı °¨¼Ò
-            yield return null; // ´ÙÀ½ ÇÁ·¹ÀÓ±îÁö ´ë±â
+            wind.volume -= startVolume * Time.deltaTime / 1f;
+            yield return null;
         }
 
-        wind.Stop(); // ¿Àµğ¿À Á¤Áö
-        wind.volume = startVolume; // º¼·ıÀ» ¿ø·¡´ë·Î º¹±¸
+        wind.Stop();
+        wind.volume = startVolume;
     }
 }

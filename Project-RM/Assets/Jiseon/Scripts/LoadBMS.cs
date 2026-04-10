@@ -1,12 +1,61 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadBMS : MonoBehaviour
 {
     public static LoadBMS Instance = null;
+
+    private const string EnemyBannerName = "ENEMY";
+    private const string YoursBannerName = "YOURS";
+
+    [System.Serializable]
+    private class RhythmStartBannerTarget
+    {
+        public Graphic graphic;
+        public SpriteRenderer spriteRenderer;
+        public float visibleAlpha;
+
+        public RhythmStartBannerTarget(Graphic graphic)
+        {
+            this.graphic = graphic;
+            visibleAlpha = graphic.color.a > 0f ? graphic.color.a : 1f;
+        }
+
+        public RhythmStartBannerTarget(SpriteRenderer spriteRenderer)
+        {
+            this.spriteRenderer = spriteRenderer;
+            visibleAlpha = spriteRenderer.color.a > 0f ? spriteRenderer.color.a : 1f;
+        }
+
+        public void SetAlpha(float alpha)
+        {
+            if (graphic != null)
+            {
+                Color color = graphic.color;
+                color.a = alpha;
+                graphic.color = color;
+            }
+            else if (spriteRenderer != null)
+            {
+                Color color = spriteRenderer.color;
+                color.a = alpha;
+                spriteRenderer.color = color;
+            }
+        }
+    }
+
+    [Header("Rhythm Start Banner")]
+    [SerializeField] private float startBannerFadeInDuration = 0.35f;
+    [SerializeField] private float startBannerVisibleDuration = 3f;
+    [SerializeField] private float startBannerFadeOutDuration = 0.35f;
+
+    private readonly List<RhythmStartBannerTarget> rhythmStartBanners = new List<RhythmStartBannerTarget>();
+    private Coroutine rhythmStartBannerRoutine;
 
     private void Awake()
     {
@@ -17,7 +66,7 @@ public class LoadBMS : MonoBehaviour
         }
         else
         {
-            if(Instance!= this)
+            if (Instance != this)
             {
                 Destroy(this.gameObject);
             }
@@ -26,26 +75,22 @@ public class LoadBMS : MonoBehaviour
 
     void OnEnable()
     {
-        // 씬 매니저의 sceneLoaded에 체인을 건다.
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    // 체인을 걸어서 이 함수는 매 씬마다 호출된다.
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         centerFrame = FindObjectOfType<CenterFrame>();
         noteManager = FindObjectOfType<NoteManager>();
         enemyNoteManager = FindObjectOfType<EnemyNoteManager>();
-        //Debug.Log("OnSceneLoaded: " + scene.name);
-        //Debug.Log(mode);
-
+        CacheRhythmStartBanners();
+        SetRhythmStartBannerAlpha(0f);
     }
 
     void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-
 
     public List<string> tutorialLevel1 = new List<string>();
     public List<string> tutorialLevel2 = new List<string>();
@@ -102,6 +147,8 @@ public class LoadBMS : MonoBehaviour
     public void play_song(string name)
     {
         isEnded = false;
+        ComboManager.Instance?.ResetCombo();
+
         if (name == "deads")
         {
             bpmManager.instance.bpm = 120;
@@ -115,7 +162,6 @@ public class LoadBMS : MonoBehaviour
             twonotesEnemyDatas = WTFEnemy;
             twonotesDatas = WTF;
             centerFrame.ChangeMusic(2);
-
         }
         else if (name == "tutorialLevel1")
         {
@@ -123,67 +169,57 @@ public class LoadBMS : MonoBehaviour
             twonotesDatas = tutorialLevel1;
             twonotesEnemyDatas.Clear();
             centerFrame.ChangeMusic(0);
-
-        }else if(name == "tutorialLevel2")
+        }
+        else if (name == "tutorialLevel2")
         {
             bpmManager.instance.bpm = 120;
             twonotesDatas = tutorialLevel2;
             twonotesEnemyDatas = tutorialLevel2Enemy;
             centerFrame.ChangeMusic(1);
-        }else if(name == "C-Diminished")
+        }
+        else if (name == "C-Diminished")
         {
             bpmManager.instance.bpm = 105;
             twonotesDatas = C_Diminished;
             twonotesEnemyDatas = C_DiminishedEnemy;
             centerFrame.ChangeMusic(4);
-        }else if(name == "C-Monstered")
+        }
+        else if (name == "C-Monstered")
         {
             bpmManager.instance.bpm = 105;
             twonotesDatas = C_Monstered;
             twonotesEnemyDatas = C_MonsteredEnemy;
             centerFrame.ChangeMusic(5);
-        }else if(name == "Venomous")
+        }
+        else if (name == "Venomous")
         {
             bpmManager.instance.bpm = 180;
             twonotesDatas = Venomous;
             twonotesEnemyDatas = VenomousEnemy;
             centerFrame.ChangeMusic(6);
-        }else if(name == "")
+        }
+        else if (name == "")
         {
             centerFrame.music_change = true;
         }
     }
+
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Y))
-        //{
-        //    currentTime = 0d;
-        //    noteNum = 0;
-        //    play_song("deads");
-        //}else if (Input.GetKeyDown(KeyCode.U))
-        //{
-        //    currentTime = 0d;
-        //    noteNum = 0;
-        //    play_song("tutorialLevel2");
-        //}
-        //else if(Input.GetKeyDown(KeyCode.O))
-        //{
-        //    SceneManager.LoadScene("Stage1");
-        //}
-
         if (twonotesDatas.Count == 0) return;
 
         currentTime += Time.deltaTime;
-        double BeatTime = bpmManager.instance.bpmInterval / 4; // 16분 음표 시간 단위로 출력
+        double beatTime = bpmManager.instance.bpmInterval / 4;
 
-        if (currentTime >= BeatTime)
+        if (currentTime >= beatTime)
         {
             if (noteNum < twonotesDatas.Count && noteNum < twonotesEnemyDatas.Count)
             {
                 noteManager.NoteMaker(twonotesDatas[noteNum]);
                 enemyNoteManager.NoteMaker(twonotesEnemyDatas[noteNum]);
                 noteNum++;
-            }else if (noteNum < twonotesDatas.Count)
+            }
+            else if (noteNum < twonotesDatas.Count)
             {
                 noteManager.NoteMaker(twonotesDatas[noteNum]);
                 noteNum++;
@@ -191,32 +227,26 @@ public class LoadBMS : MonoBehaviour
             else
             {
                 noteNum = 0;
-                // Debug.Log("노래가 끝났습니다.");
-
                 isEnded = true;
-
                 twonotesDatas.Clear();
                 twonotesEnemyDatas.Clear();
-
                 Debug.Log(twonotesDatas.Count);
             }
-            currentTime -= BeatTime;
+            currentTime -= beatTime;
         }
-
     }
 
     public List<string> notesetting(string bms_name)
     {
         List<string> noteDatalist = new List<string>();
-        string bmsFilePath = Application.streamingAssetsPath + "/" +bms_name + ".bms"; // 노트 이름 받아오기
+        string bmsFilePath = Application.streamingAssetsPath + "/" + bms_name + ".bms";
 
         string[] lineData = File.ReadAllLines(bmsFilePath)
                        .Where(line => !string.IsNullOrWhiteSpace(line))
                        .ToArray();
-        int noteNum = 0;
 
         bool isNotesSection = false;
-        string line1 = "", line2 = ""; // 같은 마디가 나눠진건지 확인
+        string line1 = "", line2 = "";
 
         for (int i = 0; i < lineData.Length; i++)
         {
@@ -236,7 +266,6 @@ public class LoadBMS : MonoBehaviour
 
                 if (line1 == line2 && i + 1 < lineData.Length)
                 {
-                    // Debug.Log(lineData[i].Substring(7) + " , " + lineData[i + 1].Substring(7));
                     noteDatalist.Add(mergeLine(lineData[i].Substring(7), lineData[i + 1].Substring(7)));
                     i++;
                 }
@@ -257,13 +286,11 @@ public class LoadBMS : MonoBehaviour
         List<string> convertwoNoteData = new List<string>();
         for (int j = 0; j < list.Count; j++)
         {
-            string data = list[j];
             if (list[j].Length == 32)
             {
                 for (int i = 0; i < 32; i += 2)
                 {
-                    string two = "";
-                    two = list[j].Substring(i, 2);
+                    string two = list[j].Substring(i, 2);
                     convertwoNoteData.Add(two);
                 }
             }
@@ -280,8 +307,7 @@ public class LoadBMS : MonoBehaviour
             {
                 for (int i = 0; i < 32; i += 2)
                 {
-                    string two = "";
-                    two = data.Substring(i, 2);
+                    string two = data.Substring(i, 2);
                     twonotesDatas.Add(two);
                 }
             }
@@ -295,86 +321,82 @@ public class LoadBMS : MonoBehaviour
 
         if (line_1.Length == 2)
         {
-            for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_1.Length; i += 2)
             {
-                convert1 += line_1.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert1 += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+                convert1 += line_1.Substring(i, 2);
+                convert1 += "000000000000000000000000000000";
             }
             line_1 = convert1;
         }
         else if (line_1.Length == 4)
         {
-            for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_1.Length; i += 2)
             {
-                convert1 += line_1.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert1 += "00000000000000"; // 16분음표를 위해 '00' 추가
+                convert1 += line_1.Substring(i, 2);
+                convert1 += "00000000000000";
             }
             line_1 = convert1;
         }
         else if (line_1.Length == 8)
         {
-            for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_1.Length; i += 2)
             {
-                convert1 += line_1.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert1 += "000000"; // 16분음표를 위해 '00' 추가
+                convert1 += line_1.Substring(i, 2);
+                convert1 += "000000";
             }
             line_1 = convert1;
         }
         else if (line_1.Length == 16)
         {
-            for (int i = 0; i < line_1.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_1.Length; i += 2)
             {
-                convert1 += line_1.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert1 += "00"; // 16분음표를 위해 '00' 추가
+                convert1 += line_1.Substring(i, 2);
+                convert1 += "00";
             }
             line_1 = convert1;
         }
 
         if (line_2.Length == 2)
         {
-            for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_2.Length; i += 2)
             {
-                convert2 += line_2.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert2 += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+                convert2 += line_2.Substring(i, 2);
+                convert2 += "000000000000000000000000000000";
             }
             line_2 = convert2;
         }
         else if (line_2.Length == 4)
         {
-            for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_2.Length; i += 2)
             {
-                convert2 += line_2.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert2 += "00000000000000"; // 16분음표를 위해 '00' 추가
+                convert2 += line_2.Substring(i, 2);
+                convert2 += "00000000000000";
             }
             line_2 = convert2;
         }
         else if (line_2.Length == 8)
         {
-            for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_2.Length; i += 2)
             {
-                convert2 += line_2.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert2 += "000000"; // 16분음표를 위해 '00' 추가
+                convert2 += line_2.Substring(i, 2);
+                convert2 += "000000";
             }
             line_2 = convert2;
         }
         else if (line_2.Length == 16)
         {
-            for (int i = 0; i < line_2.Length; i += 2) // i < data.Length로 수정
+            for (int i = 0; i < line_2.Length; i += 2)
             {
-                convert2 += line_2.Substring(i, 2); // 2글자씩 잘라서 추가
-                convert2 += "00"; // 16분음표를 위해 '00' 추가
+                convert2 += line_2.Substring(i, 2);
+                convert2 += "00";
             }
             line_2 = convert2;
         }
 
-        // Debug.Log(line_1.Length + " , " + line_2.Length);
-
         for (int i = 0; i < 32; i += 2)
         {
-            string twoNum1 = "", twoNum2 = "";
-
-            twoNum1 = line_1.Substring(i, 2);
-            twoNum2 = line_2.Substring(i, 2);
+            string twoNum1 = line_1.Substring(i, 2);
+            string twoNum2 = line_2.Substring(i, 2);
 
             if (twoNum1 != "00" && twoNum2 != "00")
             {
@@ -396,51 +418,50 @@ public class LoadBMS : MonoBehaviour
         return merge;
     }
 
-    public List<string> changeNoteData(List<string> list) // 16분음표로 표기
+    public List<string> changeNoteData(List<string> list)
     {
-        // Debug.Log(notesData.Count);
         List<string> convertedNotesData = new List<string>();
 
-        for (int j = 0; j < list.Count; j++) // notesData의 인덱스를 사용하여 반복
+        for (int j = 0; j < list.Count; j++)
         {
-            string data = list[j]; // 현재 데이터 가져오기
+            string data = list[j];
             string convert = "";
 
             if (data.Length == 2)
             {
-                for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
+                for (int i = 0; i < data.Length; i += 2)
                 {
-                    convert += data.Substring(i, 2); // 2글자씩 잘라서 추가
-                    convert += "000000000000000000000000000000"; // 16분음표를 위해 '00' 추가
+                    convert += data.Substring(i, 2);
+                    convert += "000000000000000000000000000000";
                 }
                 list[j] = convert;
             }
             else if (data.Length == 4)
             {
-                for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
+                for (int i = 0; i < data.Length; i += 2)
                 {
-                    convert += data.Substring(i, 2); // 2글자씩 잘라서 추가
-                    convert += "00000000000000"; // 16분음표를 위해 '00' 추가
+                    convert += data.Substring(i, 2);
+                    convert += "00000000000000";
                 }
                 list[j] = convert;
             }
             else if (data.Length == 8)
             {
-                for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
+                for (int i = 0; i < data.Length; i += 2)
                 {
-                    convert += data.Substring(i, 2); // 2글자씩 잘라서 추가
-                    convert += "000000"; // 16분음표를 위해 '00' 추가
+                    convert += data.Substring(i, 2);
+                    convert += "000000";
                 }
-                list[j] = convert; // 변환된 데이터를 notesData에 저장
+                list[j] = convert;
             }
             else if (data.Length == 16)
             {
-                for (int i = 0; i < data.Length; i += 2) // i < data.Length로 수정
+                for (int i = 0; i < data.Length; i += 2)
                 {
-                    convert += data.Substring(i, 2); // 2글자씩 잘라서 추가
-                    convert += "00"; // 16분음표를 위해 '00' 추가
+                    convert += data.Substring(i, 2);
+                    convert += "00";
                 }
-                list[j] = convert; // 변환된 데이터를 notesData에 저장
+                list[j] = convert;
             }
             else
             {
@@ -451,13 +472,11 @@ public class LoadBMS : MonoBehaviour
         }
 
         list = convertedNotesData;
-
         return list;
     }
 
     public void changeNoteData()
     {
-        // Debug.Log(notesData.Count);
         List<string> convertedNotesData = new List<string>();
 
         for (int j = 0; j < notesData.Count; j++)
@@ -495,16 +514,13 @@ public class LoadBMS : MonoBehaviour
 
     public void readNote()
     {
-        // 파일에서 모든 줄을 읽어오고, 빈 줄을 제외합니다.
         lineData = File.ReadAllLines(bmsFilePath)
                        .Where(line => !string.IsNullOrWhiteSpace(line))
                        .ToArray();
 
-        // 라인 데이터를 처리합니다.
         bool isNotesSection = false;
         foreach (string bmsLine in lineData)
         {
-            // 타이틀과 BPM 추출
             if (bmsLine.StartsWith("#TITLE"))
             {
                 title = bmsLine.Substring("#TITLE".Length).Trim();
@@ -513,21 +529,102 @@ public class LoadBMS : MonoBehaviour
             {
                 BPM = bmsLine.Substring("#BPM".Length).Trim();
             }
-            // MAIN DATA FIELD의 시작을 감지
-            else if (bmsLine.StartsWith("#00001:01")) // 수정: 노트 섹션 시작 감지
+            else if (bmsLine.StartsWith("#00001:01"))
             {
                 isNotesSection = true;
                 Debug.Log(bmsLine);
             }
-            // # 형식의 라인이 나오면 notesData 배열에 저장 시작
             else if (isNotesSection && bmsLine.StartsWith("#"))
             {
                 notes += 1;
-                // 접두사 제거
                 string noteData = bmsLine.Substring(7).Trim();
                 notesData.Add(noteData);
             }
         }
     }
 
+    private void CacheRhythmStartBanners()
+    {
+        rhythmStartBanners.Clear();
+        TryAddRhythmStartBanner(GameObject.Find(EnemyBannerName));
+        TryAddRhythmStartBanner(GameObject.Find(YoursBannerName));
+    }
+
+    private void TryAddRhythmStartBanner(GameObject bannerObject)
+    {
+        if (bannerObject == null)
+        {
+            return;
+        }
+
+        Graphic graphic = bannerObject.GetComponent<Graphic>();
+        if (graphic != null)
+        {
+            rhythmStartBanners.Add(new RhythmStartBannerTarget(graphic));
+            return;
+        }
+
+        SpriteRenderer spriteRenderer = bannerObject.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            rhythmStartBanners.Add(new RhythmStartBannerTarget(spriteRenderer));
+        }
+    }
+
+    public void ShowRhythmStartBanner()
+    {
+        if (rhythmStartBannerRoutine != null)
+        {
+            StopCoroutine(rhythmStartBannerRoutine);
+        }
+
+        if (rhythmStartBanners.Count == 0)
+        {
+            CacheRhythmStartBanners();
+        }
+
+        if (rhythmStartBanners.Count == 0)
+        {
+            return;
+        }
+
+        rhythmStartBannerRoutine = StartCoroutine(RhythmStartBannerRoutine());
+    }
+
+    private IEnumerator RhythmStartBannerRoutine()
+    {
+        yield return FadeRhythmStartBanner(0f, 1f, startBannerFadeInDuration);
+        yield return new WaitForSeconds(startBannerVisibleDuration);
+        yield return FadeRhythmStartBanner(1f, 0f, startBannerFadeOutDuration);
+        rhythmStartBannerRoutine = null;
+    }
+
+    private IEnumerator FadeRhythmStartBanner(float fromNormalizedAlpha, float toNormalizedAlpha, float duration)
+    {
+        if (duration <= 0f)
+        {
+            SetRhythmStartBannerAlpha(toNormalizedAlpha);
+            yield break;
+        }
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            SetRhythmStartBannerAlpha(Mathf.Lerp(fromNormalizedAlpha, toNormalizedAlpha, t));
+            yield return null;
+        }
+
+        SetRhythmStartBannerAlpha(toNormalizedAlpha);
+    }
+
+    private void SetRhythmStartBannerAlpha(float normalizedAlpha)
+    {
+        for (int i = 0; i < rhythmStartBanners.Count; i++)
+        {
+            RhythmStartBannerTarget banner = rhythmStartBanners[i];
+            banner.SetAlpha(banner.visibleAlpha * normalizedAlpha);
+        }
+    }
 }

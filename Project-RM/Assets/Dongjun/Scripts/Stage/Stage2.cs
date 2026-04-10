@@ -76,6 +76,7 @@ public class Stage2 : MonoBehaviour
         }
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        LoadBMS.Instance.ShowRhythmStartBanner();
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
         countText.text = "3";
@@ -153,7 +154,7 @@ public class Stage2 : MonoBehaviour
             }
             else if (enemies.Count == 0 && waveClear)
             {
-                readyText.text = "Æ÷Å»ÀÌ ¿­·È½À´Ï´Ù.";
+                readyText.text = "í¬íƒˆì´ ì—´ë ¸ìŠµë‹ˆë‹¤.";
                 DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 50f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnStart(() => readyText.enabled = true);
                 readyText.DOFade(1f, 2f).SetEase(Ease.InQuart);
                 CenterFrame.MusicFadeOut();
@@ -189,6 +190,7 @@ public class Stage2 : MonoBehaviour
 
     void EnableNote()
     {
+        LoadBMS.Instance.ShowRhythmStartBanner();
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
     }
 

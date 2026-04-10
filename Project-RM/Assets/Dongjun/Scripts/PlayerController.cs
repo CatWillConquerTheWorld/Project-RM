@@ -1,11 +1,11 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using JetBrains.Annotations;
 
 public class PlayerController : MonoBehaviour
 {
-    //½Ì±ÛÅæ ¼±¾ğ
+    //ì‹±ê¸€í†¤ ì„ ì–¸
     //public static PlayerController instance { get; private set; }
 
     private float maxHp;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private BoxCollider2D boxCollider;
 
-    //ÃÑ ¿ä¼Ò
+    //ì´ ìš”ì†Œ
     public static int normalAttackRate;
     public static int semiAttackRate;
     public static int chargedAttackRate;
@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour
     public Animator gunVFXAnimator;
     private float chargedTime;
 
-    //»öÀû ¿ä¼Ò
-    public float detectionRadius = 5f; // °¨Áö ¹İ°æ
+    //ìƒ‰ì  ìš”ì†Œ
+    public float detectionRadius = 5f; // ê°ì§€ ë°˜ê²½
     private Transform closestEnemy;
     public LayerMask enemyLayer;
     public LayerMask groundLayer;
@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
     public GameObject alertMark;
 
     public bool isInvincible;
+    private ComboManager comboManager;
     //void Awake()
     //{
     //    if (instance == null)
@@ -92,6 +93,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         isHitting = false;
+        comboManager = ComboManager.Instance != null ? ComboManager.Instance : FindObjectOfType<ComboManager>();
 
         //if (enemyInfoUI != null)
         //{
@@ -115,13 +117,13 @@ public class PlayerController : MonoBehaviour
             PlayerUIManager.Instance.ManageHealth(maxHp, hp);
         }
         if (isDead) return;
-        //ÁÂ¿ì ÀÌµ¿
+        //ì¢Œìš° ì´ë™
         Move();
 
-        // Á¡ÇÁ
+        // ì í”„
         Jump();
 
-        // ÃÑ ¹ß»ç
+        // ì´ ë°œì‚¬
         //Shoot();
 
         FindClosestEnemy();
@@ -157,7 +159,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // ¶¥ Ã¼Å©
+        // ë•… ì²´í¬
         isGrounded = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + 0.1f, LayerMask.GetMask("Ground"));
     }
 
@@ -194,7 +196,7 @@ public class PlayerController : MonoBehaviour
         //    Vector2 directionToEnemy = enemy.transform.position - transform.position;
         //    RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToEnemy.normalized, detectionRadius, groundLayer);
 
-        //    // Àû°ú ÇÃ·¹ÀÌ¾î »çÀÌ¿¡ Àå¾Ö¹°ÀÌ ¾øÀ¸¸é ÀûÀ» °¨Áö
+        //    // ì ê³¼ í”Œë ˆì´ì–´ ì‚¬ì´ì— ì¥ì• ë¬¼ì´ ì—†ìœ¼ë©´ ì ì„ ê°ì§€
         //    if (hit.collider == null)
         //    {
         //        closestEnemy = enemy.transform;
@@ -203,19 +205,19 @@ public class PlayerController : MonoBehaviour
         //closestEnemy = null;
         //for (int i = 0; i < 36; i++)
         //{
-        //    // °¢ ·¹ÀÌÀÇ °¢µµ °è»ê
+        //    // ê° ë ˆì´ì˜ ê°ë„ ê³„ì‚°
         //    float angle = i * (360f / 36);
         //    Vector2 direction = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
 
-        //    // ·¹ÀÌÄ³½ºÆ® ½î±â
+        //    // ë ˆì´ìºìŠ¤íŠ¸ ì˜ê¸°
         //    RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRadius, groundLayer);
 
-        //    // ·¹ÀÌÄ³½ºÆ®°¡ Àå¾Ö¹°¿¡ ´êÁö ¾ÊÀº °æ¿ì
+        //    // ë ˆì´ìºìŠ¤íŠ¸ê°€ ì¥ì• ë¬¼ì— ë‹¿ì§€ ì•Šì€ ê²½ìš°
         //    if (hit.collider == null)
         //    {
-        //        // ·¹ÀÌÄ³½ºÆ® ³¡ Á¡
+        //        // ë ˆì´ìºìŠ¤íŠ¸ ë ì 
         //        Vector2 endPoint = (Vector2)transform.position + direction * detectionRadius;
-        //        // Àû Å½Áö
+        //        // ì  íƒì§€
         //        Collider2D[] enemies = Physics2D.OverlapCircleAll(endPoint, 0.1f, enemyLayer);
 
         //        foreach (Collider2D enemy in enemies)
@@ -273,6 +275,8 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
+        float currentMoveSpeed = moveSpeed * GetComboMoveMultiplier();
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (Input.GetKey(KeyCode.RightArrow))
@@ -283,9 +287,9 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
             if (flip) transform.localScale = new Vector3(-3, 3, 0);
             if (flip) firePoint.rotation = new Quaternion(0, 0, 180, 0);
-            transform.Translate(Vector3.right * -1 * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector3.right * -1 * currentMoveSpeed * Time.deltaTime);
 
-            // ÃÑ À§Ä¡ Á¶Á¤
+            // ì´ ìœ„ì¹˜ ì¡°ì •
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(0.1f, -0.275f, 0);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
@@ -298,9 +302,9 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
             if (flip) transform.localScale = new Vector3(3, 3, 0);
             if (flip) firePoint.rotation = new Quaternion(0, 0, 0, 0);
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector3.right * currentMoveSpeed * Time.deltaTime);
 
-            //ÃÑ À§Ä¡ Á¶Á¤
+            //ì´ ìœ„ì¹˜ ì¡°ì •
             if (flip) transform.Find("Gun").transform.position = transform.position + new Vector3(-0.1f, -0.275f, 0);
         }
         else
@@ -420,12 +424,13 @@ public class PlayerController : MonoBehaviour
 
     private void Attack(string type, float multiplier)
     {
+        float finalMultiplier = multiplier * GetComboAttackMultiplier();
         print("Done" + type);
         if (type == "Charged")
         {
             GameObject chargedBullet = Instantiate(chargedBulletPrefab, firePoint.position, firePoint.rotation);
             chargedBullet.SetActive(true);
-            chargedBullet.GetComponent<Bullet>().myAttackRate = 30 * multiplier;
+            chargedBullet.GetComponent<Bullet>().myAttackRate = 30 * finalMultiplier;
             Rigidbody2D rb = chargedBullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * chargedBulletSpeed ;
             chargedBullet.GetComponent<Animator>().SetTrigger("charged");
@@ -434,7 +439,7 @@ public class PlayerController : MonoBehaviour
         {
             GameObject semiChargedBullet = Instantiate(semiChargedBP, firePoint.position, firePoint.rotation);
             semiChargedBullet.SetActive(true);
-            semiChargedBullet.GetComponent<Bullet>().myAttackRate = 20 * multiplier;
+            semiChargedBullet.GetComponent<Bullet>().myAttackRate = 20 * finalMultiplier;
             Rigidbody2D rb = semiChargedBullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * chargedBulletSpeed;
             semiChargedBullet.GetComponent<Animator>().SetTrigger("semi");
@@ -443,11 +448,31 @@ public class PlayerController : MonoBehaviour
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             bullet.SetActive(true);
-            bullet.GetComponent<Bullet>().myAttackRate = 10 * multiplier;
+            bullet.GetComponent<Bullet>().myAttackRate = 10 * finalMultiplier;
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = firePoint.right * bulletSpeed;
             bullet.GetComponent<Animator>().SetTrigger("normal");
         }
+    }
+
+    private float GetComboAttackMultiplier()
+    {
+        if (comboManager == null)
+        {
+            comboManager = ComboManager.Instance != null ? ComboManager.Instance : FindObjectOfType<ComboManager>();
+        }
+
+        return comboManager != null ? comboManager.GetAttackMultiplier() : 1f;
+    }
+
+    private float GetComboMoveMultiplier()
+    {
+        if (comboManager == null)
+        {
+            comboManager = ComboManager.Instance != null ? ComboManager.Instance : FindObjectOfType<ComboManager>();
+        }
+
+        return comboManager != null ? comboManager.GetMoveSpeedMultiplier() : 1f;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

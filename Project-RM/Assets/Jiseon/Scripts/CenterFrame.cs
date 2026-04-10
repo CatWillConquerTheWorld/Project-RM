@@ -7,6 +7,7 @@ public class CenterFrame : MonoBehaviour
     public static AudioSource myAudio;
     public AudioClip[] audioClips;
     public static bool musicStart = false;
+    public static bool isCleaningUpNotes = false;
 
     public static GameObject container;
     public static NoteManager noteManager;
@@ -57,6 +58,9 @@ public class CenterFrame : MonoBehaviour
 
     public static void MusicFadeOut()
     {
+        isCleaningUpNotes = true;
+        ComboManager.Instance?.ResetCombo();
+
         for (int i = 0; i < container.transform.childCount; i++)
         {
             if (container.transform.GetChild(i).gameObject.activeSelf)
@@ -69,7 +73,14 @@ public class CenterFrame : MonoBehaviour
         }
         LoadBMS.currentTime = -1000000000d;
         volume = 1.0f;
-        DOTween.To(() => volume, x => volume = x, 0f, 0.5f).SetEase(Ease.OutSine).OnUpdate(() => myAudio.volume = volume).OnComplete(() => myAudio.Stop());
+        DOTween.To(() => volume, x => volume = x, 0f, 0.5f)
+            .SetEase(Ease.OutSine)
+            .OnUpdate(() => myAudio.volume = volume)
+            .OnComplete(() =>
+            {
+                myAudio.Stop();
+                isCleaningUpNotes = false;
+            });
     }
 
     public static void MusicPause()

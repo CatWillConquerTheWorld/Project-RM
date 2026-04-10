@@ -1,16 +1,16 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyNoteManager : MonoBehaviour
 {
-    public int bpm; // ºĞ´ç ºñÆ® ¼ö ÀÇ¹Ì
+    public int bpm; // ë¶„ë‹¹ ë¹„íŠ¸ ìˆ˜ ì˜ë¯¸
     double currentTime = 0d;
 
-    [SerializeField] Transform tfEnemyNoteAppear = null; // ³ëÆ® »ı¼ºÀ§Ä¡
-    [SerializeField] RectTransform tfEnemyLongNoteAppear = null; // ³ëÆ® »ı¼ºÀ§Ä¡
+    [SerializeField] Transform tfEnemyNoteAppear = null; // ë…¸íŠ¸ ìƒì„±ìœ„ì¹˜
+    [SerializeField] RectTransform tfEnemyLongNoteAppear = null; // ë…¸íŠ¸ ìƒì„±ìœ„ì¹˜
 
-    bool notecheck = false; // long short ¹ø°¥¾Æ°¡¸ç Ãâ·ÂÀ§ÇØ.
+    bool notecheck = false; // long short ë²ˆê°ˆì•„ê°€ë©° ì¶œë ¥ìœ„í•´.
     public List<GameObject> enemies;
 
     public static bool isMusicStart;
@@ -54,7 +54,7 @@ public class EnemyNoteManager : MonoBehaviour
         else if (note == "AB")
         {
             if (!is_longnote_start)
-            { // ·Õ³ëÆ® ½ÃÀÛºÎºĞÀÌ¶ó¸é
+            { // ë¡±ë…¸íŠ¸ ì‹œì‘ë¶€ë¶„ì´ë¼ë©´
                 MakeLongNote();
                 is_longnote_start = true;
                 // Debug.Log("long note start");
@@ -79,7 +79,7 @@ public class EnemyNoteManager : MonoBehaviour
     {
         currentTime += Time.deltaTime;
         double BeatTime = bpmManager.instance.bpmInterval * 3;
-        if (currentTime >= BeatTime && gameObject.activeSelf) // 1ºñÆ®ÀÇ ½Ã°£ 
+        if (currentTime >= BeatTime && gameObject.activeSelf) // 1ë¹„íŠ¸ì˜ ì‹œê°„ 
         {
             if (notecheck)
             {
@@ -98,6 +98,11 @@ public class EnemyNoteManager : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (CenterFrame.isCleaningUpNotes || !gameObject.activeInHierarchy || !collision.gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
         if (collision.gameObject.name == "StartNote" || collision.gameObject.name == "EndNote")
         {
             collision.gameObject.SetActive(false);            
@@ -282,3 +287,4 @@ public class EnemyNoteManager : MonoBehaviour
         longnote3.FinishEndNote();
     }
 }
+

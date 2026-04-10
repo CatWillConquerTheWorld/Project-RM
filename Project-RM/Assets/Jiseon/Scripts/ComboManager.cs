@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ComboManager : MonoBehaviour
 {
+    public static ComboManager Instance { get; private set; }
+
     private enum ComboTier
     {
         Hidden = -1,
@@ -39,12 +41,12 @@ public class ComboManager : MonoBehaviour
     [SerializeField] private float slideOutDuration = 0.15f;
     [SerializeField] private float punchScale = 0.18f;
     [SerializeField] private float punchDuration = 0.12f;
-    [SerializeField] private float tier20ShakeStrength = 8f;
-    [SerializeField] private float tier20ShakeDuration = 0.45f;
-    [SerializeField] private int tier20ShakeVibrato = 12;
-    [SerializeField] private float tier30ShakeStrength = 14f;
-    [SerializeField] private float tier30ShakeDuration = 0.28f;
-    [SerializeField] private int tier30ShakeVibrato = 22;
+    [SerializeField] private float tier20ShakeStrength = 4f;
+    [SerializeField] private float tier20ShakeDuration = 0.22f;
+    [SerializeField] private int tier20ShakeVibrato = 10;
+    [SerializeField] private float tier30ShakeStrength = 7f;
+    [SerializeField] private float tier30ShakeDuration = 0.16f;
+    [SerializeField] private int tier30ShakeVibrato = 16;
     [SerializeField] private float doubleDigitComboFontSize = 35f;
     [SerializeField] private float tier20ComboFontSize = 50f;
 
@@ -66,6 +68,7 @@ public class ComboManager : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         EnsureReferences();
         HideImmediate();
     }
@@ -73,6 +76,14 @@ public class ComboManager : MonoBehaviour
     private void OnDisable()
     {
         KillTweens();
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     public void IncreaseCombo(int nNum = 1)
@@ -120,6 +131,46 @@ public class ComboManager : MonoBehaviour
     public bool GetCurrentComboBool()
     {
         return currentCombo >= VisibleComboThreshold;
+    }
+
+    public float GetAttackMultiplier()
+    {
+        if (currentCombo >= 30)
+        {
+            return 1.3f;
+        }
+
+        if (currentCombo >= 20)
+        {
+            return 1.2f;
+        }
+
+        if (currentCombo >= 10)
+        {
+            return 1.1f;
+        }
+
+        return 1f;
+    }
+
+    public float GetMoveSpeedMultiplier()
+    {
+        if (currentCombo >= 30)
+        {
+            return 1.5f;
+        }
+
+        if (currentCombo >= 20)
+        {
+            return 1.3f;
+        }
+
+        if (currentCombo >= 10)
+        {
+            return 1.1f;
+        }
+
+        return 1f;
     }
 
     private void EnsureReferences()

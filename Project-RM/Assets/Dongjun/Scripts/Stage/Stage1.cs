@@ -75,6 +75,7 @@ public class Stage1 : MonoBehaviour
         }
         DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 300f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnComplete(() => readyText.enabled = false);
         readyText.DOFade(0f, 2f).SetEase(Ease.OutQuart);
+        LoadBMS.Instance.ShowRhythmStartBanner();
         yield return new WaitForSeconds(2f);
         countText.enabled = true;
         countText.text = "3";
@@ -82,7 +83,7 @@ public class Stage1 : MonoBehaviour
         countText.text = "2";
         yield return new WaitForSeconds(60f / stageBPM);
         LoadBMS.currentTime = 0d;
-        LoadBMS.Instance.play_song("WTF");                      //³ë·¡ ÀÌ¸§ ¹Ù²ã¾ßÇÔ
+        LoadBMS.Instance.play_song("WTF");                      //ë…¸ëž˜ ì´ë¦„ ë°”ê¿”ì•¼í•¨
         countText.text = "1";
         yield return new WaitForSeconds(60f / stageBPM);
         countText.text = "GO!";
@@ -116,7 +117,7 @@ public class Stage1 : MonoBehaviour
             }
             else if (enemies.Count == 0)
             {
-                readyText.text = "Æ÷Å»ÀÌ ¿­·È½À´Ï´Ù.";
+                readyText.text = "í¬íƒˆì´ ì—´ë ¸ìŠµë‹ˆë‹¤.";
                 DOTween.To(() => readyTextCharacterSpace, x => readyTextCharacterSpace = x, 50f, 2f).SetEase(Ease.OutSine).OnUpdate(() => readyText.characterSpacing = readyTextCharacterSpace).OnStart(() => readyText.enabled = true);
                 readyText.DOFade(1f, 2f).SetEase(Ease.InQuart);
                 CenterFrame.MusicFadeOut();

@@ -294,6 +294,7 @@ public class MiddleBossManager : MonoBehaviour
 
     void EnableNote()
     {
+        LoadBMS.Instance.ShowRhythmStartBanner();
         noteUIContainer.gameObject.SetActive(true);
         noteUIContainer.DOFade(1f, 0.5f).SetEase(Ease.OutSine);
     }
