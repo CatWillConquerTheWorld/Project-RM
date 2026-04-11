@@ -50,6 +50,7 @@ public class Tutorial : MonoBehaviour
 
     //skipping to next description
     private bool isNext;
+    private bool canAdvanceDialogue;
 
     //checks if player is in the interactive gun's field
     public bool canHoldGun;
@@ -131,6 +132,7 @@ public class Tutorial : MonoBehaviour
         blocker.enabled = true;
 
         isNext = false;
+        canAdvanceDialogue = false;
     }
 
     void Update()
@@ -141,7 +143,7 @@ public class Tutorial : MonoBehaviour
             blocker2.enabled = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.P)) isNext = true;
+        if (canAdvanceDialogue && Input.GetKeyDown(KeyCode.P)) isNext = true;
         //if (Input.GetKeyDown(KeyCode.Q)) StartCoroutine(TestRoomAppear());
     }
 
@@ -362,9 +364,11 @@ public class Tutorial : MonoBehaviour
     IEnumerator WaitForUser()
     {
         isNext = false;
+        canAdvanceDialogue = true;
         keyP.SetActive(true);
         while (!isNext) yield return null;
         keyP.SetActive(false);
+        canAdvanceDialogue = false;
     }
 
     IEnumerator DisableWithDelay(Chatting target)

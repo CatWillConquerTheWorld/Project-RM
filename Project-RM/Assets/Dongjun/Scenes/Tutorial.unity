@@ -11170,7 +11170,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -2489435653641605366, guid: 63da205424ff40f4995f796ce8a0db05, type: 2}
   m_audioClip: {fileID: 8300000, guid: 18494970681db9240ac5f5302f28fc34, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.911
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13660,7 +13660,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: afbfa3c5e2f80e541936bee4e7e8b78f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.911
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -17383,6 +17383,8 @@ MonoBehaviour:
   bpm: 0
   bpminterval: 0
   isNoteActive: 1
+  isEnemyLongNote: 0
+  isReturnedToPool: 0
 --- !u!1 &1456446940
 GameObject:
   m_ObjectHideFlags: 0
@@ -21582,7 +21584,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -2489435653641605366, guid: 63da205424ff40f4995f796ce8a0db05, type: 2}
   m_audioClip: {fileID: 8300000, guid: 18494970681db9240ac5f5302f28fc34, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25128,6 +25130,8 @@ MonoBehaviour:
   bpm: 0
   bpminterval: 0
   isNoteActive: 1
+  isEnemyLongNote: 0
+  isReturnedToPool: 0
 --- !u!1 &1929216811
 GameObject:
   m_ObjectHideFlags: 0
