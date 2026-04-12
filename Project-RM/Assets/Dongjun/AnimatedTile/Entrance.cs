@@ -29,9 +29,18 @@ public class Entrance : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player") 
+        if (enterTriggered || collision.tag != "Player")
+        {
+            return;
+        }
+
+        if (animator != null)
         {
             animator.SetBool("lightUp", true);
+        }
+
+        if (keyF != null)
+        {
             keyF.SetActive(true);
         }
     }
@@ -50,9 +59,18 @@ public class Entrance : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (enterTriggered || collision.tag != "Player")
+        {
+            return;
+        }
+
+        if (animator != null)
         {
             animator.SetBool("lightUp", false);
+        }
+
+        if (keyF != null)
+        {
             keyF.SetActive(false);
         }
     }
@@ -65,10 +83,30 @@ public class Entrance : MonoBehaviour
         player.GetComponent<SpriteRenderer>().DOFade(0f, 1f);
         playerGun.GetComponent<SpriteRenderer>().DOFade(0f, 1f);
         yield return new WaitForSeconds(1f);
-        greyBG_up.GetComponent<RectTransform>().DOAnchorPosY(270f, 0.25f).SetEase(Ease.InSine);
-        greyBG_down.GetComponent<RectTransform>().DOAnchorPosY(-270f, 0.25f).SetEase(Ease.InSine);
+        RectTransform upperBar = greyBG_up != null ? greyBG_up.GetComponent<RectTransform>() : null;
+        RectTransform lowerBar = greyBG_down != null ? greyBG_down.GetComponent<RectTransform>() : null;
+
+        PrepareTransitionBar(upperBar, 810f);
+        PrepareTransitionBar(lowerBar, -810f);
+
+        upperBar?.DOAnchorPosY(270f, 0.25f).SetEase(Ease.InSine);
+        lowerBar?.DOAnchorPosY(-270f, 0.25f).SetEase(Ease.InSine);
         yield return new WaitForSeconds(0.3f);
         SceneLoader.LoadSceneWithLoading("Stage1");
+    }
+
+    void PrepareTransitionBar(RectTransform bar, float startY)
+    {
+        if (bar == null)
+        {
+            return;
+        }
+
+        bar.anchorMin = new Vector2(0.5f, 0.5f);
+        bar.anchorMax = new Vector2(0.5f, 0.5f);
+        bar.pivot = new Vector2(0.5f, 0.5f);
+        bar.sizeDelta = new Vector2(1920f, 540f);
+        bar.anchoredPosition = new Vector2(0f, startY);
     }
 
     IEnumerator PlayerMoveX(float destinationX, float moveSpeed)
