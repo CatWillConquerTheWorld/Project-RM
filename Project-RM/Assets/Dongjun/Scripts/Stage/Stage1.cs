@@ -56,6 +56,7 @@ public class Stage1 : MonoBehaviour
 
     IEnumerator StageFlow()
     {
+        Pause.isOKToPause = true;
         playerPlayerController.enabled = false;
         yield return new WaitForSeconds(0.5f);
         greyBG_up.DOAnchorPosY(810f, 0.3f).SetEase(Ease.InSine);

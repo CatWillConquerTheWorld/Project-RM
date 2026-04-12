@@ -119,7 +119,7 @@ public class PortalController : MonoBehaviour
         {
             // Renderer의 Material을 새로운 Material로 변경합니다.
             portalRenderer.material = material;
-            Debug.Log("New material applied to the portal.");
+            //Debug.Log("New material applied to the portal.");
         }
     }
 

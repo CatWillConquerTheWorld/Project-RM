@@ -141,7 +141,6 @@ public class Boss : MonoBehaviour
         jumpCollider.SetActive(true);
         animator.SetTrigger("Land");
         animator.SetBool("IsJump", false);
-        print("Shit!!!!!!!!!!");
     }
 
     public void EndJumpEnd()
@@ -161,6 +160,11 @@ public class Boss : MonoBehaviour
         rigid.gravityScale = 0f;
         rigid.bodyType = RigidbodyType2D.Kinematic;
         col.enabled = false;
+        spitCollider.SetActive(false);
+        stumpCollider.SetActive(false);
+        buffCollider.SetActive(false);
+        jumpCollider.SetActive(false); 
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

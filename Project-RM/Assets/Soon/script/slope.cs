@@ -79,10 +79,10 @@ public class slope : MonoBehaviour
     void AttachPlayer()
     {
         isPlayerAttached = true;
-        player.SetParent(transform); // 밧줄을 부모로 설정
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        player.position = ropeStartPoint.position; // 탑승 위치를 씬에서 직접 지정
+        player.SetParent(transform);
         player.GetComponent<PlayerController>().enabled = false;
-        player.position = new Vector3(16.5f, -6.8f, 0f);
-
         player.GetComponent<Rigidbody2D>().gravityScale = 0;
     }
 

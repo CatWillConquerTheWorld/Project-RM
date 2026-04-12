@@ -5,6 +5,7 @@ using TMPro;
 using Cinemachine;
 using UnityEngine.UI;
 using System.Data;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
@@ -147,8 +148,22 @@ public class Tutorial : MonoBehaviour
         //if (Input.GetKeyDown(KeyCode.Q)) StartCoroutine(TestRoomAppear());
     }
 
+    // Tutorial 클래스 안에 추가
+    public GameObject skipButton; // Inspector에서 스킵 버튼 UI 오브젝트 연결
+
+    public void SkipTutorial()
+    {
+        // 튜토리얼 씬에서만 실행
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+        {
+            StopAllCoroutines(); // 진행 중인 튜토리얼 코루틴 중단
+            SceneLoader.LoadSceneWithLoading("Stage1");
+        }
+    }
+
     public IEnumerator TutorialFlow()
     {
+        if (skipButton != null) skipButton.SetActive(true);
         Pause.isOKToPause = false;
         yield return waitOneSec;
         yellerChat.EnableChat();
